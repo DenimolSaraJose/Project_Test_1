@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Intended for the Finance service area</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>CIS - Finance Group</label>
+    <permissionSets>APXTConga4__Composer_Administrator</permissionSets>
+    <permissionSets>APXTConga4__Composer_User</permissionSets>
+    <permissionSets>CISFinancialForceAccountant</permissionSets>
+    <permissionSets>CIS_Basic_Access</permissionSets>
+    <permissionSets>CIS_Basic_Access_No_License</permissionSets>
+    <permissionSets>CIS_Communications_Read_Access</permissionSets>
+    <permissionSets>CIS_Engagement_Read_Access</permissionSets>
+    <permissionSets>CIS_Evaluator_Management_Read_Access</permissionSets>
+    <permissionSets>CIS_Finance_Full_Access</permissionSets>
+    <permissionSets>CIS_Lead_Management_Read_Access</permissionSets>
+    <permissionSets>CIS_Membership_Read_Only</permissionSets>
+    <permissionSets>CIS_Opportunities_Full_Access</permissionSets>
+    <permissionSets>CIS_Payable_Invoice_Scan_App_PISA</permissionSets>
+    <permissionSets>CIS_Reporting_Full_Access</permissionSets>
+    <permissionSets>CTCM__Cash_Match_User</permissionSets>
+    <permissionSets>CTPISA__CloudTeamPISAAdmin</permissionSets>
+    <permissionSets>CTPISA__CloudTeamPISAUser</permissionSets>
+    <permissionSets>FixedAssetManagementAccountingFields</permissionSets>
+    <permissionSets>FixedAssetManagementJournal</permissionSets>
+    <permissionSets>c2g__Accounting</permissionSets>
+    <permissionSets>c2g__AccountingAPI</permissionSets>
+    <permissionSets>c2g__AccountingLightningApp</permissionSets>
+    <permissionSets>c2g__AccountingReadAccess</permissionSets>
+    <permissionSets>c2g__AccountingandBilling</permissionSets>
+    <permissionSets>c2g__AccountingandBillingAPI</permissionSets>
+    <permissionSets>c2g__ActionViewsAccounting</permissionSets>
+    <permissionSets>c2g__AnalyticsandFinancialStatementsReadAccess</permissionSets>
+    <permissionSets>c2g__FMCommunity</permissionSets>
+    <permissionSets>ffban__FinancialForceFinancialManagementAndAnalytics</permissionSets>
+    <permissionSets>ffr__ActionViewsReporting</permissionSets>
+    <permissionSets>ffr__FinancialForceReporting</permissionSets>
+    <permissionSets>ffr__FinancialForceReportingAPI</permissionSets>
+    <permissionSets>ffr__FinancialForceReportingReadAccess</permissionSets>
+    <permissionSets>force__EinsteinAnalyticsAdmin</permissionSets>
+    <permissionSets>force__EinsteinAnalyticsUser</permissionSets>
+    <permissionSets>pi__Pardot</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

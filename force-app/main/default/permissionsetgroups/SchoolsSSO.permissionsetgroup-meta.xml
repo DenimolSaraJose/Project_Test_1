@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Schools SSO Basic Access</label>
+    <permissionSets>CIS_Accreditation_Community</permissionSets>
+    <permissionSets>CIS_Site_School_Portal_Member</permissionSets>
+    <permissionSets>Schools</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

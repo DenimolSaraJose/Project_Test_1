@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Intended for the membership engagement service area</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>CIS - Membership Group</label>
+    <permissionSets>CIS_Basic_Access</permissionSets>
+    <permissionSets>CIS_Basic_Access_No_License</permissionSets>
+    <permissionSets>CIS_Engagement_Read_Access</permissionSets>
+    <permissionSets>CIS_Evaluator_Management_Read_Access</permissionSets>
+    <permissionSets>CIS_Finance_Read_Access</permissionSets>
+    <permissionSets>CIS_Hide_option_to_switch_to_Salesforce_Classic</permissionSets>
+    <permissionSets>CIS_Lead_Management_Full_Access</permissionSets>
+    <permissionSets>CIS_Manage_Campaings</permissionSets>
+    <permissionSets>CIS_Membership_Full_access</permissionSets>
+    <permissionSets>CIS_Modify_Contact_Wizard</permissionSets>
+    <permissionSets>CIS_Opportunities_Read_Access</permissionSets>
+    <permissionSets>CIS_Privilege_Full_Access</permissionSets>
+    <permissionSets>CIS_Reporting_Full_Access</permissionSets>
+    <permissionSets>CIS_User_Management</permissionSets>
+    <permissionSets>Legacy_User_Management</permissionSets>
+    <permissionSets>pi__Pardot</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>
