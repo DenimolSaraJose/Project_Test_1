@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Bypass custom automation like Apex triggers, Process Builders, Lightning Flows and Validation Rules during a single transaction for a specific user, a specific profile or org wide.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>AccountTriggerHandler__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Bypass Account Trigger Handler</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>AccreditationCycleStageTriggerHandler__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Bypass Accreditation Cycle Stage Trigger</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>AccreditationCycleTriggerHandler__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Bypass Accreditation Cycle Trigger</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>AccreditationOutcomeTriggerHandler__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Bypass Accreditation Outcome Trigger</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>AccreditationTriggerHandler__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Bypass Accreditation Trigger</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>BypassAccountLightningFlow__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Bypass Account Lightning Flow</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>BypassAccreditationCycleLightningFlow__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Bypass Accreditation Cycle Lightning Flo</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>BypassAccreditationLightningFlow__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Bypass Accreditation Lightning Flow</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>BypassAccreditationOutcomeLightningFlow__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Bypass Accreditation Outcome Flow</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>BypassContactLightningFlow__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Bypass Contact Lightning Flow</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>BypassCreatingNewPrivileges__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Bypass Creating New Privileges</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>BypassJobLightningFlow__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Bypass Job Lightning Flow</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>BypassUserLightningFlow__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Bypass User Lightning Flow</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ContactTriggerHandler__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Bypass Contact Trigger Handler</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>JobTriggerHandler__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Bypass Job Trigger Handler</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MembershipTriggerHandler__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Bypass Membership Trigger Handler</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>UserTriggerHandler__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Bypass User Trigger Handler</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Org Exceptions</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>SETUP_TYPE</columns>
+        <columns>SETUP_OWNER_NAME</columns>
+        <columns>AccountTriggerHandler__c</columns>
+        <columns>ContactTriggerHandler__c</columns>
+        <columns>UserTriggerHandler__c</columns>
+        <columns>JobTriggerHandler__c</columns>
+        <columns>MembershipTriggerHandler__c</columns>
+        <columns>AccreditationTriggerHandler__c</columns>
+        <columns>AccreditationCycleTriggerHandler__c</columns>
+        <columns>AccreditationCycleStageTriggerHandler__c</columns>
+        <columns>AccreditationOutcomeTriggerHandler__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This stores configuration for Consent.</description>
+    <fields>
+        <fullName>TR1__Add_BCC_in_Email__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Checkbox to enable the BCC field when sending consent emails</inlineHelpText>
+        <label>Add BCC in Email</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Amount_Records_Consent_Page__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Determines the number of records per page displayed in the consent page table. (Example: 10, 20)</inlineHelpText>
+        <label>Amount of Records in Consent Page</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__BCC_Email_Address__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>This is used as BCC address in the Emails and if the value is not provided then the current user&apos;s email address will be used in BCC address.</inlineHelpText>
+        <label>BCC Email Address</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Candidate_Not_Found_Error_Message__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Message used in the public consent page when a contactId is not found</inlineHelpText>
+        <label>Candidate Not Found Error Message</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Consent_Email_Template_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Email template used to send the consent email to the contact</inlineHelpText>
+        <label>Consent Email Template Name</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Consent_Form_Information__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Page title used in the public consent page</inlineHelpText>
+        <label>Consent Form Information</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Consent_Page_Language__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Two letters language code used as a parameter in the link that is sent in the consent email. Examples: en=English; fr=French; es=Spanish. See documentation for all values.</inlineHelpText>
+        <label>Consent Page Language</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Contact_Email_Field_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Email field on Contact to be used for sending Consent email</inlineHelpText>
+        <label>Contact Email Field Name</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Default__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>This configuration will be set as the default for the consent page when set to true</inlineHelpText>
+        <label>Default</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Document_Public_URL__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Public URL of the document (Go to the Document tab &gt;Logo Document you are using in the public page and right click on the Image to copy the address)</inlineHelpText>
+        <label>Document Public URL</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__FavIcon_Document_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Id of the image stored in Documents used as a FavIcon for the public consent page</inlineHelpText>
+        <label>FavIcon Document Id</label>
+        <length>18</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__From_Email_Address__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>This is used as From address in the Emails and if the value is not provided then the current user&apos;s email address will be used as From address.</inlineHelpText>
+        <label>From Email Address</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Law_Enabled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Consent is enabled when set to true</inlineHelpText>
+        <label>Law Enabled</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Link_Active_Duration__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The amount of days the link sent in the consent email is valid</inlineHelpText>
+        <label>Link Active Duration</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__List_View_Prefix__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The list view prefix used in the consent page to filter the existing contact list views</inlineHelpText>
+        <label>List View Prefix</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Logo_Document_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Id of the image stored in Documents used as a Logo for the public consent page</inlineHelpText>
+        <label>Logo Document Id</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__New_Contact_Rule_Filter__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Contact filter used only when send consent email after contact creation is enabled. Example: (MailingCountry = &apos;USA&apos; AND MailingState= &apos;CA&apos;) OR (MailingCountry = &apos;Netherlands&apos;)</inlineHelpText>
+        <label>New Contact Rule Filter</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TR1__Send_Consent_Email_On_Contact_Creation__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Consent email are sent on contact creation when set to true</inlineHelpText>
+        <label>Send Consent Email on Contact Creation</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Show_Response_Text__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Checkbox to show / hide the response box for each consent type in the public consent page</inlineHelpText>
+        <label>Show Response Text</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Success_Message__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The message show in the public consent page after the candidate submits the form</inlineHelpText>
+        <label>Success Message</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <label>Consent Configuration</label>
+    <pluralLabel>Consent Configurations</pluralLabel>
+    <validationRules>
+        <fullName>TR1__New_Contact_Rule_Filter_has_value</fullName>
+        <active>true</active>
+        <description>If the &apos;Send Consent Email on Contact Creation&apos; field is checked, the &apos;New Contact Rule Filter&apos; field must contain a value</description>
+        <errorConditionFormula>AND (
+    TR1__Send_Consent_Email_On_Contact_Creation__c,
+    ISBLANK(TR1__New_Contact_Rule_Filter__c))</errorConditionFormula>
+        <errorDisplayField>TR1__New_Contact_Rule_Filter__c</errorDisplayField>
+        <errorMessage>New Contact Rule Filter field must be contain a value if the &apos;Send Consent Email on Contact Creation&apos; field is checked</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

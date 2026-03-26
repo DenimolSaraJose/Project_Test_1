@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Create_Billing_Contract</name>
+        <label>Create Billing Contract</label>
+        <locationX>314</locationX>
+        <locationY>971</locationY>
+        <actionName>AccreditationInvocable</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>UpdateAggregateResult</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>accreditation</name>
+            <value>
+                <elementReference>$Record</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>productIds</name>
+            <value>
+                <elementReference>AccreditationBillingContractProductIds</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>AccreditationInvocable</nameSegment>
+        <offset>0</offset>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <actionCalls>
+        <name>CreateAccreditationCycle</name>
+        <label>Create Accreditation Cycle</label>
+        <locationX>314</locationX>
+        <locationY>755</locationY>
+        <actionName>Accreditation__c.NewAccreditationCycle</actionName>
+        <actionType>quickAction</actionType>
+        <connector>
+            <targetReference>Assign_Products_for_Billing_Contract</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>contextId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>Status__c</name>
+            <value>
+                <stringValue>Planned</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>StartDate__c</name>
+            <value>
+                <elementReference>AccreditationCycleStartDate</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Accreditation__c.NewAccreditationCycle</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <apiVersion>59.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <description>Both the Accreditation Registration Fee and the Annual Fee</description>
+        <name>Assign_Products_for_Billing_Contract</name>
+        <label>Assign Products for Billing Contract</label>
+        <locationX>314</locationX>
+        <locationY>863</locationY>
+        <assignmentItems>
+            <assignToReference>AccreditationBillingContractProductIds</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>AccreditationRegistrationFeePoductId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>AccreditationBillingContractProductIds</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>InternationalAccreditationProductId</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Create_Billing_Contract</targetReference>
+        </connector>
+    </assignments>
+    <constants>
+        <description>Accreditation Registration Fee</description>
+        <name>AccreditationRegistrationFeePoductId</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>01t0Y00000836j9QAA</stringValue>
+        </value>
+    </constants>
+    <constants>
+        <description>International Accreditation</description>
+        <name>InternationalAccreditationProductId</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>01t1n00000CWyYMAA1</stringValue>
+        </value>
+    </constants>
+    <decisions>
+        <description>Accreditation Status has changed from &apos;Prospect&apos; to &apos;Registered&apos;.</description>
+        <name>IsStatusChangedFromProspectToRegistered</name>
+        <label>Status changed from &apos;Prospect&apos; to &apos;Registered&apos;</label>
+        <locationX>446</locationX>
+        <locationY>647</locationY>
+        <defaultConnector>
+            <targetReference>UpdateAggregateResult</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>IsStatusChangedFromProspectToRegisteredTRUE</name>
+            <conditionLogic>1 AND 2 AND 3 AND (4 OR 5)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Registered</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.nCycles__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <numberValue>0.0</numberValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record__Prior.Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Prospect</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record__Prior.Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Not Required</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>CreateAccreditationCycle</targetReference>
+            </connector>
+            <label>True</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>IsStatusChangedToWithdrawn</name>
+        <label>Status changed to &apos;Withdrawn&apos;</label>
+        <locationX>248</locationX>
+        <locationY>539</locationY>
+        <defaultConnector>
+            <targetReference>IsStatusChangedFromProspectToRegistered</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>IsStatusChangedToWithdrawnTRUE</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Withdrawn by CIS</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Withdrawn by Member</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>ClearAggregateResult</targetReference>
+            </connector>
+            <label>True</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Compare the record that triggered this flow with the most recent Accreditation.</description>
+        <name>ProcessingRecordEqualsMostRecentAccreditation</name>
+        <label>Processing Record equals Most Recent Accreditation</label>
+        <locationX>501</locationX>
+        <locationY>431</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>ProcessingRecordEqualsMostRecentAccreditationTRUE</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Id</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>Get_Most_Recent_Accreditation.Id</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>IsStatusChangedToWithdrawn</targetReference>
+            </connector>
+            <label>True</label>
+        </rules>
+    </decisions>
+    <description>TTP Changes</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>Calculates the first cycle&apos;s start date. Registration date&apos;s day before 15th, start date will be the first of next month; but the 15th day or more will move the start date one month further; the 1st of the following month.</description>
+        <name>AccreditationCycleStartDate</name>
+        <dataType>Date</dataType>
+        <expression>IF(
+DAY(ADDMONTHS({!$Flow.CurrentDate}, 1)) &lt; 15, 
+DATE(
+YEAR(ADDMONTHS({!$Flow.CurrentDate},1)),
+MONTH(ADDMONTHS({!$Flow.CurrentDate},1)),
+1)
+, 
+DATE(
+YEAR(ADDMONTHS({!$Flow.CurrentDate}, 2)),
+MONTH(ADDMONTHS({!$Flow.CurrentDate}, 2)),
+1)
+)</expression>
+    </formulas>
+    <interviewLabel>Accreditation After Creation Update {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Accreditation After Creation Update</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Get most recent Accreditation record for associated Account, based on CreatedDate.</description>
+        <name>Get_Most_Recent_Accreditation</name>
+        <label>Get Most Recent Accreditation</label>
+        <locationX>501</locationX>
+        <locationY>323</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>ProcessingRecordEqualsMostRecentAccreditation</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Account__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Account__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Accreditation__c</object>
+        <sortField>CreatedDate</sortField>
+        <sortOrder>Desc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Clear values on the Aggregate Result</description>
+        <name>ClearAggregateResult</name>
+        <label>Clear Aggregate Result</label>
+        <locationX>50</locationX>
+        <locationY>647</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Account__r.Aggregate_Result__c</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>AccreditationOutcome__c</field>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Accreditation_Status__c</field>
+            <value>
+                <elementReference>$Record.Status__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>CurrentAccreditationTrackName__c</field>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>CurrentIAC__c</field>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>CurrentStageName__c</field>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </inputAssignments>
+        <object>AggregateResult__c</object>
+    </recordUpdates>
+    <start>
+        <locationX>375</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Most_Recent_Accreditation</targetReference>
+        </connector>
+        <filterFormula>!{!$Setup.Org_Exceptions__c.BypassAccreditationLightningFlow__c}</filterFormula>
+        <object>Accreditation__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>UpdateAggregateResult</name>
+        <label>Update Aggregate Result</label>
+        <locationX>446</locationX>
+        <locationY>1163</locationY>
+        <flowName>Update_Aggregate_Result</flowName>
+        <inputAssignments>
+            <name>varAccreditation</name>
+            <value>
+                <elementReference>$Record</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <variables>
+        <name>AccreditationBillingContractProductIds</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

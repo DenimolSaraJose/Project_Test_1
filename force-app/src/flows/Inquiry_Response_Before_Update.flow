@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Update_Inquiry_Count</name>
+        <label>Update Inquiry Count</label>
+        <locationX>176</locationX>
+        <locationY>395</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.InquiryCount__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>newInquiryCount</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>This flow triggers when the record is updated by the user that created it. Every update adds +1 to the InquiryCount&apos;s field value.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>newInquiryCount</name>
+        <dataType>Number</dataType>
+        <expression>BLANKVALUE({!Get_Inquiry_Response.InquiryCount__c},1) + 1</expression>
+        <scale>0</scale>
+    </formulas>
+    <interviewLabel>Inquiry Response Before Update {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Inquiry Response Before Update</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Inquiry_Response</name>
+        <label>Get Inquiry Response</label>
+        <locationX>176</locationX>
+        <locationY>287</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Inquiry_Count</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>InquiryResponse__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Inquiry_Response</targetReference>
+        </connector>
+        <filterFormula>{!$Record.CreatedById} = {!$User.Id}</filterFormula>
+        <object>InquiryResponse__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

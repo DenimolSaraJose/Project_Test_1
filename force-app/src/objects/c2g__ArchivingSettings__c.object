@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Archiving Settings</description>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>c2g__ArchivingBatchSize__c</fullName>
+        <defaultValue>10</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The number of records that are processed in a batch by the Archiving process.</description>
+        <externalId>false</externalId>
+        <label>Archiving Batch Size</label>
+        <precision>15</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__DiscardBatchSize__c</fullName>
+        <defaultValue>10</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The number of records that are processed in a batch by the discarding process.</description>
+        <externalId>false</externalId>
+        <label>Batch Size - Discard</label>
+        <precision>15</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__JournalGroupedBy__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The field to group by when creating the summarization journal during the archiving process. You can enter Account or None. The default is Account.</description>
+        <externalId>false</externalId>
+        <label>Summarization Journal Group By Criteria</label>
+        <length>40</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__MarkForArchivingBatchSize__c</fullName>
+        <defaultValue>10</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The number of records that are processed in a batch by the Mark For Archiving process.</description>
+        <externalId>false</externalId>
+        <label>Mark For Archiving Batch Size</label>
+        <precision>15</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Archiving Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

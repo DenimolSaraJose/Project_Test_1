@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Metadata type for bug tracker admin page</description>
+    <fields>
+        <fullName>bugtr_mp__Allow_Community_User_To_Submit__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Allow users to create reports</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Allow_Community_User_To_Submit</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>bugtr_mp__Allow_Moderation__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Set all new reports to draft until privilege user manually submit report</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Allow_Moderation</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>bugtr_mp__Enable_Chatter_Auto_Follow__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Enables chatter auto follow feature for attached to report user</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Enable Chatter Auto Follow</label>
+        <type>Checkbox</type>
+    </fields>
+    <label>Bug_Tracker_Setting</label>
+    <pluralLabel>Bug_Tracker_Settings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

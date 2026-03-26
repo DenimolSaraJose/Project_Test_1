@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>TR1__Contact_Record_Types_to_Exclude__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Comma-separated list of Contact Record Type names(developer names) which should not be checked for valid Consent Records (e.g. Client Contact)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Comma-separated list of Contact Record Type names(developer names) which should not be checked for valid Consent Records (e.g. Client Contact)</inlineHelpText>
+        <label>Contact Record Types to Exclude</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Email_Engagement_Channel_Type_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Id of the Engagement channel type for Email. This type should be populated in the Contact Point Type Consent Records for contact individuals</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Id of the Engagement channel type for Email. This type should be populated in the Contact Point Type Consent Records for contact individuals</inlineHelpText>
+        <label>Email Engagement Channel Type Id</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Enable_SF_Consent_Check__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If enabled, the SF consent model is enforced</description>
+        <inlineHelpText>If enabled, the SF consent model is enforced</inlineHelpText>
+        <label>Enable SF Consent Check</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Enforce_Do_Not_Process_Check__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If enabled, SF consent model respects the DoNotProcess value on an individual record</description>
+        <inlineHelpText>If enabled, SF consent model respects the DoNotProcess value on an individual record</inlineHelpText>
+        <label>Enforce Do Not Process Check</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>SF Consent</label>
+    <visibility>Public</visibility>
+</CustomObject>

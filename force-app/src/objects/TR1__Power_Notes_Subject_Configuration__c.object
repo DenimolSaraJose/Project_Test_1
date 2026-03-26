@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>This object allows users to configure which subject is available for selection - or as &apos;default&apos; - when a Power Note is created from a supported object, ATSv2, Browse.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>TR1__Field_API_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>API name of the field referenced to configure a Power Note Subject.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>API name of the field referenced to configure a Power Note Subject.</inlineHelpText>
+        <label>Field API Name</label>
+        <length>60</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Field_Values__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Dependent on Field_API_Name__c: field values referenced to configure a Power Note Subject.</description>
+        <inlineHelpText>Dependent on Field_API_Name__c: field values referenced to configure a Power Note Subject.</inlineHelpText>
+        <label>Field Values</label>
+        <length>1000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TR1__Is_Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If checked the configuration is active.</description>
+        <inlineHelpText>If checked the configuration is active.</inlineHelpText>
+        <label>Is Active</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Is_Default__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If checked, the Power Note Subject configured in this record is set as the default Subject.</description>
+        <inlineHelpText>If checked, the Power Note Subject configured in this record is set as the default Subject.</inlineHelpText>
+        <label>Is Default</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Is_Power_Share_Default__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If checked, the Subject configured in this record is set as the default Subject for PowerShares created from a Power Note.</description>
+        <inlineHelpText>If checked, the Subject configured in this record is set as the default Subject for PowerShares created from a Power Note.</inlineHelpText>
+        <label>Is Power Share Default</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Locations__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The location where the Power Note is created from.</description>
+        <inlineHelpText>The location where the Power Note is created from.</inlineHelpText>
+        <label>Locations</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Record</fullName>
+                    <default>false</default>
+                    <label>Record</label>
+                </value>
+                <value>
+                    <fullName>Browse</fullName>
+                    <default>false</default>
+                    <label>Browse</label>
+                </value>
+                <value>
+                    <fullName>CandidateATS</fullName>
+                    <default>false</default>
+                    <label>CandidateATS</label>
+                </value>
+                <value>
+                    <fullName>JobATS</fullName>
+                    <default>false</default>
+                    <label>JobATS</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TR1__Object__c</fullName>
+        <deprecated>false</deprecated>
+        <description>List of objects that support Power Notes.</description>
+        <inlineHelpText>List of objects that support Power Notes.</inlineHelpText>
+        <label>Object</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Account</fullName>
+                    <default>false</default>
+                    <label>Account</label>
+                </value>
+                <value>
+                    <fullName>TR1__Application_V2__c</fullName>
+                    <default>false</default>
+                    <label>Application V2</label>
+                </value>
+                <value>
+                    <fullName>Contact</fullName>
+                    <default>false</default>
+                    <label>Contact</label>
+                </value>
+                <value>
+                    <fullName>TR1__Job__c</fullName>
+                    <default>false</default>
+                    <label>Job</label>
+                </value>
+                <value>
+                    <fullName>TR1__Send_Out_Schedule_V2__c</fullName>
+                    <default>false</default>
+                    <label>Send Out Schedule V2</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__Power_Note_Subject__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Power Notes subject (available or default).</description>
+        <inlineHelpText>Power Notes subject (available or default).</inlineHelpText>
+        <label>Power Note Subject</label>
+        <referenceTo>TR1__Power_Notes_Subject__c</referenceTo>
+        <relationshipName>Power_Notes_Subject_Configurations</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>TR1__Show_Only_For__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Defines whether the Subject is shown only in Power Notes Subject dropdown, or only in Power Shares Subject dropdown.</description>
+        <inlineHelpText>Defines whether the Subject is shown only in Power Notes Subject dropdown, or only in Power Shares Subject dropdown.</inlineHelpText>
+        <label>Show Only For</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Power Notes</fullName>
+                    <default>false</default>
+                    <label>Power Notes</label>
+                </value>
+                <value>
+                    <fullName>Power Shares</fullName>
+                    <default>false</default>
+                    <label>Power Shares</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Power Notes Subject Configuration</label>
+    <nameField>
+        <displayFormat>PNSC-{0000}</displayFormat>
+        <label>Power Notes Subject Config Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Power Notes Subject Configurations</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

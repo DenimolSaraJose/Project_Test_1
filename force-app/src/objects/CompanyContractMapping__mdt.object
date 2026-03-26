@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Company__c</fullName>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Company</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Council of International Schools</fullName>
+                    <default>true</default>
+                    <label>Council of International Schools</label>
+                </value>
+                <value>
+                    <fullName>Council of International Schools, Inc</fullName>
+                    <default>false</default>
+                    <label>Council of International Schools, Inc</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Currency__c</fullName>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Currency</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>EUR</fullName>
+                    <default>true</default>
+                    <label>EUR</label>
+                </value>
+                <value>
+                    <fullName>USD</fullName>
+                    <default>false</default>
+                    <label>USD</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Company Contract Mapping</label>
+    <pluralLabel>Company Contract Mappings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

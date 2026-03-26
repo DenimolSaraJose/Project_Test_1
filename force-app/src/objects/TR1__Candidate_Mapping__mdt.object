@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>TR1__Action__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Do nothing: do not update the field. Override: replace existing value with new value. Merge: add the new value to the existing one (for multi-select picklists). Conditional Override: replace existing value with new value only if the new value is not blank.</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Action</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Do Nothing</fullName>
+                    <default>true</default>
+                    <label>Do Nothing</label>
+                </value>
+                <value>
+                    <fullName>Override</fullName>
+                    <default>false</default>
+                    <label>Override</label>
+                </value>
+                <value>
+                    <fullName>Merge</fullName>
+                    <default>false</default>
+                    <label>Merge</label>
+                </value>
+                <value>
+                    <fullName>Conditional Override</fullName>
+                    <default>false</default>
+                    <label>Conditional Override</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__Custom_Contact_Relation_API_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Relation field API name to Contact(specified for custom entities when TR1__Object__c=&quot;Custom&quot;)</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Relation field API name to Contact(specified for custom entities when TR1__Object__c=&quot;Custom&quot;)</inlineHelpText>
+        <label>Custom Contact Relation API Name</label>
+        <length>60</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Custom_Object_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>API name of the Salesforce object where the parsed data is stored(specified for custom entities when TR1__Object__c=&quot;Custom&quot;)</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>API name of the Salesforce object where the parsed data is stored(specified for custom entities when TR1__Object__c=&quot;Custom&quot;)</inlineHelpText>
+        <label>Custom Object Name</label>
+        <length>60</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Default_Value__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Default Value</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Field_API_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>SF Field API Name to be populated with the extracted value. The BH4SF Standard JSON Parser(used with Custom Parser Provider by default) supports a connection to the existing parent record by text/external id. Examples: TR1__Master_Skill__r.TR1__Skill_Code__c/RecordType.Name</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Field API Name</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__JSONNode__c</fullName>
+        <deprecated>false</deprecated>
+        <description>JSON Node in an array item to retrieve the field value from the processing result. The JSON Path to the array is specified in TR1__JSONPath__c field</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>JSON Node in an array item to retrieve the field value from the processing result. The JSON Path to the array is specified in TR1__JSONPath__c field</inlineHelpText>
+        <label>JSON Node</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__JSONPath__c</fullName>
+        <deprecated>false</deprecated>
+        <description>JSON Path to retrieve the field value from the processing result</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>JSON Path to retrieve the field value from the processing result</inlineHelpText>
+        <label>JSON Path</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Object__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Object</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Contact</fullName>
+                    <default>true</default>
+                    <label>Contact</label>
+                </value>
+                <value>
+                    <fullName>TR1__EducationHistory__c</fullName>
+                    <default>false</default>
+                    <label>TR1__EducationHistory__c</label>
+                </value>
+                <value>
+                    <fullName>TR1__EmploymentHistory__c</fullName>
+                    <default>false</default>
+                    <label>TR1__EmploymentHistory__c</label>
+                </value>
+                <value>
+                    <fullName>TR1__Skills__c</fullName>
+                    <default>false</default>
+                    <label>TR1__Skills__c</label>
+                </value>
+                <value>
+                    <fullName>Custom</fullName>
+                    <default>false</default>
+                    <label>Custom</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__XML_Node__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>XML Node</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__XPath__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>XPath</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <label>Candidate Mapping</label>
+    <listViews>
+        <fullName>TR1__All</fullName>
+        <columns>MasterLabel</columns>
+        <columns>DeveloperName</columns>
+        <columns>TR1__Field_API_Name__c</columns>
+        <columns>TR1__XPath__c</columns>
+        <columns>TR1__XML_Node__c</columns>
+        <columns>TR1__Default_Value__c</columns>
+        <columns>TR1__Object__c</columns>
+        <columns>TR1__Action__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <pluralLabel>Candidate Mappings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

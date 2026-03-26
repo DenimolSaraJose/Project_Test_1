@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>TR1__Candidate_Autocomplete_Endpoint__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Candidate Autocomplete Endpoint</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Candidate_Autocomplete_Environment__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Candidate Autocomplete Environment</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Candidate_Autocomplete_Field_Mapping__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Candidate Autocomplete Field Mapping</label>
+        <length>131072</length>
+        <type>LongTextArea</type>
+        <visibleLines>20</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TR1__Candidate_Autocomplete_Password__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Candidate Autocomplete Password</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Job_Autocomplete_Endpoint__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Job Autocomplete Endpoint</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Other_Vacancy_Client_Contact_Relation__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>A lookup or master-detail field of the &quot;Other Vacancy Object&quot; that is a reference to a Client Contact</inlineHelpText>
+        <label>(deprecated) Client Contact Relation</label>
+        <metadataRelationshipControllingField>TR1__Search_And_Match_TK_Configuration__mdt.TR1__Other_Vacancy_Object__c</metadataRelationshipControllingField>
+        <referenceTo>EntityParticle</referenceTo>
+        <relationshipLabel>Search_Match_TK_Configurations</relationshipLabel>
+        <relationshipName>Search_Match_TK_Configurations</relationshipName>
+        <required>false</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Other_Vacancy_Object__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The second object (other than &quot;Job&quot;) which records are displayed in &quot;Jobs&quot; tab in TK Job Search</inlineHelpText>
+        <label>Other Vacancy Object</label>
+        <referenceTo>EntityDefinition</referenceTo>
+        <relationshipLabel>Search_Match_TK_Configurations</relationshipLabel>
+        <relationshipName>Search_Match_TK_Configurations</relationshipName>
+        <required>false</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Vacancy_Hiring_Manager_Field__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The field to be used as Hiring Manager in actions in TK Job Search for Other Vacancy object</inlineHelpText>
+        <label>Vacancy Hiring Manager Field</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Search &amp; Match TK Configuration</label>
+    <pluralLabel>Search &amp; Match TK Configurations</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

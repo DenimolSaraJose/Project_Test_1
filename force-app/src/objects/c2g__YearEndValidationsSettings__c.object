@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Year-end Validations Settings</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>c2g__PendingAdjustmentsValidation__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specifies the number of previous years to include in the pending adjustments validation. The maximum value you can enter is 99. If you enter 0 or leave this field blank, then all years are included in the validation. If you enter a negative value in this field, the minus sign is ignored by the validation process.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>You can specify the number of previous years to include in the pending adjustments validation. The maximum value you can enter is 99. If you enter 0 or leave this field blank, then all years are included in the validation. If you enter a negative value in this field, the minus sign is ignored by the validation process.</inlineHelpText>
+        <label>Pending Adjustments Validation</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>true</unique>
+    </fields>
+    <label>Year-end Validations</label>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Browse Tab Configuration</description>
+    <fields>
+        <fullName>TR1__Component_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Defines the component name when the tab type is Component</inlineHelpText>
+        <label>Component name (for Component)</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Is_Tab_Enabled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Checkbox for enabling/disabling the tab / component.</inlineHelpText>
+        <label>Is Tab Enabled</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Layout_API_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Layout API Name for Record Detail related list, e.g.: TR1__Application_V2__c-TR1__Application Layout</inlineHelpText>
+        <label>Layout API Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Lookup_Field_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Lookup Field Name on Application to get record Id from, when the tab type is Component RecordDetail</inlineHelpText>
+        <label>Lookup Field Name (for RecordDetail)</label>
+        <length>40</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Position__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Defines the position/order of the tab. Smaller numbers where rendered first (from left to right)</inlineHelpText>
+        <label>Position</label>
+        <precision>2</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Tab_Location__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Defines the location of the new tab: Left or Right</inlineHelpText>
+        <label>Tab Location</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Left</fullName>
+                    <default>true</default>
+                    <label>Left</label>
+                </value>
+                <value>
+                    <fullName>Right</fullName>
+                    <default>false</default>
+                    <label>Right</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__Tab_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Defines if it is a Component or RecordDetails that will be rendered within the tab</inlineHelpText>
+        <label>Tab Type</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Component</fullName>
+                    <default>false</default>
+                    <label>Component</label>
+                </value>
+                <value>
+                    <fullName>RecordDetail</fullName>
+                    <default>false</default>
+                    <label>RecordDetail</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Browse Tab</label>
+    <listViews>
+        <fullName>TR1__All</fullName>
+        <columns>MasterLabel</columns>
+        <columns>DeveloperName</columns>
+        <columns>TR1__Is_Tab_Enabled__c</columns>
+        <columns>TR1__Position__c</columns>
+        <columns>TR1__Tab_Location__c</columns>
+        <columns>TR1__Tab_Type__c</columns>
+        <columns>TR1__Component_Name__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <pluralLabel>Browse Tabs</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

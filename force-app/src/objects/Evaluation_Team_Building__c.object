@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Evaluation_Team_Building_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>This object is used for regsitering and store information about the evaluation team building process.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Accreditation_Activity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <label>Accreditation Activity</label>
+        <referenceTo>Engagement_Activity__c</referenceTo>
+        <relationshipLabel>Evaluation Team Building</relationshipLabel>
+        <relationshipName>Evaluation_Teams_Building</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Business_Manager_needed__c</fullName>
+        <description>0/1 (number, with only choices of 0 and 1)</description>
+        <externalId>false</externalId>
+        <label>Business Manager needed?</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Co_Chair_selected__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>yes/no</description>
+        <label>(Co) Chair selected?</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Evaluator_positions_created_published__c</fullName>
+        <description>Tick box</description>
+        <externalId>false</externalId>
+        <formula>TEXT(Accreditation_Activity__r.Evaluator_Status__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>evaluator status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Evaluators_placed__c</fullName>
+        <description>0</description>
+        <externalId>false</externalId>
+        <formula>Accreditation_Activity__r.CIS_Evaluators_in_place__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Evaluators placed</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Feedback_links_made_sent__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Tick box</description>
+        <label>Feedback links made &amp; sent</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Feedback_on_team_returned__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Tick box</description>
+        <label>Feedback on team returned</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Gizmo_link_Co_Chair__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Tick box</description>
+        <label>Gizmo link Co-/Chair</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Holding_email_to_Team_Members__c</fullName>
+        <description>Number value (2 digit no decimal)</description>
+        <externalId>false</externalId>
+        <label>Holding email to Team Members</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_Evaluators_approved_by_school__c</fullName>
+        <description>Number value (2 digit no decimal)</description>
+        <externalId>false</externalId>
+        <label>Number of Evaluators approved by school</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Prep_Materials_sent__c</fullName>
+        <description>Number value (2 digit no decimal)</description>
+        <externalId>false</externalId>
+        <label>Prep Materials sent</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Request_Evaluator_approval_from_school__c</fullName>
+        <description>Number value (2 digit no decimal)</description>
+        <externalId>false</externalId>
+        <label>Request Evaluator approval from school</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Request_feedback_from_TMs__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Tick box</description>
+        <label>Request feedback from TMs</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Resources_recap_chairs__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Tick box</description>
+        <label>Resources recap (chairs)</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <label>Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Team needed</fullName>
+                    <default>true</default>
+                    <label>Team needed</label>
+                </value>
+                <value>
+                    <fullName>Team positions published</fullName>
+                    <default>false</default>
+                    <label>Team positions published</label>
+                </value>
+                <value>
+                    <fullName>Team selection</fullName>
+                    <default>false</default>
+                    <label>Team selection</label>
+                </value>
+                <value>
+                    <fullName>Team confirmation</fullName>
+                    <default>false</default>
+                    <label>Team confirmation</label>
+                </value>
+                <value>
+                    <fullName>Essential resource sharing</fullName>
+                    <default>false</default>
+                    <label>Essential resource sharing</label>
+                </value>
+                <value>
+                    <fullName>Team Access</fullName>
+                    <default>false</default>
+                    <label>Team Access</label>
+                </value>
+                <value>
+                    <fullName>Team ready to go</fullName>
+                    <default>false</default>
+                    <label>Team ready to go</label>
+                </value>
+                <value>
+                    <fullName>Aftercare</fullName>
+                    <default>false</default>
+                    <label>Aftercare</label>
+                </value>
+                <value>
+                    <fullName>Team closed out</fullName>
+                    <default>false</default>
+                    <label>Team closed out</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Survey_Gizmo_sent__c</fullName>
+        <description>Number value</description>
+        <externalId>false</externalId>
+        <label>Survey Gizmo sent</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Team_Complete__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Accreditation_Activity__r.Evaluator_Status__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Team Complete</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Team_List_shared_with_partner_agency__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>yes/no</description>
+        <label>Team List shared with partner agency</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Team_Map_Approved__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Tick box</description>
+        <label>Team Map Approved</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Team_Map__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Tick box</description>
+        <label>Team Map</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Team_list_filled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>yes/no</description>
+        <label>Team list filled</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Team_list_received_from_partner_agency__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>yes/no</description>
+        <label>Team list received from partner agency</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Total_CIS_positions__c</fullName>
+        <description>3</description>
+        <externalId>false</externalId>
+        <formula>Accreditation_Activity__r.Total_CIS_Evaluators__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total CIS positions</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_f__c</fullName>
+        <formula>(Evaluators_placed__c + Business_Manager_needed__c) / Total_CIS_positions__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Visit_Type__c</fullName>
+        <description>Gets the Visit Type value from the Accreditation Activity via a formula.</description>
+        <externalId>false</externalId>
+        <formula>text(Accreditation_Activity__r.Visit_type__c)</formula>
+        <inlineHelpText>Gets the Visit Type value from the Accreditation Activity via a formula.</inlineHelpText>
+        <label>Visit Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Visit_history_created__c</fullName>
+        <formula>Accreditation_Activity__r.Create_Visit_History__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Visit history created</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Weave_Removed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Tick box</description>
+        <label>Weave Removed</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Weave_access_team__c</fullName>
+        <description>Number value</description>
+        <externalId>false</externalId>
+        <label>Weave access team</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Evaluation Team Building</label>
+    <nameField>
+        <label>Evaluation Team Building Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Evaluation Team Building</pluralLabel>
+    <recordTypes>
+        <fullName>Evaluation_Team_Building</fullName>
+        <active>true</active>
+        <description>Evaluation Team Building</description>
+        <label>Evaluation Team Building</label>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Aftercare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Essential resource sharing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Team Access</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Team closed out</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Team confirmation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Team needed</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Team positions published</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Team ready to go</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Team selection</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Business_Manager_needed</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF( Business_Manager_needed__c   &gt;=   2 , true, false)</errorConditionFormula>
+        <errorDisplayField>Business_Manager_needed__c</errorDisplayField>
+        <errorMessage>Business Manager needed  can only be stored 0 or 1.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Contains settings that control the behavior of Report Builder.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>fferpcore__ExportDefaultLogoFilename__c</fullName>
+        <deprecated>false</deprecated>
+        <description>To add a default logo image, enter the filename of your logo image in the Field Label field. For example &quot;MyLogo&quot;. The supported file formats are JPG, JPEG, and PNG.</description>
+        <externalId>false</externalId>
+        <label>Export Default Logo Filename</label>
+        <length>200</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>fferpcore__ReportColumnLimit__c</fullName>
+        <deprecated>false</deprecated>
+        <description>You must enter a whole number value between 0 and 99 to define the number of columns displayed in your Report Builder reports.</description>
+        <externalId>false</externalId>
+        <label>Report Column Limit</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>fferpcore__ReportRowQueryLimit__c</fullName>
+        <deprecated>false</deprecated>
+        <description>You must enter a whole number value between 0 and 25,000 to define the number of rows displayed in your Report Builder reports. This setting is overridden by any query limits applied in Analytics.</description>
+        <externalId>false</externalId>
+        <label>Report Row Query Limit</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Report Builder Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

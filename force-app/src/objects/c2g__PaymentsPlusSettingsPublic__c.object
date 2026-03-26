@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Payments Plus Options</description>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>c2g__GLAFiltering__c</fullName>
+        <defaultValue>&quot;TB1=Liabilities,TB2=Current Liabilities,TB2=Long Term Liabilities&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Control GLA filtering in Payments Selection and Payments Plus by allowing custom Trial Balance combinations.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Use custom Trial Balance combinations to control the GLAs retrieved for Payments Selection and Payments Plus. Use the following format: TB1=Liabilities,TB2=Current Liabilities,TB3=Creditors,TB3=Provisions. If set as NO FILTERING all GLAs are retrieved.</inlineHelpText>
+        <label>GLA Filtering</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__MaximumAccountsSentEmailRemittances__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The maximum number of accounts that can be sent email remittances in one batch.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The maximum number of accounts that can be sent email remittances in one batch.</inlineHelpText>
+        <label>Maximum Accounts Sent Email Remittances</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__MaximumVendorAccounts__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The maximum number of accounts that you can view in the drop-down for the Vendor Name field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The maximum number of accounts that you can view in the drop-down for the Vendor Name field. The default limit is 2000.</inlineHelpText>
+        <label>Maximum Accounts in Vendor Name Field</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__PaymentsPlusCongaPrinting__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>In the Checks stage of Payments Plus, this allows you to print checks using Conga Integration.</description>
+        <label>Payments Plus Conga Printing</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>c2g__PaymentsPlusCustomFilters__c</fullName>
+        <deprecated>false</deprecated>
+        <description>In the Transactions stage of Payments Plus, this allows you to customize the filters used to retrieve transactions.</description>
+        <externalId>false</externalId>
+        <label>Payments Plus Custom Filters</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Payments Plus Options</label>
+    <visibility>Public</visibility>
+</CustomObject>

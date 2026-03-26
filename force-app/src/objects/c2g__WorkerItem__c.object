@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <customHelpPage>c2g__codahelpworkeritem</customHelpPage>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>c2g__AttemptsRemaining__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Attempts Remaining</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__Company__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <label>Company</label>
+        <referenceTo>c2g__codaCompany__c</referenceTo>
+        <relationshipLabel>Worker Items</relationshipLabel>
+        <relationshipName>WorkerItems</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>c2g__EmailUser__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <label>Email User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipLabel>Worker Items</relationshipLabel>
+        <relationshipName>WorkerItems</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>c2g__WorkAction__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Work Action</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Post sales invoice</fullName>
+                    <default>false</default>
+                    <label>Post sales invoice</label>
+                </value>
+                <value>
+                    <fullName>Post payable invoice</fullName>
+                    <default>false</default>
+                    <label>Post payable invoice</label>
+                </value>
+                <value>
+                    <fullName>Post payable credit note</fullName>
+                    <default>false</default>
+                    <label>Post payable credit note</label>
+                </value>
+                <value>
+                    <fullName>Post sales credit note</fullName>
+                    <default>false</default>
+                    <label>Post sales credit note</label>
+                </value>
+                <value>
+                    <fullName>Post journal</fullName>
+                    <default>false</default>
+                    <label>Post journal</label>
+                </value>
+                <value>
+                    <fullName>Post and match sales credit note</fullName>
+                    <default>false</default>
+                    <label>Post and match sales credit note</label>
+                </value>
+                <value>
+                    <fullName>Create journals</fullName>
+                    <default>false</default>
+                    <label>Create journals</label>
+                </value>
+                <value>
+                    <fullName>Create currency adjustment journal if necessary</fullName>
+                    <default>false</default>
+                    <label>Create currency adjustment journal if necessary</label>
+                </value>
+                <value>
+                    <fullName>Calculate sales tax on invoice</fullName>
+                    <default>false</default>
+                    <label>Calculate sales tax on invoice</label>
+                </value>
+                <value>
+                    <fullName>Calculate sales tax on credit note</fullName>
+                    <default>false</default>
+                    <label>Calculate sales tax on credit note</label>
+                </value>
+                <value>
+                    <fullName>Calculate tax on payable invoice</fullName>
+                    <default>false</default>
+                    <label>Calculate tax on payable invoice</label>
+                </value>
+                <value>
+                    <fullName>Calculate tax on payable credit note</fullName>
+                    <default>false</default>
+                    <label>Calculate tax on payable credit note</label>
+                </value>
+                <value>
+                    <fullName>Commit sales tax on invoice</fullName>
+                    <default>false</default>
+                    <label>Commit sales tax on invoice</label>
+                </value>
+                <value>
+                    <fullName>Commit sales tax on credit note</fullName>
+                    <default>false</default>
+                    <label>Commit sales tax on credit note</label>
+                </value>
+                <value>
+                    <fullName>Commit tax on payable invoice</fullName>
+                    <default>false</default>
+                    <label>Commit tax on payable invoice</label>
+                </value>
+                <value>
+                    <fullName>Commit tax on payable credit note</fullName>
+                    <default>false</default>
+                    <label>Commit tax on payable credit note</label>
+                </value>
+                <value>
+                    <fullName>Process intercompany transfer</fullName>
+                    <default>false</default>
+                    <label>Process intercompany transfer</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>c2g__WorkReferenceDescription__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Work Reference Description</label>
+        <length>32</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__WorkReference__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Work Reference</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <label>Worker Item</label>
+    <listViews>
+        <fullName>All1</fullName>
+        <columns>NAME</columns>
+        <columns>c2g__AttemptsRemaining__c</columns>
+        <columns>c2g__WorkReferenceDescription__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>FF_Council_of_International_Schools_Inc_WorkerItem</fullName>
+        <filterScope>Queue</filterScope>
+        <label>FF Council of International Schools, Inc</label>
+        <queue>FF_Council_of_International_Schools_Inc</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>FF_Council_of_International_Schools_WorkerItem</fullName>
+        <filterScope>Queue</filterScope>
+        <label>FF Council of International Schools</label>
+        <queue>FF_Council_of_International_Schools</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>c2g__All</fullName>
+        <columns>NAME</columns>
+        <columns>c2g__WorkAction__c</columns>
+        <columns>c2g__WorkReference__c</columns>
+        <columns>c2g__WorkReferenceDescription__c</columns>
+        <columns>c2g__Company__c</columns>
+        <columns>c2g__AttemptsRemaining__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>{000000000}</displayFormat>
+        <label>Worker Item Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Worker Items</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>c2g__Dimension3CompactLayout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>c2g__Dimension3CompactLayout</fullName>
+        <fields>Name</fields>
+        <fields>c2g__ReportingCode__c</fields>
+        <fields>c2g__Type__c</fields>
+        <fields>OwnerId</fields>
+        <fields>c2g__Disabled__c</fields>
+        <label>Dimension 3 Compact Layout</label>
+    </compactLayouts>
+    <customHelpPage>c2g__codahelpdimension</customHelpPage>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Used to sub-analyze postings and can be used to represent a number of different business concepts.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>Reporting_Aggregate__c</fullName>
+        <description>Reporting Aggregate Dimension 3</description>
+        <label>Reporting Aggregate</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Africa</fullName>
+                    <default>false</default>
+                    <label>Africa</label>
+                </value>
+                <value>
+                    <fullName>Americas</fullName>
+                    <default>false</default>
+                    <label>Americas</label>
+                </value>
+                <value>
+                    <fullName>Caribbean</fullName>
+                    <default>false</default>
+                    <label>Caribbean</label>
+                </value>
+                <value>
+                    <fullName>Central Africa</fullName>
+                    <default>false</default>
+                    <label>Central Africa</label>
+                </value>
+                <value>
+                    <fullName>Central America</fullName>
+                    <default>false</default>
+                    <label>Central America</label>
+                </value>
+                <value>
+                    <fullName>Central Asia</fullName>
+                    <default>false</default>
+                    <label>Central Asia</label>
+                </value>
+                <value>
+                    <fullName>Central &amp; South Asia</fullName>
+                    <default>false</default>
+                    <label>Central &amp; South Asia</label>
+                </value>
+                <value>
+                    <fullName>Miscellaneous</fullName>
+                    <default>false</default>
+                    <label>Miscellaneous</label>
+                </value>
+                <value>
+                    <fullName>East Africa</fullName>
+                    <default>false</default>
+                    <label>East Africa</label>
+                </value>
+                <value>
+                    <fullName>East Asia</fullName>
+                    <default>false</default>
+                    <label>East Asia</label>
+                </value>
+                <value>
+                    <fullName>East Asia &amp; Oceania</fullName>
+                    <default>false</default>
+                    <label>East Asia &amp; Oceania</label>
+                </value>
+                <value>
+                    <fullName>Eastern Europe</fullName>
+                    <default>false</default>
+                    <label>Eastern Europe</label>
+                </value>
+                <value>
+                    <fullName>Eastern Europe &amp; Turkey</fullName>
+                    <default>false</default>
+                    <label>Eastern Europe &amp; Turkey</label>
+                </value>
+                <value>
+                    <fullName>Middle East</fullName>
+                    <default>false</default>
+                    <label>Middle East</label>
+                </value>
+                <value>
+                    <fullName>Middle East &amp; North Africa</fullName>
+                    <default>false</default>
+                    <label>Middle East &amp; North Africa</label>
+                </value>
+                <value>
+                    <fullName>North Africa</fullName>
+                    <default>false</default>
+                    <label>North Africa</label>
+                </value>
+                <value>
+                    <fullName>North America</fullName>
+                    <default>false</default>
+                    <label>North America</label>
+                </value>
+                <value>
+                    <fullName>Northern Europe</fullName>
+                    <default>false</default>
+                    <label>Northern Europe</label>
+                </value>
+                <value>
+                    <fullName>Oceania</fullName>
+                    <default>false</default>
+                    <label>Oceania</label>
+                </value>
+                <value>
+                    <fullName>South America</fullName>
+                    <default>false</default>
+                    <label>South America</label>
+                </value>
+                <value>
+                    <fullName>South Asia</fullName>
+                    <default>false</default>
+                    <label>South Asia</label>
+                </value>
+                <value>
+                    <fullName>South-East Asia</fullName>
+                    <default>false</default>
+                    <label>South-East Asia</label>
+                </value>
+                <value>
+                    <fullName>Southern Africa</fullName>
+                    <default>false</default>
+                    <label>Southern Africa</label>
+                </value>
+                <value>
+                    <fullName>Southern Europe</fullName>
+                    <default>false</default>
+                    <label>Southern Europe</label>
+                </value>
+                <value>
+                    <fullName>West Africa</fullName>
+                    <default>false</default>
+                    <label>West Africa</label>
+                </value>
+                <value>
+                    <fullName>Western Europe</fullName>
+                    <default>false</default>
+                    <label>Western Europe</label>
+                </value>
+                <value>
+                    <fullName>Virtual</fullName>
+                    <default>false</default>
+                    <label>Virtual</label>
+                </value>
+                <value>
+                    <fullName>Asia</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Asia</label>
+                </value>
+                <value>
+                    <fullName>Australasia</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Australasia</label>
+                </value>
+                <value>
+                    <fullName>Europe</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Europe</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>c2g__DateFrom__c</fullName>
+        <deprecated>false</deprecated>
+        <description>If the period start and end date of the document match or are within the dates mentioned in the Date From and Date To fields in the Posting Effective Dates section of the dimension, then that dimension is available to be assigned to that document.</description>
+        <inlineHelpText>If the period start date and end date of the document match or are within the dates mentioned in the Date From and Date To fields, then this dimension can be assigned to that document.</inlineHelpText>
+        <label>Date From</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>c2g__DateTo__c</fullName>
+        <deprecated>false</deprecated>
+        <description>If the period start and end date of the document match or are within the dates mentioned in the Date From and Date To fields in the Posting Effective Dates section of the dimension, then that dimension is available to be assigned to that document.</description>
+        <inlineHelpText>If the period start date and end date of the document match or are within the dates mentioned in the Date From and Date To fields, then this dimension can be assigned to that document.</inlineHelpText>
+        <label>Date To</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>c2g__Disabled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>When selected, indicates that values for this dimension are not in use. To assign to documents, mappings, or definitions, it must not be selected. Default is not selected.</description>
+        <inlineHelpText>When selected, indicates that values for this dimension are not in use. To assign to documents, mappings, or definitions, it must not be selected.</inlineHelpText>
+        <label>Disabled</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>c2g__ExternalId__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <externalId>true</externalId>
+        <label>External Id</label>
+        <length>32</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__PostingAllowed__c</fullName>
+        <deprecated>false</deprecated>
+        <description>By default, this field is set to “All Dates” which allows this dimension to be assigned to any document irrespective of its period. You can set it to “Select Dates” and specify the dates in the Date From and Date To fields. This makes the dimension available for posting only those documents that have the period start and end dates within the dates mentioned here.</description>
+        <inlineHelpText>The “All Dates” option allows you to associate this dimension with documents assigned to any period. The “Select Dates” option allows you to specify the dates in the Date From and Date To fields. This makes the dimension available for posting only those documents that have the period start and end dates within the dates mentioned here.</inlineHelpText>
+        <label>Allow Posting</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>All Dates</fullName>
+                    <default>true</default>
+                    <label>All Dates</label>
+                </value>
+                <value>
+                    <fullName>Select Dates</fullName>
+                    <default>false</default>
+                    <label>Select Dates</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>c2g__ReportingCode__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>An alternative name or code intended for reporting</description>
+        <externalId>false</externalId>
+        <label>Reporting Code</label>
+        <length>24</length>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__TypeDescription__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Description of the dimension type.</description>
+        <externalId>false</externalId>
+        <label>Type Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>ID used to identify the dimension type.</description>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <length>24</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__UnitOfWork__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Unit of Work</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Dimension 3</label>
+    <listViews>
+        <fullName>c2g__All</fullName>
+        <columns>NAME</columns>
+        <columns>c2g__ReportingCode__c</columns>
+        <columns>Reporting_Aggregate__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Dimension 3</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>c2g__ReportingCode__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

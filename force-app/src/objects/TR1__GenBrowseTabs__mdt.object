@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Tabs that can be shown in the generic browse component</description>
+    <fields>
+        <fullName>TR1__Active__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Determines if this tab is used.</inlineHelpText>
+        <label>Is Enabled</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__ComponentName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The API name of component to be used in this tab.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The API name of component to be used in this tab.</inlineHelpText>
+        <label>Component Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Generic_Browse_Supported_Object__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The Generic Browse Supported Object this tab is used by.</inlineHelpText>
+        <label>Generic Browse Supported Object</label>
+        <referenceTo>TR1__GenBrowseObjects__mdt</referenceTo>
+        <relationshipLabel>Generic Browse Tabs</relationshipLabel>
+        <relationshipName>Generic_Browse_Tabs</relationshipName>
+        <required>false</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Layout__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Deprecated: This setting is no longer in use</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Layout API Name(Deprecated)</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Lookup__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The API name of the field containing the Id of record to be used in this Tab.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The API name of the field containing the Id of record to be used in this Tab.</inlineHelpText>
+        <label>Lookup Field Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Panel__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>In which of the 2 panels this tab should be added to, left or right.</inlineHelpText>
+        <label>Used in Panel</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>left</fullName>
+                    <default>false</default>
+                    <label>Left</label>
+                </value>
+                <value>
+                    <fullName>right</fullName>
+                    <default>false</default>
+                    <label>Right</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__Position__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Relative position to the other tabs shown, lowest number is the left most tab.</inlineHelpText>
+        <label>Tab Position</label>
+        <precision>2</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__TabType__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Tabs of type component show a custom component, while recordDetail tabs show information through the recorddetail component.</inlineHelpText>
+        <label>Tab Type</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Component</fullName>
+                    <default>false</default>
+                    <label>Component</label>
+                </value>
+                <value>
+                    <fullName>RecordDetail</fullName>
+                    <default>false</default>
+                    <label>RecordDetail</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__Tab_label__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Custom label API name for tab name.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Custom label API name for tab name.</inlineHelpText>
+        <label>Tab label</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Generic Browse Tab</label>
+    <pluralLabel>Generic Browse Tabs</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

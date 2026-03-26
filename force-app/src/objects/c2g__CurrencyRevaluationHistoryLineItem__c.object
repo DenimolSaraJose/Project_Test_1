@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Currency revaluation history line item information.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>c2g__Company__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Name of the company associated with the CRV History.</description>
+        <externalId>false</externalId>
+        <formula>c2g__CurrencyRevaluationHistory__r.c2g__Company__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Company</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CurrencyRevaluationHistory__c</fullName>
+        <deprecated>false</deprecated>
+        <description>the currency revaluation history that relates to the currency revaluation History Line Items.</description>
+        <label>Currency Revaluation History</label>
+        <referenceTo>c2g__CurrencyRevaluationHistory__c</referenceTo>
+        <relationshipLabel>Currency Revaluation History Line Items</relationshipLabel>
+        <relationshipName>CurrencyRevaluationHistoryLineItems</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>c2g__JournalCanceled__c</fullName>
+        <deprecated>false</deprecated>
+        <description>If selected, the currency revaluation journal is canceled.</description>
+        <formula>c2g__JournalNumber__r.c2g__CanceledJournal__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Journal Canceled</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>c2g__JournalNumber__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The journal generated based on balances.</description>
+        <label>Journal Number</label>
+        <referenceTo>c2g__codaJournal__c</referenceTo>
+        <relationshipLabel>CRV History Line Item Journals</relationshipLabel>
+        <relationshipName>CRVHistoriesLineItemJournal</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>c2g__JournalPeriod__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The period of the currency revaluation history journal.</description>
+        <label>Journal Period</label>
+        <referenceTo>c2g__codaPeriod__c</referenceTo>
+        <relationshipLabel>CRV History Line Item Journal Periods</relationshipLabel>
+        <relationshipName>CRVHistoriesLineJournalPeriod</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>c2g__JournalStatus__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The status of the currency revaluation history journal.</description>
+        <externalId>false</externalId>
+        <formula>TEXT(c2g__JournalNumber__r.c2g__JournalStatus__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Journal Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__ReverseJournalCanceled__c</fullName>
+        <deprecated>false</deprecated>
+        <description>If selected the reversing journal is cancelled.</description>
+        <formula>c2g__ReverseJournalNumber__r.c2g__CanceledJournal__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Reversing Journal Canceled</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>c2g__ReverseJournalNumber__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The reversing journal based on balances.</description>
+        <label>Reversing Journal Number</label>
+        <referenceTo>c2g__codaJournal__c</referenceTo>
+        <relationshipLabel>CRV History Line Item Reversing Journals</relationshipLabel>
+        <relationshipName>CRVHistoriesLineRevJournal</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>c2g__ReverseJournalPeriod__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The period of the reversing journal.</description>
+        <label>Reversing Journal Period</label>
+        <referenceTo>c2g__codaPeriod__c</referenceTo>
+        <relationshipLabel>CRV History Line Item Reversing Journal Periods</relationshipLabel>
+        <relationshipName>CRVHistoriesLineRevJournalPeriod</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>c2g__ReverseJournalStatus__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The status of the reversing journal.</description>
+        <externalId>false</externalId>
+        <formula>TEXT(c2g__ReverseJournalNumber__r.c2g__JournalStatus__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Reversing Journal Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The currency revaluation type.</description>
+        <label>Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Currency Revaluation</fullName>
+                    <default>false</default>
+                    <label>Currency Revaluation</label>
+                </value>
+                <value>
+                    <fullName>Currency Translation</fullName>
+                    <default>false</default>
+                    <label>Currency Translation</label>
+                </value>
+                <value>
+                    <fullName>Currency Translation to Reporting</fullName>
+                    <default>false</default>
+                    <label>Currency Translation to Reporting</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Currency Revaluation History Line Item</label>
+    <listViews>
+        <fullName>c2g__All</fullName>
+        <columns>c2g__CurrencyRevaluationHistory__c</columns>
+        <columns>NAME</columns>
+        <columns>c2g__Type__c</columns>
+        <columns>c2g__JournalCanceled__c</columns>
+        <columns>c2g__JournalNumber__c</columns>
+        <columns>c2g__JournalStatus__c</columns>
+        <columns>c2g__JournalPeriod__c</columns>
+        <columns>c2g__ReverseJournalNumber__c</columns>
+        <columns>c2g__ReverseJournalStatus__c</columns>
+        <columns>c2g__ReverseJournalCanceled__c</columns>
+        <columns>c2g__ReverseJournalPeriod__c</columns>
+        <columns>c2g__Company__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>CRHL{00000000}</displayFormat>
+        <label>Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Currency Revaluation History Line Items</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

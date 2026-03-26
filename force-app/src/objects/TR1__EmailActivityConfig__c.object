@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>TR1__Active__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <inlineHelpText>Allows you disable a configuration record, use this instead of deleting</inlineHelpText>
+        <label>Active</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Active_for_Additional_Message_Channels__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Flag which allows you to activate/deactivate an email activity configuration record for all additional message channels (e.g. if it&apos;s disabled then activities for all message channels will not be created). Note: email channel is controlled by another flag called &apos;&apos;Active&quot;.</description>
+        <inlineHelpText>Flag which allows you to activate/deactivate an email activity configuration record for all additional message channels (e.g. if it&apos;s disabled then activities for all message channels will not be created). Note: email channel is controlled by another flag called &apos;&apos;Active&quot;.</inlineHelpText>
+        <label>Active for Additional Message Channels</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Activity__c</fullName>
+        <deprecated>false</deprecated>
+        <inlineHelpText>The kind of activity that needs to be created</inlineHelpText>
+        <label>Activity</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Event</fullName>
+                    <default>false</default>
+                    <label>Create Event</label>
+                </value>
+                <value>
+                    <fullName>Email_Task</fullName>
+                    <default>false</default>
+                    <label>Create Email Activity</label>
+                </value>
+                <value>
+                    <fullName>Task</fullName>
+                    <default>false</default>
+                    <label>Create Task</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__Application_V2_Relation_Field_API_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field API Name on Task(Activity) object which is populated with the related Application Id. If the field value is blank or non-relevant within the send message context, the pre-population will not be done.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Field API Name on Task(Activity) object which is populated with the related Application Id. If the field value is blank or non-relevant within the send message context, the pre-population will not be done.</inlineHelpText>
+        <label>Application V2 Relation Field API Name</label>
+        <length>40</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__AssignedTo__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Assign To</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>current</fullName>
+                    <default>false</default>
+                    <label>Current User</label>
+                </value>
+                <value>
+                    <fullName>interviewer</fullName>
+                    <default>false</default>
+                    <label>Interviewer User</label>
+                </value>
+                <value>
+                    <fullName>specified</fullName>
+                    <default>false</default>
+                    <label>As specified</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__AssignedUser__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <inlineHelpText>Specific user id to assign the event to.</inlineHelpText>
+        <label>Specific Assigned User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Email_Activity_Assignee</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>TR1__CreateCandidateTask__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <inlineHelpText>Supported for the following pages only: Candidate Marketing Call List, Share CV, Job Lead email. If enabled a task will be created against the Candidate that the email is about, even if the Candidate is not among the recipients.</inlineHelpText>
+        <label>Create Task For Candidates</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Email_Action__c</fullName>
+        <deprecated>false</deprecated>
+        <inlineHelpText>The origin of the email transaction.</inlineHelpText>
+        <label>Email Action</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>TR1__Activity__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>InternalInterview</fullName>
+                    <default>false</default>
+                    <label>Internal Interview</label>
+                </value>
+                <value>
+                    <fullName>GroupInterview</fullName>
+                    <default>false</default>
+                    <label>Group Interview</label>
+                </value>
+                <value>
+                    <fullName>SendOutSchedule</fullName>
+                    <default>false</default>
+                    <label>SendOut Schedule</label>
+                </value>
+                <value>
+                    <fullName>RegistrationInterview</fullName>
+                    <default>false</default>
+                    <label>Registration Interview</label>
+                </value>
+                <value>
+                    <fullName>JobLeadEmail</fullName>
+                    <default>false</default>
+                    <label>JobLead Email</label>
+                </value>
+                <value>
+                    <fullName>LongList</fullName>
+                    <default>false</default>
+                    <label>LongList</label>
+                </value>
+                <value>
+                    <fullName>MarketingCallList</fullName>
+                    <default>false</default>
+                    <label>Marketing CallList</label>
+                </value>
+                <value>
+                    <fullName>SendEmail</fullName>
+                    <default>false</default>
+                    <label>Send Email</label>
+                </value>
+                <value>
+                    <fullName>ShareCV</fullName>
+                    <default>false</default>
+                    <label>Share CV</label>
+                </value>
+                <value>
+                    <fullName>StandardCallList</fullName>
+                    <default>false</default>
+                    <label>Standard CallList</label>
+                </value>
+                <value>
+                    <fullName>SubmitWithEmail</fullName>
+                    <default>false</default>
+                    <label>Submit With Email</label>
+                </value>
+                <value>
+                    <fullName>TextKernelSamEmail</fullName>
+                    <default>false</default>
+                    <label>TextKernel Sam Email</label>
+                </value>
+                <value>
+                    <fullName>InterviewCancel</fullName>
+                    <default>false</default>
+                    <label>Interview Cancel</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Event</controllingFieldValue>
+                <controllingFieldValue>Email_Task</controllingFieldValue>
+                <controllingFieldValue>Task</controllingFieldValue>
+                <valueName>InternalInterview</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Event</controllingFieldValue>
+                <controllingFieldValue>Email_Task</controllingFieldValue>
+                <controllingFieldValue>Task</controllingFieldValue>
+                <valueName>GroupInterview</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Event</controllingFieldValue>
+                <controllingFieldValue>Email_Task</controllingFieldValue>
+                <controllingFieldValue>Task</controllingFieldValue>
+                <valueName>SendOutSchedule</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Event</controllingFieldValue>
+                <controllingFieldValue>Email_Task</controllingFieldValue>
+                <controllingFieldValue>Task</controllingFieldValue>
+                <valueName>RegistrationInterview</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Email_Task</controllingFieldValue>
+                <controllingFieldValue>Task</controllingFieldValue>
+                <valueName>JobLeadEmail</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Email_Task</controllingFieldValue>
+                <controllingFieldValue>Task</controllingFieldValue>
+                <valueName>LongList</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Email_Task</controllingFieldValue>
+                <controllingFieldValue>Task</controllingFieldValue>
+                <valueName>MarketingCallList</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Email_Task</controllingFieldValue>
+                <controllingFieldValue>Task</controllingFieldValue>
+                <valueName>SendEmail</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Email_Task</controllingFieldValue>
+                <controllingFieldValue>Task</controllingFieldValue>
+                <valueName>ShareCV</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Email_Task</controllingFieldValue>
+                <controllingFieldValue>Task</controllingFieldValue>
+                <valueName>StandardCallList</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Email_Task</controllingFieldValue>
+                <controllingFieldValue>Task</controllingFieldValue>
+                <valueName>SubmitWithEmail</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Email_Task</controllingFieldValue>
+                <controllingFieldValue>Task</controllingFieldValue>
+                <valueName>TextKernelSamEmail</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__Event_Subject_Fields__c</fullName>
+        <deprecated>false</deprecated>
+        <inlineHelpText>Show the value of the following fields (when available) after the subject text</inlineHelpText>
+        <label>Event Subject Fields</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>interviewee</fullName>
+                    <default>false</default>
+                    <label>Interviewee</label>
+                </value>
+                <value>
+                    <fullName>job</fullName>
+                    <default>false</default>
+                    <label>Job</label>
+                </value>
+                <value>
+                    <fullName>account</fullName>
+                    <default>false</default>
+                    <label>Account</label>
+                </value>
+                <value>
+                    <fullName>stage</fullName>
+                    <default>false</default>
+                    <label>Stage</label>
+                </value>
+                <value>
+                    <fullName>interviewtype</fullName>
+                    <default>false</default>
+                    <label>Interview Type</label>
+                </value>
+                <value>
+                    <fullName>location</fullName>
+                    <default>false</default>
+                    <label>Location</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TR1__Event_Subject__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Event Subject</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Interviewees_List__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <inlineHelpText>Add a list of candidate names to the description</inlineHelpText>
+        <label>Add List of interviewees</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Interviewers_List__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <inlineHelpText>Add a list of interviewer names to the description</inlineHelpText>
+        <label>Add List of interviewers</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Job_Account_Relation_Field_API_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field API Name on Task(Activity) object which is populated with the related Job Account Id. If the field value is blank or non-relevant within the send message context, the pre-population will not be done.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Field API Name on Task(Activity) object which is populated with the related Job Account Id. If the field value is blank or non-relevant within the send message context, the pre-population will not be done.</inlineHelpText>
+        <label>Job Account Relation Field API Name</label>
+        <length>40</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Job_Relation_Field_API_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field API Name on Task(Activity) object which is populated with the related Job Id. If the field value is blank or non-relevant within the send message context, the pre-population will not be done.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Field API Name on Task(Activity) object which is populated with the related Job Id. If the field value is blank or non-relevant within the send message context, the pre-population will not be done.</inlineHelpText>
+        <label>Job Relation Field API Name</label>
+        <length>40</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Language__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Optional language code to make this configuration record only for users with a matching language code.</inlineHelpText>
+        <label>Language code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Number_of_events__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Number of events</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>interviewee</fullName>
+                    <default>true</default>
+                    <label>One event per Interviewee</label>
+                </value>
+                <value>
+                    <fullName>interviewer</fullName>
+                    <default>false</default>
+                    <label>One event per Interviewer</label>
+                </value>
+                <value>
+                    <fullName>single</fullName>
+                    <default>false</default>
+                    <label>One event</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__ProfileId__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Optional profile Id to make this configuration record only for that profile.</inlineHelpText>
+        <label>Profile Id</label>
+        <length>15</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Send_Out_V2_Relation_Field_API_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field API Name on Task(Activity) object which is populated with the related Send Out Schedule Id. If the field value is blank or non-relevant within the send message context, the pre-population will not be done.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Field API Name on Task(Activity) object which is populated with the related Send Out Schedule Id. If the field value is blank or non-relevant within the send message context, the pre-population will not be done.</inlineHelpText>
+        <label>Send Out V2 Relation Field API Name</label>
+        <length>40</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Task_Record_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Record Type developer name to be given in the created Task</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Record Type developer name to be given in the created Task</inlineHelpText>
+        <label>Task Record Type</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Task_Subject__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The text that you enter in this field will appear at the beginning of the Email/ Task Activity Subject line (separated by a hyphen).</inlineHelpText>
+        <label>Task/Email activity Subject</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__WhatId__c</fullName>
+        <deprecated>false</deprecated>
+        <inlineHelpText>Object the activity needs to be linked to.</inlineHelpText>
+        <label>Related To</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Job</fullName>
+                    <default>false</default>
+                    <label>Job</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__WhoId__c</fullName>
+        <deprecated>false</deprecated>
+        <inlineHelpText>Contact the activity needs to be linked to.</inlineHelpText>
+        <label>Contact</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>interviewer</fullName>
+                    <default>false</default>
+                    <label>Interviewer</label>
+                </value>
+                <value>
+                    <fullName>interviewee</fullName>
+                    <default>false</default>
+                    <label>Interviewee</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Email Activity Configuration</label>
+    <listViews>
+        <fullName>TR1__All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Email Activity Configuration Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Email Activity Configurations</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

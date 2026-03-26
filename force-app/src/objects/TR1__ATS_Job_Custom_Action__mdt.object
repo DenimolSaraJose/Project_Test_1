@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Metadata used for defining custom action by end users in Job obejct.
+User have to create record of the metadata to see the actions in ATS.</description>
+    <fields>
+        <fullName>TR1__ATS_Flow_Settings__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Settings record for Flow</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Settings record for Flow</inlineHelpText>
+        <label>ATS Flow Settings</label>
+        <referenceTo>TR1__ATSFlowSettings__mdt</referenceTo>
+        <relationshipLabel>ATS Job Custom Actions</relationshipLabel>
+        <relationshipName>ATS_Job_Custom_Actions</relationshipName>
+        <required>false</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Action_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Enter the Custom Action Name which user want to see in the ATS global action dropdown.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Action Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Apex_Class_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The name of the Apex class to execute. The specified class should extend the ATSActionBase class.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The name of the Apex class to execute. The specified class should extend the ATSActionBase class.</inlineHelpText>
+        <label>Apex Class Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Available_for_Browse__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Allows to disable this action in the Browse feature</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Check if needs to be shown in ATS Browse actions</inlineHelpText>
+        <label>Available for Browse</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Component_Location__c</fullName>
+        <defaultValue>&quot;All&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Component Location</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>All</fullName>
+                    <default>true</default>
+                    <label>All</label>
+                </value>
+                <value>
+                    <fullName>Job ATS</fullName>
+                    <default>false</default>
+                    <label>Job ATS</label>
+                </value>
+                <value>
+                    <fullName>SaM Actions</fullName>
+                    <default>false</default>
+                    <label>SaM Actions</label>
+                </value>
+                <value>
+                    <fullName>Mass Offer - Grid</fullName>
+                    <default>false</default>
+                    <label>Mass Offer - Grid</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__Component_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Enter the component name with Namespace Prefix
+Example: Either use the default name space like c:ComponentName.
+If Namespace is enabled than use that one.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Component Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Disable_for_Closed_jobs__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>None - &apos;Disable ATSv2 actions for Closed Jobs&apos; from the ATS Configuration Custom Setting will be applied; Enabled - enable action on Closed Jobs; Disabled - disable action on Closed Jobs. Enable/Disable values will override Custom Setting configuration.</inlineHelpText>
+        <label>Disable for Closed jobs</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Enabled</fullName>
+                    <default>false</default>
+                    <label>Enabled</label>
+                </value>
+                <value>
+                    <fullName>Disabled</fullName>
+                    <default>false</default>
+                    <label>Disabled</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__Display_Location__c</fullName>
+        <defaultValue>&apos;Dropdown&apos;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Controls whether the particular action location is in the bar or in the dropdown. Possible values are Bar and Dropdown.</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Controls whether the particular action location is in the bar or in the dropdown. Possible values are Bar and Dropdown. If nothing is specified the default location will be in the dropdown.</inlineHelpText>
+        <label>Display Location</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Bar</fullName>
+                    <default>true</default>
+                    <label>Bar</label>
+                </value>
+                <value>
+                    <fullName>Dropdown</fullName>
+                    <default>false</default>
+                    <label>Dropdown</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__Icon_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Icon Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Job_Record_Type_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Enter the Job Record Type Name or Developer Name.
+If you did the translation for the Job Record Type, enter the translated record type name.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Job Record Type Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Label__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Stores Custom Label API name which will be translated if it has appropriate translations</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Stores Custom Label API name which will be translated if it has appropriate translations</inlineHelpText>
+        <label>Custom Label Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Order_Number__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is used to decide the order of the Custom Action Dropdown.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Order Number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>ATS Job Custom Action</label>
+    <pluralLabel>ATS Job Custom Actions</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Browse module configuration</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>TR1__Enable_Browse_in_ATSV2__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <inlineHelpText>Show Browse in ATSv2 Action Toolbar</inlineHelpText>
+        <label>Enable Browse in ATSv2</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Enable_Group_Actions__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <inlineHelpText>Show Group Actions button on Browse Navigation Header (top section)</inlineHelpText>
+        <label>Enable Group Actions</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Fieldset_Name_Containing_Pulldown_Fields__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the API name of the ApplicationV2 fieldset that controls what fields are shown in candidate pulldown</inlineHelpText>
+        <label>Fieldset Name for Pulldown Fields</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Fieldset_Name_For_Candidate_Application__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the API name of the ApplicationV2 fieldset that controls what fields are shown in the header area</inlineHelpText>
+        <label>Fieldset Name for Header Fields</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Left_Side_Width_Percentage__c</fullName>
+        <deprecated>false</deprecated>
+        <inlineHelpText>Width % of the left side of the panel. The remaining will be the percentage for the right side</inlineHelpText>
+        <label>Left Side Width %</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <label>Browse</label>
+    <visibility>Public</visibility>
+</CustomObject>

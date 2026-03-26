@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Generic Lookup Configuration</description>
+    <fields>
+        <fullName>TR1__Apply_To_Multiple_Jobs__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>When enabled, user can multi-select Jobs for Candidate to apply in the Job lookup field on NewApplications page.
+This page can be accessed from:
+
+Action buttons:
+“New Application” on Call_List_Member__c
+&quot;Search &amp; Match&quot; on Call_List__c
+&quot;ATS&quot;,&quot;Similar Candidates&quot;,“Match”,&quot;Add to Job&quot; on Contact
+“Match”, “Search JOB”, &quot;ATS&quot; on Job__c
+
+tabs:
+&quot;ATS for Jobs&quot;,“ATS for Candidates“,&quot;Search and Match (France)&quot;,&quot;Search And Match&quot;,&quot;TK Candidate Search&quot;,&quot;TK Job Search&quot;
+
+flexipages:
+Front_Office_UtilityBar, Job_3_Column1, test, Front_Office_UtilityBar, Front_Office_UtilityBar1
+
+quickActions:
+&quot;Search&quot;,“Search &amp; Match”,“Match“,&quot;Search JOB&quot;,&quot;JBA Search&quot;,&quot;JBA Search&quot;
+
+aura apps:
+SavedSearchApp
+TextkernelIframeApp
+
+KanbanCandidateDetails page accessible from Card on the Swimlane</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>When enabled, user can multi-select Jobs for Candidate to apply in the Job lookup field on NewApplications page.
+This page can be accessed from:
+Action buttons on Call_List_Member__c, Call_List__c, Contact, Job__c objects
+ATS, SAM, Search tabs
+flexipages: Front_Office*, Job_3_Column1
+quickActions: &quot;Search&quot;,“Search&amp;Match”,“Match“,&quot;Search JOB&quot;,&quot;JBA Search&quot;,&quot;JBA Search&quot;
+apps: SavedSearchApp, TextkernelIframeApp
+KanbanCandidateDetails page accessible from Card on the Swimlane</inlineHelpText>
+        <label>Apply to multiple jobs</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Enable_SOSL__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>When enabled, Look Up filter search will use SOSL query instead of SOQL query. Users will need to type in the first three letters to retrieve results</inlineHelpText>
+        <label>Enable SOSL</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__List_of_Pre_Authorized_Profile_Names__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>A comma separated list of profile names that does not require the GenericLookup_User permission set. Typically it will be the System Administrator.</inlineHelpText>
+        <label>List of Pre Authorized Profile Names</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Generic Lookup</label>
+    <pluralLabel>Generic Lookups</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

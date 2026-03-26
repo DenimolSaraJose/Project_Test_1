@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Settings related to Executive Search</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>TR1__Async_Update_Off_Limit_Lookups__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>When checked, the update on Account and Contact Off Limit Lookups are done asynchronously, allowing a possible have logic attached to these standard objects to run with new limits</description>
+        <inlineHelpText>When checked, the update on Account and Contact Off Limit Lookups are done asynchronously, allowing a possible have logic attached to these standard objects to run with new limits</inlineHelpText>
+        <label>Async Update of Off Limit Lookups</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Create_derived_Job_Roles__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <inlineHelpText>If this checkbox is selected, Job Role records will be created against new Job records for the Contact in TR1__Contact__c / TR1__Hiring_Manager__c . The Job Role records will be read-only and will get updated when TR1__Contact__c / TR1__Hiring_Manager__c get updated.</inlineHelpText>
+        <label>Create ‘derived’ Job Roles</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Default_Off_Limit_Icon__c</fullName>
+        <defaultValue>&apos;/resource/TR1__Lock_icon_svg&apos;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Relative url to a Salesforce image resource preferable a SVG. For instance &apos;/resource/TR1__Lock_icon_svg.&apos;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Relative url to a Salesforce image resource, preferable a SVG. For instance &apos;/resource/TR1__Lock_icon_svg.&apos;</inlineHelpText>
+        <label>Default Off Limit Block Icon</label>
+        <length>200</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Default_Off_Limit_Warning_Icon__c</fullName>
+        <defaultValue>&apos;/resource/TR1__Warning_icon_svg&apos;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Relative url to a Salesforce image resource preferable a SVG. For instance &apos;/resource/TR1__Warning_icon_svg.&apos;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Relative url to a Salesforce image resource, preferable a SVG. For instance &apos;/resource/TR1__Warning_icon_svg.&apos;</inlineHelpText>
+        <label>Default Off Limit Warning Icon</label>
+        <length>200</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Enable_Off_Limit_Policies__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Enables Off Limit policies to be processed and allows the results shown in lookups, ATS and on Contact/Account records.</description>
+        <inlineHelpText>Enables Off Limit policies to be processed and allows the results shown in lookups, ATS and on Contact/Account records.</inlineHelpText>
+        <label>Enable Off Limit Policies</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Enable_Off_Limit_Warning__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <label>Deprecated</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Enable_Successful_Candidate__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Activates Successful Candidate Off Limits logic in Orgs where Executive Search is configured.</description>
+        <inlineHelpText>Activates Successful Candidate Off Limits logic in Orgs where Executive Search is configured.</inlineHelpText>
+        <label>Enable Successful Candidate</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Evaluate_Application_Comment_Flow__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Screen flow API name for Evaluate Application action to import comment from existing Evaluation Criteria records</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Screen flow API name for Evaluate Application action to import comment from existing Evaluation Criteria records</inlineHelpText>
+        <label>Evaluate Application Comment Flow</label>
+        <length>90</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Hide_Disable_Policies_Button__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If this checkbox is selected, the Disable/Enable button on Off Limit Policies LWC component will be hidden.</description>
+        <inlineHelpText>If selected, the Disable/Enable button on Off Limit Policies LWC component will be hidden.</inlineHelpText>
+        <label>Hide Enable/Disable Policy Button</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Info_Records_Chunk_Size__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The maximum amount of dirty info records processed, in a single transaction, for the automated process</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The maximum amount of dirty info records processed, in a single transaction, for the automated process</inlineHelpText>
+        <label>Info Records Chunk Size</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Job_Role_Contact_Limit__c</fullName>
+        <defaultValue>80</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Maximum number of Contacts that can be selected from a List view while creating Job Roles. The default value is 80.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Maximum number of Contacts that can be selected from a List view while creating Job Roles. The default value is 80.</inlineHelpText>
+        <label>Job Role Contact Limit</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Line_Item_Batch_Deletion_Chunk_Size__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Chunk size used in a batch when deleting line items when a policy is deleted and the threshold is met. Default value is 2000.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Chunk size used in a batch when deleting line items when a policy is deleted and the threshold is met. Default value is 2000.</inlineHelpText>
+        <label>Line Item Batch Deletion Chunk Size</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Line_Item_Batch_Deletion_Threshold__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The threshold used to determine if a batch or the current transaction will be used to delete the line items associated to a policy when that one is also deleted. Default value is 1000.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The threshold used to determine if a batch or the current transaction will be used to delete the line items associated to a policy when that one is also deleted. Default value is 1000.</inlineHelpText>
+        <label>Line Item Batch Deletion Threshold</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Non_Executive_Job_Field_API_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Boolean field (API name) on Job object which shows that the job is not an executive</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Boolean field (API name) on Job object which shows that the job is not an executive</inlineHelpText>
+        <label>Non Executive Job Field API Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Off_Limit_Payload_Chunk_Size__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The maximum amount of off limit payload records processed, in a single transaction, for the automated process. The default and maximum value is 15.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The maximum amount of off limit payload records processed, in a single transaction, for the automated process. The default and maximum value is 15.</inlineHelpText>
+        <label>Off Limit Payload Chunk Size</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Override_Reason_With_Reason_Code__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If this checkbox is selected, override Reason field with Reason Code value for Contact Policies if Reason Code is populated.</description>
+        <inlineHelpText>If this checkbox is selected, override Reason field with Reason Code value for Contact Policies if Reason Code is populated.</inlineHelpText>
+        <label>Override Reason With Reason Code</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Prefill_Employment_History_Account__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>When parsing a CV with textkernel it will to fill the EmploymentHistory Account field if there is an account or account alias matching the Employer Name</description>
+        <inlineHelpText>When parsing a CV with textkernel it will to fill the EmploymentHistory Account field if there is an account or account alias matching the Employer Name</inlineHelpText>
+        <label>Prefill Employment History Account</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Related_Jobs_Limit__c</fullName>
+        <defaultValue>80</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Maximum number of Jobs that can be selected from a List view while creating Related Jobs. The default value is 80.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Maximum number of Jobs that can be selected from a List view while creating Related Jobs. The default value is 80.</inlineHelpText>
+        <label>Related Jobs Limit</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__SC_Default_Reason__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Default Reason of the Successful Candidate Off Limit Policy.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Default Reason of the Successful Candidate Off Limit Policy.</inlineHelpText>
+        <label>SC Off Limits Default Reason</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Selected_Accounts_Limit__c</fullName>
+        <defaultValue>80</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Maximum number of Accounts that can be selected from a List view while creating Target Accounts. The default value is 80.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Maximum number of Accounts that can be selected from a List view while creating Target Accounts. The default value is 80.</inlineHelpText>
+        <label>Selected Accounts Limit</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Show_Job_Roles_In_Lookups__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Allow the Job roles to be shown in the results of a lookup to contacts for Sendout Interviewer and on the email component.</description>
+        <inlineHelpText>Allow the Job roles to be shown in the results of a lookup to contacts for Sendout Interviewer and on the email component.</inlineHelpText>
+        <label>Show Job Roles In Lookups</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Successful_Candidate_Default_Duration__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Default duration of the Successful Candidate Off Limit Policy in days.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Default duration of the Successful Candidate Off Limit Policy in days.</inlineHelpText>
+        <label>SC Default Off Limits Duration</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Telemetry_Enabled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If this checkbox is selected, extra debug logs are generated to help diagnose Off Limits calculation issues</description>
+        <inlineHelpText>If this checkbox is selected, extra debug logs are generated to help diagnose Off Limits calculation issues</inlineHelpText>
+        <label>Enabled Telemetry</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Executive Search</label>
+    <visibility>Public</visibility>
+</CustomObject>

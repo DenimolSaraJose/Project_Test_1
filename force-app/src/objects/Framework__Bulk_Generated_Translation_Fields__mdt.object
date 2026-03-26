@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Fields that will have translation strings generated when Fonteva Community Language Bulk Generation is used.</description>
+    <fields>
+        <fullName>Framework__Field__c</fullName>
+        <deprecated>false</deprecated>
+        <description>API Name of the field.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>API Name of the field.</inlineHelpText>
+        <label>Field</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Framework__Object__c</fullName>
+        <deprecated>false</deprecated>
+        <description>API name of the object.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>API name of the object.</inlineHelpText>
+        <label>Object</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Bulk Generated Translation Fields</label>
+    <pluralLabel>Bulk Generated Translation Fields</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

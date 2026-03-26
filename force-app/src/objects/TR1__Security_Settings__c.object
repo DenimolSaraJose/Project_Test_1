@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Settings that control BHSD_SecureDatabase Implementation</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>TR1__LoggerClass__c</fullName>
+        <defaultValue>&quot;TR1.BHLO_LoggerCollable&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Classname that implements Callable interface to create logs for Secure Database module.</description>
+        <externalId>false</externalId>
+        <label>LoggerClass</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__isNativeDMLSecurityEnabled__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <label>(Deprecated)isNativeDMLSecurityEnabled</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__isNativeSOQLSecurityEnabled__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Once enabled, we use native Salesforce stripInaccessible for FLS. If not enabled, we use custom BHSD_SecureDatabase. applyFLSonFieldMap()</description>
+        <label>isNativeSOQLSecurityEnabled</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__isSecurityEnforced__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This setting enables FLS checks, stripping inaccessible fields from SOQL result</description>
+        <label>isSecurityEnforced</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__isSecurityLogEnabled__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Once enabled, security logs are created for FLS checks</description>
+        <label>isSecurityLogEnabled</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Security Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>TR1__Facets_to_hide__c</fullName>
+        <deprecated>false</deprecated>
+        <description>List of facets to hide where each facet is on a single line.</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>List of facets to hide where each facet is on a single line.</inlineHelpText>
+        <label>Facets to hide</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TR1__Filter_Field__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>A field that is used to filter out records to sync.</inlineHelpText>
+        <label>Filter Field</label>
+        <metadataRelationshipControllingField>TR1__BHTK_object_configuration__mdt.TR1__Object__c</metadataRelationshipControllingField>
+        <referenceTo>EntityParticle</referenceTo>
+        <relationshipLabel>Textkernel_object_configurations</relationshipLabel>
+        <relationshipName>Textkernel_object_configurations</relationshipName>
+        <required>false</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Filter_Value__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>If the value of the filter field in a record is not equal to this value, the record will not be synced.</inlineHelpText>
+        <label>Filter Value</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__For_unit_test__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Developer only setting: used for system unit test</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Developer only setting: used for system unit test</inlineHelpText>
+        <label>For unit test</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Items_to_rename__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field hold the definition of items that need to be renamed</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Rename items by using the following format (1 item per line):
+facetname: {&quot;en&quot;: &quot;facet-renamed_en&quot;, &quot;de&quot;:&quot;facet-renamed_de&quot;}
+birthdate: {&quot;en&quot;: &quot;Date of Birth&quot;: &quot;de&quot;:&quot;Geburtstag&quot;}</inlineHelpText>
+        <label>Items to rename</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TR1__LightWeight_update_fields__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Comma-separated list of field API names. Lightweight update can be used to update only business fields, so data that is not extracted from the CV. Fields that are used for matching cannot be updated with this mechanism.</inlineHelpText>
+        <label>LightWeight update fields</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TR1__Object__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The object used to store this type of records in</inlineHelpText>
+        <label>Object</label>
+        <referenceTo>EntityDefinition</referenceTo>
+        <relationshipLabel>TextKernel_object_configurations</relationshipLabel>
+        <relationshipName>TextKernel_object_configurations</relationshipName>
+        <required>true</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Object_type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specify whether the configuration is for a candidate or job</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Specify whether the configuration is for a candidate or job</inlineHelpText>
+        <label>Object type</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Candidate</fullName>
+                    <default>true</default>
+                    <label>Candidate</label>
+                </value>
+                <value>
+                    <fullName>Job</fullName>
+                    <default>false</default>
+                    <label>Job</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__Result_fields_to_hide__c</fullName>
+        <deprecated>false</deprecated>
+        <description>List of result fields to hide where each facet is on a single line.</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>List of result fields to hide where each facet is on a single line.</inlineHelpText>
+        <label>Result fields to hide</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TR1__Sharing_Field__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>A field that determines visibility of a record. See documentation for guidelines on how to configure sharing.</inlineHelpText>
+        <label>Sharing Field</label>
+        <metadataRelationshipControllingField>TR1__BHTK_object_configuration__mdt.TR1__Object__c</metadataRelationshipControllingField>
+        <referenceTo>EntityParticle</referenceTo>
+        <relationshipLabel>Textkernel_object_configurations1</relationshipLabel>
+        <relationshipName>Textkernel_object_configurations1</relationshipName>
+        <required>false</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Template__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The TMF with added attributes for the mapping. For more information, see documentation.</inlineHelpText>
+        <label>Template</label>
+        <length>131072</length>
+        <type>LongTextArea</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <label>Textkernel object configuration</label>
+    <pluralLabel>Textkernel object configurations</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

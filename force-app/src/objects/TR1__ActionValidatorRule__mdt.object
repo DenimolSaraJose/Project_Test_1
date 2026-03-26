@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Rules for conditionally restricting execution of ATS actions.</description>
+    <fields>
+        <fullName>TR1__Actions__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The actions for which this rule will be enforced. The actions should be provided as a comma-separated values (CSV) list. Please refer to the product documentation for supported actions.</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The actions for which this rule will be enforced. The actions should be provided as a comma-separated values (CSV) list. Please refer to the product documentation for supported actions.</inlineHelpText>
+        <label>Actions Targeted</label>
+        <length>131072</length>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TR1__Active__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Flag that shows if this rule is active or not</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Flag that shows if this rule is active or not</inlineHelpText>
+        <label>Active</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Behavior__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Behavior enforced at the checkpoint (Warning/ Block)</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Behavior enforced at the checkpoint (Warning/ Block)</inlineHelpText>
+        <label>Behavior</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Warn</fullName>
+                    <default>true</default>
+                    <label>Warn</label>
+                </value>
+                <value>
+                    <fullName>Block</fullName>
+                    <default>false</default>
+                    <label>Block</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__Object_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The object this rule applies to. It will be used as the FROM object of the query, together with the Where clause in this rule to query records breaking the rule.</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The object this rule applies to. It will be used as the FROM object of the query, together with the Where clause in this rule to query records breaking the rule.</inlineHelpText>
+        <label>Object Name</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Contact</fullName>
+                    <default>false</default>
+                    <label>Contact</label>
+                </value>
+                <value>
+                    <fullName>TR1__Job__c</fullName>
+                    <default>false</default>
+                    <label>Job</label>
+                </value>
+                <value>
+                    <fullName>TR1__Application_V2__c</fullName>
+                    <default>false</default>
+                    <label>Application</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__Reason__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This value represents categories of rules that might be used to identify a generic rule scenario (for example: ‘ATS Rules’ , ‘Do Not Email’ etc).</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>This value represents categories of rules that might be used to identify a generic rule scenario (for example: ‘ATS Rules’ , ‘Do Not Email’ etc).</inlineHelpText>
+        <label>Reason</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Rule_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Descriptive name of the specific rule (for example: ‘Block submit for unvetted Candidates’, ‘Market Candidate Exceptions’ etc)</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Descriptive name of the specific rule (for example: ‘Block submit for unvetted Candidates’, ‘Market Candidate Exceptions’ etc)</inlineHelpText>
+        <label>Rule Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__SubActions__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specifies which part of the chosen action(s) are targeted. Only applies to certain actions. The actions should be provided as a comma-separated values (CSV) list. Please refer to the product documentation for supported actions.</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Specifies which part of the chosen action(s) are targeted. Only applies to certain actions. The actions should be provided as a comma-separated values (CSV) list. Please refer to the product documentation for supported actions.</inlineHelpText>
+        <label>Sub Actions</label>
+        <length>131072</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TR1__Where_Clause__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The SOQL where clause used to query which records break this rule.</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The SOQL where clause used to query which records break this rule.</inlineHelpText>
+        <label>Where Clause</label>
+        <length>131072</length>
+        <type>LongTextArea</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <label>Action Validator Rule</label>
+    <pluralLabel>Action Validator Rules</pluralLabel>
+    <validationRules>
+        <fullName>TR1__Actions_Targeted_Names</fullName>
+        <active>true</active>
+        <description>Validates that the inputs are in the allowed set of actions and that there are no full stops.</description>
+        <errorConditionFormula>REGEX(TR1__Actions__c, &apos;.*(\\b(?!(,|Add_To_Call_List|Add_To_Longlist|Apply_To_Job|Create_Internal_Interview|Create_Powernote|Create_Sendout|Market_Candidate|Mass_Placement|Move_To_Stage|Reject_Unreject|Send_Email|Share_CV|Standard_Call_List_Email|Job_Lead_Email|Submit_With_Email)\\b).+)&apos;)</errorConditionFormula>
+        <errorDisplayField>TR1__Actions__c</errorDisplayField>
+        <errorMessage>Some of the actions are not valid. Validate that there are no typos, the case matches, no full stops, no spaces and no trailing commas. Please refer to the documentation for the allowed values.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>TR1__Must_Contain_Recipients</fullName>
+        <active>true</active>
+        <description>Validates that when Standard_Call_List_Email or Send_Email is specified as an action that the sub actions is either blank or contains recipients</description>
+        <errorConditionFormula>(CONTAINS(TR1__Actions__c, &apos;Standard_Call_List_Email&apos;)||
+CONTAINS(TR1__Actions__c, &apos;Send_Email&apos;)) &amp;&amp; 
+NOT(CONTAINS(TR1__SubActions__c, &apos;Recipients&apos;) ||
+ ISBLANK(TR1__SubActions__c)
+)</errorConditionFormula>
+        <errorDisplayField>TR1__SubActions__c</errorDisplayField>
+        <errorMessage>Must contain &apos;Recipients&apos; or be blank when &apos;Standard_Call_List_Email&apos; or &apos;Send_Email&apos;  is specified in &apos;Actions Targeted&apos;.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>TR1__Must_Contain_Recipients_Resumes</fullName>
+        <active>true</active>
+        <description>Validates that when any action has Recipients or Resumes as an applicable sub action that the sub actions is either blank, contains Recipients or contains Resumes</description>
+        <errorConditionFormula>(CONTAINS(TR1__Actions__c, &apos;Create_Sendout&apos;) || CONTAINS(TR1__Actions__c, &apos;Market_Candidate&apos;) ||  CONTAINS(TR1__Actions__c, &apos;Share_CV&apos;) || CONTAINS(TR1__Actions__c, &apos;Submit_With_Email&apos;) ||
+CONTAINS(TR1__Actions__c, &apos;Job_Lead_Email&apos;)) &amp;&amp; 
+NOT(CONTAINS(TR1__SubActions__c, &apos;Recipients&apos;) ||
+ CONTAINS(TR1__SubActions__c, &apos;Resumes&apos;) ||
+ ISBLANK(TR1__SubActions__c)
+)</errorConditionFormula>
+        <errorDisplayField>TR1__SubActions__c</errorDisplayField>
+        <errorMessage>Must contain &apos;Recipients&apos; or &apos;Resumes&apos; or be blank for some of the specified &apos;Actions Targeted&apos;.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>TR1__Must_Contain_Stage</fullName>
+        <active>true</active>
+        <description>Validates that if the Move_To_Stage Action is specified, that sub actions contains at least one stage or is blank</description>
+        <errorConditionFormula>(CONTAINS(TR1__Actions__c, &apos;Move_To_Stage&apos;) ||
+CONTAINS(TR1__Actions__c, &apos;Apply_To_Job&apos;)) &amp;&amp;
+NOT(CONTAINS(TR1__SubActions__c, &apos;Application&apos;) ||
+ CONTAINS(TR1__SubActions__c, &apos;Internal Interview&apos;) ||
+ CONTAINS(TR1__SubActions__c, &apos;Submittal&apos;) ||
+ CONTAINS(TR1__SubActions__c, &apos;Send Out&apos;) ||
+ CONTAINS(TR1__SubActions__c, &apos;Offer&apos;) ||
+ CONTAINS(TR1__SubActions__c, &apos;Closing Report&apos;) || 
+ ISBLANK(TR1__SubActions__c) 
+ )</errorConditionFormula>
+        <errorDisplayField>TR1__SubActions__c</errorDisplayField>
+        <errorMessage>Must contain a stage or be blank when &apos;Move_To_Stage&apos; is specified in &apos;Actions Targeted&apos;,</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>TR1__Must_Not_Contain_Recipients</fullName>
+        <active>true</active>
+        <description>Validates that when recipients is specified as a sub action that at least one corresponding action is specified.</description>
+        <errorConditionFormula>NOT(CONTAINS(TR1__Actions__c, &apos;Create_Sendout&apos;) || 
+ CONTAINS(TR1__Actions__c, &apos;Market_Candidate&apos;) || 
+ CONTAINS(TR1__Actions__c, &apos;Send_Email&apos;) || 
+ CONTAINS(TR1__Actions__c, &apos;Share_CV&apos;) ||
+ CONTAINS(TR1__Actions__c, &apos;Submit_With_Email&apos;) ||
+ CONTAINS(TR1__Actions__c, &apos;Job_Lead_Email&apos;) ||
+ CONTAINS(TR1__Actions__c, &apos;Standard_Call_List_Email&apos;)
+) &amp;&amp; 
+CONTAINS(TR1__SubActions__c, &apos;Recipients&apos;)</errorConditionFormula>
+        <errorDisplayField>TR1__SubActions__c</errorDisplayField>
+        <errorMessage>&apos;Recipients&apos; is not valid for any of the specified &apos;Actions Targeted&apos;.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>TR1__Must_Not_Contain_Resumes</fullName>
+        <active>true</active>
+        <description>Validates that when resumes is specified as a sub action that at least one corresponding action is specified.</description>
+        <errorConditionFormula>NOT(CONTAINS(TR1__Actions__c, &apos;Create_Sendout&apos;) || CONTAINS(TR1__Actions__c, &apos;Market_Candidate&apos;) || CONTAINS(TR1__Actions__c, &apos;Share_CV&apos;) || CONTAINS(TR1__Actions__c, &apos;Submit_With_Email&apos;) ||
+CONTAINS(TR1__Actions__c, &apos;Job_Lead_Email&apos;)) &amp;&amp; 
+CONTAINS(TR1__SubActions__c, &apos;Resumes&apos;)</errorConditionFormula>
+        <errorDisplayField>TR1__SubActions__c</errorDisplayField>
+        <errorMessage>&apos;Resumes&apos; is not valid for any of the specified &apos;Actions Targeted&apos;.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>TR1__Must_Not_Contain_Stage</fullName>
+        <active>true</active>
+        <description>Validates that if Move_To_Stage or Apply_To_Job is not specified as an Action, that no stage are specified as sub actions</description>
+        <errorConditionFormula>NOT(CONTAINS(TR1__Actions__c, &apos;Move_To_Stage&apos;)) &amp;&amp;
+NOT(CONTAINS(TR1__Actions__c, &apos;Apply_To_Job&apos;)) &amp;&amp;
+(CONTAINS(TR1__SubActions__c, &apos;Application&apos;) ||
+CONTAINS(TR1__SubActions__c, &apos;Internal Interview&apos;) ||
+CONTAINS(TR1__SubActions__c, &apos;Submittal&apos;) ||
+CONTAINS(TR1__SubActions__c, &apos;Send Out&apos;) ||
+CONTAINS(TR1__SubActions__c, &apos;Offer&apos;) ||
+CONTAINS(TR1__SubActions__c, &apos;Closing Report&apos;))</errorConditionFormula>
+        <errorDisplayField>TR1__SubActions__c</errorDisplayField>
+        <errorMessage>No stages should be specified when &apos;Move_To_Stage&apos; or &apos;Apply_To_Job&apos; is not specified in &apos;Actions Targeted&apos;,</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>TR1__Sub_Actions_Names</fullName>
+        <active>true</active>
+        <description>Validates that the specified sub actions are within the allowed set of stages and that there are not spaces next to commas. Custom stages can be added to this rule.</description>
+        <errorConditionFormula>REGEX(SUBSTITUTE(TR1__SubActions__c, &apos; &apos;, &apos;&apos;), &apos;.*(\\b(?!(,|Recipients|Resumes|Application|InternalInterview|Submittal|SendOut|Offer|ClosingReport)\\b).+)&apos;) ||
+REGEX(TR1__SubActions__c, &apos;.*(,| )(,| )+.*&apos;)</errorConditionFormula>
+        <errorDisplayField>TR1__SubActions__c</errorDisplayField>
+        <errorMessage>Some of the sub actions are not valid. Validate there are no typos, the case, no full stops, no trailing commas, no spaces separating values and the correct number of spaces within a stage name. Please refer to the documentation for the allowed values.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

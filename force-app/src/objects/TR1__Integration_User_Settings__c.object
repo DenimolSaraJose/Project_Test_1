@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Settings relating to communication with integrated systems which can be tweaked per user or profile.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>TR1__Contact_Document_Public_URL_Duration__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The length of time, in seconds, that a URL for a contact document should remain publicly accessible.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The length of time, in seconds, that a URL for a contact document should remain publicly accessible.</inlineHelpText>
+        <label>Contact Document Public URL Duration</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Integration User Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

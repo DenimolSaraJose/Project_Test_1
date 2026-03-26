@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Credit Notes track negative adjustments made to invoices.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fieldSets>
+        <fullName>LTE__Header</fullName>
+        <description>Use to populate the header in the financial documents.</description>
+        <displayedFields>
+            <field>OrderApi__Date__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Header</label>
+    </fieldSets>
+    <fields>
+        <fullName>OrderApi__Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>**System Calculated/Override** Link to the customer&apos;s account record. Auto-populates with the related account&apos;s primary contact if not defined prior to entry.</description>
+        <inlineHelpText>**System Calculated/Override** Link to the customer&apos;s account record. Auto-populates with the related account&apos;s primary contact if not defined prior to entry.</inlineHelpText>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Credit Notes</relationshipLabel>
+        <relationshipName>Credit_Notes</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>OrderApi__Billing_City__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The value of this field will be updated with the Account&apos;s Billing City or Contact&apos;s Mailing City, based on &quot;Entity&quot; if not defined on record entry.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The value of this field will be updated with the Account&apos;s Billing City or Contact&apos;s Mailing City, based on &quot;Entity&quot; if not defined on record entry.</inlineHelpText>
+        <label>Billing City</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OrderApi__Billing_Country__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The value of this field will be updated with the Account&apos;s Billing Country or Contact&apos;s Mailing Country, based on &quot;Entity&quot; if not defined on record entry.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The value of this field will be updated with the Account&apos;s Billing Country or Contact&apos;s Mailing Country, based on &quot;Entity&quot; if not defined on record entry.</inlineHelpText>
+        <label>Billing Country</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OrderApi__Billing_Postal_Code__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The value of this field will be updated with the Account&apos;s Billing Postal Code or Contact&apos;s Mailing Postal Code, based on &quot;Entity&quot; if not defined on record entry.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The value of this field will be updated with the Account&apos;s Billing Postal Code or Contact&apos;s Mailing Postal Code, based on &quot;Entity&quot; if not defined on record entry.</inlineHelpText>
+        <label>Billing Postal Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OrderApi__Billing_State__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The value of this field will be updated with the Account&apos;s Billing State or Contact&apos;s Mailing State, based on &quot;Entity&quot; if not defined on record entry.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The value of this field will be updated with the Account&apos;s Billing State or Contact&apos;s Mailing State, based on &quot;Entity&quot; if not defined on record entry.</inlineHelpText>
+        <label>Billing State</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OrderApi__Billing_Street__c</fullName>
+        <deprecated>false</deprecated>
+        <description>**System Calculated/Conditional** Billing Street derives from the Contact Mailing Street or the Account Billing Street when Calculate Billing Details is checked.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>**System Calculated/Conditional** Billing Street derives from the Contact Mailing Street or the Account Billing Street when Calculate Billing Details is checked.</inlineHelpText>
+        <label>Billing Street</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OrderApi__Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>**System Calculated/Override** Link to the customer&apos;s contact record. Auto-populates with the related account&apos;s primary contact if not defined prior to entry.</description>
+        <inlineHelpText>**System Calculated/Override** Link to the customer&apos;s contact record. Auto-populates with the related account&apos;s primary contact if not defined prior to entry.</inlineHelpText>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Credit Notes</relationshipLabel>
+        <relationshipName>Credit_Notes</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>OrderApi__Customer__c</fullName>
+        <deprecated>false</deprecated>
+        <description>**System Calculated** Link to the customer&apos;s record, controlled by the &quot;Entity&quot; field.</description>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL(OrderApi__Entity__c,&quot;Account&quot;), OrderApi__Account__r.Name, OrderApi__Contact__r.FirstName &amp; &quot; &quot; &amp; OrderApi__Contact__r.LastName)</formula>
+        <inlineHelpText>**System Calculated** Link to the customer&apos;s record, controlled by the &quot;Entity&quot; field.</inlineHelpText>
+        <label>Customer</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OrderApi__Date__c</fullName>
+        <defaultValue>TODAY()</defaultValue>
+        <deprecated>false</deprecated>
+        <description>**System Calculated/Override** The date the credit note was created.</description>
+        <inlineHelpText>**System Calculated/Override** The date the credit note was created.</inlineHelpText>
+        <label>Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>OrderApi__Encrypted_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field shows this record&apos;s encrypted id used for external pages.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field shows this record&apos;s encrypted id used for external pages.</inlineHelpText>
+        <label>Encrypted Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OrderApi__Entity__c</fullName>
+        <deprecated>false</deprecated>
+        <description>**Required** Select &quot;Account&quot; if the credit note should be applied to the related account, select &quot;Contact&quot; if the credit note should be applied to the related &quot;Contact&quot;.</description>
+        <inlineHelpText>**Required** Select &quot;Account&quot; if the credit note should be applied to the related account, select &quot;Contact&quot; if the credit note should be applied to the related &quot;Contact&quot;.</inlineHelpText>
+        <label>Entity</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Account</fullName>
+                    <default>false</default>
+                    <label>Account</label>
+                </value>
+                <value>
+                    <fullName>Contact</fullName>
+                    <default>false</default>
+                    <label>Contact</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>OrderApi__Invoice_Number__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Invoice number related to the Invoice.</description>
+        <externalId>false</externalId>
+        <formula>OrderApi__Invoice__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Invoice number related to the Invoice.</inlineHelpText>
+        <label>Invoice Number</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OrderApi__Invoice__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>**System Calculated/Override** Link to the invoice that generated the credit note.</description>
+        <inlineHelpText>**System Calculated/Override** Link to the invoice that generated the credit note.</inlineHelpText>
+        <label>Invoice</label>
+        <referenceTo>OrderApi__Invoice__c</referenceTo>
+        <relationshipLabel>Credit Notes</relationshipLabel>
+        <relationshipName>Credit_Notes</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>OrderApi__Is_Posted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Checked if the credit note has been posted and transactions (journal entries) have been created.</description>
+        <inlineHelpText>Checked if the credit note has been posted and transactions (journal entries) have been created.</inlineHelpText>
+        <label>Is Posted</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>OrderApi__Memo__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Optional memo that will display on the credit note sent to the customer as well as on customer statements.</description>
+        <inlineHelpText>Optional memo that will display on the credit note sent to the customer as well as on customer statements.</inlineHelpText>
+        <label>Memo</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>OrderApi__Posted_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>**System Calculated/Override** The date the transaction posted.</description>
+        <inlineHelpText>**System Calculated/Override** The date the transaction posted.</inlineHelpText>
+        <label>Posted Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>OrderApi__Sales_Order_Number__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Sales Order number related to the Sales Order.</description>
+        <externalId>false</externalId>
+        <formula>OrderApi__Sales_Order__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Sales Order number related to the Sales Order.</inlineHelpText>
+        <label>Sales Order Number</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OrderApi__Sales_Order__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Link to related Sales Order.</description>
+        <inlineHelpText>Link to related Sales Order.</inlineHelpText>
+        <label>Sales Order</label>
+        <referenceTo>OrderApi__Sales_Order__c</referenceTo>
+        <relationshipLabel>Credit Notes</relationshipLabel>
+        <relationshipName>Credit_Notes</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>OrderApi__Total__c</fullName>
+        <deprecated>false</deprecated>
+        <description>**System Calculated** Sum of all adjustment lines</description>
+        <inlineHelpText>**System Calculated** Sum of all adjustment lines</inlineHelpText>
+        <label>Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <label>Credit Note</label>
+    <nameField>
+        <displayFormat>{000000000}</displayFormat>
+        <label>Credit Note Number</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Credit Notes</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>LTE__View_Document</fullName>
+        <availability>online</availability>
+        <description>This button will display the PDF version of the financial document.</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>View Document</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/31.0/connection.js&quot;)}
+            var connection = sforce.connection;
+            var myquery = &quot;SELECT Id FROM Framework__Registry__mdt WHERE Framework__Is_Enabled__c = TRUE AND Framework__Key__c = &apos;DefaultSite&apos; AND Framework__Category__c != NULL&quot;;
+            result = sforce.connection.query(myquery);
+            records = result.getArray(&quot;records&quot;);
+            if (records.length === 0) {
+                alert(&quot;{!$Label.LTE__View_Document_Error}&quot;);
+            }
+            else {
+                window.open(&apos;{!$Site.Prefix}/apex/LTE__ViewDocument?recordId={!CASESAFEID(OrderApi__Credit_Note__c.Id)}&apos;);
+            }</url>
+    </webLinks>
+</CustomObject>

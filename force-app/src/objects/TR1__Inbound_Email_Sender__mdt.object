@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>TR1__Sender_Domain__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The domain used by the sender of the domain, in practice everything behind the @ of the email address. Or the word default to indicate it is to be used for all domains for which no match is available.</inlineHelpText>
+        <label>Sender Domain</label>
+        <length>80</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__jobPattern__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Regex pattern used to extract the job number from an email subject</inlineHelpText>
+        <label>JobPattern</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TR1__sourcePattern__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Regex pattern used to extract the source from an email subject</inlineHelpText>
+        <label>sourcePattern</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <label>Inbound Email Sender</label>
+    <pluralLabel>Inbound Email Senders</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

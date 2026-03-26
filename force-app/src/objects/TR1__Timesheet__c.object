@@ -1,0 +1,1470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>TR1__Talent_Rover</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>TR1__Talent_Rover</fullName>
+        <fields>Name</fields>
+        <fields>TR1__Consultant__c</fields>
+        <fields>TR1__Job_Order__c</fields>
+        <fields>TR1__Status__c</fields>
+        <fields>TR1__Week_Ending__c</fields>
+        <fields>TR1__Pay_Week_Ending__c</fields>
+        <label>Talent Rover</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fieldSets>
+        <fullName>TR1__TimesheetHeader</fullName>
+        <description>Used in CreateShiftWork vf page</description>
+        <displayedFields>
+            <field>TR1__Consultant__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>TR1__Consultant_Name__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>TR1__Consultant_Email__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>TimesheetHeader</label>
+    </fieldSets>
+    <fields>
+        <fullName>TR1__Accrual_Processed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <label>Accrual Processed</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Adjusted_Bill_Rate__c</fullName>
+        <deprecated>false</deprecated>
+        <formula>TR1__Closing_Report__r.TR1__Adjusted_Bill_Rate__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Adjusted Bill Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Adjusted_Gross_Profit__c</fullName>
+        <deprecated>false</deprecated>
+        <formula>IF( $Setup.TR1__TalentRoverProperties__c.TR1__Use_Override_Amt_Fields_for_GP_Invoices__c ,  
+
+(TR1__Gross_Profit__c * $Setup.TR1__AdjustedGrossProfit__c.TR1__GrossProfitPercent__c)
+, 
+
+((((+ TR1__Adjusted_Bill_Rate__c - TR1__Pay_Rate__c )* TR1__Total_Regular_Hours__c )+((( TR1__Adjusted_Bill_Rate__c * TR1__Closing_Report__r.TR1__OT_Bill_Rate_Multiplier_Percentage__c )-( TR1__Pay_Rate__c *1.5))* TR1__Total_Overtime_Hours__c )+((( TR1__Adjusted_Bill_Rate__c * TR1__Closing_Report__r.TR1__DT_Bill_Rate_Multiplier_Percentage__c )-( TR1__Pay_Rate__c *2))* TR1__Total_Double_Time_Hours__c )- TR1__Burden__c)*$Setup.TR1__AdjustedGrossProfit__c.TR1__GrossProfitPercent__c)
+
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Adjusted Gross Profit</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Administrative_Fee_Amount__c</fullName>
+        <deprecated>false</deprecated>
+        <formula>TR1__Closing_Report__r.TR1__Administrative_Fee_Amount__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Administrative Fee Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TR1__All_Approver__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>TR1__Approver__c+&apos;;&apos;+TR1__Timesheet_Second_Approver__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>All Approver</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Approver_First_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>TR1__Approver__r.FirstName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Approver First Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Approver_User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <label>Approver User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>TimesheetToApprove</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Approver__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <label>Timesheet Approver</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Timesheets (Timesheet Approver)</relationshipLabel>
+        <relationshipName>Timesheets1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Approvers_Notes__c</fullName>
+        <deprecated>false</deprecated>
+        <inlineHelpText>Visible to approver and payroll.</inlineHelpText>
+        <label>Approver Notes</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Assignment_Continuing__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Assignment Continuing</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__Bill_Rate__c</fullName>
+        <deprecated>false</deprecated>
+        <formula>TR1__Closing_Report__r.TR1__Bill_Rate__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Bill Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Bonus__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Bonus</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Burden__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Burden</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Candidate_AGP__c</fullName>
+        <deprecated>false</deprecated>
+        <formula>TR1__Closing_Report__r.TR1__Candidate_Percentage__c *  TR1__Adjusted_Gross_Profit__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Candidate AGP</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Candidate_Credit_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>TR1__Closing_Report__r.TR1__Candidate_Credit__r.Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Candidate Credit Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Candidate_Credit__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>TR1__Closing_Report__r.TR1__Candidate_Credit__r.FirstName &amp; &quot; &quot; &amp;  TR1__Closing_Report__r.TR1__Candidate_Credit__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Candidate Credit</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Candidate_GP__c</fullName>
+        <deprecated>false</deprecated>
+        <formula>TR1__Closing_Report__r.TR1__Candidate_Percentage__c *  TR1__Gross_Profit__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Candidate GP</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Client_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>TR1__Client__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Client__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Timesheets</relationshipLabel>
+        <relationshipName>Timesheets</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Closing_Report__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <label>Closing Report</label>
+        <referenceTo>TR1__Closing_Report__c</referenceTo>
+        <relationshipLabel>Timesheets</relationshipLabel>
+        <relationshipName>Timesheets</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Consultant_Email__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>TR1__Consultant__r.Email</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Consultant Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Consultant_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>TR1__Consultant__r.LastName &amp; &quot;, &quot; &amp;  TR1__Consultant__r.FirstName</formula>
+        <label>Consultant Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Consultant__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <label>Consultant</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Timesheets</relationshipLabel>
+        <relationshipName>Timesheets</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Consultants_Notes__c</fullName>
+        <deprecated>false</deprecated>
+        <inlineHelpText>Visible to everyone.</inlineHelpText>
+        <label>Consultant Notes</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TR1__DT_Bill_Rate__c</fullName>
+        <deprecated>false</deprecated>
+        <formula>TR1__Closing_Report__r.TR1__DT_Bill_Rate__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>DT Bill Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Division__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>TR1__Closing_Report__r.TR1__Division__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Division</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Gross_Profit__c</fullName>
+        <deprecated>false</deprecated>
+        <formula>IF( $Setup.TR1__TalentRoverProperties__c.TR1__Use_Rate_Card_Module__c,
+TR1__TotalShiftBillAmount__c - TR1__Total_Shift_Fee__c - TR1__TotalShiftPayAmount__c ,
+IF( $Setup.TR1__TalentRoverProperties__c.TR1__Use_Override_Amt_Fields_for_GP_Invoices__c , 
+
+(TR1__Timesheet_Invoice_Total__c -  TR1__Payroll_Amount__c - TR1__Burden__c)
+
+, 
+
+(((TR1__Adjusted_Bill_Rate__c - TR1__Pay_Rate__c )* TR1__Total_Regular_Hours__c )+((( TR1__Adjusted_Bill_Rate__c *  TR1__Closing_Report__r.TR1__OT_Bill_Rate_Multiplier_Percentage__c  )-( TR1__Pay_Rate__c *1.5))* TR1__Total_Overtime_Hours__c )+((( TR1__Adjusted_Bill_Rate__c *  TR1__Closing_Report__r.TR1__DT_Bill_Rate_Multiplier_Percentage__c  )-( TR1__Pay_Rate__c *2))* TR1__Total_Double_Time_Hours__c )-  TR1__Burden__c)
+
+))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Gross Profit</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Invoice_Amount__c</fullName>
+        <deprecated>false</deprecated>
+        <formula>IF( 
+
+AND( $Setup.TR1__TalentRoverProperties__c.TR1__Use_Override_Amt_Fields_for_GP_Invoices__c, TR1__Total_Bill_Override__c != 0) ,
+
+TR1__Total_Bill_Override__c, 
+
+((ROUND(TR1__Adjusted_Bill_Rate__c, 2) * TR1__Total_Regular_Hours__c) + (TR1__OT_Bill_Rate__c * TR1__Total_Overtime_Hours__c) + (TR1__Travel_Bill_Rate__c * TR1__Total_Travel_Hours__c) + (TR1__Total_Double_Time_Hours__c * TR1__DT_Bill_Rate__c))
+
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Invoice Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Job_AGP__c</fullName>
+        <deprecated>false</deprecated>
+        <formula>TR1__Closing_Report__r.TR1__Job_Percentage__c *  TR1__Adjusted_Gross_Profit__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Job AGP</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Job_Credit_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>TR1__Closing_Report__r.TR1__Job_Credit__r.Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Job Credit Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Job_Credit__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>TR1__Closing_Report__r.TR1__Job_Credit__r.FirstName &amp; &quot; &quot; &amp;  TR1__Closing_Report__r.TR1__Job_Credit__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Job Credit</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Job_GP__c</fullName>
+        <deprecated>false</deprecated>
+        <formula>TR1__Closing_Report__r.TR1__Job_Percentage__c *  TR1__Gross_Profit__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Job GP</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Job_Order__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Job</label>
+        <referenceTo>TR1__Job__c</referenceTo>
+        <relationshipLabel>Timesheets</relationshipLabel>
+        <relationshipName>Timesheets</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>TR1__Job_Owner_Email__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>TR1__Closing_Report__r.TR1__Job_Credit__r.Email</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Job Owner Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Job_Owner__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>TR1__Closing_Report__r.TR1__Job_Credit__r.FirstName &amp; &quot; &quot; &amp;  TR1__Closing_Report__r.TR1__Job_Credit__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Job Owner</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Manual_Total_Regular_Hours__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Manual Total Regular Hours</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Marketing_AGP__c</fullName>
+        <deprecated>false</deprecated>
+        <formula>TR1__Closing_Report__r.TR1__Marketing_Percentage__c *  TR1__Adjusted_Gross_Profit__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Marketing AGP</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Marketing_Credit_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>TR1__Closing_Report__r.TR1__Marketing_Credit__r.Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Marketing Credit Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Marketing_Credit__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>TR1__Closing_Report__r.TR1__Marketing_Credit__r.FirstName &amp; &quot; &quot; &amp;  TR1__Closing_Report__r.TR1__Marketing_Credit__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Marketing Credit</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Marketing_GP__c</fullName>
+        <deprecated>false</deprecated>
+        <formula>TR1__Closing_Report__r.TR1__Marketing_Percentage__c *  TR1__Gross_Profit__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Marketing GP</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TR1__OT_Bill_Rate__c</fullName>
+        <deprecated>false</deprecated>
+        <formula>TR1__Closing_Report__r.TR1__OT_Bill_Rate__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>OT Bill Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Other2_AGP__c</fullName>
+        <deprecated>false</deprecated>
+        <formula>TR1__Closing_Report__r.TR1__Other2_Percentage__c *   TR1__Adjusted_Gross_Profit__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Other2 AGP</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Other2_Credit_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>TR1__Closing_Report__r.TR1__Other2_Credit__r.Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Other2 Credit Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Other2_Credit__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>TR1__Closing_Report__r.TR1__Other2_Credit__r.FirstName &amp; &quot; &quot; &amp; TR1__Closing_Report__r.TR1__Other2_Credit__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Other2 Credit</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Other2_GP__c</fullName>
+        <deprecated>false</deprecated>
+        <formula>TR1__Closing_Report__r.TR1__Other2_Percentage__c *  TR1__Gross_Profit__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Other2 GP</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Other_AGP__c</fullName>
+        <deprecated>false</deprecated>
+        <formula>TR1__Closing_Report__r.TR1__Other_Percentage__c *  TR1__Adjusted_Gross_Profit__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Other AGP</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Other_Credit_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>TR1__Closing_Report__r.TR1__Other_Credit__r.Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Other Credit Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Other_Credit__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>TR1__Closing_Report__r.TR1__Other_Credit__r.FirstName &amp; &quot; &quot; &amp;  TR1__Closing_Report__r.TR1__Other_Credit__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Other Credit</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Other_GP__c</fullName>
+        <deprecated>false</deprecated>
+        <formula>TR1__Closing_Report__r.TR1__Other_Percentage__c *  TR1__Gross_Profit__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Other GP</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Pay_Rate__c</fullName>
+        <deprecated>false</deprecated>
+        <formula>TR1__Closing_Report__r.TR1__Pay_Rate__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Pay Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Pay_Week_Ending__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Pay Week Ending</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Payroll_Amount__c</fullName>
+        <deprecated>false</deprecated>
+        <formula>IF( 
+
+AND( $Setup.TR1__TalentRoverProperties__c.TR1__Use_Override_Amt_Fields_for_GP_Invoices__c, TR1__Total_Pay_Override__c &gt; 0) , 
+
+TR1__Total_Pay_Override__c, 
+
+
+((TR1__Pay_Rate__c * TR1__Total_Regular_Hours__c)
++
+((TR1__Pay_Rate__c * 1.5) * TR1__Total_Overtime_Hours__c)
++
+((TR1__Pay_Rate__c * 2.0) * TR1__Total_Double_Time_Hours__c))
+
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Payroll Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Payroll_Note__c</fullName>
+        <deprecated>false</deprecated>
+        <inlineHelpText>Visible to consultant and approver.</inlineHelpText>
+        <label>Payroll Note</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Payroll_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>TEXT (TR1__Closing_Report__r.TR1__Payroll_Type__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Payroll Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Recruiter__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <label>Recruiter</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Timesheets</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Status__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                    <label>Approved</label>
+                </value>
+                <value>
+                    <fullName>Changed By Payroll</fullName>
+                    <default>false</default>
+                    <label>Changed By Payroll</label>
+                </value>
+                <value>
+                    <fullName>Not Submitted</fullName>
+                    <default>false</default>
+                    <label>Not Submitted</label>
+                </value>
+                <value>
+                    <fullName>Paid Approval</fullName>
+                    <default>false</default>
+                    <label>Paid Approval</label>
+                </value>
+                <value>
+                    <fullName>Rejected</fullName>
+                    <default>false</default>
+                    <label>Rejected</label>
+                </value>
+                <value>
+                    <fullName>Submitted</fullName>
+                    <default>false</default>
+                    <label>Submitted</label>
+                </value>
+                <value>
+                    <fullName>Unsubmitted</fullName>
+                    <default>false</default>
+                    <label>Unsubmitted</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__Timesheet_Approver_Email__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>TR1__Approver__r.Email</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Timesheet Approver Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Timesheet_Copy__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>TEXT (TR1__Closing_Report__r.TR1__Timesheet_Copy__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Timesheet Copy</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Timesheet_Invoice_Adjustment__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <label>Timesheet Invoice Adjustment</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Timesheet_Invoice_Total__c</fullName>
+        <deprecated>false</deprecated>
+        <formula>TR1__Invoice_Amount__c  -  TR1__Timesheet_Invoice_Adjustment__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Timesheet Invoice Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Timesheet_Second_Approver__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <label>Timesheet Second Approver</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Timesheets (Timesheet Second Approver)</relationshipLabel>
+        <relationshipName>SecondApprover</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Timesheet_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>TEXT ( TR1__Closing_Report__r.TR1__Timesheet_Type__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Timesheet Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__TotalShiftBillAmount__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Total Shift Bill Amount</label>
+        <summarizedField>TR1__Timesheet_Detail__c.TR1__TotalShiftBillAmount__c</summarizedField>
+        <summaryForeignKey>TR1__Timesheet_Detail__c.TR1__Timesheet__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>TR1__TotalShiftPayAmount__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Total Shift Pay Amount</label>
+        <summarizedField>TR1__Timesheet_Detail__c.TR1__TotalShiftPayAmount__c</summarizedField>
+        <summaryForeignKey>TR1__Timesheet_Detail__c.TR1__Timesheet__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>TR1__TotalShiftUnits__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Total Shift Units</label>
+        <summarizedField>TR1__Timesheet_Detail__c.TR1__TotalShiftUnits__c</summarizedField>
+        <summaryForeignKey>TR1__Timesheet_Detail__c.TR1__Timesheet__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Total_Bill_Override__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Total Bill (Override)</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Total_Days_Worked__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Total Days Worked</label>
+        <summaryFilterItems>
+            <field>TR1__Timesheet_Detail__c.TR1__Regular_Hours__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </summaryFilterItems>
+        <summaryForeignKey>TR1__Timesheet_Detail__c.TR1__Timesheet__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Total_Double_Time_Hours__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Total Double Time Hours</label>
+        <summarizedField>TR1__Timesheet_Detail__c.TR1__Double_Time_Hours__c</summarizedField>
+        <summaryForeignKey>TR1__Timesheet_Detail__c.TR1__Timesheet__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Total_Expenses__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Total Expenses</label>
+        <summarizedField>TR1__Timesheet_Detail__c.TR1__Expenses__c</summarizedField>
+        <summaryForeignKey>TR1__Timesheet_Detail__c.TR1__Timesheet__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Total_GP__c</fullName>
+        <deprecated>false</deprecated>
+        <formula>TR1__Gross_Profit__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total GP</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Total_Holiday_Hours__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Total Holiday Hours</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Total_Hours__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>TR1__Total_Regular_Hours__c + TR1__Total_Overtime_Hours__c + TR1__Total_Double_Time_Hours__c + TR1__Total_Vacation_Hours__c + TR1__Total_Sick_Time_Hours__c + TR1__Total_Holiday_Hours__c + TR1__Total_Travel_Hours__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Hours</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Total_Overtime_Hours__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Total Overtime Hours</label>
+        <summarizedField>TR1__Timesheet_Detail__c.TR1__Overtime_Hours__c</summarizedField>
+        <summaryForeignKey>TR1__Timesheet_Detail__c.TR1__Timesheet__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Total_Pay_Override__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Total Pay (Override)</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Total_Regular_Hours__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Total Regular Hours</label>
+        <summarizedField>TR1__Timesheet_Detail__c.TR1__Regular_Hours__c</summarizedField>
+        <summaryForeignKey>TR1__Timesheet_Detail__c.TR1__Timesheet__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Total_Shift_Fee__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Total Shift Fee</label>
+        <summarizedField>TR1__Timesheet_Detail__c.TR1__Total_Fee__c</summarizedField>
+        <summaryForeignKey>TR1__Timesheet_Detail__c.TR1__Timesheet__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Total_Shift_Hours__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Total Shift Hours</label>
+        <summarizedField>TR1__Timesheet_Detail__c.TR1__Total_Shift_Hours__c</summarizedField>
+        <summaryForeignKey>TR1__Timesheet_Detail__c.TR1__Timesheet__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Total_Sick_Time_Hours__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Total Sick Time Hours</label>
+        <summarizedField>TR1__Timesheet_Detail__c.TR1__Sick_Time_Hours__c</summarizedField>
+        <summaryForeignKey>TR1__Timesheet_Detail__c.TR1__Timesheet__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Total_Travel_Hours__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Total Travel Hours</label>
+        <summarizedField>TR1__Timesheet_Detail__c.TR1__Travel_Hours__c</summarizedField>
+        <summaryForeignKey>TR1__Timesheet_Detail__c.TR1__Timesheet__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Total_Vacation_Hours__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Total Vacation Hours</label>
+        <summarizedField>TR1__Timesheet_Detail__c.TR1__Vacation_Hours__c</summarizedField>
+        <summaryForeignKey>TR1__Timesheet_Detail__c.TR1__Timesheet__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Travel_Bill_Rate__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Travel Bill Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Travel_Pay_Rate__c</fullName>
+        <deprecated>false</deprecated>
+        <formula>TR1__Closing_Report__r.TR1__Travel_Pay_Rate__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Travel Pay Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Week_Ending__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Week Ending</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Worker_Comp_Percentage__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Worker Comp Percentage</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <label>Timesheet</label>
+    <listViews>
+        <fullName>TR1__All</fullName>
+        <columns>NAME</columns>
+        <columns>TR1__Division__c</columns>
+        <columns>TR1__Week_Ending__c</columns>
+        <columns>TR1__Consultant__c</columns>
+        <columns>TR1__Client__c</columns>
+        <columns>TR1__Job_Order__c</columns>
+        <columns>TR1__Approver__c</columns>
+        <columns>TR1__Total_Hours__c</columns>
+        <columns>TR1__Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>TS-{YYYY}{MM}-{0}</displayFormat>
+        <label>Timesheet Number</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Timesheets</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>TR1__Week_Ending__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>TR1__Consultant__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>TR1__Client__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>TR1__Job_Order__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>TR1__Division__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>TR1__Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>TR1__Total_Hours__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>TR1__Consultant__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>TR1__Client__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>TR1__Job_Order__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>TR1__Division__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>TR1__Status__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>TR1__Week_Ending__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>TR1__Consultant__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>TR1__Client__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>TR1__Job_Order__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>TR1__Division__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>TR1__Status__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>TR1__Week_Ending__c</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>TR1__Consultant__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TR1__Client__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TR1__Job_Order__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TR1__Division__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TR1__Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TR1__Week_Ending__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>TR1__Prevent_Use_of_Override_Fields</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+DATEVALUE(CreatedDate) &lt; DATE(2015,12,16)
+,
+OR(!ISBLANK( TR1__Total_Bill_Override__c ),!ISBLANK( TR1__Total_Pay_Override__c ))
+)</errorConditionFormula>
+        <errorMessage>To Maintain Data Integrity, Override Fields cannot be populated for Historical Records</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>TR1__CreateTimeSheet</fullName>
+        <availability>online</availability>
+        <description>Created For Create timesheet by weekending.</description>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Create Timesheet</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>/apex/TR1__CreateTimesheetByWeekending?crid={!TR1__Closing_Report__c.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>TR1__Create_ShiftWorks_New</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Create ShiftWorks</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/apex/TR1__CreateShiftWorkNew?tsId={!TR1__Timesheet__c.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>TR1__Create_Timesheet</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Create Timesheet</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>/apex/TR1__CreateTimeSheet?crid={!TR1__Closing_Report__c.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>TR1__Edit_Timesheet_Details</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Create Shiftwork</masterLabel>
+        <openType>noSidebar</openType>
+        <protected>false</protected>
+        <url>/apex/TR1__CreateShiftWork?tsId={!TR1__Timesheet__c.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>TR1__New_Rate</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>New Rate</masterLabel>
+        <openType>noSidebar</openType>
+        <protected>false</protected>
+        <url>/apex/TR1__Calculator?timesheetId={!TR1__Timesheet__c.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>TR1__Select_Existing_Rate</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Select Existing Rate</masterLabel>
+        <openType>noSidebar</openType>
+        <protected>false</protected>
+        <url>/apex/TR1__CloneRateAndRatePeriod?Id={!TR1__Timesheet__c.Id}&amp;ParentId={!TR1__Timesheet__c.TR1__Closing_ReportId__c}</url>
+    </webLinks>
+</CustomObject>

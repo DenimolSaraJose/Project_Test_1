@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>ATS View Configuration for specific Job (TR1__Job__c) Record Type</description>
+    <fields>
+        <fullName>TR1__Contact_detail_popover_Page_Layout_name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specifies the Page Layout to be used when hovering over a Contact name within the ATS.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Specifies the Page Layout to be used when hovering over a Contact name within the ATS.</inlineHelpText>
+        <label>Contact detail popover Page Layout name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Default_View__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Default View</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Default View</inlineHelpText>
+        <label>Default View</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Table</fullName>
+                    <default>true</default>
+                    <label>Table</label>
+                </value>
+                <value>
+                    <fullName>ATS</fullName>
+                    <default>false</default>
+                    <label>ATS</label>
+                </value>
+                <value>
+                    <fullName>Kanban</fullName>
+                    <default>false</default>
+                    <label>Kanban</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__Enable_Current_Stage_Selection__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If checked, the current stage selection in &apos;Move to Stage&apos; on ATSv2 is allowed.</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>If checked, the current stage selection in &apos;Move to Stage&apos; on ATSv2 is allowed.</inlineHelpText>
+        <label>Enable Current Stage Selection</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Fields_to_Display__c</fullName>
+        <deprecated>false</deprecated>
+        <description>List of comma-separated ApplicationV2 (TR1__Application_V2__c) fields to display on ATS view. Syntax is similar to SOQL, lookup relationship are available.
+e.g. TR1__Stage__c, TR1__Applicant__r.Name, TR1__Applicant__r.Email</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>List of comma-separated Application V2 fields to display. Use SOQL syntax.
+e.g. TR1__Stage__c, TR1__Applicant__r.Name, TR1__Applicant__r.Email</inlineHelpText>
+        <label>Fields to Display</label>
+        <length>2048</length>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TR1__Job_Record_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Job (TR1__Job__c) Record Type</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Job (TR1__Job__c) Record Type</inlineHelpText>
+        <label>Job Record Type</label>
+        <referenceTo>TR1__Job_Record_Type__mdt</referenceTo>
+        <relationshipLabel>ATS Configs per Job Record Type</relationshipLabel>
+        <relationshipName>ATS_Configs_per_Job_Record_Type</relationshipName>
+        <required>true</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <label>ATS Config per Job Record Type</label>
+    <pluralLabel>ATS Configs per Job Record Type</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

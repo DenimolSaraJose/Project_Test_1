@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Object is used to schedule Payment Runs in the future</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>cpm__Additional_SOQL__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Custom SOQL to limit the installments generated and/or included. Use with caution and test carefully. The query added here must start with &apos;AND&apos;.</description>
+        <inlineHelpText>Custom SOQL to limit the installments generated and/or included. Use with caution and test carefully. The query added here must start with &apos;AND&apos;.</inlineHelpText>
+        <label>Additional SOQL</label>
+        <length>15000</length>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>cpm__Channel__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Channel</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Buckaroo</fullName>
+                    <default>false</default>
+                    <label>Buckaroo</label>
+                </value>
+                <value>
+                    <fullName>ProcessingHub</fullName>
+                    <default>false</default>
+                    <label>ProcessingHub</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>cpm__Close_Async_Apex_Job_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Close Async Apex Job Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cpm__Collection_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Date when the payments should be collected by the bank. This is only used for direct debit methods with FinDock as processor (PaymentHub-BACS, PaymentHub-SEPA, etc.)</description>
+        <inlineHelpText>Date when the payments should be collected by the bank. This is only used for direct debit methods with FinDock as processor (PaymentHub-BACS, PaymentHub-SEPA, etc.)</inlineHelpText>
+        <label>Collection Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>cpm__Exclude_from_Auto_Run__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <inlineHelpText>If you are creating a schedule that you want to run manually by changing the schedule status, please select this option. If Auto Run is enabled, this schedule will otherwise be run automatically.</inlineHelpText>
+        <label>Exclude from Auto-Run</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>cpm__Finished_Status__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is for using the payment schedule to create references for payslips (e.g. Acceptgiro, ESR, etc. payment methods). The Finished Status indicates in your org that the generated installments are ready for collection using your payslip process.</description>
+        <inlineHelpText>This field is for using the payment schedule to create references for payslips (e.g. Acceptgiro, ESR, etc. payment methods). The Finished Status indicates in your org that the generated installments are ready for collection using your payslip process.</inlineHelpText>
+        <label>Finished Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>-- Provided by Sys Admin --</fullName>
+                    <default>false</default>
+                    <label>-- Provided by Sys Admin --</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>cpm__Generator_Class__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Generator Class</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cpm__Hashcode__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Hashcode</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cpm__Hashcode_date__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Hashcode date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>cpm__Job_Group_Identifier__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field to store the Job group identifier from cpm__Job__c</description>
+        <externalId>false</externalId>
+        <label>Job Group Identifier</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cpm__Last_Status_Reason__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Optional additional information added in Last Status Reason field if the payment schedule fails.</description>
+        <inlineHelpText>Optional additional information added in Last Status Reason field if the payment schedule fails.</inlineHelpText>
+        <label>Last Status Reason</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>cpm__Nr_Of_Installments__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Number of installments in the schedule</description>
+        <externalId>false</externalId>
+        <label>Total Number of Installments</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cpm__Original_Payment_Schedule__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <label>Original Payment Schedule</label>
+        <referenceTo>cpm__Payment_Schedule__c</referenceTo>
+        <relationshipLabel>Payment Schedules</relationshipLabel>
+        <relationshipName>Payment_Schedules</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>cpm__PaymentMethod__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Payment Method</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>CreditCard</fullName>
+                    <default>false</default>
+                    <label>CreditCard</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>cpm__Payment_Journey__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <label>Payment Journey</label>
+        <referenceTo>cpm__Payment_Journey__c</referenceTo>
+        <relationshipLabel>Payment Schedules</relationshipLabel>
+        <relationshipName>Payment_Schedules</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>cpm__Payment_Method__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field get automatically populated in trigger and is used by ProcessingHub to define correct package</description>
+        <externalId>false</externalId>
+        <label>Payment Method</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cpm__Payment_Processor__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Payment Processor</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>cpm__PaymentMethod__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>PaymentHub-Stripe</fullName>
+                    <default>false</default>
+                    <label>PaymentHub-Stripe</label>
+                </value>
+                <value>
+                    <fullName>PaymentHub-Adyen</fullName>
+                    <default>false</default>
+                    <label>PaymentHub-Adyen</label>
+                </value>
+                <value>
+                    <fullName>PaymentHub-MT940</fullName>
+                    <default>false</default>
+                    <label>PaymentHub-MT940</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>CreditCard</controllingFieldValue>
+                <valueName>PaymentHub-Stripe</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CreditCard</controllingFieldValue>
+                <valueName>PaymentHub-Adyen</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>cpm__Prepare_Async_Apex_Job_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Prepare Async Apex Job Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cpm__Prepare_SOQL_Query__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Prepare SOQL Query</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>cpm__Process_Async_Apex_Job_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Process Async Apex Job Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cpm__Process_Batch_Size__c</fullName>
+        <defaultValue>200</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This field is for payment schedules that are used to create payment refrences for pay slips. If your org has record creation limits for batch jobs, set the payment schedule limit here for installment generation job. If unsure, leave this field with the default value.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is for payment schedules that are used to create payment refrences for pay slips. If your org has record creation limits for batch jobs, set the payment schedule limit here for installment generation job. If unsure, leave this field with the default value.</inlineHelpText>
+        <label>Process Batch Size</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cpm__Processor_Class__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Processor Class</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cpm__Recurring_Payment_Schedule__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <label>Recurring Payment Schedule</label>
+        <referenceTo>cpm__Recurring_Payment_Schedule__c</referenceTo>
+        <relationshipLabel>Payment Schedules</relationshipLabel>
+        <relationshipName>Payment_Schedules</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>cpm__Report_Summary__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Report Summary on JSON format to use on PaymentScheduleReportSummary component</description>
+        <label>Report Summary</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>cpm__Run_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Date when payment schedule is run.</description>
+        <inlineHelpText>Date when payment schedule is run.</inlineHelpText>
+        <label>Run Date</label>
+        <required>true</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>cpm__Selection_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Installments with a due date on or before the selection date are collected if all other processing details match.</description>
+        <inlineHelpText>Installments with a due date on or before the selection date are collected if all other processing details match.</inlineHelpText>
+        <label>Selection Date</label>
+        <required>true</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>cpm__Source__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Source</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>PaymentHub</fullName>
+                    <default>false</default>
+                    <label>PaymentHub</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>cpm__Status_Before_Failed__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Status Before Failed</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cpm__Status__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Set status to &apos;Scheduled&apos; unless otherwise instructed.</description>
+        <inlineHelpText>Set status to &apos;Scheduled&apos; unless otherwise instructed.</inlineHelpText>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Scheduled</fullName>
+                    <default>true</default>
+                    <label>Scheduled</label>
+                </value>
+                <value>
+                    <fullName>Pending Approval</fullName>
+                    <default>false</default>
+                    <label>Pending Approval</label>
+                </value>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                    <label>Approved</label>
+                </value>
+                <value>
+                    <fullName>Processing</fullName>
+                    <default>false</default>
+                    <label>Processing</label>
+                </value>
+                <value>
+                    <fullName>Done</fullName>
+                    <default>false</default>
+                    <label>Done</label>
+                </value>
+                <value>
+                    <fullName>Process</fullName>
+                    <default>false</default>
+                    <label>Process</label>
+                </value>
+                <value>
+                    <fullName>Generated</fullName>
+                    <default>false</default>
+                    <label>Generated</label>
+                </value>
+                <value>
+                    <fullName>Pending Verification</fullName>
+                    <default>false</default>
+                    <label>Pending Verification</label>
+                </value>
+                <value>
+                    <fullName>Verified</fullName>
+                    <default>false</default>
+                    <label>Verified</label>
+                </value>
+                <value>
+                    <fullName>Failed</fullName>
+                    <default>false</default>
+                    <label>Failed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>cpm__Target__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Target</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>cpm__Payment_Processor__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Council of International Schools</fullName>
+                    <default>false</default>
+                    <label>Council of International Schools</label>
+                </value>
+                <value>
+                    <fullName>Main</fullName>
+                    <default>false</default>
+                    <label>Main</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>PaymentHub-Stripe</controllingFieldValue>
+                <valueName>Council of International Schools</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PaymentHub-Adyen</controllingFieldValue>
+                <valueName>Main</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>cpm__Total_Value__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Sum of the amount of all the child installments</description>
+        <label>Total Value of Installments</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>cpm__Totals_Async_Apex_Job_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Holds the id of the batch apex job for recalculating totals fields on the payment schedule schedule</description>
+        <externalId>false</externalId>
+        <label>Totals Async Apex Job Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cpm__Validate_Job_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Validate Job Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Payment Schedule</label>
+    <listViews>
+        <fullName>cpm__All_new</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>PS-{000000000}</displayFormat>
+        <label>Payment Schedule Reference</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Payment Schedules</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>cpm__Run_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>cpm__Selection_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>cpm__Source__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>cpm__Payment_Method__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>cpm__Payment_Processor__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>cpm__Target__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>cpm__Status__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>cpm__Run_Date__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>cpm__Selection_Date__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>cpm__Source__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>cpm__Payment_Method__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>cpm__Payment_Processor__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>cpm__Target__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>cpm__Status__c</lookupDialogsAdditionalFields>
+        <searchFilterFields>cpm__Run_Date__c</searchFilterFields>
+        <searchFilterFields>cpm__Selection_Date__c</searchFilterFields>
+        <searchFilterFields>cpm__Source__c</searchFilterFields>
+        <searchFilterFields>cpm__Payment_Method__c</searchFilterFields>
+        <searchFilterFields>cpm__Payment_Processor__c</searchFilterFields>
+        <searchFilterFields>cpm__Target__c</searchFilterFields>
+        <searchFilterFields>cpm__Status__c</searchFilterFields>
+        <searchResultsAdditionalFields>cpm__Run_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>cpm__Selection_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>cpm__Source__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>cpm__Payment_Method__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>cpm__Payment_Processor__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>cpm__Target__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>cpm__Status__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>cpm__Collection_Date_must_be_in_the_future</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF(
+  AND(
+     NOT(ISPICKVAL( cpm__Status__c , &apos;Verified&apos;))
+   , NOT(ISPICKVAL( cpm__Status__c , &apos;Done&apos;))
+   , NOT(ISPICKVAL( cpm__Status__c , &apos;Pending Verification&apos;))
+   , OR(
+      ISPICKVAL( cpm__PaymentMethod__c, &apos;Direct Debit&apos;)
+      ,ISPICKVAL( cpm__PaymentMethod__c, &apos;Credit Transfer&apos;)
+    )
+   , OR(
+       ISPICKVAL( cpm__Payment_Processor__c, &apos;PaymentHub-CH-DD&apos;)
+     , ISPICKVAL( cpm__Payment_Processor__c, &apos;PaymentHub-LSV&apos;)
+     , ISPICKVAL( cpm__Payment_Processor__c, &apos;PaymentHub-BACS&apos;)
+   )
+   , NOT(ISNULL( cpm__Collection_Date__c ))
+   , NOT(ISCHANGED(cpm__Report_Summary__c))
+   , NOT(ISCHANGED(cpm__Total_Value__c))
+   , NOT(ISCHANGED(cpm__Nr_Of_Installments__c))
+   , cpm__Collection_Date__c &lt;= TODAY()
+) , true, false )</errorConditionFormula>
+        <errorDisplayField>cpm__Collection_Date__c</errorDisplayField>
+        <errorMessage>Collection Date must be in the future</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>cpm__Collection_cant_be_in_the_past_for_SEPA</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF(
+    AND(
+        NOT(ISPICKVAL( cpm__Status__c , &apos;Verified&apos;)),
+        NOT(ISPICKVAL( cpm__Status__c , &apos;Done&apos;)),
+        NOT(ISPICKVAL( cpm__Status__c , &apos;Pending Verification&apos;)),
+        OR(
+            ISPICKVAL( cpm__PaymentMethod__c, &apos;Direct Debit&apos;),
+            ISPICKVAL( cpm__PaymentMethod__c, &apos;Credit Transfer&apos;)
+        ),
+        OR(
+            ISPICKVAL( cpm__Payment_Processor__c, &apos;PaymentHub-SEPA&apos;),
+            ISPICKVAL( cpm__Payment_Processor__c, &apos;DummyExtension-PSP&apos;)
+        ),
+        NOT(ISNULL( cpm__Collection_Date__c )),
+        cpm__Collection_Date__c &lt; TODAY()
+    ),
+    true,
+    false
+)</errorConditionFormula>
+        <errorDisplayField>cpm__Collection_Date__c</errorDisplayField>
+        <errorMessage>Collection Date can&apos;t be in the past</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>cpm__Lock_Fiscal_Period</fullName>
+        <active>true</active>
+        <errorConditionFormula>cpm__Collection_Date__c &lt;= $Setup.cpm__Lock_Fiscal_Periods__c.cpm__Lock_Payments_Up_To__c</errorConditionFormula>
+        <errorMessage>Fiscal period is closed. You can&apos;t edit this record</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>cpm__Mandatory_Field_Check</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF ( OR ( ISBLANK(TEXT(cpm__Payment_Processor__c)) , ISBLANK (TEXT(cpm__PaymentMethod__c)) , ISBLANK(TEXT(cpm__Source__c)) ), true, false )</errorConditionFormula>
+        <errorMessage>Payment Method, Payment Processor and Source are required</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>cpm__Start_Generation</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Start Generation</masterLabel>
+        <openType>sidebar</openType>
+        <page>cpm__Payment_Schedule_Start_Generation</page>
+        <protected>false</protected>
+    </webLinks>
+</CustomObject>

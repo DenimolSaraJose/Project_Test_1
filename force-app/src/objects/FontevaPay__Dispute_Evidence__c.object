@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>FontevaPay__Dispute_Evidence_Compact_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>FontevaPay__Dispute_Evidence_Compact_Layout</fullName>
+        <fields>Name</fields>
+        <fields>RecordTypeId</fields>
+        <fields>FontevaPay__Product_Service_Type__c</fields>
+        <fields>FontevaPay__Dispute__c</fields>
+        <label>Dispute Evidence Compact Layout</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Evidence records for a Charge Dispute</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>FontevaPay__Access_Activity_Log__c</fullName>
+        <deprecated>false</deprecated>
+        <inlineHelpText>Documentation supporting access by purchaser</inlineHelpText>
+        <label>Access Activity Log</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>FontevaPay__Billing_City__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>FontevaPay__Dispute__r.FontevaPay__Charge__r.FontevaPay__EPayment__r.OrderApi__Billing_City__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>City</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FontevaPay__Billing_Country__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>FontevaPay__Dispute__r.FontevaPay__Charge__r.FontevaPay__EPayment__r.OrderApi__Billing_Country__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Country</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FontevaPay__Billing_Postal_Code__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>FontevaPay__Dispute__r.FontevaPay__Charge__r.FontevaPay__EPayment__r.OrderApi__Billing_Postal_Code__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Postal Code</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FontevaPay__Billing_Street__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>FontevaPay__Dispute__r.FontevaPay__Charge__r.FontevaPay__EPayment__r.OrderApi__Billing_Street__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Street Address</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FontevaPay__Carrier__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of shipper utilized for delivery</inlineHelpText>
+        <label>Carrier</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FontevaPay__Customer_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>FontevaPay__Dispute__r.FontevaPay__Charge__r.FontevaPay__EPayment__r.OrderApi__Full_Name__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Customer name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FontevaPay__Description__c</fullName>
+        <deprecated>false</deprecated>
+        <inlineHelpText>Explanation of the product or service</inlineHelpText>
+        <label>Description</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>FontevaPay__Dispute__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Charge Dispute</description>
+        <label>Dispute</label>
+        <referenceTo>FontevaPay__Dispute__c</referenceTo>
+        <relationshipLabel>Dispute Evidence</relationshipLabel>
+        <relationshipName>Dispute_Evidence</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>FontevaPay__Document_Count__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Document Count</label>
+        <summaryForeignKey>FontevaPay__Dispute_Evidence_Documentation__c.FontevaPay__Dispute_Evidence__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>FontevaPay__Email__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Email</description>
+        <externalId>false</externalId>
+        <formula>FontevaPay__Dispute__r.FontevaPay__Charge__r.FontevaPay__EPayment__r.OrderApi__Email__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FontevaPay__Product_Service_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <inlineHelpText>Category of Product of Service provided</inlineHelpText>
+        <label>What type of product or service is this?</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Physical Product</fullName>
+                    <default>false</default>
+                    <label>Physical Product</label>
+                </value>
+                <value>
+                    <fullName>Digital Product or Service</fullName>
+                    <default>false</default>
+                    <label>Digital Product or Service</label>
+                </value>
+                <value>
+                    <fullName>Offline Service</fullName>
+                    <default>false</default>
+                    <label>Offline Service</label>
+                </value>
+                <value>
+                    <fullName>Event</fullName>
+                    <default>false</default>
+                    <label>Event</label>
+                </value>
+                <value>
+                    <fullName>Booking or Reservation</fullName>
+                    <default>false</default>
+                    <label>Booking or Reservation</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>FontevaPay__Recommended_Documents__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Recommended Document Types for this Dispute Evidence Type.</description>
+        <externalId>false</externalId>
+        <formula>CASE(FontevaPay__Product_Service_Type__c,
+  &quot;Physical Product&quot;, &quot;Customer Communication, Customer Signature, Shipping Documentation, Other Evidence, Receipt&quot;,
+  &quot;Digital Product or Service&quot;, &quot;Customer Communication, Customer Signature, Receipt&quot;,
+  &quot;Offline Service&quot;, &quot;Customer Communication, Customer Signature, Shipping Documentation, Other Evidence, Receipt&quot;,
+  &quot;Event&quot;, &quot;Customer Communication&quot;,
+  &quot;Booking or Reservation&quot;, &quot;Customer Communication&quot;,
+  &quot;Other&quot;, &quot;Customer Communication&quot;,
+&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Recommended Documentation to support this Dispute</inlineHelpText>
+        <label>Recommended Documents</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FontevaPay__Service_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Service Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>FontevaPay__Shipping_City__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Shipping City</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FontevaPay__Shipping_Country__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Shipping Country</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FontevaPay__Shipping_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Shipping Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>FontevaPay__Shipping_Postal_Code__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Shipping Postal Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FontevaPay__Shipping_Street__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Shipping Street Address</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FontevaPay__Submission_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Submission Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>FontevaPay__Submission_Status__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Submission Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Not Submitted</fullName>
+                    <default>true</default>
+                    <label>Not Submitted</label>
+                </value>
+                <value>
+                    <fullName>Submitted</fullName>
+                    <default>false</default>
+                    <label>Submitted</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>FontevaPay__Tracking_Number__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Tracking number</label>
+        <length>120</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Dispute Evidence</label>
+    <listViews>
+        <fullName>FontevaPay__All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>DE-{00000}</displayFormat>
+        <label>Dispute Evidence Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Dispute Evidence</pluralLabel>
+    <recordTypes>
+        <fullName>FontevaPay__Booking_or_Reservation</fullName>
+        <active>true</active>
+        <label>Booking or Reservation</label>
+        <picklistValues>
+            <picklist>FontevaPay__Product_Service_Type__c</picklist>
+            <values>
+                <fullName>Booking or Reservation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Digital Product or Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Offline Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Physical Product</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>FontevaPay__Submission_Status__c</picklist>
+            <values>
+                <fullName>Not Submitted</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Submitted</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>FontevaPay__Digital_product_or_service</fullName>
+        <active>true</active>
+        <label>Digital product or service</label>
+        <picklistValues>
+            <picklist>FontevaPay__Product_Service_Type__c</picklist>
+            <values>
+                <fullName>Booking or Reservation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Digital Product or Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Offline Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Physical Product</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>FontevaPay__Submission_Status__c</picklist>
+            <values>
+                <fullName>Not Submitted</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Submitted</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>FontevaPay__Event</fullName>
+        <active>true</active>
+        <label>Event</label>
+        <picklistValues>
+            <picklist>FontevaPay__Product_Service_Type__c</picklist>
+            <values>
+                <fullName>Booking or Reservation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Digital Product or Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Offline Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Physical Product</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>FontevaPay__Submission_Status__c</picklist>
+            <values>
+                <fullName>Not Submitted</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Submitted</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>FontevaPay__Offline_Service</fullName>
+        <active>true</active>
+        <label>Offline Service</label>
+        <picklistValues>
+            <picklist>FontevaPay__Product_Service_Type__c</picklist>
+            <values>
+                <fullName>Booking or Reservation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Digital Product or Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Offline Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Physical Product</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>FontevaPay__Submission_Status__c</picklist>
+            <values>
+                <fullName>Not Submitted</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Submitted</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>FontevaPay__Other</fullName>
+        <active>true</active>
+        <label>Other</label>
+        <picklistValues>
+            <picklist>FontevaPay__Product_Service_Type__c</picklist>
+            <values>
+                <fullName>Booking or Reservation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Digital Product or Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Offline Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Physical Product</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>FontevaPay__Submission_Status__c</picklist>
+            <values>
+                <fullName>Not Submitted</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Submitted</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>FontevaPay__Physical_Product</fullName>
+        <active>true</active>
+        <label>Physical Product</label>
+        <picklistValues>
+            <picklist>FontevaPay__Product_Service_Type__c</picklist>
+            <values>
+                <fullName>Booking or Reservation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Digital Product or Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Offline Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Physical Product</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>FontevaPay__Submission_Status__c</picklist>
+            <values>
+                <fullName>Not Submitted</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Submitted</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>FontevaPay__ACH_Dispute_Validation</fullName>
+        <active>true</active>
+        <errorConditionFormula>CONTAINS(FontevaPay__Dispute__r.FontevaPay__Charge__r.FontevaPay__Payment_Method_Type__c, &apos;bank_account&apos;)</errorConditionFormula>
+        <errorMessage>Dispute Evidence Record cannot be created for ACH Payment Method.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>FontevaPay__Block_Evidence_Edits_Once_Submitted</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISPICKVAL(PRIORVALUE(FontevaPay__Submission_Status__c), &apos;Submitted&apos;)</errorConditionFormula>
+        <errorMessage>This Evidence has been submitted and cannot be altered or deleted.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>FontevaPay__Enforce_Dispute_Status_Needs_Response</fullName>
+        <active>true</active>
+        <errorConditionFormula>FontevaPay__Dispute__r.FontevaPay__Status__c &lt;&gt; &apos;needs_response&apos; &amp;&amp; FontevaPay__Dispute__r.FontevaPay__Status__c &lt;&gt; &apos;warning_needs_response&apos;</errorConditionFormula>
+        <errorMessage>The dispute submission process is complete for this record.  Evidence cannot be submitted.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>FontevaPay__Enforce_Single_Evidence_Record</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISNEW() &amp;&amp; FontevaPay__Dispute__r.FontevaPay__Evidence_Record_Count__c  &gt; 0</errorConditionFormula>
+        <errorMessage>You can only add a single evidence record to a dispute.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>FontevaPay__Preserve_Documents_Once_Submitted</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISPICKVAL(FontevaPay__Submission_Status__c, &apos;Submitted&apos;) &amp;&amp; ISCHANGED( FontevaPay__Document_Count__c )</errorConditionFormula>
+        <errorMessage>You cannot add, delete, or edit documentation once the dispute evidence is submitted.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

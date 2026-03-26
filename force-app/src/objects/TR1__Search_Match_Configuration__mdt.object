@@ -1,0 +1,1138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>TR1__Application_Fields_Info__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Application fields to display in table if data source is Application. By default column width is equal to 100. columnWidth param determines by how many percent the target column will be more than the other columns. Example : [ {&quot;fieldAPIName&quot; : &quot;TR1__Stage__c&quot;, &quot;fieldLabel&quot; : &quot;Stage&quot;, &quot;columnWidth&quot; : &quot;100&quot;}, {&quot;fieldAPIName&quot; : &quot;TR1__Reject__c&quot;, &quot;fieldLabel&quot; : &quot;Reject&quot;} ]</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Each object contains info about fieldAPIName, fieldLabel, columnWidth. fieldAPIName and fieldLabel is required
+By default column width is equal to 100. columnWidth param determines by how many percent the target column will be more than average column.</inlineHelpText>
+        <label>Application Fields Info</label>
+        <length>5000</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TR1__Autocomplete_Field_Mapping__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Autocomplete Field Mapping</label>
+        <length>131072</length>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TR1__Brand__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Brand</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Contact_Deduplication_Engine__c</fullName>
+        <defaultValue>&quot;PackageDuplicateDetectionEngineV2&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The supported values as of today are: PackageDuplicateDetectionEngineV2 and StandardDuplicateDetectionEngineV2.  The former uses the old conventional deduping logic in the package(label) while latter uses standard Salesforce Duplicate Management features.</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The supported values as of today are: PackageDuplicateDetectionEngineV2 and StandardDuplicateDetectionEngineV2.  The former uses the old conventional deduping logic in the package(label) while latter uses standard Salesforce Duplicate Management features.</inlineHelpText>
+        <label>Contact Deduplication Engine V2</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>PackageDuplicateDetectionEngineV2</fullName>
+                    <default>true</default>
+                    <label>PackageDuplicateDetectionEngineV2</label>
+                </value>
+                <value>
+                    <fullName>StandardDuplicateDetectionEngineV2</fullName>
+                    <default>false</default>
+                    <label>StandardDuplicateDetectionEngineV2</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__Country__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Country</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Deduplication_Engine_Edu__c</fullName>
+        <defaultValue>&quot;PackageDuplicateDetectionEngineV2&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The supported values as of today are: PackageDuplicateDetectionEngineV2 and StandardDuplicateDetectionEngineV2.  The former uses the old conventional deduping logic in the Formula field while latter uses standard Salesforce Duplicate Management features.</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The supported values as of today are: PackageDuplicateDetectionEngineV2 and StandardDuplicateDetectionEngineV2.  The former uses the old conventional deduping logic in the Formula field while latter uses standard Salesforce Duplicate Management features.</inlineHelpText>
+        <label>Education Deduplication Engine</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>PackageDuplicateDetectionEngineV2</fullName>
+                    <default>true</default>
+                    <label>PackageDuplicateDetectionEngineV2</label>
+                </value>
+                <value>
+                    <fullName>StandardDuplicateDetectionEngineV2</fullName>
+                    <default>false</default>
+                    <label>StandardDuplicateDetectionEngineV2</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__Deduplication_Engine_Emp__c</fullName>
+        <defaultValue>&quot;PackageDuplicateDetectionEngineV2&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The supported values as of today are: PackageDuplicateDetectionEngineV2 and StandardDuplicateDetectionEngineV2.  The former uses the old conventional deduping logic in the Formula field while latter uses standard Salesforce Duplicate Management features.</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The supported values as of today are: PackageDuplicateDetectionEngineV2 and StandardDuplicateDetectionEngineV2.  The former uses the old conventional deduping logic in the Formula field while latter uses standard Salesforce Duplicate Management features.</inlineHelpText>
+        <label>Employment Deduplication Engine</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>PackageDuplicateDetectionEngineV2</fullName>
+                    <default>true</default>
+                    <label>PackageDuplicateDetectionEngineV2</label>
+                </value>
+                <value>
+                    <fullName>StandardDuplicateDetectionEngineV2</fullName>
+                    <default>false</default>
+                    <label>StandardDuplicateDetectionEngineV2</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__Deduplication_Engine_Skill__c</fullName>
+        <defaultValue>&quot;PackageDuplicateDetectionEngineV2&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The supported values as of today are: PackageDuplicateDetectionEngineV2 and StandardDuplicateDetectionEngineV2.  The former uses the old conventional deduping logic in the Formula field while latter uses standard Salesforce Duplicate Management features.</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The supported values as of today are: PackageDuplicateDetectionEngineV2 and StandardDuplicateDetectionEngineV2.  The former uses the old conventional deduping logic in the Formula field while latter uses standard Salesforce Duplicate Management features.</inlineHelpText>
+        <label>Skills Deduplication Engine</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>PackageDuplicateDetectionEngineV2</fullName>
+                    <default>true</default>
+                    <label>PackageDuplicateDetectionEngineV2</label>
+                </value>
+                <value>
+                    <fullName>StandardDuplicateDetectionEngineV2</fullName>
+                    <default>false</default>
+                    <label>StandardDuplicateDetectionEngineV2</label>
+                </value>
+                <value>
+                    <fullName>NormalizedSkillsConcatenationEngine</fullName>
+                    <default>false</default>
+                    <label>NormalizedSkillsConcatenationEngine</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__Deduplication_Engine__c</fullName>
+        <defaultValue>&quot;PackageDuplicateDetectionEngine&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The supported values as of today are: PackageDuplicateDetectionEngine and StandardDuplicateDetectionEngine.  The former uses the old conventional deduping logic in the package(label) while latter uses standard Salesforce Duplicate Management features.</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The supported values as of today are: PackageDuplicateDetectionEngine and StandardDuplicateDetectionEngine.  The former uses the old conventional deduping logic in the package(label) while latter uses standard Salesforce Duplicate Management features.</inlineHelpText>
+        <label>Deduplication Engine</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>PackageDuplicateDetectionEngine</fullName>
+                    <default>false</default>
+                    <label>PackageDuplicateDetectionEngine</label>
+                </value>
+                <value>
+                    <fullName>StandardDuplicateDetectionEngine</fullName>
+                    <default>false</default>
+                    <label>StandardDuplicateDetectionEngine</label>
+                </value>
+                <value>
+                    <fullName>PackageDuplicateDetectionEngineV2</fullName>
+                    <default>true</default>
+                    <label>PackageDuplicateDetectionEngineV2</label>
+                </value>
+                <value>
+                    <fullName>StandardDuplicateDetectionEngineV2</fullName>
+                    <default>false</default>
+                    <label>StandardDuplicateDetectionEngineV2</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__Default_Searchable_Call_List__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specify the Label of the Record Type defined on the Call List object that needs to be defaulted on the SAM Screen.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Specify the Label of the Record Type defined on the Call List object that needs to be defaulted on the SAM Screen.</inlineHelpText>
+        <label>Default Searchable Call List</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Default_state_SaveSearch_dialog__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Default state for &quot;Save Search with Job&quot; dialog</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Default state for &quot;Save Search with Job&quot; dialog</inlineHelpText>
+        <label>Default state for Save Search dialog</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Save the job with the search</fullName>
+                    <default>true</default>
+                    <label>Save the job with the search</label>
+                </value>
+                <value>
+                    <fullName>Save the search without the job</fullName>
+                    <default>false</default>
+                    <label>Save the search without the job</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__Dist_GE_Threshold__c</fullName>
+        <defaultValue>&quot;#4bc076&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Color to be displayed on the Map Marker when the distance between the Job and the Candidate&apos;s location is greater or equal to the distance s/he is willing to travel.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Color to be displayed on the Map Marker when the distance between the Job and the Candidate&apos;s location is greater or equal to the distance s/he is willing to travel.</inlineHelpText>
+        <label>Distance Greater or Equals Threshold</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Dist_LT_Threshold__c</fullName>
+        <defaultValue>&quot;#ff5722&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Color to be displayed on the Map Marker when the distance between the Job and the Candidate&apos;s location is within the distance s/he is willing to travel.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Color to be displayed on the Map Marker when the distance between the Job and the Candidate&apos;s location is within the distance s/he is willing to travel.</inlineHelpText>
+        <label>Distance Less Than Threshold</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Dist_NA__c</fullName>
+        <defaultValue>&quot;#808080&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Color to be displayed on the Map Marker when the Candidate hasn&apos;t provided a distance that s/he is willing to travel.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Color to be displayed on the Map Marker when the Candidate hasn&apos;t provided a distance that s/he is willing to travel.</inlineHelpText>
+        <label>Distance Not Available</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__EnableFullTextScale__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Enable Full Text Scale</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Enable_Additional_Locations__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Enable Additional Locations</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Enable_Advanced_Skills_Management__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Enable Advanced Skills Management</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Enable_Autosearch__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Enable Autosearch</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Enable_Nice_Should_Must_Have__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Controls if the Nice / Should / Must Have search option are displayed (Enabled).
+If not, the search will behave as the Must Have option is checked.</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Controls if the Nice / Should / Must Have search option are displayed (Enabled).
+If not, the search will behave as the Must Have option is checked.</inlineHelpText>
+        <label>Enable Nice, Should, Must Have</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Enable_Search_and_Match_MultiView__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Opens the Multiview S&amp;M UI when accessed from a Job match or a Saved Search</inlineHelpText>
+        <label>Enable Search and Match MultiView</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Enable_mass_rejection_validation__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This checkbox enable/disable functionality that forbids mass reject for application with &quot;Closing Report&quot; stage</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Enable mass rejection validation</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__EnforceCRUD_FLS__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Flag to show that some classes will enforce CRUD/FLS.</inlineHelpText>
+        <label>Enforce CRUD/FLS</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__ExcludedColor__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Excluded Breadcrumbs Color</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Excluded_JBA_Statuses_Subs__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Excluded JBA Statuses</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Excluded_JBA_Statuses__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Excluded JBA Statuses Deprecated</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__FieldsFromResumeSearch__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The field initially used for the exclude functionality</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Fields from Resume Search</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TR1__Filter_Column_Visibility__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Filter Column Visibility</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Expanded</fullName>
+                    <default>true</default>
+                    <label>Expanded</label>
+                </value>
+                <value>
+                    <fullName>Collapsed</fullName>
+                    <default>false</default>
+                    <label>Collapsed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__Ignore_Diacritic_Symbols_On_Search__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The setting is used when searching for skills in autosuggestion and filtering facet on USAM. When the setting is enabled, specific characters will not be taken into account during the search.</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Ignore diacritic symbols on search for suggestions and skills.</inlineHelpText>
+        <label>Ignore diacritic symbols(Deprecated)</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Job_Latitude_Field__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Job or Standard Parent Object Field to be used for Job GeoLocation In SM Map View</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Job or Standard Parent Object Field to be used for Job GeoLocation In SM Map View</inlineHelpText>
+        <label>Job Latitude Field</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Job_Longitude_Field__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Job or Standard Parent Object Field to be used for Job GeoLocation In SM Map View</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Job or Standard Parent Object Field to be used for Job GeoLocation In SM Map View</inlineHelpText>
+        <label>Job Longitude Field</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Job_Search_And_Match_Layout__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Job Search And Match Layout (Deprecated)</label>
+        <length>131072</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TR1__Job_Search_Layout__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Job Search And Match Layout</label>
+        <length>131072</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TR1__Job_to_Candidate_Match_Fields__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Job to Candidate Match Fields</label>
+        <length>131072</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TR1__Monitored_Additional_Locations_Fields__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Monitored Additional Locations Fields</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TR1__Monitored_Contact_Fields__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Monitored Contact Fields</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TR1__Monitored_Education_History_Fields__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Monitored Education History Fields</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TR1__Monitored_Employment_History_Fields__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Monitored Employment History Fields</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TR1__Monitored_Job_Fields__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Monitored Job Fields</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TR1__Monitored_Skills_Fields__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Monitored Skills Fields</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TR1__Must_Have__c</fullName>
+        <defaultValue>&apos;#FF0000&apos;</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Must Have</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Nice_to_Have__c</fullName>
+        <defaultValue>&apos;#808080&apos;</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Nice to Have</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Provider_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Provider Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Daxtra</fullName>
+                    <default>true</default>
+                    <label>Daxtra</label>
+                </value>
+                <value>
+                    <fullName>TextKernel</fullName>
+                    <default>false</default>
+                    <label>TextKernel</label>
+                </value>
+                <value>
+                    <fullName>Custom</fullName>
+                    <default>false</default>
+                    <label>Custom</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__Query_Parts_Field_Name_To_Hide__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Query Parts Field Name To Hide</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TR1__RecordsPerPage__c</fullName>
+        <defaultValue>&apos;25, 50, 100, 200, 250&apos;</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Configure the count of records in the search results on the SaM page,
+Value can look like this - 25, 50, 100, 200, 250</inlineHelpText>
+        <label>Records per Page</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Search_And_Match_Layout__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Search And Match Layout</label>
+        <length>131072</length>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TR1__Searchable_Call_Lists__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specify the Labels of the Record Type(s) defined on the Call List object that are searchable in the SAM screen.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Specify the Labels of the Record Type(s) defined on the Call List object that are searchable in the SAM screen.</inlineHelpText>
+        <label>Searchable Call Lists</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Should_Have__c</fullName>
+        <defaultValue>&apos;#008000&apos;</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Should Have</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__ShowUnavailableCandidates__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Show Unavailable Candidates</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Show_SaveSearchWithJob_dialog__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Show &quot;Save Search with Job&quot; on the Search and Match save dialog</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Show &quot;Save Search with Job&quot; on the Search and Match save dialog</inlineHelpText>
+        <label>Show &quot;Save Search with Job&quot; dialog</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Sidebar_Collapsed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Filters sidebar collapsed by default on SAM France if checked</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Sidebar Collapsed</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__SkillCustomFieldToMasterSkill__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is to map custom fields on skill object with fields on master skill object while using standard duplication rules on Contact Skills object</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>map custom fields on skill object with fields on master skill object while using standard duplication rules for skills.
+example: TR1__Skill_Code_Text__c:TR1__Skill_Code__c;Master_Skill_Name_txt:Master_Skill_Name__c</inlineHelpText>
+        <label>Skill Custom Field To Master Skill</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TR1__Skill_Filter_JSON_Schema__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Skill Filter JSON Schema</label>
+        <length>131072</length>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TR1__Skill_Type_Mapping__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Skill Type Mapping</label>
+        <length>131072</length>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TR1__Sync_Jobs_To_Provider__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>This can only be used to sync jobs to any provider except Daxtra</inlineHelpText>
+        <label>Sync Jobs To Provider</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__SynonymLanguage__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field contains the value of the synonym languages separated by the semicolons (e.g. &apos;EN;FR;DE&apos;). And used according to MCMB functionality - for each user can be created different instances of &apos;Search &amp; Match Configuration&apos; mdt with a different set of languages and sequences of them.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>This field contains the set of the synonym languages separated by the semicolons (e.g. &apos;EN;FR;DE&apos;).</inlineHelpText>
+        <label>Synonym Language</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__TabComp_Tab1_Icon_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Tab 1 Icon Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__TabComp_Tab2_Exclusions_only__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Tab 2: Exclusions only</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__TabComp_Tab2_Field_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>API name of the Contact field used as a filter</inlineHelpText>
+        <label>Tab 2: Filter by (field API name)</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__TabComp_Tab2_Field_Value__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Value of the field selected above</inlineHelpText>
+        <label>Tab 2: Filter by (field value)</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__TabComp_Tab2_Icon_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Tab 2 Icon Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__TabComp_Tab2_Is_Favorite__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>If ticked, only Contacts flagged as “Favorites” and matching the filtering criteria are displayed.</inlineHelpText>
+        <label>Tab 2: Favorites only</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__TabComp_Tab2_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Tabs component: Tab2 Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__TabComp_Tab3_Exclusions_only__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Tab 3: Exclusions only</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__TabComp_Tab3_Field_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>API name of the Contact field used as a filter</inlineHelpText>
+        <label>Tab 3: Filter by (field API name)</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__TabComp_Tab3_Field_Value__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Value of the field selected above</inlineHelpText>
+        <label>Tab 3: Filter by (field value)</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__TabComp_Tab3_Icon_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Tab 3 Icon Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__TabComp_Tab3_Is_Favorite__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>If ticked, only Contacts flagged as “Favorites” and matching the filtering criteria are displayed.</inlineHelpText>
+        <label>Tab 3: Favorites only</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__TabComp_Tab3_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Tabs component: Tab3 Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__TabComp_Tab4_Exclusions_only__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Tab 4: Exclusions only</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__TabComp_Tab4_Field_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>API name of the Contact field used as a filter</inlineHelpText>
+        <label>Tab 4: Filter by (field API name)</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__TabComp_Tab4_Field_Value__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Value of the field selected above</inlineHelpText>
+        <label>Tab 4: Filter by (field value)</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__TabComp_Tab4_Icon_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Tab 4 Icon Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__TabComp_Tab4_Is_Favorite__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>If ticked, only Contacts flagged as “Favorites” and matching the filtering criteria are displayed.</inlineHelpText>
+        <label>Tab 4: Favorites only</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__TabComp_Tab4_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Tabs component: Tab4 Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__TabComp_Tab5_Exclusions_only__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Tab 5: Exclusions only</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__TabComp_Tab5_Field_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>API name of the Contact field used as a filter</inlineHelpText>
+        <label>Tab 5: Filter by (field API name)</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__TabComp_Tab5_Field_Value__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Value of the field selected above</inlineHelpText>
+        <label>Tab 5: Filter by (field value)</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__TabComp_Tab5_Icon_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Tab 5 Icon Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__TabComp_Tab5_Is_Favorite__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>If ticked, only Contacts flagged as “Favorites” and matching the filtering criteria are displayed.</inlineHelpText>
+        <label>Tab 5: Favorites only</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__TabComp_Tab5_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Tabs component: Tab5 Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__TabComp_Tab6_Exclusions_only__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Tab 6: Exclusions only</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__TabComp_Tab6_Field_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>API name of the Contact field used as a filter</inlineHelpText>
+        <label>Tab 6: Filter by (field API name)</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__TabComp_Tab6_Field_Value__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Value of the field selected above</inlineHelpText>
+        <label>Tab 6: Filter by (field value)</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__TabComp_Tab6_Icon_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Tab 6 Icon Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__TabComp_Tab6_Is_Favorite__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>If ticked, only Contacts flagged as “Favorites” and matching the filtering criteria are displayed.</inlineHelpText>
+        <label>Tab 6: Favorites only</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__TabComp_Tab6_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Tabs component: Tab6 Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Table_Fields_Info__c</fullName>
+        <deprecated>false</deprecated>
+        <description>List of displayed contact fields info objects. Each object contains info about  fieldAPIName  and columnWidth.
+By default column width is equal to 100. columnWidth param determines by how many percent the target column will be more than the other columns.  isSortedField and isAscendingOrder are used for default table sort.  Example : [  {&quot;fieldAPIName&quot; : &quot;Name&quot;,  &quot;columnWidth&quot; : &quot;100&quot;, &quot;isSortedField&quot;: true, &quot;isAscendingOrder&quot;: true}, {&quot;fieldAPIName&quot; : &quot;LastUpdated&quot;, &quot;columnWidth&quot; : &quot;100&quot;}, {&quot;fieldAPIName&quot; : &quot;TR1__Function__c&quot;},
+{&quot;fieldAPIName&quot; : &quot;Location&quot;} ] .</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Each object contains info about  fieldAPIName, isSortedField,  isAscendingOrder  and columnWidth.
+By default column width is equal to 100. columnWidth param determines by how many percent the target column will be more than average column.</inlineHelpText>
+        <label>Table Fields Info</label>
+        <length>5000</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TR1__Tabs_component_Items_Per_Page__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Number of Contact records per page</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Tabs_component_Tab5_Visible__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Tab 5 visible</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Tabs_component_Tab6_Visible__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Tab 6 visible</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Textkernel_Autocomplete_API_Endpoint__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Textkernel Autocomplete API Endpoint</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Textkernel_Environment_Password__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Textkernel Environment Password</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Textkernel_Environment__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Textkernel Environment</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Threshold__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If we update or create Contact records more than the number specified then the Contact records will be processed via Scheduled Batch Job and NOT in real time.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Threshold</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Use_Advanced_Skills_Matching__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Use Advanced Skills Matching</label>
+        <type>Checkbox</type>
+    </fields>
+    <label>Search &amp; Match Configuration</label>
+    <pluralLabel>Search &amp; Match Configurations</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

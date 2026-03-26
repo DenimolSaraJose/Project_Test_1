@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>65.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assign_Job_Fields</name>
+        <label>Assign Job Fields</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Job_Start_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varJobStartDate</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.End_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varJobEndDate</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Accreditation_Framework__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varJobAccreditationTrack</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Account__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varJobAccount</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Name</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>forJobName</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>IsApplicationDeadlineChanged</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assing_Deadline_Change</name>
+        <label>Assing Deadline Change</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Application_deadline_changed__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>IsApplicationDeadlineChanged</name>
+        <label>Application Deadline Changed</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>IsApplicationDeadlineChangedTRUE</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Application_Deadline__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assing_Deadline_Change</targetReference>
+            </connector>
+            <label>True</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>IsNew</name>
+        <label>Is New</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>IsApplicationDeadlineChanged</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>IsNewTRUE</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record__Prior</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Job_Fields</targetReference>
+            </connector>
+            <label>True</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>forJobName</name>
+        <dataType>String</dataType>
+        <expression>IF(LEN(
+{!$Record.Account__r.Name} + &quot; - &quot; + {!$Record.Accreditation_Cycle_Stage__r.AccreditationStage__r.Name}) &lt;= 80,
+{!$Record.Account__r.Name} + &quot; - &quot; + {!$Record.Accreditation_Cycle_Stage__r.AccreditationStage__r.Name} ,
+TRIM(LEFT({!$Record.Account__r.Name},50)) + &apos;...&apos;+ &quot; - &quot; + {!$Record.Accreditation_Cycle_Stage__r.AccreditationStage__r.Name})</expression>
+    </formulas>
+    <formulas>
+        <name>varJobAccount</name>
+        <dataType>String</dataType>
+        <expression>BLANKVALUE({!$Record.Account__c},{!$Record.Accreditation_Cycle_Stage__r.Accreditation__r.Account__c})</expression>
+    </formulas>
+    <formulas>
+        <name>varJobAccreditationTrack</name>
+        <dataType>String</dataType>
+        <expression>BLANKVALUE({!$Record.Accreditation_Framework__c}, {!$Record.Accreditation_Cycle_Stage__r.AccreditationCycle__r.AccreditationTrack__c})</expression>
+    </formulas>
+    <formulas>
+        <name>varJobEndDate</name>
+        <dataType>Date</dataType>
+        <expression>BLANKVALUE({!$Record.End_Date__c}, {!$Record.Accreditation_Cycle_Stage__r.CompletedDate__c})</expression>
+    </formulas>
+    <formulas>
+        <name>varJobStartDate</name>
+        <dataType>Date</dataType>
+        <expression>BLANKVALUE({!$Record.Job_Start_Date__c}, {!$Record.Accreditation_Cycle_Stage__r.StartDate__c})</expression>
+    </formulas>
+    <interviewLabel>CIS Job Before Creation Update {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>CIS Job Before Creation Update</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>IsNew</targetReference>
+        </connector>
+        <filterFormula>!{!$Setup.Org_Exceptions__c.BypassJobLightningFlow__c}</filterFormula>
+        <object>CIS_Job__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

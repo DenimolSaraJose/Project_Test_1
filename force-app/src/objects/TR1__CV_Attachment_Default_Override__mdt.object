@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>TR1__Default_Resume_Setting__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>This setting will overwrite the global setting controlling the attachment of the default resume</inlineHelpText>
+        <label>Default Resume Setting</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ATTACH_DEFAULT_RESUME</fullName>
+                    <default>false</default>
+                    <label>Attach Default Resume</label>
+                </value>
+                <value>
+                    <fullName>DONT_ATTACH_DEFAULT_RESUME</fullName>
+                    <default>false</default>
+                    <label>Do Not Attach Default Resume</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__Overriding__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The field defines the location for which the global default resume attachment setting will be overwritten</inlineHelpText>
+        <label>Overriding</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ShareCV</fullName>
+                    <default>false</default>
+                    <label>Share CV (Resume Manager) (Contact record)</label>
+                </value>
+                <value>
+                    <fullName>MarketingCallList</fullName>
+                    <default>false</default>
+                    <label>Call List Candidate Marketing Record Type</label>
+                </value>
+                <value>
+                    <fullName>SubmitWithEmail</fullName>
+                    <default>false</default>
+                    <label>Submit With Email (ATSv2)</label>
+                </value>
+                <value>
+                    <fullName>SendOutSchedule</fullName>
+                    <default>false</default>
+                    <label>Send Out Schedule - ONLY for emails to Interviewers (ATSv2)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>CV Attachment Default Override</label>
+    <pluralLabel>CV Attachment Default Overrides</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Used to create a PS Cloud Core Analytics app. This object contains details of the data required for the app and any object sharing or permission controls applied to it.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>fferpcore__Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates the PS Cloud Analytics Setup record used to create the PS Cloud Core Analytics app. You can only have one active PS Cloud Analytics Setup record.</description>
+        <inlineHelpText>Indicates the PSA Analytics Setup record used to create the PSA Core Analytics app. You can only have one active PSA Analytics Setup record.</inlineHelpText>
+        <label>Active</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>fferpcore__Additional_Contact_Field_API_Names__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Stores the API names of additional fields from the Contact object in the Billings, Capacity, Utilization, and Utilization Results datasets in the PS Cloud Core Analytics app.</description>
+        <inlineHelpText>Stores the API names of additional fields from the Contact object in the Billings, Capacity, Utilization, and Utilization Results datasets in the PSA Core Analytics app.</inlineHelpText>
+        <label>Additional Contact Field API Names</label>
+        <length>131072</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>fferpcore__Additional_Contact_Fields__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Stores additional fields from the Contact object in the Billings, Capacity, Utilization, and Utilization Results datasets in the PS Cloud Core Analytics app. Encrypted and multi-select picklist fields are not supported. Assign read-access permission to the Integration User to add user-generated additional fields to these datasets.</description>
+        <inlineHelpText>Imported packaged additional fields are prefixed with the originating object&apos;s name unless this is already present in the field name. Lookup packaged fields are appended with &quot;Name&quot; and ID fields are appended with &quot;ID&quot; unless already present in the field name.</inlineHelpText>
+        <label>Additional Contact Fields</label>
+        <length>131072</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>fferpcore__Additional_Milestone_Field_API_Names__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Stores the API names of additional fields from the Milestone object in the Billings, Project Reporting, and Revenue Forecast datasets in the PS Cloud Core Analytics app.</description>
+        <inlineHelpText>Stores the API names of additional fields from the Project object in the Billings, Project Reporting, and Revenue Forecast datasets in the PS Cloud Core Analytics app.</inlineHelpText>
+        <label>Additional Milestone Field API Names</label>
+        <length>131072</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>fferpcore__Additional_Milestone_Fields__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Stores additional fields from the Milestone object in the Billings, Project Reporting, and Revenue Forecast datasets in the PS Cloud Core Analytics app. Encrypted and multi-select picklist fields are not supported. Assign read-access permission to the Integration User to add user-generated additional fields to these datasets.</description>
+        <inlineHelpText>Imported packaged additional fields are prefixed with the originating object&apos;s name unless this is already present in the field name. Lookup packaged fields are appended with &quot;Name&quot; and ID fields are appended with &quot;ID&quot; unless already present in the field name.</inlineHelpText>
+        <label>Additional Milestone Fields</label>
+        <length>131072</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>fferpcore__Additional_Project_Field_API_Names__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Stores the API names of additional fields from the Project object in the Backlog, Billings, Project Reporting, Revenue Forecast, and Total Project Margin (Workspace) datasets in the PS Cloud Core Analytics app.</description>
+        <inlineHelpText>Stores the API names of additional fields from the Project object in the Backlog, Billings, Project Reporting, Revenue Forecast, and Total Project Margin (Workspace) datasets in the PSA Core Analytics app.</inlineHelpText>
+        <label>Additional Project Field API Names</label>
+        <length>131072</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>fferpcore__Additional_Project_Fields__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Stores additional fields from the Project object in the Backlog, Billings, Project Reporting, Revenue Forecast, and Total Project Margin (Workspace) datasets in the PS Cloud Core Analytics app. Encrypted and multi-select picklist fields are not supported. Only user-generated dimension fields can be added to the Project Reporting dataset. Assign read-access permission to the Integration User to add user-generated additional fields to these datasets.</description>
+        <inlineHelpText>Imported packaged additional fields are prefixed with the originating object&apos;s name unless this is already present in the field name. Lookup packaged fields are appended with &quot;Name&quot; and ID fields are appended with &quot;ID&quot; unless already present in the field name.</inlineHelpText>
+        <label>Additional Project Fields</label>
+        <length>131072</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>fferpcore__Additional_Resource_Change_API_Names__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Stores the API names of additional fields from the Resource Change object in the Utilization Results datasets in the PS Cloud Core Analytics app.</description>
+        <inlineHelpText>Stores the API names of additional fields from the Resource Change object in the Utilization Results datasets in the PS Cloud Core Analytics app.</inlineHelpText>
+        <label>Additional Resource Change API Names</label>
+        <length>131072</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>fferpcore__Additional_Resource_Change_Fields__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Stores additional fields from the Resource Change object in the Utilization Results datasets in the PS Cloud Core Analytics app. Encrypted and multi-select picklist fields are not supported. Assign read-access permission to the Integration User to add user-generated additional fields to these datasets.</description>
+        <inlineHelpText>Imported packaged additional fields are prefixed with the originating object&apos;s name unless this is already present in the field name. Lookup packaged fields are appended with &quot;Name&quot; and ID fields are appended with &quot;ID&quot; unless already present in the field name.</inlineHelpText>
+        <label>Additional Resource Change Fields</label>
+        <length>131072</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>fferpcore__Backlog_Selected__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If selected, creates the Backlog dataset in the PS Cloud Core Analytics app. This is used to create the Backlog and PSA Overview dashboards in the PS Cloud Advanced Analytics app.</description>
+        <inlineHelpText>If selected, creates the Backlog dataset in the PS Cloud Core Analytics app. This is used to create the Backlog and PSA Overview dashboards in the PS Cloud Advanced Analytics app.</inlineHelpText>
+        <label>Backlog</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>fferpcore__CS_Cloud_Selected__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This field is obsolete. If selected, creates the CS Cloud Customer Success Manager dashboard in the PS Cloud Core Analytics app.</description>
+        <inlineHelpText>If selected, creates the CS Cloud Customer Success Manager dashboard in the PS Cloud Core Analytics app.</inlineHelpText>
+        <label>DEPRECATED: CS Cloud</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>fferpcore__Contact_Additional_Fields_Api_Names__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Auto-populated comma-delimited list of additional fields on the Contact object.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Auto-populated comma-delimited list of additional fields on the Contact object.</inlineHelpText>
+        <label>Contact Additional Fields Api Names</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>fferpcore__Contact_Additional_Fields__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A comma-delimited list of additional fields on the Contact object that had been chosen to be added to PSA Analytics.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>A comma-delimited list of additional fields on the Contact object that had been chosen to be added to PSA Analytics.</inlineHelpText>
+        <label>Contact Additional Fields</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>fferpcore__Eva_Filter__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The historical data limit to apply to EvAs included in your app.</description>
+        <inlineHelpText>Limiting your EvA data can improve the speed of your dataflow.
+		If --None-- is selected, all historical and future EvAs are included in your app.
+		If Include Previous Year is selected, all future EvAs, plus historical EvAs from the previous year are included in your app.
+		If Include Previous Two Years is selected, all future EvAs, plus historical EvAs from the previous two years are included in your app.</inlineHelpText>
+        <label>EvA Historical Data Limit</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Include Previous Year</fullName>
+                    <default>false</default>
+                    <label>Include Previous Year</label>
+                </value>
+                <value>
+                    <fullName>Include Previous Two Years</fullName>
+                    <default>false</default>
+                    <label>Include Previous Two Years</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>fferpcore__Fiscal_Year_Start_Month__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Indicates the month set as the start of your fiscal year. The default option is January.</description>
+        <inlineHelpText>Indicates the month set as the start of your fiscal year. The default option is January.</inlineHelpText>
+        <label>Fiscal Year Start Month</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>January</fullName>
+                    <default>true</default>
+                    <label>January</label>
+                </value>
+                <value>
+                    <fullName>February</fullName>
+                    <default>false</default>
+                    <label>February</label>
+                </value>
+                <value>
+                    <fullName>March</fullName>
+                    <default>false</default>
+                    <label>March</label>
+                </value>
+                <value>
+                    <fullName>April</fullName>
+                    <default>false</default>
+                    <label>April</label>
+                </value>
+                <value>
+                    <fullName>May</fullName>
+                    <default>false</default>
+                    <label>May</label>
+                </value>
+                <value>
+                    <fullName>June</fullName>
+                    <default>false</default>
+                    <label>June</label>
+                </value>
+                <value>
+                    <fullName>July</fullName>
+                    <default>false</default>
+                    <label>July</label>
+                </value>
+                <value>
+                    <fullName>August</fullName>
+                    <default>false</default>
+                    <label>August</label>
+                </value>
+                <value>
+                    <fullName>September</fullName>
+                    <default>false</default>
+                    <label>September</label>
+                </value>
+                <value>
+                    <fullName>October</fullName>
+                    <default>false</default>
+                    <label>October</label>
+                </value>
+                <value>
+                    <fullName>November</fullName>
+                    <default>false</default>
+                    <label>November</label>
+                </value>
+                <value>
+                    <fullName>December</fullName>
+                    <default>false</default>
+                    <label>December</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>fferpcore__Object_Sharing__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If selected, the object sharing model applied to the Project and Opportunity objects in your org is used to control the data displayed to users in the Backlog, Billing, and Project Reporting datasets.</description>
+        <inlineHelpText>If selected, the object sharing model applied to the Project and Opportunity objects in your org is used to control the data displayed to users in the Backlog, Billing, and Project Reporting datasets.</inlineHelpText>
+        <label>Object Sharing</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>fferpcore__Permission_Controls_Enabled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If selected, applies permission controls from PSA to the Revenue Forecast dataset and dashboard in the PS Cloud Core Analytics app.</description>
+        <inlineHelpText>If selected, applies permission controls from PSA to the Revenue Forecast dataset and dashboard in the PSA Core Analytics app.</inlineHelpText>
+        <label>Revenue Forecasting Permission Controls</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>fferpcore__Project_Additional_Fields_Api_Names__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Auto-populated comma-delimited list of additional fields on the Project object.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Auto-populated comma-delimited list of additional fields on the Project object.</inlineHelpText>
+        <label>Project Additional Fields Api Names</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>fferpcore__Project_Additional_Fields__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A comma-delimited list of additional fields on the Project object that had been chosen to be added to PSA Analytics.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>A comma-delimited list of additional fields on the Project object that had been chosen to be added to PSA Analytics.</inlineHelpText>
+        <label>Project Additional Fields</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>fferpcore__Project_Margin_Selected__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If selected, creates the Project Margin dataset in the PS Cloud Core Analytics app. This dataset is required to create the Total Project Margin (Workspace) dashboard in the PS Cloud Advanced Analytics app.</description>
+        <inlineHelpText>If selected, creates the Project Margin dataset in the PSA Core Analytics app. This dataset is required to create the Total Project Margin (Workspace) dashboard in the PSA Advanced Analytics app.</inlineHelpText>
+        <label>Project Margin</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>fferpcore__Resourcing_Adjacencies_Selected__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If selected, adds Resourcing Adjacencies dataset in the PS Cloud Core Analytics app.</description>
+        <inlineHelpText>If selected, adds Resourcing Adjacencies dataset in the PS Cloud Core Analytics app.</inlineHelpText>
+        <label>Resourcing Adjacencies</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>fferpcore__Revenue_Forecast_Selected__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If selected, creates the Revenue Forecast dataset and Revenue Forecast dashboard in the PS Cloud Core Analytics app.</description>
+        <inlineHelpText>If selected, creates the Revenue Forecast dataset and Revenue Forecast dashboard in the PSA Core Analytics app.</inlineHelpText>
+        <label>Revenue Forecast</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>fferpcore__Revenue_Management_Selected__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If selected, adds data derived from Revenue Management to the Project Reporting dataset in the PS Cloud Core Analytics app.</description>
+        <inlineHelpText>Depending on your Revenue Management settings for the Project object, you can add the following fields to the Project Reporting dataset in your PSA Core Analytics app: Project Cost Amortized, Project Revenue Recognized, Project Total Cost Amortized, and Project Total Revenue Recognized.</inlineHelpText>
+        <label>Revenue Management Fields</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>fferpcore__Services_CPQ_Selected__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If selected, adds data derived from Services Estimator to the Project Reporting dataset in the PS Cloud Core Analytics app. This data is used to create the Services Estimator Performance Summary and Services Estimator Team Performance Summary dashboards in the PS Cloud Core Analytics app.</description>
+        <inlineHelpText>If selected, adds data derived from Services CPQ to the Project Reporting dataset in the PSA Core Analytics app. This data is used to create the Services CPQ Estimator and Estimate Manager dashboards in the PSA Core Analytics app.</inlineHelpText>
+        <label>Services Estimator</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>fferpcore__Task_Time_Selected__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If selected, adds Task Time data to the Project Reporting dataset in the PS Cloud Core Analytics app.</description>
+        <inlineHelpText>If selected, adds Task Time data to the Project Reporting dataset in the PS Cloud Core Analytics app.</inlineHelpText>
+        <label>Task Time</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>fferpcore__User_Generated_Field_Label_Suffix__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Add a suffix to your user-generated fields in the format: &quot;My Project Field [ProjectCustomField]&quot;. This indicates that they are additional fields created by the user, and which object they come from.</description>
+        <inlineHelpText>Add a suffix to your user-generated fields in the format: &quot;My Project Field [ProjectCustomField]&quot;. This indicates that they are additional fields created by the user, and which object they come from.</inlineHelpText>
+        <label>User-Generated Field Label Suffix</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>fferpcore__Utilization_Calculation_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>If Utilization Setup is selected, creates the Utilization Results dataset. If Utilization Calculation is selected, creates data in the Capacity and Utilization dataset. If Both Calculation Types (for migration purposes) is selected, creates the Utilization Results, Utilization Summary/Detail and Utilization datasets. For information about the dashboards and apps that can be created from these datasets, see the Business Analytics Help.</description>
+        <inlineHelpText>If Utilization Setup is selected, creates the Utilization Results dataset. If Utilization Calculation is selected, creates data in the Capacity and Utilization dataset. If Both Calculation Types (for migration purposes) is selected, creates the Utilization Results, Utilization Summary/Detail and Utilization datasets. For information about the dashboards and apps that can be created from these datasets, see the Business Analytics Help.</inlineHelpText>
+        <label>Utilization Calculation Type</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Utilization Setup</fullName>
+                    <default>false</default>
+                    <label>Utilization Setup</label>
+                </value>
+                <value>
+                    <fullName>Utilization Calculation</fullName>
+                    <default>false</default>
+                    <label>Utilization Calculation</label>
+                </value>
+                <value>
+                    <fullName>Both Calculation Types (for migration purposes)</fullName>
+                    <default>true</default>
+                    <label>Both Calculation Types (for migration purposes)</label>
+                </value>
+                <value>
+                    <fullName>Utilization Result</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Utilization Result</label>
+                </value>
+                <value>
+                    <fullName>Utilization Result and Summary/Detail</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Utilization Result and Summary/Detail</label>
+                </value>
+                <value>
+                    <fullName>Utilization Summary/Detail</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Utilization Summary/Detail</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>fferpcore__Utilization_Results_Hierarchy_Mode__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Sets how the hierarchy is determined between the current user and resources.</description>
+        <inlineHelpText>Select the field to be used for establishing role hierarchy. If no option is selected no role hierarchy will be applied.</inlineHelpText>
+        <label>Utilization Results Hierarchy Mode</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>UserRoleId</fullName>
+                    <default>false</default>
+                    <label>Role Field on User Object</label>
+                </value>
+                <value>
+                    <fullName>ManagerId</fullName>
+                    <default>false</default>
+                    <label>Manager Field on User Object</label>
+                </value>
+                <value>
+                    <fullName>ReportsToId</fullName>
+                    <default>false</default>
+                    <label>Reports To Field on Contact Object</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>fferpcore__Utilization_Results_Permission_Controls__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If selected, applies permission controls from PSA to the Utilization Results dataset and dashboard in the PS Cloud Core Analytics app.</description>
+        <inlineHelpText>If selected, applies permission controls from PSA to the Utilization Analytics dataset and dashboard in PS Cloud Core Analytics app to show all utilization data.</inlineHelpText>
+        <label>Utilization Results Permission Controls</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>fferpcore__Utilization_Results_Security_Mode__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Detmines the security mode to apply to the Utilization Dataset</description>
+        <inlineHelpText>Select the security mode to apply to the Utilization Dataset. If Individual is selected, the security is applied to allow resources to access their own data only. If Hierarchy is selected, access will also be provided to the resource&apos;s manager based on the field selected in Hierarchy Mode.</inlineHelpText>
+        <label>Utilization Results Security Mode</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Individual</fullName>
+                    <default>false</default>
+                    <label>Individual</label>
+                </value>
+                <value>
+                    <fullName>Hierarchy</fullName>
+                    <default>false</default>
+                    <label>Hierarchy</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>fferpcore__Utilization_Results_Selected__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This field is obsolete. It was used to create the Utilization Result dataset and the Utilization Analytics dashboard in the PS Cloud Core Analytics app. This can still be performed by selecting the Utilization Result option in the Utilization Calculation Type section.</description>
+        <inlineHelpText>If selected, creates the Utilization Results dataset and the Utilization Analytics dashboard in the PSA Core Analytics app. This dataset is required to create the Utilization Analytics Capacity and Demand Planning and the Skills Capacity and Demand Planning dashboard in the PSA Advanced Analytics app.</inlineHelpText>
+        <label>DEPRECATED: Utilization Results</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>PS Cloud Analytics Setup</label>
+    <listViews>
+        <fullName>fferpcore__All</fullName>
+        <columns>NAME</columns>
+        <columns>fferpcore__Active__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>AS-{000}</displayFormat>
+        <label>PS Cloud Analytics Setup Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>PS Cloud Analytics Setup</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

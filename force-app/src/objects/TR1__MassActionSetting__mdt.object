@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>TR1__AppliesToDataSource__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field shows on which Data Sources action is used. Separator is &quot;;&quot; (semicolon).</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>This field shows for which Data Sources action is used. Separator is &quot;;&quot; (semicolon). By default for all data sources(this field should be blank). Values Applications, Job Board Applications or Applications;Job Board Applications can be added to restrict the sources for which the action should be applied.</inlineHelpText>
+        <label>Applies to Data Source</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__AuraAttributeName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Lightning Component API Name for Lightning Mass Action Type. API Name pattern: namespace name (&quot;c&quot; or package prefix) + &quot;:&quot; + component name.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Aura Attribute Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__ForMultiView__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The Action setting will be applied for Global SAM and USAM pages if the checkbox is unchecked.
+The Action setting will be applied for SAM France page if the checkbox is checked.</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>For Multi View</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__IsActive__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Mass Action setting is active if checkbox is checked</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Active</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__LightningComponentAPI_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Lightning Component API Name for Lightning Action Type. Name should contain the namespace (ex. c:LightningComponent)</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Lightning Component API Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__MassActionType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A type of the Mass Action: URL, Lightning or Visualforce</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Mass Action Type</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Visualforce</fullName>
+                    <default>true</default>
+                    <label>Visualforce</label>
+                </value>
+                <value>
+                    <fullName>Lightning</fullName>
+                    <default>false</default>
+                    <label>Lightning</label>
+                </value>
+                <value>
+                    <fullName>URL</fullName>
+                    <default>false</default>
+                    <label>URL</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__Order_Number__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is used to define the order of the Mass Actions in the dropdown on SAM.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Defines the order of the Mass Actions in the dropdown on SAM.</inlineHelpText>
+        <label>Order Number</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Pass_Job_ID__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If checked Job ID will be passed to jobId aura attribute.</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>If checked Job ID will be passed to jobId aura attribute.</inlineHelpText>
+        <label>Pass Job ID</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__SLDS_Icon__c</fullName>
+        <deprecated>false</deprecated>
+        <description>SLDS Icon API name for Action Icon</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>SLDS Icon</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__TypeNameForVisualforce__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The Action Name attribute. Used for Visualforce Mass Actions</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Type Name For Visualforce</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__URL__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Action URL. Used for URL Mass Action Type</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>URL</label>
+        <required>false</required>
+        <type>Url</type>
+    </fields>
+    <label>Mass Action Setting</label>
+    <pluralLabel>Mass Action Settings</pluralLabel>
+    <validationRules>
+        <fullName>TR1__AuraAttributeNameMustBeSpecified</fullName>
+        <active>true</active>
+        <description>Aura Attribute Name Must Be Specified For Lightning Type Of Mass Action</description>
+        <errorConditionFormula>ISPICKVAL( TR1__MassActionType__c , &apos;Lightning&apos;) &amp;&amp;  ISBLANK( TR1__AuraAttributeName__c )</errorConditionFormula>
+        <errorDisplayField>TR1__AuraAttributeName__c</errorDisplayField>
+        <errorMessage>Aura Attribute Name Must Be Specified!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>TR1__LightningComponentAPINameMustBeSpecified</fullName>
+        <active>true</active>
+        <description>Lightning Component API Name Must Be Specified For Lightning Type Of Mass Action</description>
+        <errorConditionFormula>ISPICKVAL( TR1__MassActionType__c , &apos;Lightning&apos;) &amp;&amp; ISBLANK( TR1__LightningComponentAPI_Name__c )</errorConditionFormula>
+        <errorDisplayField>TR1__LightningComponentAPI_Name__c</errorDisplayField>
+        <errorMessage>Lightning Component API Name Must Be Specified!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>TR1__TypeNameMustBeSpecified</fullName>
+        <active>true</active>
+        <description>Type Name Must Be Specified For Visualforce Type Of Mass Action</description>
+        <errorConditionFormula>ISPICKVAL( TR1__MassActionType__c , &apos;Visualforce&apos;) &amp;&amp; ISBLANK( TR1__TypeNameForVisualforce__c )</errorConditionFormula>
+        <errorDisplayField>TR1__TypeNameForVisualforce__c</errorDisplayField>
+        <errorMessage>Type Name Must Be Specified!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>TR1__URL_MustBeSpecified</fullName>
+        <active>true</active>
+        <description>URL Must Be Specified For URL Type Of Mass Action</description>
+        <errorConditionFormula>ISPICKVAL( TR1__MassActionType__c , &apos;URL&apos;) &amp;&amp;  ISBLANK( TR1__URL__c )</errorConditionFormula>
+        <errorDisplayField>TR1__URL__c</errorDisplayField>
+        <errorMessage>URL Must Be Specified!</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Stores support data access key to bypass Certinia triggers.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>FAM__SDAKey__c</fullName>
+        <deprecated>false</deprecated>
+        <description>When populated, the user skips the Certinia triggers. Only user level records are evaluated. The values at org-wide or profile are not inherited.</description>
+        <externalId>false</externalId>
+        <label>Support Data Access Key</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Support Data Access Key</label>
+    <visibility>Public</visibility>
+</CustomObject>

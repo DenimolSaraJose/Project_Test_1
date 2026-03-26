@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>TR1__Application_Object_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Allows to choose whether a Job Board Application or ApplicationV2 is created when a valid Job Number was found</inlineHelpText>
+        <label>Application Object Name</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Application</fullName>
+                    <default>true</default>
+                    <label>Application</label>
+                </value>
+                <value>
+                    <fullName>Job Board Application</fullName>
+                    <default>false</default>
+                    <label>Job Board Application</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__Cancel_Threshold__c</fullName>
+        <defaultValue>3</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The amount of re-tries before setting this inbound email to cancelled</inlineHelpText>
+        <label>Cancel Threshold</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__CleanupChunksize__c</fullName>
+        <defaultValue>100</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The amount of inboundEmail records that are deleted per chunk of the cleanup Batch</inlineHelpText>
+        <label>Cleanup Batch Chunksize</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__DaysBeforeDeleting__c</fullName>
+        <defaultValue>14</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The amount of days before Completed and Abort inboundMail records are eligible for deletion</inlineHelpText>
+        <label>Days before deleting</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Job_Reference_Field_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Text field specifying the name of the field on the Job object which will be used to query the Job using the job number</inlineHelpText>
+        <label>Job Reference Field Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Queuables_Threshold__c</fullName>
+        <defaultValue>5</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The maximum number of active Queuables allowed before setting new inbound emails to Batch</inlineHelpText>
+        <label>Queuables Threshold</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Inbound Email Handler Configuration</label>
+    <pluralLabel>Inbound Email Handler Configurations</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Rules for assigning permission set groups based on user profile names.</description>
+    <fields>
+        <fullName>FPS__Group_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The API name of the permission set group to assign (the PermissionSetGroup.DeveloperName field).</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Group Name</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FPS__Is_Enabled__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Whether or not the permission set group assignment rule is enabled.</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Is Enabled</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>FPS__Match_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>How to match the user profile name.  If set to &quot;Exact&quot;, the profile name must exactly match (this match is case-sensitive).  If set to &quot;Like&quot;, the profile name can have &quot;%&quot; characters to do wildcard matching similar to the SOQL LIKE operator (this match is case-insensitive).  If set to &quot;Regex&quot;, the profile name is an Apex regular expression (case sensitivity is controlled by the regular expression).</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Match Type</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Exact</fullName>
+                    <default>true</default>
+                    <label>Exact</label>
+                </value>
+                <value>
+                    <fullName>Like</fullName>
+                    <default>false</default>
+                    <label>Like</label>
+                </value>
+                <value>
+                    <fullName>Regex</fullName>
+                    <default>false</default>
+                    <label>Regex</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>FPS__Profile_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The name of the profile that is used to assign users to the permission set group.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Profile Name</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Fonteva Group Assignment Rule</label>
+    <pluralLabel>Fonteva Group Assignment Rules</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

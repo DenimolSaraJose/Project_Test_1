@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>TR1__Log_Cleaner_Chunk_Size__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Chunk size override for the SyncLogCleaner batch. Defines how many log parent records (e.g. Contacts) will be processed in a single transaction. Default 100 if null.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Chunk size override for the SyncLogCleaner batch. Defines how many log parent records (e.g. Contacts) will be processed in a single transaction. Default 100 if null.</inlineHelpText>
+        <label>Log Cleaner Chunk Size</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Log_Cleaner_Record_Limit__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Limits the number of log records processed in a single transaction by the SyncLogCleaner. Default 5000 if null.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Limits the number of log records processed in a single transaction by the SyncLogCleaner. Default 5000 if null.</inlineHelpText>
+        <label>Log Cleaner Record Limit</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__SyncIsActive__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <label>Sync is Active</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Sync Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

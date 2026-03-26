@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Allows you to enable or disable email notifications for Community users, use custom field sets to determine the fields included on a printed document and specify a custom page to be used for printing billing documents.</description>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>c2g__CommPrintBillingDocFieldSet__c</fullName>
+        <defaultValue>&quot;CommunityPrintedDocumentFields&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Name of the billing document field set that determines which billing document fields are to be included on a printed billing document for community users. When blank, the default field set &quot;CommunityPrintedDocumentFields&quot; is used.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of the billing document field set that determines which billing document fields are to be included on a printed billing document for community users. When blank, the default field set &quot;CommunityPrintedDocumentFields&quot; is used.</inlineHelpText>
+        <label>Community Print Billing Doc Field Set</label>
+        <length>40</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CommPrintBillingDocLineFieldSet__c</fullName>
+        <defaultValue>&quot;CommunityPrintedDocumentFields&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Name of the billing document field set that determines which billing document line item fields are to be included on a printed billing document for community users. When blank, the default field set &quot;CommunityPrintedDocumentFields&quot; is used.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of the billing document field set that determines which billing document line item fields are to be included on a printed billing document for community users. When blank, the default field set &quot;CommunityPrintedDocumentFields&quot; is used.</inlineHelpText>
+        <label>Community Print Bill Doc Line Field Set</label>
+        <length>40</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CustomPrintTemplate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The print template used to print a billing document via FM Communities.</description>
+        <externalId>false</externalId>
+        <label>Custom Billing Document Print Template</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__NotifyCommunityUsersBillingDocument__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If selected, Community members will be sent an email message each time a Billing Document is posted.</description>
+        <label>Notify Contacts - Billing Document</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>c2g__NotifyCommunityUsersCreditNote__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If selected, Community members will be sent an email message each time a Sales Credit Note is posted.</description>
+        <label>Notify Contacts - Sales Credit Note</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>c2g__NotifyCommunityUsersInvoice__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If selected, Community members will be sent an email message each time a Sales Invoice is posted.</description>
+        <label>Notify Contacts - Sales Invoice</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Community Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

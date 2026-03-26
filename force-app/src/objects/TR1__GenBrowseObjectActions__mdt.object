@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>TR1__Action_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Determines if this action is a single or a group action.</inlineHelpText>
+        <label>Action Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Group</fullName>
+                    <default>true</default>
+                    <label>Group</label>
+                </value>
+                <value>
+                    <fullName>Single</fullName>
+                    <default>false</default>
+                    <label>Single</label>
+                </value>
+                <value>
+                    <fullName>Both</fullName>
+                    <default>false</default>
+                    <label>Both</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__Action_label_name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Custom label API name for action name.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Custom label API name for action name.</inlineHelpText>
+        <label>Action label name</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Active__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Determines if this configuration is used.</inlineHelpText>
+        <label>Is Active</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Additional_Data__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>JSON formatted data containing additional data for this action.</inlineHelpText>
+        <label>Additional Data</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TR1__Disabled_for_closed_jobs__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>If enabled, the action configured in this .mdt record will be hidden for Jobs with Status= Closed (e.g. on ATS Browse)</inlineHelpText>
+        <label>Hide Action On Closed Jobs</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Generic_Browse_Action__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Related to Browse Action for Object</inlineHelpText>
+        <label>Generic Browse Action</label>
+        <referenceTo>TR1__GenBrowseActions__mdt</referenceTo>
+        <relationshipLabel>Generic Browse Actions for Objects</relationshipLabel>
+        <relationshipName>Generic_Browse_Actions_for_Objects</relationshipName>
+        <required>false</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Generic_Browse_Supported_Object__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Generic Browse Supported Object this action is related to.</inlineHelpText>
+        <label>Generic Browse Supported Object</label>
+        <referenceTo>TR1__GenBrowseObjects__mdt</referenceTo>
+        <relationshipLabel>Generic Browse Actions for Objects</relationshipLabel>
+        <relationshipName>Generic_Browse_Actions_for_Objects</relationshipName>
+        <required>false</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Lookup__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The API name of the field containing the Id of record(s) to be used for this action.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The API name of the field containing the Id of record(s) to be used for this action.</inlineHelpText>
+        <label>Lookup Field Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Position__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The order in which the actions are shown, lowest first</inlineHelpText>
+        <label>Position</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__UI_Limit__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>When a user performs this action as a group action with more than this number, show a limit error.</inlineHelpText>
+        <label>UI Limit</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Generic Browse Action for Objects</label>
+    <pluralLabel>Generic Browse Actions for Objects</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

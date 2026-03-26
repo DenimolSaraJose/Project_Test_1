@@ -1,0 +1,1012 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Accreditation_Cycle_Stage_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>AccreditationCycleStageCompactLayout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>AccreditationCycleStageCompactLayout</fullName>
+        <fields>StageName__c</fields>
+        <fields>Status__c</fields>
+        <fields>AccreditationCycle__c</fields>
+        <fields>Accreditation__c</fields>
+        <fields>Semester__c</fields>
+        <fields>IACFullName__c</fields>
+        <label>Accreditation Cycle Stage Compact Layout</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>AccountName__c</fullName>
+        <description>Helper field used in search layout(s).</description>
+        <externalId>false</externalId>
+        <formula>Accreditation__r.Account__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Accreditation Cycle Stages</relationshipLabel>
+        <relationshipName>AccreditationCycleStages</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>AccreditationCycle__c</fullName>
+        <description>The Accreditation Cycle record associated with this Accreditation Cycle Stage record.</description>
+        <inlineHelpText>The Accreditation Cycle record associated with this record.</inlineHelpText>
+        <label>Accreditation Cycle</label>
+        <referenceTo>AccreditationCycle__c</referenceTo>
+        <relationshipLabel>Accreditation Cycle Stages</relationshipLabel>
+        <relationshipName>AccreditationCycleStages</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>AccreditationStageName__c</fullName>
+        <description>Helper field, used in data-table to show Stage name without the record name</description>
+        <externalId>false</externalId>
+        <formula>AccreditationStage__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Accreditation Stage Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AccreditationStage__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>The Accreditation Stage record (template) associated with this Accreditation Cycle Stage record.</description>
+        <inlineHelpText>The Accreditation Stage record (template) associated with this Accreditation Cycle Stage record.</inlineHelpText>
+        <label>Accreditation Stage</label>
+        <referenceTo>AccreditationStage__c</referenceTo>
+        <relationshipLabel>Accreditation Cycle Stages</relationshipLabel>
+        <relationshipName>Accreditation_Cycle_Stages</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Accreditation__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>The Accreditation record associated with this Accreditation Cycle Stage record.</description>
+        <inlineHelpText>The Accreditation record associated with this record.</inlineHelpText>
+        <label>Accreditation</label>
+        <referenceTo>Accreditation__c</referenceTo>
+        <relationshipLabel>Accreditation Cycle Stages</relationshipLabel>
+        <relationshipName>AccreditationCycleStages</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ActualDuration__c</fullName>
+        <description>The actual duration in days, calculated based on the &apos;Start Date&apos; and &apos;Due Date&apos; while in progress. Once the Accreditation Cycle Activity completes the actual duration is shown, calculated based on the Start Date and &apos;Completed Date&apos;.</description>
+        <externalId>false</externalId>
+        <formula>IF(CEILING(((IF(!IsCompleted__c, DueDate__c, BLANKVALUE(CompletedDate__c, DueDate__c)) - StartDate__c))) &gt; 0, CEILING(((IF(!IsCompleted__c, DueDate__c, BLANKVALUE(CompletedDate__c, DueDate__c)) - StartDate__c))) +1, NULL)</formula>
+        <inlineHelpText>The actual duration in days, calculated based on the &apos;Start Date&apos; and &apos;Due Date&apos; while in progress. Once the Accreditation Cycle Activity completes the actual duration is shown, calculated based on the Start Date and &apos;Completed Date&apos;.</inlineHelpText>
+        <label>Actual Duration (days)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CommentsProcessed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Temporary helper field for data migration purposes</description>
+        <inlineHelpText>Temporary helper field for data migration purposes</inlineHelpText>
+        <label>CommentsProcessed</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CompletedDate__c</fullName>
+        <description>The date on which the Accredition Cycle Stage is completed/finished.</description>
+        <inlineHelpText>The actual completion date of the stage.</inlineHelpText>
+        <label>Stage Completed Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CycleStageLink__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(AccreditationStage__c), &apos;N/A&apos;, HYPERLINK(
+&quot;/&quot; &amp; Id,
+AccreditationStage__r.Name &amp; &quot; (&quot; &amp; Name &amp; &quot;)&quot;,
+&quot;_self&quot;
+))</formula>
+        <label>Cycle Stage Link</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DueDate__c</fullName>
+        <description>Due Date when the Accreditation Stage supposes to be complete/finished.</description>
+        <inlineHelpText>Due Date when the Stage is supposed to be completed</inlineHelpText>
+        <label>Stage Due Date</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>DurationOffset__c</fullName>
+        <description>Indicates deviation in Stage duration, comparing planned duration to actual duration. In percentage, rounded. Empty when there is no deviation.</description>
+        <formula>IF(
+ActualDuration__c &lt;&gt; PlannedDuration__c &amp;&amp; !ISBLANK(PlannedDuration__c),
+(ActualDuration__c - PlannedDuration__c) / PlannedDuration__c,
+NULL
+)</formula>
+        <inlineHelpText>Indicates deviation in Stage duration, comparing planned duration to actual duration. In percentage, rounded. Empty when there is no deviation.</inlineHelpText>
+        <label>Duration Offset (%)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>EngagementActivity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <inlineHelpText>Link to the former activity record, for reference only.</inlineHelpText>
+        <label>Engagement Activity</label>
+        <referenceTo>Engagement_Activity__c</referenceTo>
+        <relationshipLabel>Accreditation Cycle Stages</relationshipLabel>
+        <relationshipName>AccreditationCycleStages</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>EvaluationVisitEndDate__c</fullName>
+        <description>Prepatory - or Team Evaluation Visit End Date</description>
+        <label>Evaluation Visit End Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>EvaluationVisitSemester__c</fullName>
+        <description>Semester in which the Evaluation Visit will take place, calculated based on the Evaluation Visit Start Date.</description>
+        <externalId>false</externalId>
+        <formula>RIGHT(TEXT(YEAR(DATEVALUE(TEXT(YEAR(EvaluationVisitStartDate__c)) &amp; &quot;-&quot; &amp; TEXT(MONTH(EvaluationVisitStartDate__c)) &amp; &quot;-1&quot;))), 2) &amp; &quot;-&quot; &amp; IF(MONTH(DATEVALUE(TEXT(YEAR(EvaluationVisitStartDate__c)) &amp; &quot;-&quot; &amp; TEXT(MONTH(EvaluationVisitStartDate__c)) &amp; &quot;-1&quot;)) &lt;= 6, &quot;1&quot;, &quot;2&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Evaluation Visit Semester</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EvaluationVisitStartDate__c</fullName>
+        <description>Prepatory - or Team Evaluation Visit Start Date</description>
+        <label>Evaluation Visit Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IAAId__c</fullName>
+        <description>Get Salesforce Id for CRM Analytics</description>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(Accreditation__r.Account__r.IAA__r.Id)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>IAAId</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IAA__c</fullName>
+        <externalId>false</externalId>
+        <formula>Accreditation__r.Account__r.IAA__r.FirstName + &apos; &apos; +
+IF(!ISBLANK(Accreditation__r.Account__r.IAA__r.MiddleName), Accreditation__r.Account__r.IAA__r.MiddleName + &apos; &apos;, &apos;&apos;) +
+Accreditation__r.Account__r.IAA__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>IAA</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IACFullName__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF ( !ISBLANK ( IAC__c ), IAC__r.FirstName + &apos; &apos; + IF ( !ISBLANK( IAC__r.MiddleName ), IAC__r.MiddleName + &apos; &apos;, &apos;&apos; ) + IAC__r.LastName, &apos;N/A&apos; )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>IAC Full Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IAC__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <label>IAC</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Accreditation_Cycle_Stages</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>InSequence__c</fullName>
+        <defaultValue>true</defaultValue>
+        <inlineHelpText>Indicates whether the Accreditation stage is scheduled in sequential order relative to other stages. Dates then cannot overlap.</inlineHelpText>
+        <label>Part of Sequence</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>InitialDueDateOffset__c</fullName>
+        <description>Indicates the number of days the current Due Date differs from the initial Due Date which derives from the originating Accreditation Track. A negative offset value means the Accreditation Stage will likely completes earlier then planned, while a positive offset value represents the opposite. Empty when there is no deviation.</description>
+        <externalId>false</externalId>
+        <formula>IF(
+!ISBLANK(InitialDueDate__c) &amp;&amp; InitialDueDate__c &lt;&gt; DueDate__c,
+(InitialDueDate__c - DueDate__c) *-1,
+NULL
+)</formula>
+        <inlineHelpText>Indicates the number of days the current Due Date differs from the initial Due Date which derives from the originating Accreditation Track. A negative offset value means the Accreditation Stage will likely completes earlier then planned, while a positive offset value represents the opposite. Empty when there is no deviation.</inlineHelpText>
+        <label>Due Date Offset (days)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>InitialDueDate__c</fullName>
+        <label>Initial Due Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>InitialSemester__c</fullName>
+        <defaultValue>&apos;N/A&apos;</defaultValue>
+        <externalId>false</externalId>
+        <label>Initial Semester</label>
+        <length>4</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>InitialStartDateOffset__c</fullName>
+        <description>Indicates the number of days the current Start Date differs from the initial Start Date which derives from the originating Accreditation Track. A negative offset value means the Accreditation Stage starts earlier then planned, while a positive offset value represents the opposite. Empty when there is no deviation.</description>
+        <externalId>false</externalId>
+        <formula>IF(
+!ISBLANK(InitialStartDate__c) &amp;&amp; InitialStartDate__c &lt;&gt; StartDate__c,
+(InitialStartDate__c - StartDate__c) *-1,
+NULL
+)</formula>
+        <inlineHelpText>Indicates the number of days the current Start Date differs from the initial Start Date which derives from the originating Accreditation Track. A negative offset value means the Accreditation Stage starts earlier then planned, while a positive offset value represents the opposite. Empty when there is no deviation.</inlineHelpText>
+        <label>Start Date Offset (days)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>InitialStartDate__c</fullName>
+        <label>Initial Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Integration_Trigger__c</fullName>
+        <formula>IF(  AND(Accreditation__r.CurrentCycleStage__r.Id =  Id ,
+  ISPICKVAL(Status__c, &quot;In Progress&quot;),
+ ISBLANK( Number_of_Divisions__c ) = FALSE, 
+  OR( AccreditationStage__r.Name = &quot;Preparatory Evaluation&quot;, AccreditationStage__r.Name = &quot;Team Evaluation&quot;)),
+ TODAY() ,
+ NULL
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Integration Trigger</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IsAvailableForSearch__c</fullName>
+        <description>This helper field is used to include/exclude the Accreditation Cycle Stage -record in/from search results. With the current formula we only return stages for the current or next Accreditation Cycle; see &apos;Search Manager&apos; for configuration.</description>
+        <formula>AccreditationCycle__c = Accreditation__r.CurrentAccreditationCycle__c ||
+AccreditationCycle__c = Accreditation__r.CurrentAccreditationCycle__r.NextAccreditationCycle__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Available For Search</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IsCompleted__c</fullName>
+        <description>Checkbox (boolean) indicating if this Accreditation Cycle Stage was marked &apos;Completed&apos; or &apos;Postponed&apos;.</description>
+        <formula>ISPICKVAL(Status__c, &apos;Completed&apos;) ||
+ISPICKVAL(Status__c, &apos;Postponed&apos;)</formula>
+        <inlineHelpText>Checkbox (boolean) indicating if this Accreditation Cycle Stage was marked &apos;Completed&apos; or &apos;Postponed&apos;.</inlineHelpText>
+        <label>Completed</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IsCreateVisitHistoryRecordsEnabled__c</fullName>
+        <description>Helper field, used to show or hide the Create Visit History -button.</description>
+        <formula>EvaluationVisitEndDate__c &lt;=  TODAY()</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Create Visit History Records Enabled</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IsUserIAA__c</fullName>
+        <description>If checked the user is registered as a IAA for the related Account, this field is used as a filter for certain components on Lightning Record pages.</description>
+        <formula>IF ( $User.Id = Accreditation__r.Account__r.IAA__c, true, false )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>User IAA</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IsUserIAC__c</fullName>
+        <formula>IF ( $User.Id = IAC__c, true, false )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>User IAC</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IsUserSSA__c</fullName>
+        <description>If checked the user is registered as the SSA for the Stage, this field is used as a filter for certain components on Lightning Record pages.</description>
+        <formula>IF ( $User.Id = SSA__c, true, false )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>User SSA</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IsUserSSEO__c</fullName>
+        <description>If checked the user is registered as a SSEO for the related Account, this field is used as a filter for certain components on Lightning Record pages.</description>
+        <formula>IF ( $User.Id = Accreditation__r.Account__r.SSEO__c, true, false )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>User SSEO</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Number_of_Divisions__c</fullName>
+        <description>This field is used to determine the amount of divisions a school will report on in their Team Evaluation report</description>
+        <externalId>false</externalId>
+        <label>Number of Divisions</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Order__c</fullName>
+        <description>The order in which the Accreditation Cycle Stage occurs within the Accreditation Cycle.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The order in which the Accreditation Cycle Stage occurs within the Accreditation Cycle.</inlineHelpText>
+        <label>Order</label>
+        <precision>3</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OriginatingAccreditationTrack__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>Accreditation Track that was applied to the Accreditation Cycle when this Accreditation Cycle Stage was created.</description>
+        <inlineHelpText>Accreditation Framework applied to this cycle when this stage was created.</inlineHelpText>
+        <label>Originating Accreditation Framework</label>
+        <referenceTo>AccreditationTrack__c</referenceTo>
+        <relationshipLabel>Accreditation Cycle Stages</relationshipLabel>
+        <relationshipName>AccreditationCycleStages</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PlannedDuration__c</fullName>
+        <description>The planned duration in days, calculated based on the initial &apos;Start Date&apos; and &apos;Due Date&apos;, derrived from the originating Accreditation Track.</description>
+        <externalId>false</externalId>
+        <formula>InitialDueDate__c - InitialStartDate__c +1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The planned duration in days, calculated based on the initial &apos;Start Date&apos; and &apos;Due Date&apos;.</inlineHelpText>
+        <label>Planned Duration (days)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SSAFullName__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF ( !ISBLANK ( SSA__c ), SSA__r.FirstName + &apos; &apos; + IF ( !ISBLANK( SSA__r.MiddleName ), SSA__r.MiddleName + &apos; &apos;, &apos;&apos; ) + SSA__r.LastName, &apos;N/A&apos; )</formula>
+        <label>SSA Full Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SSA__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <label>SSA</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>AccreditationCycleStages</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SSEOId__c</fullName>
+        <description>Get Salesforce Id for CRM Analytics</description>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(Accreditation__r.Account__r.SSEO__r.Id)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>SSEOId</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SSEO__c</fullName>
+        <externalId>false</externalId>
+        <formula>Accreditation__r.Account__r.SSEO__r.FirstName + &apos; &apos; +
+IF(!ISBLANK(Accreditation__r.Account__r.SSEO__r.MiddleName), Accreditation__r.Account__r.SSEO__r.MiddleName + &apos; &apos;, &apos;&apos;) + 
+Accreditation__r.Account__r.SSEO__r.LastName</formula>
+        <label>SSEO</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SchoolReportDueDate__c</fullName>
+        <label>School Report Due Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SearchField__c</fullName>
+        <description>Helper field, indexed field which contains a normalized Account Name and the stage semester. Used for the global search.</description>
+        <externalId>true</externalId>
+        <label>Search Field</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Semester__c</fullName>
+        <description>Semester for calculating capacity and workload, based on the visit start date (1) or school report due date (2).</description>
+        <externalId>false</externalId>
+        <formula>IF(!ISBLANK(EvaluationVisitStartDate__c) || !ISBLANK(SchoolReportDueDate__c),
+RIGHT(TEXT(YEAR(DATEVALUE(TEXT(YEAR(BLANKVALUE(EvaluationVisitStartDate__c, SchoolReportDueDate__c))) &amp; &quot;-&quot; &amp; TEXT(MONTH(BLANKVALUE(EvaluationVisitStartDate__c, SchoolReportDueDate__c))) &amp; &quot;-1&quot;))), 2) &amp; &quot;-&quot; &amp; IF(MONTH(DATEVALUE(TEXT(YEAR(BLANKVALUE(EvaluationVisitStartDate__c, SchoolReportDueDate__c))) &amp; &quot;-&quot; &amp; TEXT(MONTH(BLANKVALUE(EvaluationVisitStartDate__c, SchoolReportDueDate__c))) &amp; &quot;-1&quot;)) &lt;= 6, &quot;1&quot;, &quot;2&quot;),
+&apos;N/A&apos;)</formula>
+        <inlineHelpText>The semester in which the visit (or due date of main report) is due.</inlineHelpText>
+        <label>Semester</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>StageName__c</fullName>
+        <description>The Accreditation Stage Name.</description>
+        <externalId>false</externalId>
+        <formula>AccreditationStage__r.Name &amp; &quot; (&quot; &amp; Name &amp; &quot;)&quot;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The Accreditation Stage Name.</inlineHelpText>
+        <label>Stage Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>StartDate__c</fullName>
+        <description>Date when the Accreditation Cycle Stage starts.</description>
+        <inlineHelpText>When the stage started.</inlineHelpText>
+        <label>Stage Start Date</label>
+        <required>true</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <description>Status field for the Accreditation Cycle Stage. Possible values are: &apos;Planned&apos;, In &apos;Progress&apos; and &apos;Completed&apos;.</description>
+        <inlineHelpText>Status field for the Accreditation Cycle Stage. Possible values are: &apos;Planned&apos;, In &apos;Progress&apos; and &apos;Completed&apos;.</inlineHelpText>
+        <label>Stage Status</label>
+        <required>true</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Planned</fullName>
+                    <default>false</default>
+                    <label>Planned</label>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                    <label>In Progress</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+                <value>
+                    <fullName>Cancelled</fullName>
+                    <default>false</default>
+                    <label>Cancelled</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>UUID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>UUID</label>
+        <length>36</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>nActivities__c</fullName>
+        <label># Activities</label>
+        <summaryForeignKey>AccreditationStageActivity__c.AccreditationCycleStage__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>nCancelledActivities__c</fullName>
+        <label># Cancelled Activities</label>
+        <summaryFilterItems>
+            <field>AccreditationStageActivity__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Cancelled</value>
+        </summaryFilterItems>
+        <summaryForeignKey>AccreditationStageActivity__c.AccreditationCycleStage__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>nCompletedActivities__c</fullName>
+        <label># Completed Activities</label>
+        <summaryFilterItems>
+            <field>AccreditationStageActivity__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Completed</value>
+        </summaryFilterItems>
+        <summaryForeignKey>AccreditationStageActivity__c.AccreditationCycleStage__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>nPostponedActivities__c</fullName>
+        <label># Postponed Activities</label>
+        <summaryFilterItems>
+            <field>AccreditationStageActivity__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Postponed</value>
+        </summaryFilterItems>
+        <summaryForeignKey>AccreditationStageActivity__c.AccreditationCycleStage__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <label>Accreditation Cycle Stage</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>CS-{000000}</displayFormat>
+        <label>Cycle Stage Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Accreditation Cycle Stages</pluralLabel>
+    <searchLayouts>
+        <searchResultsAdditionalFields>StageName__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Semester__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>IACFullName__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>AccountName__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Prevent_Cancel_Completed_Stage</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISCHANGED(Status__c) &amp;&amp;
+ISPICKVAL(Status__c, &apos;Cancelled&apos;) &amp;&amp;
+ISPICKVAL(PRIORVALUE(Status__c), &apos;Completed&apos;)</errorConditionFormula>
+        <errorMessage>You cannot cancel an Accreditation Cycle Stage that is marked as &apos;Completed&apos;.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Prevent_Changing_Accreditation_Track</fullName>
+        <active>true</active>
+        <description>This validation rule prevents updating or changing the applied Accreditation Track for an existing Accreditation Cycle Stage.</description>
+        <errorConditionFormula>!ISNEW() 
+&amp;&amp; ISCHANGED(OriginatingAccreditationTrack__c)
+&amp;&amp; !ISBLANK(PRIORVALUE(OriginatingAccreditationTrack__c))</errorConditionFormula>
+        <errorMessage>You cannot change the Accreditation Track for an existing Accreditation Cycle Stage!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Prevent_Changing_Dates_When_Completed</fullName>
+        <active>true</active>
+        <errorConditionFormula>!ISNEW() 
+&amp;&amp; ISPICKVAL( Status__c, &apos;Completed&apos;)
+&amp;&amp; (
+  ISCHANGED( StartDate__c )
+  || ISCHANGED( DueDate__c )
+  || (!ISNULL(PRIORVALUE(CompletedDate__c)) &amp;&amp; ISCHANGED( CompletedDate__c ))
+) &amp;&amp;
+$Profile.Name != &apos;System Administrator&apos;</errorConditionFormula>
+        <errorMessage>Dates cannot be changed once completed.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Prevent_Changing_InSequence</fullName>
+        <active>true</active>
+        <errorConditionFormula>!ISNEW() &amp;&amp; ISCHANGED( InSequence__c )</errorConditionFormula>
+        <errorDisplayField>InSequence__c</errorDisplayField>
+        <errorMessage>This field cannot be changed.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Prevent_Changing_Initial_Dates</fullName>
+        <active>true</active>
+        <errorConditionFormula>!ISNEW() &amp;&amp;
+!ISPICKVAL(Status__c, &apos;Planned&apos;) &amp;&amp; (
+   (!ISBLANK(PRIORVALUE(InitialStartDate__c)) &amp;&amp; ISCHANGED( InitialStartDate__c )) ||
+   (!ISBLANK(PRIORVALUE(InitialDueDate__c)) &amp;&amp; ISCHANGED( InitialDueDate__c ))
+) &amp;&amp;  $Profile.Name != &apos;System Administrator&apos;</errorConditionFormula>
+        <errorMessage>Initial dates cannot be changed after these dates once set.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Prevent_Changing_Initial_Semester</fullName>
+        <active>true</active>
+        <errorConditionFormula>!ISNEW() &amp;&amp;
+!ISPICKVAL(Status__c, &apos;Planned&apos;) &amp;&amp; (
+(!ISBLANK(PRIORVALUE(InitialSemester__c)) &amp;&amp; ISCHANGED( InitialSemester__c ))
+)</errorConditionFormula>
+        <errorMessage>Initial semester cannot be changed once set.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Prevent_Changing_Status_Cycle_Completed</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISCHANGED( Status__c ) &amp;&amp;
+AccreditationCycle__r.IsCompleted__c</errorConditionFormula>
+        <errorMessage>Statuses cannot be changed once the Accreditation Cycle is completed.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Prevent_Complete_Stage_Open_Activities</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISCHANGED(Status__c) &amp;&amp;
+ISPICKVAL(Status__c, &apos;Completed&apos;) &amp;&amp;
+nActivities__c &gt; 0 &amp;&amp;
+nActivities__c &lt;&gt; (nCompletedActivities__c + nPostponedActivities__c + nCancelledActivities__c)</errorConditionFormula>
+        <errorMessage>There are open Accreditation Activities for this Stage, therefor you cannot mark this stage as &apos;Completed&apos;.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Prevent_Dates_Before_Cycle_Start_Date</fullName>
+        <active>true</active>
+        <description>This validation rule prevents entering dates before the Accreditation Cycle Start Date. It applies to the Stage&apos;s Start Date, Due Date and Completed Date.</description>
+        <errorConditionFormula>!ISNEW() &amp;&amp;
+(
+StartDate__c &lt; AccreditationCycle__r.StartDate__c ||
+DueDate__c &lt; AccreditationCycle__r.StartDate__c ||
+CompletedDate__c &lt; AccreditationCycle__r.StartDate__c
+) &amp;&amp;
+$Profile.Name != &apos;System Administrator&apos;</errorConditionFormula>
+        <errorMessage>Dates entered before the Accreditation Cycle Start Date are not allowed.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Prevent_Incorrect_Evaluation_Visit_Dates</fullName>
+        <active>false</active>
+        <errorConditionFormula>(
+!ISBLANK(EvaluationVisitStartDate__c) &amp;&amp; (
+EvaluationVisitStartDate__c &lt; StartDate__c ||
+EvaluationVisitStartDate__c &gt; DueDate__c ||
+EvaluationVisitStartDate__c &gt; EvaluationVisitEndDate__c
+))
+||
+(!ISBLANK(EvaluationVisitEndDate__c) &amp;&amp; (
+EvaluationVisitEndDate__c &gt; DueDate__c ||
+EvaluationVisitEndDate__c &lt; StartDate__c ||
+EvaluationVisitEndDate__c &lt; EvaluationVisitStartDate__c
+))</errorConditionFormula>
+        <errorMessage>Evaluation Visit Start and End dates must be aligned with the Stage Start and Due dates, please check all the dates and, if needed, update the Stage Start and Due dates accordingly.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Prevent_Incorrect_School_Report_Due_Date</fullName>
+        <active>false</active>
+        <errorConditionFormula>SchoolReportDueDate__c &lt; StartDate__c ||
+SchoolReportDueDate__c &gt; DueDate__c</errorConditionFormula>
+        <errorMessage>The School Report Due Date must be aligned with the Stage Start and Due dates. Please check all the dates and, if needed, update the Stage Start and Due dates accordingly.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>CreateVisitHistoryRecords</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Create Visit History records</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <url>/flow/Create_Visit_History_Records?recordId={!AccreditationCycleStage__c.Id}&amp;retURL={!AccreditationCycleStage__c.Id}</url>
+    </webLinks>
+</CustomObject>

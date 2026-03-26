@@ -1,0 +1,2988 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override updated by Lightning App Builder during activation.</comment>
+        <content>Membership_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override updated by Lightning App Builder during activation.</comment>
+        <content>Membership_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>Membership_Default</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Membership_Default</fullName>
+        <fields>Name</fields>
+        <fields>Account_Name__c</fields>
+        <fields>Application_Status__c</fields>
+        <fields>Membership_Status__c</fields>
+        <label>Membership Default</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Academic_Calendar_Link__c</fullName>
+        <label>Academic Calendar Link</label>
+        <length>131072</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Account_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <label>Account Name</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Memberships</relationshipLabel>
+        <relationshipName>Memberships</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Accreditation_Body__c</fullName>
+        <label>Accreditation Body</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Higher Learning Commission</fullName>
+                    <default>false</default>
+                    <label>Higher Learning Commission</label>
+                </value>
+                <value>
+                    <fullName>Middle States Commission on Higher Education</fullName>
+                    <default>false</default>
+                    <label>Middle States Commission on Higher Education</label>
+                </value>
+                <value>
+                    <fullName>New England Commission of Higher Education</fullName>
+                    <default>false</default>
+                    <label>New England Commission of Higher Education</label>
+                </value>
+                <value>
+                    <fullName>Northwest Accreditation Commission</fullName>
+                    <default>false</default>
+                    <label>Northwest Accreditation Commission</label>
+                </value>
+                <value>
+                    <fullName>Southern Association of Colleges and Schools</fullName>
+                    <default>false</default>
+                    <label>Southern Association of Colleges and Schools</label>
+                </value>
+                <value>
+                    <fullName>Western Association of Schools and Colleges</fullName>
+                    <default>false</default>
+                    <label>Western Association of Schools and Colleges</label>
+                </value>
+                <value>
+                    <fullName>UK Department for Education</fullName>
+                    <default>false</default>
+                    <label>UK Department for Education</label>
+                </value>
+                <value>
+                    <fullName>Swiss University Conference (SUK/CUS)</fullName>
+                    <default>false</default>
+                    <label>Swiss University Conference (SUK/CUS)</label>
+                </value>
+                <value>
+                    <fullName>Nederlands-Vlaamse Accreditatie Organisatie (NVAO)</fullName>
+                    <default>false</default>
+                    <label>Nederlands-Vlaamse Accreditatie Organisatie (NVAO)</label>
+                </value>
+                <value>
+                    <fullName>Chinese Ministry of Education</fullName>
+                    <default>false</default>
+                    <label>Chinese Ministry of Education</label>
+                </value>
+                <value>
+                    <fullName>Hong Kong Education Bureau</fullName>
+                    <default>false</default>
+                    <label>Hong Kong Education Bureau</label>
+                </value>
+                <value>
+                    <fullName>Singaporean Ministry of Education</fullName>
+                    <default>false</default>
+                    <label>Singaporean Ministry of Education</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>AlchemerMembershipID__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <description>Unique ID generated by Alchemer, pushed to Salesforce via Alchemer-SF integration. This allows Alchemer to lookup the membership record again in the same survey</description>
+        <externalId>true</externalId>
+        <label>AlchemerMembershipID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Anticipated_Graduates_Current_Year__c</fullName>
+        <externalId>false</externalId>
+        <label>Anticipated Graduates Current Year</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Anticipated_Graduates_Next_Year__c</fullName>
+        <externalId>false</externalId>
+        <label>Anticipated Graduates Next Year</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Application_Review_Status__c</fullName>
+        <label>Application Review Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Not Started</fullName>
+                    <default>false</default>
+                    <label>Not Started</label>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                    <label>In Progress</label>
+                </value>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                    <label>Complete</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Application_Route__c</fullName>
+        <description>This field is used in multiple automations including a flow (Membership_Record_Triggered_Flow_CreateUpdate_BeforeSave), Alchemer form (School Membership Eligibility Application - Jan 2022), and the Lightning Record Page</description>
+        <label>Application Route</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Route A</fullName>
+                    <default>false</default>
+                    <label>Fast Track</label>
+                </value>
+                <value>
+                    <fullName>Route C</fullName>
+                    <default>false</default>
+                    <label>Standard</label>
+                </value>
+                <value>
+                    <fullName>Route B</fullName>
+                    <default>false</default>
+                    <label>Direct Prep</label>
+                </value>
+                <value>
+                    <fullName>Route H</fullName>
+                    <default>false</default>
+                    <label>Route H</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Application_Status__c</fullName>
+        <label>Application Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New Application</fullName>
+                    <default>false</default>
+                    <label>New Application</label>
+                </value>
+                <value>
+                    <fullName>Eligibility Review</fullName>
+                    <default>false</default>
+                    <label>Eligibility Review</label>
+                </value>
+                <value>
+                    <fullName>Engagement Access</fullName>
+                    <default>false</default>
+                    <label>Engagement Access</label>
+                </value>
+                <value>
+                    <fullName>Engagement Submitted</fullName>
+                    <default>false</default>
+                    <label>Engagement Submitted</label>
+                </value>
+                <value>
+                    <fullName>Evidence Requested</fullName>
+                    <default>false</default>
+                    <label>Evidence Requested</label>
+                </value>
+                <value>
+                    <fullName>Application Review</fullName>
+                    <default>false</default>
+                    <label>Application Review</label>
+                </value>
+                <value>
+                    <fullName>Pending Allocation</fullName>
+                    <default>false</default>
+                    <label>Pending Allocation</label>
+                </value>
+                <value>
+                    <fullName>Membership Engagement Event</fullName>
+                    <default>false</default>
+                    <label>Membership Engagement Event</label>
+                </value>
+                <value>
+                    <fullName>Supplementary Review</fullName>
+                    <default>false</default>
+                    <label>Supplementary Review</label>
+                </value>
+                <value>
+                    <fullName>Accepted</fullName>
+                    <default>false</default>
+                    <label>Accepted</label>
+                </value>
+                <value>
+                    <fullName>Rejected</fullName>
+                    <default>false</default>
+                    <label>Rejected</label>
+                </value>
+                <value>
+                    <fullName>On Hold</fullName>
+                    <default>false</default>
+                    <label>On Hold</label>
+                </value>
+                <value>
+                    <fullName>Renewal</fullName>
+                    <default>false</default>
+                    <label>Renewal</label>
+                </value>
+                <value>
+                    <fullName>Renewed</fullName>
+                    <default>false</default>
+                    <label>Renewed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Assignee__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <label>Assignee</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Memberships</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Background_checks_references_11__c</fullName>
+        <inlineHelpText>Policy/procedure related to criminal background checks on all staff (both teaching and non-teaching).</inlineHelpText>
+        <label>Background checks &amp; references (11)</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Flagged</fullName>
+                    <default>false</default>
+                    <label>Flagged</label>
+                </value>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                    <label>Complete</label>
+                </value>
+                <value>
+                    <fullName>Complete with Remark</fullName>
+                    <default>false</default>
+                    <label>Complete with Remark</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Boarding_Homestay__c</fullName>
+        <description>This field has been replaced with the Account field Boarding/Homestay.</description>
+        <label>OBSOLETE - Boarding / Homestay</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Boarding</fullName>
+                    <default>false</default>
+                    <label>Boarding</label>
+                </value>
+                <value>
+                    <fullName>Homestay</fullName>
+                    <default>false</default>
+                    <label>Homestay</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Child_protection_policy_incl_B_H_9__c</fullName>
+        <inlineHelpText>Child Protection policy which shows commitment and procedures relating to child protection of students including boarding and/or homestay.</inlineHelpText>
+        <label>Child protection policy incl. B/H (9)</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Flagged</fullName>
+                    <default>false</default>
+                    <label>Flagged</label>
+                </value>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                    <label>Complete</label>
+                </value>
+                <value>
+                    <fullName>Complete with Remark</fullName>
+                    <default>false</default>
+                    <label>Complete with Remark</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Commitment_to_int_education_global_citiz__c</fullName>
+        <description>Field used to capture information collected in the Alchemer Membership form for universities</description>
+        <label>International Ed &amp; Global Citizenship</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Communication_with_parents_13__c</fullName>
+        <inlineHelpText>Two examples of proactive communication with parents, either positive or negative. Method of communication can be WhatsApp, email, letter, etc.</inlineHelpText>
+        <label>Communication with parents (13)</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Flagged</fullName>
+                    <default>false</default>
+                    <label>Flagged</label>
+                </value>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                    <label>Complete</label>
+                </value>
+                <value>
+                    <fullName>Complete with Remark</fullName>
+                    <default>false</default>
+                    <label>Complete with Remark</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Country_State_Province_of_MoE__c</fullName>
+        <description>Identifies what country/state or province the Ministry of Education represents</description>
+        <externalId>false</externalId>
+        <label>Country, State, Province of MoE</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Current_Students_Early_Childhood__c</fullName>
+        <externalId>false</externalId>
+        <label>Current Students Early Childhood</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Current_Students_Middle_School__c</fullName>
+        <externalId>false</externalId>
+        <label>Current Students Middle School</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Current_Students_PrimaryElementary__c</fullName>
+        <externalId>false</externalId>
+        <label>Current Students Primary/Elementary</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Current_Students_SeniorHigh_School__c</fullName>
+        <externalId>false</externalId>
+        <label>Current Students Senior/High School</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Degrees_Awarded__c</fullName>
+        <description>List of academic degrees awarded by universities</description>
+        <inlineHelpText>Indication of academic degree awarded by the university</inlineHelpText>
+        <label>Degrees Awarded</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Bachelors</fullName>
+                    <default>false</default>
+                    <label>Bachelors</label>
+                </value>
+                <value>
+                    <fullName>Doctorate</fullName>
+                    <default>false</default>
+                    <label>Doctorate</label>
+                </value>
+                <value>
+                    <fullName>Masters</fullName>
+                    <default>false</default>
+                    <label>Masters</label>
+                </value>
+                <value>
+                    <fullName>Associate</fullName>
+                    <default>false</default>
+                    <label>Associate</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Diplomas_and_End_Qualifications__c</fullName>
+        <label>Diplomas and End Qualifications</label>
+        <length>131072</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Early_Childhood__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Early Childhood</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Eligibility_Notes_Remarks__c</fullName>
+        <label>Eligibility Notes &amp; Remarks</label>
+        <length>8000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Embedding_global_citizenship_12__c</fullName>
+        <inlineHelpText>Two examples of documents or projects that showcase embedding global citizenship, which may include: 
+- Building knowledge of world events &amp; understanding of interconnectedness
+- Human rights/values
+- Cultural and diversity learning
+- Learning beyond the classroom
+- Getting involved in local and international communities</inlineHelpText>
+        <label>Embedding global citizenship (12)</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Flagged</fullName>
+                    <default>false</default>
+                    <label>Flagged</label>
+                </value>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                    <label>Complete</label>
+                </value>
+                <value>
+                    <fullName>Complete with Remark</fullName>
+                    <default>false</default>
+                    <label>Complete with Remark</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Ending_Month__c</fullName>
+        <externalId>false</externalId>
+        <label>Ending Month</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Engagement_Status__c</fullName>
+        <inlineHelpText>This value is pushed out of the Armature integration and represents the status of the Instrument.</inlineHelpText>
+        <label>Engagement Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Opened</fullName>
+                    <default>false</default>
+                    <label>Opened</label>
+                </value>
+                <value>
+                    <fullName>School Submitted</fullName>
+                    <default>false</default>
+                    <label>School Submitted</label>
+                </value>
+                <value>
+                    <fullName>Check for Completeness</fullName>
+                    <default>false</default>
+                    <label>Check for Completeness</label>
+                </value>
+                <value>
+                    <fullName>Readiness to Proceed</fullName>
+                    <default>false</default>
+                    <label>Readiness to Proceed</label>
+                </value>
+                <value>
+                    <fullName>CIS Review</fullName>
+                    <default>false</default>
+                    <label>CIS Review</label>
+                </value>
+                <value>
+                    <fullName>Final Review</fullName>
+                    <default>false</default>
+                    <label>Final Review</label>
+                </value>
+                <value>
+                    <fullName>Membership Engagement Complete</fullName>
+                    <default>false</default>
+                    <label>Membership Engagement Complete</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>External_Accreditation_Agency__c</fullName>
+        <inlineHelpText>Schools with an accreditation report from a recognised or partner agency listed in the dropdown may be eligible for the Fast Track route to membership and will be exempt from the mandatory CIS Accreditation requirement of registering within two years of their membership start date.
+Schools marked as Internally verified do not have accreditation from a recognised or partner agency but have been exempted from mandatory CIS Accreditation requirement by the Executive Director. See notes for details.</inlineHelpText>
+        <label>External Accreditation Agency</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Western Association (WASC)</fullName>
+                    <default>false</default>
+                    <label>Western Association (WASC)</label>
+                </value>
+                <value>
+                    <fullName>New England Association (NEASC)</fullName>
+                    <default>false</default>
+                    <label>New England Association (NEASC)</label>
+                </value>
+                <value>
+                    <fullName>Middle States Association (MSA)</fullName>
+                    <default>false</default>
+                    <label>Middle States Association (MSA)</label>
+                </value>
+                <value>
+                    <fullName>Council of British Int. Schools (COBIS)</fullName>
+                    <default>false</default>
+                    <label>Council of British Int. Schools (COBIS)</label>
+                </value>
+                <value>
+                    <fullName>British Schools Overseas (BSO)</fullName>
+                    <default>false</default>
+                    <label>British Schools Overseas (BSO)</label>
+                </value>
+                <value>
+                    <fullName>ICAISA Member</fullName>
+                    <default>false</default>
+                    <label>ICAISA Member</label>
+                </value>
+                <value>
+                    <fullName>Internally verified</fullName>
+                    <default>false</default>
+                    <label>Internally verified</label>
+                </value>
+                <value>
+                    <fullName>Abu Dhabi Department of Education and Knowledge (ADEC)</fullName>
+                    <default>false</default>
+                    <label>Abu Dhabi Department of Education and Knowledge (ADEC)</label>
+                </value>
+                <value>
+                    <fullName>Cognia</fullName>
+                    <default>false</default>
+                    <label>Cognia</label>
+                </value>
+                <value>
+                    <fullName>Education Standards Board of South Australia</fullName>
+                    <default>false</default>
+                    <label>Education Standards Board of South Australia</label>
+                </value>
+                <value>
+                    <fullName>Knowledge and Human Development Authority (KHDA)</fullName>
+                    <default>false</default>
+                    <label>Knowledge and Human Development Authority (KHDA)</label>
+                </value>
+                <value>
+                    <fullName>Ministry of Education, Singapore</fullName>
+                    <default>false</default>
+                    <label>Ministry of Education, Singapore</label>
+                </value>
+                <value>
+                    <fullName>Ministry of Education, Culture, Sports, Science and Technology (MEXT)</fullName>
+                    <default>false</default>
+                    <label>Ministry of Education, Culture, Sports, Science and Technology (MEXT)</label>
+                </value>
+                <value>
+                    <fullName>New South Wales Education Standards Authority (NESA)</fullName>
+                    <default>false</default>
+                    <label>New South Wales Education Standards Authority (NESA)</label>
+                </value>
+                <value>
+                    <fullName>Office for Standards in Education, Children’s Services and skills (Ofsted)</fullName>
+                    <default>false</default>
+                    <label>Office for Standards in Education, Children’s Services and skills (Ofsted)</label>
+                </value>
+                <value>
+                    <fullName>The Victorian Registration and Qualifications Authority (VRQA)</fullName>
+                    <default>false</default>
+                    <label>The Victorian Registration and Qualifications Authority (VRQA)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>External_Accreditation_Report_Status__c</fullName>
+        <inlineHelpText>An internal status for the school’s accreditation report based on our assessment of its contents. 
+
+Where the Report Status is set to ineligible for Fast Track, the school will apply via the standard route to membership but will not be subject to register for CIS Accreditation within two years of their membership start date. 
+
+Following each accreditation cycle, the school will need to provide a copy of the latest external accreditation report.</inlineHelpText>
+        <label>External Accreditation Report Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Requested</fullName>
+                    <default>false</default>
+                    <label>Requested</label>
+                </value>
+                <value>
+                    <fullName>Under Review</fullName>
+                    <default>false</default>
+                    <label>Under Review</label>
+                </value>
+                <value>
+                    <fullName>Accepted</fullName>
+                    <default>false</default>
+                    <label>Accepted</label>
+                </value>
+                <value>
+                    <fullName>Accepted with Remark</fullName>
+                    <default>false</default>
+                    <label>Accepted with Remark</label>
+                </value>
+                <value>
+                    <fullName>Ineligible for Fast Track</fullName>
+                    <default>false</default>
+                    <label>Ineligible for Fast Track</label>
+                </value>
+                <value>
+                    <fullName>Expired</fullName>
+                    <default>false</default>
+                    <label>Expired</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>External_validation_of_Finances_4__c</fullName>
+        <inlineHelpText>The school’s most recent Audit Report demonstrating that the school holds itself to account using an external process.
+
+If an audit document is not available, flag this and proceed.</inlineHelpText>
+        <label>External validation of Finances (4)</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Flagged</fullName>
+                    <default>false</default>
+                    <label>Flagged</label>
+                </value>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                    <label>Complete</label>
+                </value>
+                <value>
+                    <fullName>Complete with Remark</fullName>
+                    <default>false</default>
+                    <label>Complete with Remark</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Fast_Track_Eligibility_Remarks__c</fullName>
+        <label>Fast Track Eligibility Remarks</label>
+        <length>5500</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Fee_Agreement__c</fullName>
+        <description>See https://cois.atlassian.net/browse/CSP-189</description>
+        <inlineHelpText>The &quot;Default&quot; value ensures a Billing Contract and Invoice is automatically created when a member becomes Active. In certain scenario&apos;s, such as for certain school groups that prefer central billing or when special agreements apply, the automatic Billing Contract creation can be bypassed by selecting the value &quot;Exception&quot;.</inlineHelpText>
+        <label>Fee Agreement</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Default</fullName>
+                    <default>true</default>
+                    <label>Default</label>
+                </value>
+                <value>
+                    <fullName>Exception</fullName>
+                    <default>false</default>
+                    <label>Exception</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Governance_Ownership_Leadership_2__c</fullName>
+        <inlineHelpText>A description of how the governance, ownership and leadership works - a documented structure with differentiation between governance/oversight and the leadership/operations of the school. 
+
+A written explanation in place of a formal document is sufficient.</inlineHelpText>
+        <label>Governance, Ownership &amp; Leadership (2)</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Flagged</fullName>
+                    <default>false</default>
+                    <label>Flagged</label>
+                </value>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                    <label>Complete</label>
+                </value>
+                <value>
+                    <fullName>Complete with Remark</fullName>
+                    <default>false</default>
+                    <label>Complete with Remark</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Governance__c</fullName>
+        <label>Governance</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Company School</fullName>
+                    <default>false</default>
+                    <label>Company School</label>
+                </value>
+                <value>
+                    <fullName>Independent, Foundation or Association School</fullName>
+                    <default>false</default>
+                    <label>Independent, Foundation or Association School</label>
+                </value>
+                <value>
+                    <fullName>Proprietary School</fullName>
+                    <default>false</default>
+                    <label>Proprietary School</label>
+                </value>
+                <value>
+                    <fullName>State or Government School</fullName>
+                    <default>false</default>
+                    <label>State or Government School</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Guiding_Statements_1__c</fullName>
+        <inlineHelpText>The school’s written guiding statements (mission/vision/values).
+
+Advantageous if high quality international education, well-being and/or a commitment to global citizenship are mentioned.</inlineHelpText>
+        <label>Guiding Statements (1)</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Flagged</fullName>
+                    <default>false</default>
+                    <label>Flagged</label>
+                </value>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                    <label>Complete</label>
+                </value>
+                <value>
+                    <fullName>Complete with Remark</fullName>
+                    <default>false</default>
+                    <label>Complete with Remark</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>HE_Extended_Form__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;http://survey.cois.org/s3/Additional-University-Information?Id=&quot; &amp; Account_Name__c , &quot;this form&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>HE Extended Form</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HE_Extended_form_complete__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Alchemer ticks this box when the form HE Extended form is returned</description>
+        <label>HE Extended form complete</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Head_of_School_Job_Description_8__c</fullName>
+        <inlineHelpText>Job description for the educational leader of the school. This may be the Head of School, International Principal, Headmaster, Principal or Educational Director.</inlineHelpText>
+        <label>Head of School Job Description (8)</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Flagged</fullName>
+                    <default>false</default>
+                    <label>Flagged</label>
+                </value>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                    <label>Complete</label>
+                </value>
+                <value>
+                    <fullName>Complete with Remark</fullName>
+                    <default>false</default>
+                    <label>Complete with Remark</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Health_Safety_Policy_10__c</fullName>
+        <inlineHelpText>Evidence of procedures relating to health and safety which may include fire drills, lockdowns, earthquakes, security, first aid/medical care, etc.</inlineHelpText>
+        <label>Health &amp; Safety Policy (10)</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Flagged</fullName>
+                    <default>false</default>
+                    <label>Flagged</label>
+                </value>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                    <label>Complete</label>
+                </value>
+                <value>
+                    <fullName>Complete with Remark</fullName>
+                    <default>false</default>
+                    <label>Complete with Remark</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>How_degrees_are_awarded_at_institution__c</fullName>
+        <label>How degrees are awarded at institution</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Flagged</fullName>
+                    <default>false</default>
+                    <label>Flagged</label>
+                </value>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                    <label>Complete</label>
+                </value>
+                <value>
+                    <fullName>Complete with Remark</fullName>
+                    <default>false</default>
+                    <label>Complete with Remark</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Int_l_student_services_enrolment__c</fullName>
+        <label>Int&apos;l student services &amp; enrolment</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Flagged</fullName>
+                    <default>false</default>
+                    <label>Flagged</label>
+                </value>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                    <label>Complete</label>
+                </value>
+                <value>
+                    <fullName>Complete with Remark</fullName>
+                    <default>false</default>
+                    <label>Complete with Remark</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Lanuage_of_institution_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Lanuage of institution 1</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lanuage_of_institution_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Lanuage of institution 2</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lanuage_of_institution_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Lanuage of institution 3</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LastStatusUpdate__c</fullName>
+        <defaultValue>NOW()</defaultValue>
+        <description>Helper field, contains datetimestamp of the most recent Membership Status update.</description>
+        <label>Last Status Update</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Learning_teaching_statement_policy_5__c</fullName>
+        <inlineHelpText>A written statement of the school’s teaching methodology showing purpose and direction in improving student learning.
+
+A written explanation in place of a formal document is sufficient.</inlineHelpText>
+        <label>Learning &amp; teaching statement/policy (5)</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Flagged</fullName>
+                    <default>false</default>
+                    <label>Flagged</label>
+                </value>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                    <label>Complete</label>
+                </value>
+                <value>
+                    <fullName>Complete with Remark</fullName>
+                    <default>false</default>
+                    <label>Complete with Remark</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>License_Authority_in_Host_Country__c</fullName>
+        <label>OBSOLETE - License Authority in Country</label>
+        <length>131072</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>License__c</fullName>
+        <inlineHelpText>School license and its translation in English.
+ 
+It should be clear where it states the name of the school, address, number of students permitted, grade levels/curriculum and dates of validity.</inlineHelpText>
+        <label>License</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes, in English</fullName>
+                    <default>false</default>
+                    <label>Yes, in English</label>
+                </value>
+                <value>
+                    <fullName>Need translation/ Annotation</fullName>
+                    <default>false</default>
+                    <label>Need translation/ Annotation</label>
+                </value>
+                <value>
+                    <fullName>Unclear/ Not submitted</fullName>
+                    <default>false</default>
+                    <label>Unclear/ Not submitted</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>List_other_Accreditation_Organisation__c</fullName>
+        <description>A free text field for the school to list accreditations they have from agencies not on our list.</description>
+        <inlineHelpText>Information about external accreditations held by the school.</inlineHelpText>
+        <label>List other Accreditation Organisation</label>
+        <length>131072</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>List_other_campuses_and_locations__c</fullName>
+        <label>List other campuses and locations</label>
+        <length>131072</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Majors__c</fullName>
+        <label>Majors</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Accounting</fullName>
+                    <default>false</default>
+                    <label>Accounting</label>
+                </value>
+                <value>
+                    <fullName>African Studies</fullName>
+                    <default>false</default>
+                    <label>African Studies</label>
+                </value>
+                <value>
+                    <fullName>Agriculture</fullName>
+                    <default>false</default>
+                    <label>Agriculture</label>
+                </value>
+                <value>
+                    <fullName>American Studies</fullName>
+                    <default>false</default>
+                    <label>American Studies</label>
+                </value>
+                <value>
+                    <fullName>Animal Science</fullName>
+                    <default>false</default>
+                    <label>Animal Science</label>
+                </value>
+                <value>
+                    <fullName>Anthropology</fullName>
+                    <default>false</default>
+                    <label>Anthropology</label>
+                </value>
+                <value>
+                    <fullName>Arabic</fullName>
+                    <default>false</default>
+                    <label>Arabic</label>
+                </value>
+                <value>
+                    <fullName>Archaeology</fullName>
+                    <default>false</default>
+                    <label>Archaeology</label>
+                </value>
+                <value>
+                    <fullName>Architecture</fullName>
+                    <default>false</default>
+                    <label>Architecture</label>
+                </value>
+                <value>
+                    <fullName>Art - History</fullName>
+                    <default>false</default>
+                    <label>Art - History</label>
+                </value>
+                <value>
+                    <fullName>Art - Studio</fullName>
+                    <default>false</default>
+                    <label>Art - Studio</label>
+                </value>
+                <value>
+                    <fullName>Asian Studies</fullName>
+                    <default>false</default>
+                    <label>Asian Studies</label>
+                </value>
+                <value>
+                    <fullName>Astronomy</fullName>
+                    <default>false</default>
+                    <label>Astronomy</label>
+                </value>
+                <value>
+                    <fullName>Athletic Training</fullName>
+                    <default>false</default>
+                    <label>Athletic Training</label>
+                </value>
+                <value>
+                    <fullName>Aviation and Aeronautics</fullName>
+                    <default>false</default>
+                    <label>Aviation and Aeronautics</label>
+                </value>
+                <value>
+                    <fullName>Biochemistry</fullName>
+                    <default>false</default>
+                    <label>Biochemistry</label>
+                </value>
+                <value>
+                    <fullName>Biology</fullName>
+                    <default>false</default>
+                    <label>Biology</label>
+                </value>
+                <value>
+                    <fullName>Biomedical Engineering</fullName>
+                    <default>false</default>
+                    <label>Biomedical Engineering</label>
+                </value>
+                <value>
+                    <fullName>Business/Management</fullName>
+                    <default>false</default>
+                    <label>Business/Management</label>
+                </value>
+                <value>
+                    <fullName>Chemistry</fullName>
+                    <default>false</default>
+                    <label>Chemistry</label>
+                </value>
+                <value>
+                    <fullName>Chinese</fullName>
+                    <default>false</default>
+                    <label>Chinese</label>
+                </value>
+                <value>
+                    <fullName>Civil Engineering</fullName>
+                    <default>false</default>
+                    <label>Civil Engineering</label>
+                </value>
+                <value>
+                    <fullName>Classics</fullName>
+                    <default>false</default>
+                    <label>Classics</label>
+                </value>
+                <value>
+                    <fullName>Communications</fullName>
+                    <default>false</default>
+                    <label>Communications</label>
+                </value>
+                <value>
+                    <fullName>Computer Graphics</fullName>
+                    <default>false</default>
+                    <label>Computer Graphics</label>
+                </value>
+                <value>
+                    <fullName>Computer Science/Systems</fullName>
+                    <default>false</default>
+                    <label>Computer Science/Systems</label>
+                </value>
+                <value>
+                    <fullName>Criminal Justice</fullName>
+                    <default>false</default>
+                    <label>Criminal Justice</label>
+                </value>
+                <value>
+                    <fullName>Criminology</fullName>
+                    <default>false</default>
+                    <label>Criminology</label>
+                </value>
+                <value>
+                    <fullName>Culinary Arts</fullName>
+                    <default>false</default>
+                    <label>Culinary Arts</label>
+                </value>
+                <value>
+                    <fullName>Dance</fullName>
+                    <default>false</default>
+                    <label>Dance</label>
+                </value>
+                <value>
+                    <fullName>Design Your Own Major</fullName>
+                    <default>false</default>
+                    <label>Design Your Own Major</label>
+                </value>
+                <value>
+                    <fullName>Economics</fullName>
+                    <default>false</default>
+                    <label>Economics</label>
+                </value>
+                <value>
+                    <fullName>Education</fullName>
+                    <default>false</default>
+                    <label>Education</label>
+                </value>
+                <value>
+                    <fullName>Education - Elementary</fullName>
+                    <default>false</default>
+                    <label>Education - Elementary</label>
+                </value>
+                <value>
+                    <fullName>Education - Secondary</fullName>
+                    <default>false</default>
+                    <label>Education - Secondary</label>
+                </value>
+                <value>
+                    <fullName>Electrical Engineering</fullName>
+                    <default>false</default>
+                    <label>Electrical Engineering</label>
+                </value>
+                <value>
+                    <fullName>Engineering</fullName>
+                    <default>false</default>
+                    <label>Engineering</label>
+                </value>
+                <value>
+                    <fullName>Engineering 3-2</fullName>
+                    <default>false</default>
+                    <label>Engineering 3-2</label>
+                </value>
+                <value>
+                    <fullName>English</fullName>
+                    <default>false</default>
+                    <label>English</label>
+                </value>
+                <value>
+                    <fullName>Environmental Engineering</fullName>
+                    <default>false</default>
+                    <label>Environmental Engineering</label>
+                </value>
+                <value>
+                    <fullName>Environmental Science</fullName>
+                    <default>false</default>
+                    <label>Environmental Science</label>
+                </value>
+                <value>
+                    <fullName>European Studies</fullName>
+                    <default>false</default>
+                    <label>European Studies</label>
+                </value>
+                <value>
+                    <fullName>Fashion Design/Retailing</fullName>
+                    <default>false</default>
+                    <label>Fashion Design/Retailing</label>
+                </value>
+                <value>
+                    <fullName>Film/Radio/TV/Video Production</fullName>
+                    <default>false</default>
+                    <label>Film/Radio/TV/Video Production</label>
+                </value>
+                <value>
+                    <fullName>Film Studies</fullName>
+                    <default>false</default>
+                    <label>Film Studies</label>
+                </value>
+                <value>
+                    <fullName>Finance/Banking</fullName>
+                    <default>false</default>
+                    <label>Finance/Banking</label>
+                </value>
+                <value>
+                    <fullName>Food Science</fullName>
+                    <default>false</default>
+                    <label>Food Science</label>
+                </value>
+                <value>
+                    <fullName>French</fullName>
+                    <default>false</default>
+                    <label>French</label>
+                </value>
+                <value>
+                    <fullName>Geography</fullName>
+                    <default>false</default>
+                    <label>Geography</label>
+                </value>
+                <value>
+                    <fullName>Geology/Earth Science</fullName>
+                    <default>false</default>
+                    <label>Geology/Earth Science</label>
+                </value>
+                <value>
+                    <fullName>German</fullName>
+                    <default>false</default>
+                    <label>German</label>
+                </value>
+                <value>
+                    <fullName>Graphic Design</fullName>
+                    <default>false</default>
+                    <label>Graphic Design</label>
+                </value>
+                <value>
+                    <fullName>Health Care Administration</fullName>
+                    <default>false</default>
+                    <label>Health Care Administration</label>
+                </value>
+                <value>
+                    <fullName>History</fullName>
+                    <default>false</default>
+                    <label>History</label>
+                </value>
+                <value>
+                    <fullName>Hospitality Administration/Management</fullName>
+                    <default>false</default>
+                    <label>Hospitality Administration/Management</label>
+                </value>
+                <value>
+                    <fullName>Interior Design</fullName>
+                    <default>false</default>
+                    <label>Interior Design</label>
+                </value>
+                <value>
+                    <fullName>International Business</fullName>
+                    <default>false</default>
+                    <label>International Business</label>
+                </value>
+                <value>
+                    <fullName>International Economy</fullName>
+                    <default>false</default>
+                    <label>International Economy</label>
+                </value>
+                <value>
+                    <fullName>International Studies</fullName>
+                    <default>false</default>
+                    <label>International Studies</label>
+                </value>
+                <value>
+                    <fullName>Italian</fullName>
+                    <default>false</default>
+                    <label>Italian</label>
+                </value>
+                <value>
+                    <fullName>Japanese</fullName>
+                    <default>false</default>
+                    <label>Japanese</label>
+                </value>
+                <value>
+                    <fullName>Journalism</fullName>
+                    <default>false</default>
+                    <label>Journalism</label>
+                </value>
+                <value>
+                    <fullName>Languages/Linguistics</fullName>
+                    <default>false</default>
+                    <label>Languages/Linguistics</label>
+                </value>
+                <value>
+                    <fullName>Latin American Studies</fullName>
+                    <default>false</default>
+                    <label>Latin American Studies</label>
+                </value>
+                <value>
+                    <fullName>Law/Pre-Law</fullName>
+                    <default>false</default>
+                    <label>Law/Pre-Law</label>
+                </value>
+                <value>
+                    <fullName>Linguistics</fullName>
+                    <default>false</default>
+                    <label>Linguistics</label>
+                </value>
+                <value>
+                    <fullName>Marine Sciences</fullName>
+                    <default>false</default>
+                    <label>Marine Sciences</label>
+                </value>
+                <value>
+                    <fullName>Marketing/Advertising</fullName>
+                    <default>false</default>
+                    <label>Marketing/Advertising</label>
+                </value>
+                <value>
+                    <fullName>Mathematics</fullName>
+                    <default>false</default>
+                    <label>Mathematics</label>
+                </value>
+                <value>
+                    <fullName>Mechanical Engineering</fullName>
+                    <default>false</default>
+                    <label>Mechanical Engineering</label>
+                </value>
+                <value>
+                    <fullName>Medical Technology</fullName>
+                    <default>false</default>
+                    <label>Medical Technology</label>
+                </value>
+                <value>
+                    <fullName>Medicine/Pre-Medicine</fullName>
+                    <default>false</default>
+                    <label>Medicine/Pre-Medicine</label>
+                </value>
+                <value>
+                    <fullName>Merchandising</fullName>
+                    <default>false</default>
+                    <label>Merchandising</label>
+                </value>
+                <value>
+                    <fullName>Military Science</fullName>
+                    <default>false</default>
+                    <label>Military Science</label>
+                </value>
+                <value>
+                    <fullName>Music</fullName>
+                    <default>false</default>
+                    <label>Music</label>
+                </value>
+                <value>
+                    <fullName>Nursing</fullName>
+                    <default>false</default>
+                    <label>Nursing</label>
+                </value>
+                <value>
+                    <fullName>Pharmacy and Health Sciences</fullName>
+                    <default>false</default>
+                    <label>Pharmacy and Health Sciences</label>
+                </value>
+                <value>
+                    <fullName>Philosophy</fullName>
+                    <default>false</default>
+                    <label>Philosophy</label>
+                </value>
+                <value>
+                    <fullName>Photography</fullName>
+                    <default>false</default>
+                    <label>Photography</label>
+                </value>
+                <value>
+                    <fullName>Physical Education/Recreation</fullName>
+                    <default>false</default>
+                    <label>Physical Education/Recreation</label>
+                </value>
+                <value>
+                    <fullName>Physical Therapy</fullName>
+                    <default>false</default>
+                    <label>Physical Therapy</label>
+                </value>
+                <value>
+                    <fullName>Physics</fullName>
+                    <default>false</default>
+                    <label>Physics</label>
+                </value>
+                <value>
+                    <fullName>Political Science/Government</fullName>
+                    <default>false</default>
+                    <label>Political Science/Government</label>
+                </value>
+                <value>
+                    <fullName>Psychology</fullName>
+                    <default>false</default>
+                    <label>Psychology</label>
+                </value>
+                <value>
+                    <fullName>Religion</fullName>
+                    <default>false</default>
+                    <label>Religion</label>
+                </value>
+                <value>
+                    <fullName>Russian</fullName>
+                    <default>false</default>
+                    <label>Russian</label>
+                </value>
+                <value>
+                    <fullName>Social Work</fullName>
+                    <default>false</default>
+                    <label>Social Work</label>
+                </value>
+                <value>
+                    <fullName>Sociology</fullName>
+                    <default>false</default>
+                    <label>Sociology</label>
+                </value>
+                <value>
+                    <fullName>Spanish</fullName>
+                    <default>false</default>
+                    <label>Spanish</label>
+                </value>
+                <value>
+                    <fullName>Statistics</fullName>
+                    <default>false</default>
+                    <label>Statistics</label>
+                </value>
+                <value>
+                    <fullName>Theater/Drama</fullName>
+                    <default>false</default>
+                    <label>Theater/Drama</label>
+                </value>
+                <value>
+                    <fullName>Urban Studies</fullName>
+                    <default>false</default>
+                    <label>Urban Studies</label>
+                </value>
+                <value>
+                    <fullName>Women&apos;s/Feminist/Gender Studies</fullName>
+                    <default>false</default>
+                    <label>Women&apos;s/Feminist/Gender Studies</label>
+                </value>
+                <value>
+                    <fullName>Writing</fullName>
+                    <default>false</default>
+                    <label>Writing</label>
+                </value>
+                <value>
+                    <fullName>Zoology</fullName>
+                    <default>false</default>
+                    <label>Zoology</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Membership_Application_Date__c</fullName>
+        <label>Membership Application Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Membership_Armature_Sync_Field__c</fullName>
+        <description>This field is used to populate a date/time stamp from a flow. The Armature sync will look for a value in this field to be within a date range for the sync to occur.</description>
+        <label>Membership Armature Sync Field</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Membership_Engagement_Visit__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>CSP-206 &quot;As MET we want to be able to track and report on the date and status of an engagement visit a School has set with an SSEO including when there are postponements.&quot;</description>
+        <label>Membership Engagement Visit</label>
+        <referenceTo>Engagement_Activity__c</referenceTo>
+        <relationshipLabel>Memberships</relationshipLabel>
+        <relationshipName>Memberships</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Membership_Original_Start_Date__c</fullName>
+        <label>Membership Original Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Membership_Rejoin_Date__c</fullName>
+        <label>Membership Rejoin Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Membership_Renewal_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>Membership Renewal Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Membership_Renewal_Date__c</fullName>
+        <label>Membership Renewal Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Membership_Status__c</fullName>
+        <label>Membership Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Prospective</fullName>
+                    <default>true</default>
+                    <label>Prospective</label>
+                </value>
+                <value>
+                    <fullName>Applicant</fullName>
+                    <default>false</default>
+                    <label>Applicant</label>
+                </value>
+                <value>
+                    <fullName>Membership Withdrawn by Member</fullName>
+                    <default>false</default>
+                    <label>Membership Withdrawn by Member</label>
+                </value>
+                <value>
+                    <fullName>Membership Withdrawn by CIS</fullName>
+                    <default>false</default>
+                    <label>Membership Withdrawn by CIS</label>
+                </value>
+                <value>
+                    <fullName>Application Withdrawn</fullName>
+                    <default>false</default>
+                    <label>Application Withdrawn</label>
+                </value>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>false</default>
+                    <label>Active</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Membership_Withdrawal_Date__c</fullName>
+        <label>Membership Withdrawal Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Middle_School__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Middle  School</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Ministry_of_Education_MoE__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Ministry of Education (MoE)</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Mission_goals_for_internationalisation__c</fullName>
+        <label>Mission/ goals for internationalisation</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Flagged</fullName>
+                    <default>false</default>
+                    <label>Flagged</label>
+                </value>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                    <label>Complete</label>
+                </value>
+                <value>
+                    <fullName>Complete with Remark</fullName>
+                    <default>false</default>
+                    <label>Complete with Remark</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Multiple_Campuses__c</fullName>
+        <defaultValue>false</defaultValue>
+        <inlineHelpText>Check if your school has more than one campus or site.</inlineHelpText>
+        <label>Multiple Campuses</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Name_of_School_Group__c</fullName>
+        <inlineHelpText>If your school is legally part of a group, organisation or company of schools, indicate the name of the group, organisation or company. If your group is not listed, please email membership@cois.org.</inlineHelpText>
+        <label>Name of School Group (if applicable)</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ACS International Schools, UK</fullName>
+                    <default>false</default>
+                    <label>ACS International Schools, UK</label>
+                </value>
+                <value>
+                    <fullName>Brent International Schools, Philippines</fullName>
+                    <default>false</default>
+                    <label>Brent International Schools, Philippines</label>
+                </value>
+                <value>
+                    <fullName>British Schools Foundation</fullName>
+                    <default>false</default>
+                    <label>British Schools Foundation</label>
+                </value>
+                <value>
+                    <fullName>Chadwick International</fullName>
+                    <default>false</default>
+                    <label>Chadwick International</label>
+                </value>
+                <value>
+                    <fullName>Cognita</fullName>
+                    <default>false</default>
+                    <label>Cognita</label>
+                </value>
+                <value>
+                    <fullName>Dulwich College International</fullName>
+                    <default>false</default>
+                    <label>Dulwich College International</label>
+                </value>
+                <value>
+                    <fullName>Dwight Schools</fullName>
+                    <default>false</default>
+                    <label>Dwight Schools</label>
+                </value>
+                <value>
+                    <fullName>English Modern Schools, Qatar</fullName>
+                    <default>false</default>
+                    <label>English Modern Schools, Qatar</label>
+                </value>
+                <value>
+                    <fullName>English Schools Foundation</fullName>
+                    <default>false</default>
+                    <label>English Schools Foundation</label>
+                </value>
+                <value>
+                    <fullName>ESOL Education</fullName>
+                    <default>false</default>
+                    <label>ESOL Education</label>
+                </value>
+                <value>
+                    <fullName>FEYZİYE MEKTEPLERİ VAKFI IŞIK</fullName>
+                    <default>false</default>
+                    <label>FEYZİYE MEKTEPLERİ VAKFI IŞIK</label>
+                </value>
+                <value>
+                    <fullName>GEMS, UAE</fullName>
+                    <default>false</default>
+                    <label>GEMS, UAE</label>
+                </value>
+                <value>
+                    <fullName>Harrow International Schools</fullName>
+                    <default>false</default>
+                    <label>Harrow International Schools</label>
+                </value>
+                <value>
+                    <fullName>International Schools Group</fullName>
+                    <default>false</default>
+                    <label>International Schools Group</label>
+                </value>
+                <value>
+                    <fullName>Nazarbayev Intellectual Schools</fullName>
+                    <default>false</default>
+                    <label>Nazarbayev Intellectual Schools</label>
+                </value>
+                <value>
+                    <fullName>Nord Anglia Education</fullName>
+                    <default>false</default>
+                    <label>Nord Anglia Education</label>
+                </value>
+                <value>
+                    <fullName>Orbital Education</fullName>
+                    <default>false</default>
+                    <label>Orbital Education</label>
+                </value>
+                <value>
+                    <fullName>Pathways Schools, India</fullName>
+                    <default>false</default>
+                    <label>Pathways Schools, India</label>
+                </value>
+                <value>
+                    <fullName>Qatar Academies</fullName>
+                    <default>false</default>
+                    <label>Qatar Academies</label>
+                </value>
+                <value>
+                    <fullName>SEK Schools, Spain</fullName>
+                    <default>false</default>
+                    <label>SEK Schools, Spain</label>
+                </value>
+                <value>
+                    <fullName>SEV Schools, Turkey</fullName>
+                    <default>false</default>
+                    <label>SEV Schools, Turkey</label>
+                </value>
+                <value>
+                    <fullName>Sinav Koleji</fullName>
+                    <default>false</default>
+                    <label>Sinav Koleji</label>
+                </value>
+                <value>
+                    <fullName>Taaleem Schools</fullName>
+                    <default>false</default>
+                    <label>Taaleem Schools</label>
+                </value>
+                <value>
+                    <fullName>Tenby Schools, Malaysia</fullName>
+                    <default>false</default>
+                    <label>Tenby Schools, Malaysia</label>
+                </value>
+                <value>
+                    <fullName>United World Colleges</fullName>
+                    <default>false</default>
+                    <label>United World Colleges</label>
+                </value>
+                <value>
+                    <fullName>Wellington College China</fullName>
+                    <default>false</default>
+                    <label>Wellington College China</label>
+                </value>
+                <value>
+                    <fullName>Yew Chung Schools</fullName>
+                    <default>false</default>
+                    <label>Yew Chung Schools</label>
+                </value>
+                <value>
+                    <fullName>Presidential Schools of Uzbekistan</fullName>
+                    <default>false</default>
+                    <label>Presidential Schools of Uzbekistan</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>News_Check__c</fullName>
+        <inlineHelpText>A review of the institution in recent news articles and public platforms. Any notable remarks are noted for review either internally, or where significant, addressed with the institution directly as we process the institution’s application.</inlineHelpText>
+        <label>News Check</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Flagged</fullName>
+                    <default>false</default>
+                    <label>Flagged</label>
+                </value>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                    <label>Complete</label>
+                </value>
+                <value>
+                    <fullName>Complete with Remark</fullName>
+                    <default>false</default>
+                    <label>Complete with Remark</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Number_of_faculty_working_days__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of faculty working days</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_students_contact_days__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of students contact days</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Oldest_age_for_leaving_or_graduating__c</fullName>
+        <externalId>false</externalId>
+        <label>Oldest age for leaving or graduating</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Own_degree_awarded_by_institution__c</fullName>
+        <description>Used to collect information gathered in the Membership Eligibility form for universities</description>
+        <label>Own degree awarded by institution</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Payment_option__c</fullName>
+        <description>Displays the payment options choice of the institution</description>
+        <label>OBSOLETE Payment option</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Credit card</fullName>
+                    <default>false</default>
+                    <label>Credit card</label>
+                </value>
+                <value>
+                    <fullName>Wire transfer</fullName>
+                    <default>false</default>
+                    <label>Wire transfer</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PrimaryElementary__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Primary/Elementary</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Published_Admission_Criteria_Process_7__c</fullName>
+        <inlineHelpText>Admissions criteria that are published to prospective parents and internal admission process (when/why children are [not] accepted) showing the criteria are transparent.</inlineHelpText>
+        <label>Published Admission Criteria&amp;Process (7)</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Flagged</fullName>
+                    <default>false</default>
+                    <label>Flagged</label>
+                </value>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                    <label>Complete</label>
+                </value>
+                <value>
+                    <fullName>Complete with Remark</fullName>
+                    <default>false</default>
+                    <label>Complete with Remark</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Reason_for_CIS_Membership__c</fullName>
+        <label>Reason for CIS Membership</label>
+        <length>131072</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Recognition_by_MoE_or_national_body__c</fullName>
+        <label>Recognition by MoE or national body</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Flagged</fullName>
+                    <default>false</default>
+                    <label>Flagged</label>
+                </value>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                    <label>Complete</label>
+                </value>
+                <value>
+                    <fullName>Complete with Remark</fullName>
+                    <default>false</default>
+                    <label>Complete with Remark</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Religious_Affiliation__c</fullName>
+        <label>Religious Affiliation</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Baptist</fullName>
+                    <default>false</default>
+                    <label>Baptist</label>
+                </value>
+                <value>
+                    <fullName>Catholic</fullName>
+                    <default>false</default>
+                    <label>Catholic</label>
+                </value>
+                <value>
+                    <fullName>Episcopal</fullName>
+                    <default>false</default>
+                    <label>Episcopal</label>
+                </value>
+                <value>
+                    <fullName>Islamic</fullName>
+                    <default>false</default>
+                    <label>Islamic</label>
+                </value>
+                <value>
+                    <fullName>Jewish</fullName>
+                    <default>false</default>
+                    <label>Jewish</label>
+                </value>
+                <value>
+                    <fullName>Lutheran</fullName>
+                    <default>false</default>
+                    <label>Lutheran</label>
+                </value>
+                <value>
+                    <fullName>Methodist</fullName>
+                    <default>false</default>
+                    <label>Methodist</label>
+                </value>
+                <value>
+                    <fullName>Non-denominational</fullName>
+                    <default>false</default>
+                    <label>Non-denominational</label>
+                </value>
+                <value>
+                    <fullName>None/independent</fullName>
+                    <default>false</default>
+                    <label>None/independent</label>
+                </value>
+                <value>
+                    <fullName>Other Christian</fullName>
+                    <default>false</default>
+                    <label>Other Christian</label>
+                </value>
+                <value>
+                    <fullName>Other Religious Affiliation</fullName>
+                    <default>false</default>
+                    <label>Other Religious Affiliation</label>
+                </value>
+                <value>
+                    <fullName>Presbyterian</fullName>
+                    <default>false</default>
+                    <label>Presbyterian</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Report_Reviewed_by__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <inlineHelpText>The Associate Director responsible for reviewing and approving the External Accreditation Report. 
+
+Any areas of concern should be noted in remarks and/or addressed with the school as necessary.</inlineHelpText>
+        <label>Report Reviewed by</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Memberships1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>School_budget_current_next_years_3__c</fullName>
+        <inlineHelpText>The school’s budget for 2 years (current and next fiscal year).</inlineHelpText>
+        <label>School budget - current &amp; next years (3)</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Flagged</fullName>
+                    <default>false</default>
+                    <label>Flagged</label>
+                </value>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                    <label>Complete</label>
+                </value>
+                <value>
+                    <fullName>Complete with Remark</fullName>
+                    <default>false</default>
+                    <label>Complete with Remark</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SeniorHigh_School__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Senior/High School</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Starting_Month__c</fullName>
+        <externalId>false</externalId>
+        <label>Starting Month</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status_to_Active__c</fullName>
+        <label>Status to Active</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Student_Enrollment_Gender__c</fullName>
+        <label>Student Enrollment Gender</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Coeducational</fullName>
+                    <default>false</default>
+                    <label>Coeducational</label>
+                </value>
+                <value>
+                    <fullName>Only Male</fullName>
+                    <default>false</default>
+                    <label>Only Male</label>
+                </value>
+                <value>
+                    <fullName>Only Female</fullName>
+                    <default>false</default>
+                    <label>Only Female</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Student_Perspective_Video_14__c</fullName>
+        <inlineHelpText>A video made by students to showcase the school from the student perspective. The video should give an example of learning across the age ranges, show student voice, and also the facilities in the school. The video should be 30 minutes or less. 
+
+If video is not available, flag and follow-up with the school to understand why.</inlineHelpText>
+        <label>Student Perspective Video (14)</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Flagged</fullName>
+                    <default>false</default>
+                    <label>Flagged</label>
+                </value>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                    <label>Complete</label>
+                </value>
+                <value>
+                    <fullName>Complete with Remark</fullName>
+                    <default>false</default>
+                    <label>Complete with Remark</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Student_support_prog_serv_Int_Students__c</fullName>
+        <label>Student Support &amp; Int’l Services</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Supporting_Documentation_Remarks__c</fullName>
+        <label>Supporting Documentation Remarks</label>
+        <length>8000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Teaching_Non_Teaching_Contracts_6__c</fullName>
+        <inlineHelpText>Exemplars of two contracts (teaching &amp; non-teaching or international &amp; national hires) showing the school has ethical hiring practices.</inlineHelpText>
+        <label>Teaching &amp; Non-Teaching Contracts (6)</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Flagged</fullName>
+                    <default>false</default>
+                    <label>Flagged</label>
+                </value>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                    <label>Complete</label>
+                </value>
+                <value>
+                    <fullName>Complete with Remark</fullName>
+                    <default>false</default>
+                    <label>Complete with Remark</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Total_Number_Students__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Number Students</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_years_of_education__c</fullName>
+        <externalId>false</externalId>
+        <label>Total years of education</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Usage_of_lanuage_of_institution_1__c</fullName>
+        <externalId>false</externalId>
+        <label>% Usage of lanuage of institution 1</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Usage_of_lanuage_of_institution_2__c</fullName>
+        <externalId>false</externalId>
+        <label>% Usage of lanuage of institution 2</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Usage_of_lanuage_of_institution_3__c</fullName>
+        <externalId>false</externalId>
+        <label>% Usage of lanuage of institution 3</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Valid_to_Date__c</fullName>
+        <inlineHelpText>This represents the date when the school’s external accreditation is due for renewal. We track this date to ensure timely follow-up with the school and to receive the external accreditation report. This ensures the school’s ongoing eligibility for membership.</inlineHelpText>
+        <label>Valid to Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Website_Check__c</fullName>
+        <inlineHelpText>A review of the institution’s website which includes alignment between data shared in the membership application and the website such as leadership, address, and educational offering for validation purposes.</inlineHelpText>
+        <label>Website Check</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Flagged</fullName>
+                    <default>false</default>
+                    <label>Flagged</label>
+                </value>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                    <label>Complete</label>
+                </value>
+                <value>
+                    <fullName>Complete with Remark</fullName>
+                    <default>false</default>
+                    <label>Complete with Remark</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Withdrawal_Reason__c</fullName>
+        <label>Withdrawal Reason</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Financial</fullName>
+                    <default>false</default>
+                    <label>Financial</label>
+                </value>
+                <value>
+                    <fullName>Non-Payment</fullName>
+                    <default>false</default>
+                    <label>Non-Payment</label>
+                </value>
+                <value>
+                    <fullName>Lack of Value</fullName>
+                    <default>false</default>
+                    <label>Lack of Value</label>
+                </value>
+                <value>
+                    <fullName>Not using services</fullName>
+                    <default>false</default>
+                    <label>Not using services</label>
+                </value>
+                <value>
+                    <fullName>Institutional needs changed</fullName>
+                    <default>false</default>
+                    <label>Institutional needs changed</label>
+                </value>
+                <value>
+                    <fullName>CIS offerings changed</fullName>
+                    <default>false</default>
+                    <label>CIS offerings changed</label>
+                </value>
+                <value>
+                    <fullName>Leadership change at institution</fullName>
+                    <default>false</default>
+                    <label>Leadership change at institution</label>
+                </value>
+                <value>
+                    <fullName>Breach of Membership Terms</fullName>
+                    <default>false</default>
+                    <label>Breach of Membership Terms</label>
+                </value>
+                <value>
+                    <fullName>Permanently closed</fullName>
+                    <default>false</default>
+                    <label>Permanently closed</label>
+                </value>
+                <value>
+                    <fullName>Merged with another institution</fullName>
+                    <default>false</default>
+                    <label>Merged with another institution</label>
+                </value>
+                <value>
+                    <fullName>Changing accreditation agencies</fullName>
+                    <default>false</default>
+                    <label>Changing accreditation agencies</label>
+                </value>
+                <value>
+                    <fullName>Lack of budget</fullName>
+                    <default>false</default>
+                    <label>Lack of budget</label>
+                </value>
+                <value>
+                    <fullName>Change in Government/Country Policy</fullName>
+                    <default>false</default>
+                    <label>Change in Government/Country Policy</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Year_Founded__c</fullName>
+        <externalId>false</externalId>
+        <label>Year Founded</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Youngest_enrollment_age__c</fullName>
+        <externalId>false</externalId>
+        <label>Youngest enrollment age</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>isEligibleForRenewal__c</fullName>
+        <description>The membership is eligible for renewal within three months before renewal date</description>
+        <formula>ISPICKVAL(Membership_Status__c, &apos;Active&apos;) &amp;&amp; 
+!ISPICKVAL(Application_Status__c,&apos;Renewal&apos;) &amp;&amp;
+(TODAY() &gt;= ADDMONTHS(Membership_Renewal_Date__c, -3) &amp;&amp; TODAY() &lt;= Membership_Renewal_Date__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The membership is eligible for renewal within three months before renewal date</inlineHelpText>
+        <label>Eligible for Renewal</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Membership</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Account_Name__c</columns>
+        <columns>Membership_Status__c</columns>
+        <columns>Application_Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Membership_Status__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </filters>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Memberships_with_appl_status_renewed</fullName>
+        <columns>Account_Name__c</columns>
+        <columns>Application_Status__c</columns>
+        <columns>Membership_Renewal_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Membership_Status__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </filters>
+        <filters>
+            <field>Application_Status__c</field>
+            <operation>equals</operation>
+            <value>Renewal</value>
+        </filters>
+        <label>Memberships with appl status: renewal</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <nameField>
+        <displayFormat>A{0000}</displayFormat>
+        <label>Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Memberships</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

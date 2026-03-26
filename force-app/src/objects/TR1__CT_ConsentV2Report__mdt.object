@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This stores configuration for reports on Consent tool.</description>
+    <fields>
+        <fullName>TR1__CT_ConsentV2Configuration__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Name of the privacy law associated to this chart</inlineHelpText>
+        <label>Compliance Law</label>
+        <referenceTo>TR1__CT_ConsentV2Configuration__mdt</referenceTo>
+        <relationshipLabel>ConsentV2Reports</relationshipLabel>
+        <relationshipName>CT_ConsentV2Reports</relationshipName>
+        <required>true</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Chart_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Type of the chart</inlineHelpText>
+        <label>Chart Type</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>pie</fullName>
+                    <default>true</default>
+                    <label>pie</label>
+                </value>
+                <value>
+                    <fullName>bar</fullName>
+                    <default>false</default>
+                    <label>bar</label>
+                </value>
+                <value>
+                    <fullName>donut</fullName>
+                    <default>false</default>
+                    <label>donut</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__Report_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Report Id (15 or 18 characters) to be used as source for the chart</inlineHelpText>
+        <label>Report Id</label>
+        <length>18</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Consent Report</label>
+    <pluralLabel>Consent Reports</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Contains settings that control the behavior of the reconciliation process.</description>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>c2g__AutoCreateTransactions__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates that you can automatically create transactions during the reconciliation process.</description>
+        <inlineHelpText>Indicates that you can automatically create transactions during the reconciliation process. For example, you can automatically create transactions for bank charges when reconciling your bank statements.</inlineHelpText>
+        <label>Allow Transactions Auto Creation</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>c2g__CashEntryAsDefaultType__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates that the default transaction type for manually created transactions is Cash Entry.</description>
+        <inlineHelpText>If selected, the default transaction type for manually created transactions from bank statement lines is Cash Entry. This setting does not affect the transaction type for auto-created transactions.</inlineHelpText>
+        <label>Default Transaction Type - Cash Entry</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>c2g__FullAutoCreateTransactions__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates that all possible transactions are automatically created during the reconciliation process.</description>
+        <inlineHelpText>Indicates that all possible transactions are automatically created, posted, and matched during the reconciliation process. This setting automatically creates transactions for customer cash receipts as well as bank charges and interest payments when reconciling bank statements.</inlineHelpText>
+        <label>Allow Full Transaction Auto Creation</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>c2g__TransactionsAutoCreationLimit__c</fullName>
+        <defaultValue>30</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The maximum number of transactions that can be automatically created synchronously by the Reconciliation process. The default value is 30.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The maximum number of transactions that can be automatically created synchronously by the Reconciliation process. The default value is 30.</inlineHelpText>
+        <label>Transactions Auto-Creation Sync Limit</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Reconciliation Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

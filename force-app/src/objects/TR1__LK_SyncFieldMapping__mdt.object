@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Acc:10/25/2017: Sync Integration field mappings</description>
+    <fields>
+        <fullName>TR1__Additional_Filters__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Acc: Created for W-009323 Sync Contacts Functionality.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Additional Filters</label>
+        <length>80</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__LK_FieldName__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>LinkedIn Field Name</inlineHelpText>
+        <label>LK_FieldName</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__LK_Interface__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>LinkedIn Interface Name</inlineHelpText>
+        <label>LK_Interface</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__TR_FieldName__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>TR Field Name</inlineHelpText>
+        <label>TR_FieldName</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>(Deprecated)LK_SyncFieldMapping</label>
+    <pluralLabel>LK_SyncFieldMappings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Controlling the behavior of each action on Candidate ATS</description>
+    <fields>
+        <fullName>TR1__ATS_Flow_Settings__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Reference to &apos;ATS Flow Settings&apos; CMT to run action as a Flow</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Reference to &apos;ATS Flow Settings&apos; CMT to run action as a Flow</inlineHelpText>
+        <label>ATS Flow Settings</label>
+        <referenceTo>TR1__ATSFlowSettings__mdt</referenceTo>
+        <relationshipLabel>ATS Candidate Action Configurations</relationshipLabel>
+        <relationshipName>ATS_Candidate_Action_Configurations</relationshipName>
+        <required>false</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Action_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Name of the action (its value is displayed for new custom action if the custom label is not specified)</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Name of the action (its value is displayed for new custom action if the custom label is not specified)</inlineHelpText>
+        <label>Action Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Active__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Boolean flag for enabling/disabling this action</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Boolean flag for enabling/disabling this action</inlineHelpText>
+        <label>Active</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Additional_Attribute__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Additional attributes that will be added to a component when an action is taken. This should be specified in a JSON format.</inlineHelpText>
+        <label>Additional Attributes</label>
+        <length>131072</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TR1__Additional_Attributes__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Deprecated</label>
+        <length>131072</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TR1__Component_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Name of the custom Aura component running for custom action</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Name of the custom Aura component running for custom action</inlineHelpText>
+        <label>Component Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Custom_Label_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The Custom Label API name which will be translated if it has appropriate translations.
+This is used only for custom actions</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The Custom Label API name which will be translated if it has appropriate translations.
+This is used only for custom actions</inlineHelpText>
+        <label>Custom Label Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Disable_for_Closed_Jobs__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Controlling the availability of action for closed jobs</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Controlling the availability of action for closed jobs. Enable/Disable values will override Custom Setting configuration.
+Values:
+&apos;None&apos; - &apos;Disable ATSv2 actions for Closed Jobs&apos; from the ATS Configuration Custom Setting will be applied
+&apos;Enabled&apos; - enable action on Closed Jobs 
+&apos;Disabled&apos; - disable action on Closed Jobs</inlineHelpText>
+        <label>Disable for Closed Jobs</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Enabled</fullName>
+                    <default>true</default>
+                    <label>Enabled</label>
+                </value>
+                <value>
+                    <fullName>Disabled</fullName>
+                    <default>false</default>
+                    <label>Disabled</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__Display_Location__c</fullName>
+        <defaultValue>&apos;Dropdown&apos;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Controls whether the particular action location is in the bar or in the dropdown</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Controls whether the particular action location is in the bar or in the dropdown</inlineHelpText>
+        <label>Display Location</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Dropdown</fullName>
+                    <default>true</default>
+                    <label>Dropdown</label>
+                </value>
+                <value>
+                    <fullName>Bar</fullName>
+                    <default>false</default>
+                    <label>Bar</label>
+                </value>
+                <value>
+                    <fullName>Right bar</fullName>
+                    <default>false</default>
+                    <label>Right bar</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__Icon_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The name of the SLDS icon that will be shown in the Bar for this action (if we need to support Bar location)</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>The name of the SLDS icon that will be shown in the Bar for this action (if we need to support Bar location)</inlineHelpText>
+        <label>Icon Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Order_Number__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Controls the order of the Action on Candidate ATS</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Controls the order of the Action on Candidate ATS</inlineHelpText>
+        <label>Order Number</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>ATS Candidate Action Configuration</label>
+    <pluralLabel>ATS Candidate Action Configurations</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

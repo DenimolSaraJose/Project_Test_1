@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This Custom Metadata Type contains the different sets of Advanced Search criteria which depend on the user&apos;s country and brand.</description>
+    <fields>
+        <fullName>TR1__Brand__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field contains a brand of organization.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>This field contains a brand of organization.</inlineHelpText>
+        <label>Brand</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Contact_s_CriteriaFieldSet_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field contains an API Name of Contact&apos;s FiledSet.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>This field contains an API Name of Contact&apos;s FiledSet.</inlineHelpText>
+        <label>Contact&apos;s CriteriaFieldSet Name</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Country__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field contains a country of organization.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>This field contains a country of organization.</inlineHelpText>
+        <label>Country</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Multicountry/Multibrand Advanced Search</label>
+    <pluralLabel>Multicountry/Multibrand Advanced Search</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

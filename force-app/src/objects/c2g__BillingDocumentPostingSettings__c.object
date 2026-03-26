@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Contains settings that determine the behavior of the integration that posts complete Billing Central billing documents to Accounting transactions.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>c2g__DisableDuplicateTransactionValidation__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If selected, validation is disabled that would prevent duplicate Accounting transactions for the same billing document.</description>
+        <label>Disable Duplicate Transaction Validation</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>c2g__MaximumLineCount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Maximum number of billing document line items that a billing document to be posted to Accounting transactions can contain.</description>
+        <externalId>false</externalId>
+        <label>Maximum Billing Document Line Items</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__UseDimensionsOnTaxLines__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If selected, dimensions are populated from the accounting tax code on transaction lines with Line Type of &quot;Tax&quot;.</description>
+        <label>Use Tax Code Dimensions on Tax Lines</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Billing Document Posting Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

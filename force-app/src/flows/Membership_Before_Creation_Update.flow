@@ -1,0 +1,962 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Select_Route_B</name>
+        <label>Select Route B</label>
+        <locationX>314</locationX>
+        <locationY>2435</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Application_Route__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Route C</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Set_Application_Date</name>
+        <label>Set Application Date</label>
+        <locationX>1683</locationX>
+        <locationY>695</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Membership_Application_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>IsStatusActive</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Application_Status_into_In_Progress</name>
+        <label>Set Application Status into In Progress</label>
+        <locationX>446</locationX>
+        <locationY>2219</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Application_Review_Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>In Progress</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Ineligibile_for_Fast_Track</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Application_Status_to_Complete_1</name>
+        <label>Set Application Status to Complete</label>
+        <locationX>50</locationX>
+        <locationY>2219</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Application_Review_Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Complete</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Set_Application_Status_to_Complete_2</name>
+        <label>Set Application Status to Complete</label>
+        <locationX>1106</locationX>
+        <locationY>2327</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Application_Review_Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Complete</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Set_Application_Status_to_Complete_3</name>
+        <label>Set Application Status to Complete</label>
+        <locationX>1898</locationX>
+        <locationY>2111</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Application_Review_Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Complete</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Set_Application_Status_to_In_Progress</name>
+        <label>Set Application Status to In Progress</label>
+        <locationX>1370</locationX>
+        <locationY>2327</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Application_Review_Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>In Progress</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Set_Application_Status_to_In_Progress_2</name>
+        <label>Set Application Status to In Progress</label>
+        <locationX>2162</locationX>
+        <locationY>2111</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Application_Review_Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>In Progress</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Set_Last_Status_Update</name>
+        <label>Set Last Status Update</label>
+        <locationX>1683</locationX>
+        <locationY>395</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.LastStatusUpdate__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>IsStatusApplicant</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Rejoin_Date</name>
+        <label>Set Rejoin Date</label>
+        <locationX>1529</locationX>
+        <locationY>1103</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Membership_Rejoin_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Set_Status_to_Active</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Renewal_Date</name>
+        <label>Set Renewal Date</label>
+        <locationX>1661</locationX>
+        <locationY>1403</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Membership_Renewal_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>membershipRenewalDate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>IsStatusWithdrawn</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Status_to_Active</name>
+        <label>Set Status to Active</label>
+        <locationX>1661</locationX>
+        <locationY>1295</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Status_to_Active__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Set_Renewal_Date</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Withdrawal_Date</name>
+        <label>Set Withdrawal Date</label>
+        <locationX>1683</locationX>
+        <locationY>1703</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Membership_Withdrawal_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>School_or_University</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>Route A has a different update in comparrison to when different a different route is selected</description>
+        <name>Application_Route_Check</name>
+        <label>Application Route Check</label>
+        <locationX>941</locationX>
+        <locationY>2003</locationY>
+        <defaultConnector>
+            <targetReference>Supporting_Documents_Schools_Updated</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Other Routes</defaultConnectorLabel>
+        <rules>
+            <name>Route_A_Fast_Track</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Application_Route__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Route A</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>External_Accreditation_Report_Status_Updated</targetReference>
+            </connector>
+            <label>Route A (Fast Track)</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Are all supporting documents complete or complete with remark?</description>
+        <name>Complete_or_Complete_with_Remark</name>
+        <label>Complete or Complete with Remark</label>
+        <locationX>1238</locationX>
+        <locationY>2219</locationY>
+        <defaultConnector>
+            <targetReference>Set_Application_Status_to_In_Progress</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>In Progress</defaultConnectorLabel>
+        <rules>
+            <name>Complete</name>
+            <conditionLogic>(1 OR 2) AND (3 OR 4) AND (5 OR 6) AND (7 OR 8) AND (9 OR 10) AND (11 OR 12) AND (13 OR 14) AND (15 OR 16) AND (17 OR 18) AND (19 OR 20) AND (21 OR 22) AND (23 OR 24) AND (25 OR 26) AND (27 OR 28)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Guiding_Statements_1__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Complete</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Guiding_Statements_1__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Complete with Remark</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Governance_Ownership_Leadership_2__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Complete</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Governance_Ownership_Leadership_2__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Complete with Remark</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.School_budget_current_next_years_3__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Complete</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.School_budget_current_next_years_3__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Complete with Remark</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.External_validation_of_Finances_4__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Complete</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.External_validation_of_Finances_4__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Complete with Remark</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Learning_teaching_statement_policy_5__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Complete</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Learning_teaching_statement_policy_5__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Complete with Remark</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Teaching_Non_Teaching_Contracts_6__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Complete</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Teaching_Non_Teaching_Contracts_6__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Complete with Remark</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Published_Admission_Criteria_Process_7__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Complete</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Published_Admission_Criteria_Process_7__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Complete with Remark</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Head_of_School_Job_Description_8__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Complete</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Head_of_School_Job_Description_8__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Complete with Remark</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Child_protection_policy_incl_B_H_9__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Complete</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Child_protection_policy_incl_B_H_9__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Complete with Remark</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Health_Safety_Policy_10__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Complete</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Health_Safety_Policy_10__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Complete with Remark</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Background_checks_references_11__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Complete</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Background_checks_references_11__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Complete with Remark</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Embedding_global_citizenship_12__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Complete</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Embedding_global_citizenship_12__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Complete with Remark</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Communication_with_parents_13__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Complete</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Communication_with_parents_13__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Complete with Remark</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Student_Perspective_Video_14__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Complete</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Student_Perspective_Video_14__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Complete with Remark</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Application_Status_to_Complete_2</targetReference>
+            </connector>
+            <label>Complete</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>External_Accreditation_Report_Status_Updated</name>
+        <label>External Accreditation Report Status Updated</label>
+        <locationX>446</locationX>
+        <locationY>2111</locationY>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>All_accepted</name>
+            <conditionLogic>1 AND (2 OR 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>FormulaExternalAccreditationReportStatusChanged</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.External_Accreditation_Report_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Accepted</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.External_Accreditation_Report_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Accepted with Remark</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Application_Status_to_Complete_1</targetReference>
+            </connector>
+            <label>All accepted</label>
+        </rules>
+        <rules>
+            <name>In_Progress</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>FormulaFastTrackInProgress</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Application_Status_into_In_Progress</targetReference>
+            </connector>
+            <label>In Progress</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Ineligibile_for_Fast_Track</name>
+        <label>Ineligibile for Fast Track</label>
+        <locationX>446</locationX>
+        <locationY>2327</locationY>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Update_Application_Route</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.External_Accreditation_Report_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Ineligible for Fast Track</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Select_Route_B</targetReference>
+            </connector>
+            <label>Update Application Route</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>IsMembershipStatusChanged</name>
+        <label>Membership Status Changed?</label>
+        <locationX>1815</locationX>
+        <locationY>287</locationY>
+        <defaultConnector>
+            <targetReference>IsStatusApplicant</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>IsMembershipStatusChangedTRUE</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Membership_Status__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Last_Status_Update</targetReference>
+            </connector>
+            <label>True</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks the Original Membership Start Date on the Aggregate Result record.</description>
+        <name>IsOriginalStartDateNotEmpty</name>
+        <label>Original Start Date NOT Empty?</label>
+        <locationX>1661</locationX>
+        <locationY>995</locationY>
+        <defaultConnector>
+            <targetReference>Set_Status_to_Active</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>IsOriginalStartDateNotEmptyTRUE</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Account_Name__r.Aggregate_Result__r.Original_Membership_Start_Date__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Rejoin_Date</targetReference>
+            </connector>
+            <label>True</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Membership Status changed to &apos;Active&apos;. Only applies to updates.</description>
+        <name>IsStatusActive</name>
+        <label>Update Status to Active?</label>
+        <locationX>1815</locationX>
+        <locationY>887</locationY>
+        <defaultConnector>
+            <targetReference>IsStatusWithdrawn</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>IsStatusActiveTRUE</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Membership_Status__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Membership_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Active</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>IsOriginalStartDateNotEmpty</targetReference>
+            </connector>
+            <label>True</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>New records with membership status &apos;Applicant&apos; or an update from &apos;Prospective&apos; to &apos;Applicant&apos;.</description>
+        <name>IsStatusApplicant</name>
+        <label>Update Status to Applicant</label>
+        <locationX>1815</locationX>
+        <locationY>587</locationY>
+        <defaultConnector>
+            <targetReference>IsStatusActive</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>IsStatusApplicantTRUE</name>
+            <conditionLogic>(1 AND 2) OR (3 AND 4 AND 5)</conditionLogic>
+            <conditions>
+                <leftValueReference>IsNew</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Membership_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Applicant</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Membership_Status__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record__Prior.Membership_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Prospective</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Membership_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Applicant</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Application_Date</targetReference>
+            </connector>
+            <label>True</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Membership Status changed to &apos;Membership Withdrawn By CIS&apos; or &apos;Membership Withdrawn By Member&apos;. Only applies to updates.</description>
+        <name>IsStatusWithdrawn</name>
+        <label>Update Status to Withdrawn</label>
+        <locationX>1815</locationX>
+        <locationY>1595</locationY>
+        <defaultConnector>
+            <targetReference>School_or_University</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>IsStatusWithdrawnTRUE</name>
+            <conditionLogic>1 AND (2 OR 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Membership_Status__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Membership_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Membership Withdrawn by CIS</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Membership_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Membership Withdrawn by Member</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Withdrawal_Date</targetReference>
+            </connector>
+            <label>True</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Check based on Account Record Type, only applies to updates.</description>
+        <name>School_or_University</name>
+        <label>School or University</label>
+        <locationX>1815</locationX>
+        <locationY>1895</locationY>
+        <defaultConnectorLabel>Other</defaultConnectorLabel>
+        <rules>
+            <name>School</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Account_Name__r.RecordType.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>School</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Application_Route_Check</targetReference>
+            </connector>
+            <label>School</label>
+        </rules>
+        <rules>
+            <name>University</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Account_Name__r.RecordType.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>University</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Supporting_Documents_Complete</targetReference>
+            </connector>
+            <label>University</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Supporting_Documents_Complete</name>
+        <label>Supporting Documents Complete</label>
+        <locationX>2162</locationX>
+        <locationY>2003</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>University_Supporting_Documentation_Complete</name>
+            <conditionLogic>(1 OR 2) AND (3 OR 4) AND (5 OR 6) AND (7 OR 8)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Recognition_by_MoE_or_national_body__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Complete</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Recognition_by_MoE_or_national_body__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Complete with Remark</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Int_l_student_services_enrolment__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Complete</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Int_l_student_services_enrolment__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Complete with Remark</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Mission_goals_for_internationalisation__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Complete</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Mission_goals_for_internationalisation__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Complete with Remark</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.How_degrees_are_awarded_at_institution__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Complete</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.How_degrees_are_awarded_at_institution__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Complete with Remark</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Application_Status_to_Complete_3</targetReference>
+            </connector>
+            <label>University Supporting Documentation Complete</label>
+        </rules>
+        <rules>
+            <name>In_Progress_University</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>FormulaEligibilityANDSupportingDocumentsUniversities</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Application_Status_to_In_Progress_2</targetReference>
+            </connector>
+            <label>In Progress</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Check if one of the Supporting Document fields have been updated</description>
+        <name>Supporting_Documents_Schools_Updated</name>
+        <label>Supporting Documents Schools Updated?</label>
+        <locationX>1436</locationX>
+        <locationY>2111</locationY>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Update_Application_Review_Status</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>FormulaEligibilityANDSupportingDocumentsSchool</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Complete_or_Complete_with_Remark</targetReference>
+            </connector>
+            <label>Update Application Review Status</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <description>Check if any of the following fields have been updated</description>
+        <name>FormulaEligibilityANDSupportingDocumentsSchool</name>
+        <dataType>Boolean</dataType>
+        <expression>OR
+(
+ISCHANGED({!$Record.License__c}),
+ISCHANGED({!$Record.Website_Check__c}),
+ISCHANGED({!$Record.News_Check__c}),
+ISCHANGED({!$Record.Eligibility_Notes_Remarks__c}),
+ISCHANGED({!$Record.Guiding_Statements_1__c}),
+ISCHANGED({!$Record.Governance_Ownership_Leadership_2__c}),
+ISCHANGED({!$Record.School_budget_current_next_years_3__c}),
+ISCHANGED({!$Record.External_validation_of_Finances_4__c}),
+ISCHANGED({!$Record.Learning_teaching_statement_policy_5__c}),
+ISCHANGED({!$Record.Teaching_Non_Teaching_Contracts_6__c}),
+ISCHANGED({!$Record.Published_Admission_Criteria_Process_7__c}),
+ISCHANGED({!$Record.Head_of_School_Job_Description_8__c}),
+ISCHANGED({!$Record.Child_protection_policy_incl_B_H_9__c}),
+ISCHANGED({!$Record.Health_Safety_Policy_10__c}),
+ISCHANGED({!$Record.Background_checks_references_11__c}),
+ISCHANGED({!$Record.Embedding_global_citizenship_12__c}),
+ISCHANGED({!$Record.Communication_with_parents_13__c}),
+ISCHANGED({!$Record.Student_Perspective_Video_14__c})
+)</expression>
+    </formulas>
+    <formulas>
+        <description>Any University related fields updated?</description>
+        <name>FormulaEligibilityANDSupportingDocumentsUniversities</name>
+        <dataType>Boolean</dataType>
+        <expression>OR
+(
+ISCHANGED({!$Record.Website_Check__c}),
+ISCHANGED({!$Record.News_Check__c}),
+ISCHANGED({!$Record.Eligibility_Notes_Remarks__c}),
+ISCHANGED({!$Record.Recognition_by_MoE_or_national_body__c}),
+ISCHANGED({!$Record.Int_l_student_services_enrolment__c}),
+ISCHANGED({!$Record.Mission_goals_for_internationalisation__c}),
+ISCHANGED({!$Record.How_degrees_are_awarded_at_institution__c}),
+ISCHANGED({!$Record.Supporting_Documentation_Remarks__c})
+)</expression>
+    </formulas>
+    <formulas>
+        <name>FormulaExternalAccreditationReportStatusChanged</name>
+        <dataType>Boolean</dataType>
+        <expression>ISCHANGED({!$Record.External_Accreditation_Report_Status__c})</expression>
+    </formulas>
+    <formulas>
+        <description>Is any of the fields in the Eligibility section or Fast Track section updated?</description>
+        <name>FormulaFastTrackInProgress</name>
+        <dataType>Boolean</dataType>
+        <expression>OR
+(
+ISCHANGED({!$Record.License__c}),
+ISCHANGED({!$Record.Website_Check__c}),
+ISCHANGED({!$Record.News_Check__c}),
+ISCHANGED({!$Record.Eligibility_Notes_Remarks__c}),
+ISCHANGED({!$Record.External_Accreditation_Agency__c}),
+ISCHANGED({!$Record.Report_Reviewed_by__c}),
+ISCHANGED({!$Record.External_Accreditation_Report_Status__c}),
+ISCHANGED({!$Record.Valid_to_Date__c}),
+ISCHANGED({!$Record.Fast_Track_Eligibility_Remarks__c})
+)</expression>
+    </formulas>
+    <formulas>
+        <name>IsNew</name>
+        <dataType>Boolean</dataType>
+        <expression>ISNEW()</expression>
+    </formulas>
+    <formulas>
+        <name>membershipRenewalDate</name>
+        <dataType>Date</dataType>
+        <expression>IF(
+AND(
+MONTH({!$Flow.CurrentDate}) = 2,
+DAY({!$Flow.CurrentDate}) = 29
+),
+DATE(
+YEAR({!$Flow.CurrentDate})+1,
+3,
+1),
+DATE(
+YEAR({!$Flow.CurrentDate})+1,
+MONTH({!$Flow.CurrentDate}),
+DAY({!$Flow.CurrentDate})
+)
+)</expression>
+    </formulas>
+    <interviewLabel>Membership Before Creation Update {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Membership Before Creation Update</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>1689</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>IsMembershipStatusChanged</targetReference>
+        </connector>
+        <object>Membership__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>tmp</name>
+        <dataType>Date</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

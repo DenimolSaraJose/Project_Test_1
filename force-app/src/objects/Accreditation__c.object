@@ -1,0 +1,1219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>InternalAccreditationCompactLayout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>ExternalAccreditationCompactLayout</fullName>
+        <fields>Account__c</fields>
+        <fields>Status__c</fields>
+        <fields>OriginatingMembership__c</fields>
+        <label>External Accreditation Compact Layout</label>
+    </compactLayouts>
+    <compactLayouts>
+        <fullName>InternalAccreditationCompactLayout</fullName>
+        <fields>Account__c</fields>
+        <fields>Status__c</fields>
+        <fields>FirstCycleStartDate__c</fields>
+        <fields>CurrentCycleStageLink__c</fields>
+        <fields>CurrentStageStatus__c</fields>
+        <fields>IAA__c</fields>
+        <label>Internal Accreditation Compact Layout</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Accreditations</relationshipLabel>
+        <relationshipName>Accreditations</relationshipName>
+        <required>true</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>AccreditationOutcome2__c</fullName>
+        <description>Current Accreditation Outcome, this does not include recommendations.</description>
+        <externalId>false</externalId>
+        <formula>BLANKVALUE(Account__r.Aggregate_Result__r.AccreditationOutcome__c, &apos;N/A&apos;)</formula>
+        <inlineHelpText>This reflects the school&apos;s most recent accreditation decision.</inlineHelpText>
+        <label>OBSOLETE Accreditation Decision</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AccreditationOutcome__c</fullName>
+        <defaultValue>&apos;N/A&apos;</defaultValue>
+        <description>Current Accreditation Outcome, this does not include recommendations.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This reflects the school&apos;s most recent accreditation decision.</inlineHelpText>
+        <label>Accreditation Decision</label>
+        <length>3</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CurrentAccreditationCycle__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <label>Current Accreditation Cycle</label>
+        <referenceTo>AccreditationCycle__c</referenceTo>
+        <relationshipLabel>Accreditations</relationshipLabel>
+        <relationshipName>Accreditations</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CurrentAccreditationTrack__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <label>Current Framework</label>
+        <referenceTo>AccreditationTrack__c</referenceTo>
+        <relationshipLabel>Accreditations</relationshipLabel>
+        <relationshipName>Accreditations</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CurrentCycleStageLink__c</fullName>
+        <description>Current Cycle Stage name, presented as clickable link</description>
+        <externalId>false</externalId>
+        <formula>IF((ISBLANK(CurrentCycleStage__c) || !ISPICKVAL($User.UserType, &apos;Standard&apos;)), &apos;N/A&apos;, HYPERLINK(
+  &quot;/&quot; &amp;  CurrentCycleStage__c, 
+   CurrentCycleStage__r.StageName__c,
+  &quot;_self&quot;
+))</formula>
+        <label>Current Cycle Stage Link</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CurrentCycleStage__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <label>Current Cycle Stage Name</label>
+        <referenceTo>AccreditationCycleStage__c</referenceTo>
+        <relationshipLabel>Accreditations</relationshipLabel>
+        <relationshipName>Accreditations</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CurrentIAC__c</fullName>
+        <defaultValue>&apos;N/A&apos;</defaultValue>
+        <description>Current SSA for Accreditation, configured at Accreditation Stage</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is showing the current SSA for this accreditation. The SSA varies by accreditation stage and is configured there.</inlineHelpText>
+        <label>IAC</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CurrentSSA__c</fullName>
+        <defaultValue>&apos;N/A&apos;</defaultValue>
+        <description>Current SSA for Accreditation, configured at Accreditation Stage</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is showing the current SSA for this accreditation. The SSA varies by accreditation stage and is configured there.</inlineHelpText>
+        <label>SSA</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CurrentStageDueDate__c</fullName>
+        <formula>CurrentCycleStage__r.DueDate__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Current Stage Due Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CurrentStageName__c</fullName>
+        <externalId>false</externalId>
+        <formula>CurrentCycleStage__r.AccreditationStage__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Current Stage Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CurrentStageStartDate__c</fullName>
+        <formula>CurrentCycleStage__r.StartDate__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Current Stage Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CurrentStageStatus__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT( CurrentCycleStage__r.Status__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Current Stage Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Engagement__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <inlineHelpText>Link to former engagement record, for reference only.</inlineHelpText>
+        <label>Engagement</label>
+        <referenceTo>Engagement__c</referenceTo>
+        <relationshipLabel>Accreditations</relationshipLabel>
+        <relationshipName>Accreditations</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>FirstCycleStartDate__c</fullName>
+        <inlineHelpText>When the school initially started engaging with CIS Accreditation in their first cycle.</inlineHelpText>
+        <label>Initial Start Date</label>
+        <summarizedField>AccreditationCycle__c.StartDate__c</summarizedField>
+        <summaryForeignKey>AccreditationCycle__c.Accreditation__c</summaryForeignKey>
+        <summaryOperation>min</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Framework__c</fullName>
+        <label>OBSOLETE Framework</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>8th Edition</fullName>
+                    <default>false</default>
+                    <label>8th Edition</label>
+                </value>
+                <value>
+                    <fullName>CIS International Accreditation 2016</fullName>
+                    <default>false</default>
+                    <label>CIS International Accreditation 2016</label>
+                </value>
+                <value>
+                    <fullName>CIS International Accreditation 2019</fullName>
+                    <default>false</default>
+                    <label>CIS International Accreditation 2019</label>
+                </value>
+                <value>
+                    <fullName>New Framework</fullName>
+                    <default>true</default>
+                    <label>New Framework</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IAA__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.IAA__r.FirstName + &apos; &apos; +
+IF(!ISBLANK(Account__r.IAA__r.MiddleName), Account__r.IAA__r.MiddleName + &apos; &apos;, &apos;&apos;) +
+Account__r.IAA__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>IAA</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IsNewAccreditationCycleAllowed__c</fullName>
+        <description>Boolean that indicates if creating a new Accreditation Cycle record is allowed. It is used to show or /hide the button &apos;New Accreditation Cycle&apos; on the Accreditation Record page and for validation.</description>
+        <formula>(
+  nCycles__c = 0 || nPlannedCycles__c = 0
+) &amp;&amp;
+(
+   ISPICKVAL(Status__c, &apos;Registered&apos;) ||
+   ISPICKVAL(Status__c, &apos;Accredited&apos;) 
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>New Accreditation Cycle Allowed</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IsUserIAA__c</fullName>
+        <description>If checked the user is registered as a IAA for the related Account, this field is used as a filter for certain components on Lightning Record pages.</description>
+        <formula>IF ( $User.Id =  Account__r.IAA__r.Id, true, false )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>User IAA</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IsUserSSEO__c</fullName>
+        <description>If checked the user is registered as a SSEO for the related Account, this field is used as a filter for certain components on Lightning Record pages.</description>
+        <formula>IF ( $User.Id =  Account__r.SSEO__r.Id, true, false )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>User SSEO</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IsVRBypassed__c</fullName>
+        <formula>BLANKVALUE(ValidationBypassDateTime__c, $System.OriginDateTime) &gt; NOW() - 0.00005787037 /*Five Seconds*/</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>IsVRBypassed</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>OriginalAccreditationDate2__c</fullName>
+        <formula>Account__r.Aggregate_Result__r.Original_Accreditation_Date__c</formula>
+        <inlineHelpText>When a school first became accredited.</inlineHelpText>
+        <label>OBSOLETE Original Accreditation Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>OriginalAccreditationDate__c</fullName>
+        <inlineHelpText>When a school first became accredited.</inlineHelpText>
+        <label>Original Accreditation Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>OriginatingMembership__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <label>Originating Membership</label>
+        <referenceTo>Membership__c</referenceTo>
+        <relationshipLabel>Accreditations</relationshipLabel>
+        <relationshipName>Accreditations</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ReaccreditationDate2__c</fullName>
+        <formula>Account__r.Aggregate_Result__r.Reaccreditation_Date__c</formula>
+        <inlineHelpText>When a school last became re-accredited.</inlineHelpText>
+        <label>OBSOLETE Re-Accreditation Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ReaccreditationDate__c</fullName>
+        <inlineHelpText>When a school last became re-accredited.</inlineHelpText>
+        <label>Re-Accreditation Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>RegisteredById__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <label>Registered By</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Accreditations1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>RegisteredByName__c</fullName>
+        <externalId>false</externalId>
+        <label>Registered By</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RegistrationDate__c</fullName>
+        <inlineHelpText>When a school registered</inlineHelpText>
+        <label>Registration Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>RegistrationDueDateOverride__c</fullName>
+        <description>THIS FIELD IS NOT USED YET
+https://dev.azure.com/COIS-ORG/IT%20Service%20Requests/_workitems/edit/131</description>
+        <inlineHelpText>The calculated Registration Due Date can be overriden by setting a date in this field.</inlineHelpText>
+        <label>Registration Due Date Override</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>RegistrationDueDate__c</fullName>
+        <formula>BLANKVALUE(RegistrationDueDateOverride__c, ADDMONTHS(OriginatingMembership__r.Status_to_Active__c, 24))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>By when a school is required to register.</inlineHelpText>
+        <label>Registration Due Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ReportManager__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.ReportManager__r.FirstName + &apos; &apos; +
+IF(!ISBLANK(Account__r.ReportManager__r.MiddleName), Account__r.ReportManager__r.MiddleName + &apos; &apos;, &apos;&apos;) +
+Account__r.ReportManager__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Report Manager</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SSEO__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.SSEO__r.FirstName + &apos; &apos; +
+IF(!ISBLANK(Account__r.SSEO__r.MiddleName), Account__r.SSEO__r.MiddleName + &apos; &apos;, &apos;&apos;) + 
+Account__r.SSEO__r.LastName</formula>
+        <label>SSEO</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <label>Accreditation Status</label>
+        <required>true</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Closed</fullName>
+                    <default>false</default>
+                    <label>Closed</label>
+                </value>
+                <value>
+                    <fullName>Not Required</fullName>
+                    <default>false</default>
+                    <label>Not Required</label>
+                </value>
+                <value>
+                    <fullName>Prospect</fullName>
+                    <default>false</default>
+                    <label>Prospect</label>
+                </value>
+                <value>
+                    <fullName>Registered</fullName>
+                    <default>false</default>
+                    <label>Registered</label>
+                </value>
+                <value>
+                    <fullName>Accredited</fullName>
+                    <default>false</default>
+                    <label>Accredited</label>
+                </value>
+                <value>
+                    <fullName>Withdrawn by Member</fullName>
+                    <default>false</default>
+                    <label>Withdrawn by Member</label>
+                </value>
+                <value>
+                    <fullName>Withdrawn by CIS</fullName>
+                    <default>false</default>
+                    <label>Withdrawn by CIS</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ValidationBypassDateTime__c</fullName>
+        <defaultValue>$System.OriginDateTime</defaultValue>
+        <description>This field is used in to be able to override validation rules configured on the SObject</description>
+        <label>ValidationBypassDateTime</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>WithdrawalDate__c</fullName>
+        <label>Withdrawal Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>WithdrawalReason__c</fullName>
+        <label>Withdrawal Reason</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Status__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Breach of membership terms</fullName>
+                    <default>false</default>
+                    <label>Breach of membership terms</label>
+                </value>
+                <value>
+                    <fullName>Change in Government/Country Policy</fullName>
+                    <default>false</default>
+                    <label>Change in Government/Country Policy</label>
+                </value>
+                <value>
+                    <fullName>Changing accreditation agencies</fullName>
+                    <default>false</default>
+                    <label>Changing accreditation agencies</label>
+                </value>
+                <value>
+                    <fullName>Financial</fullName>
+                    <default>false</default>
+                    <label>Financial</label>
+                </value>
+                <value>
+                    <fullName>Institutional needs changed</fullName>
+                    <default>false</default>
+                    <label>Institutional needs changed</label>
+                </value>
+                <value>
+                    <fullName>Lack of budget</fullName>
+                    <default>false</default>
+                    <label>Lack of budget</label>
+                </value>
+                <value>
+                    <fullName>Lack of value</fullName>
+                    <default>false</default>
+                    <label>Lack of value</label>
+                </value>
+                <value>
+                    <fullName>Leadership change in institution</fullName>
+                    <default>false</default>
+                    <label>Leadership change in institution</label>
+                </value>
+                <value>
+                    <fullName>Merged with another institution</fullName>
+                    <default>false</default>
+                    <label>Merged with another institution</label>
+                </value>
+                <value>
+                    <fullName>Non-payment</fullName>
+                    <default>false</default>
+                    <label>Non-payment</label>
+                </value>
+                <value>
+                    <fullName>Permanently closed</fullName>
+                    <default>false</default>
+                    <label>Permanently closed</label>
+                </value>
+                <value>
+                    <fullName>Standards not met</fullName>
+                    <default>false</default>
+                    <label>Standards not met</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Withdrawn by Member</controllingFieldValue>
+                <controllingFieldValue>Withdrawn by CIS</controllingFieldValue>
+                <valueName>Breach of membership terms</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Withdrawn by Member</controllingFieldValue>
+                <controllingFieldValue>Withdrawn by CIS</controllingFieldValue>
+                <valueName>Change in Government/Country Policy</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Withdrawn by Member</controllingFieldValue>
+                <controllingFieldValue>Withdrawn by CIS</controllingFieldValue>
+                <valueName>Changing accreditation agencies</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Withdrawn by Member</controllingFieldValue>
+                <controllingFieldValue>Withdrawn by CIS</controllingFieldValue>
+                <valueName>Financial</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Withdrawn by Member</controllingFieldValue>
+                <controllingFieldValue>Withdrawn by CIS</controllingFieldValue>
+                <valueName>Institutional needs changed</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Withdrawn by Member</controllingFieldValue>
+                <controllingFieldValue>Withdrawn by CIS</controllingFieldValue>
+                <valueName>Lack of budget</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Withdrawn by Member</controllingFieldValue>
+                <controllingFieldValue>Withdrawn by CIS</controllingFieldValue>
+                <valueName>Lack of value</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Withdrawn by Member</controllingFieldValue>
+                <controllingFieldValue>Withdrawn by CIS</controllingFieldValue>
+                <valueName>Leadership change in institution</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Withdrawn by Member</controllingFieldValue>
+                <controllingFieldValue>Withdrawn by CIS</controllingFieldValue>
+                <valueName>Non-payment</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Withdrawn by Member</controllingFieldValue>
+                <controllingFieldValue>Withdrawn by CIS</controllingFieldValue>
+                <valueName>Permanently closed</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Withdrawn by Member</controllingFieldValue>
+                <controllingFieldValue>Withdrawn by CIS</controllingFieldValue>
+                <valueName>Standards not met</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>nClosedCycles__c</fullName>
+        <description>Total number of closed Accreditation Cycles for this Accreditation.</description>
+        <inlineHelpText>Total number of closed Accreditation Cycles for this Accreditation.</inlineHelpText>
+        <label># Closed Cycles</label>
+        <summaryFilterItems>
+            <field>AccreditationCycle__c.IsClosed__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </summaryFilterItems>
+        <summaryForeignKey>AccreditationCycle__c.Accreditation__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>nCompletedCycles__c</fullName>
+        <description>Total number of completed Accreditation Cycles for this Accreditation.</description>
+        <inlineHelpText>Total number of completed Accreditation Cycles for this Accreditation.</inlineHelpText>
+        <label># Completed Cycles</label>
+        <summaryFilterItems>
+            <field>AccreditationCycle__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Completed</value>
+        </summaryFilterItems>
+        <summaryForeignKey>AccreditationCycle__c.Accreditation__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>nCurrentCycle__c</fullName>
+        <description>The current Accreditation Cycle that is &apos;In Progress&apos; or &apos;Completed&apos;.</description>
+        <inlineHelpText>The current Accreditation Cycle that is &apos;In Progress&apos; or &apos;Completed&apos;.</inlineHelpText>
+        <label># Current Cycle</label>
+        <summaryFilterItems>
+            <field>AccreditationCycle__c.Status__c</field>
+            <operation>notEqual</operation>
+            <value>Planned</value>
+        </summaryFilterItems>
+        <summaryForeignKey>AccreditationCycle__c.Accreditation__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>nCycles__c</fullName>
+        <description>Total number of Accreditation Cycles for this Accreditation.</description>
+        <inlineHelpText>Total number of Accreditation Cycles for this Accreditation.</inlineHelpText>
+        <label># Cycles</label>
+        <summaryForeignKey>AccreditationCycle__c.Accreditation__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>nPlannedCycles__c</fullName>
+        <label># Planned Cycles</label>
+        <summaryFilterItems>
+            <field>AccreditationCycle__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Planned</value>
+        </summaryFilterItems>
+        <summaryForeignKey>AccreditationCycle__c.Accreditation__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <label>Accreditation</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>FirstCycleStartDate__c</columns>
+        <columns>CurrentAccreditationCycle__c</columns>
+        <columns>CurrentCycleStageLink__c</columns>
+        <columns>IAA__c</columns>
+        <columns>CurrentIAC__c</columns>
+        <columns>Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>External</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Accreditation__c.External</value>
+        </filters>
+        <label>External Accreditation Agency</label>
+    </listViews>
+    <listViews>
+        <fullName>Internal</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>FirstCycleStartDate__c</columns>
+        <columns>CurrentAccreditationCycle__c</columns>
+        <columns>CurrentCycleStageLink__c</columns>
+        <columns>IAA__c</columns>
+        <columns>CurrentIAC__c</columns>
+        <columns>Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Accreditation__c.Internal</value>
+        </filters>
+        <label>CIS</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Accreditations</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Status__c</columns>
+        <filterScope>Mine</filterScope>
+        <label>My Accreditations</label>
+        <sharedTo>
+            <group>All_Community_Members</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Prospects</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>RegistrationDueDate__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Prospect</value>
+        </filters>
+        <label>Prospects</label>
+    </listViews>
+    <nameField>
+        <label>Accreditation Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Accreditations</pluralLabel>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>External</fullName>
+        <active>true</active>
+        <compactLayoutAssignment>ExternalAccreditationCompactLayout</compactLayoutAssignment>
+        <description>Create an accreditation record for a school not required to undergo CIS Accreditation.</description>
+        <label>External</label>
+        <picklistValues>
+            <picklist>Framework__c</picklist>
+            <values>
+                <fullName>8th Edition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CIS International Accreditation 2016</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CIS International Accreditation 2019</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>New Framework</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Required</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WithdrawalReason__c</picklist>
+            <values>
+                <fullName>Breach of membership terms</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Change in Government%2FCountry Policy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Changing accreditation agencies</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Financial</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Institutional needs changed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lack of budget</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lack of value</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leadership change in institution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Merged with another institution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-payment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Standards not met</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Internal</fullName>
+        <active>true</active>
+        <compactLayoutAssignment>InternalAccreditationCompactLayout</compactLayoutAssignment>
+        <description>Create an accreditation record for a school required to undergo CIS Accreditation.</description>
+        <label>Internal</label>
+        <picklistValues>
+            <picklist>Framework__c</picklist>
+            <values>
+                <fullName>8th Edition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CIS International Accreditation 2016</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CIS International Accreditation 2019</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>New Framework</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Accredited</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospect</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Registered</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Withdrawn by CIS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Withdrawn by Member</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>WithdrawalReason__c</picklist>
+            <values>
+                <fullName>Breach of membership terms</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Change in Government%2FCountry Policy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Changing accreditation agencies</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Financial</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Institutional needs changed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lack of budget</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lack of value</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leadership change in institution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Merged with another institution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-payment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Permanently closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Standards not met</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <excludedStandardButtons>OpenListInQuip</excludedStandardButtons>
+        <excludedStandardButtons>NewFromDocument</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>Import</excludedStandardButtons>
+        <excludedStandardButtons>MassChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>PrintableListView</excludedStandardButtons>
+        <excludedStandardButtons>MassAssignRecordLabel</excludedStandardButtons>
+        <massQuickActions>NewAccreditationCycle</massQuickActions>
+        <searchResultsAdditionalFields>Account__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>FirstCycleStartDate__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CurrentAccreditationCycle__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CurrentCycleStageLink__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>IAA__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CurrentIAC__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Prevent_Override_Registration_Due_Date</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISCHANGED(RegistrationDueDateOverride__c) &amp;&amp;
+!ISNULL(RegistrationDueDateOverride__c) &amp;&amp;
+!$Permission.Override_Registration_Due_Date</errorConditionFormula>
+        <errorMessage>You are not allowed to override the Registration Due Date...</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Prevent_Revert_Status_Prospect</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISNEW() &amp;&amp;
+ISCHANGED(Status__c) &amp;&amp;
+ISPICKVAL(Status__c, &apos;Prospect&apos;) &amp;&amp;
+!$Permission.Revert_Accreditation_Status</errorConditionFormula>
+        <errorDisplayField>Account__c</errorDisplayField>
+        <errorMessage>You cannot revert the status to &apos;Prospect&apos;...</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Prevent_Update_Account</fullName>
+        <active>true</active>
+        <errorConditionFormula>!ISNEW() &amp;&amp;
+ISCHANGED(Account__c)</errorConditionFormula>
+        <errorMessage>You are not allowed to update the Account...</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Prevent_Update_Accreditation_Name</fullName>
+        <active>true</active>
+        <errorConditionFormula>!ISNEW() &amp;&amp;
+ISCHANGED(Name) &amp;&amp;
+!IsVRBypassed__c</errorConditionFormula>
+        <errorMessage>You are not allowed to update the Accreditation name...</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Prevent_Update_Status</fullName>
+        <active>true</active>
+        <description>Custom permission &apos;Update Accreditation Status&apos; or &apos;Update Accreditation Status To Closed&apos; must be assigned (for closing an Accreditation record).</description>
+        <errorConditionFormula>!ISNEW() &amp;&amp;
+ISCHANGED(Status__c) &amp;&amp;
+!$Permission.Update_Accreditation_Status &amp;&amp;
+!IsVRBypassed__c &amp;&amp;
+(ISPICKVAL(Status__c, &apos;Closed&apos;) &amp;&amp; !$Permission.Update_Accreditation_Status_To_Closed)</errorConditionFormula>
+        <errorMessage>You are not allowed to update the Accreditation status...</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Prevent_Update_Status_From_Closed</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISCHANGED( Status__c ) &amp;&amp;
+ISPICKVAL( PRIORVALUE( Status__c ), &apos;Closed&apos; )</errorConditionFormula>
+        <errorMessage>You cannot update the Accreditation status once it is closed.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Prevent_Update_Status_To_Withdrawn</fullName>
+        <active>true</active>
+        <errorConditionFormula>!ISNEW() &amp;&amp;
+ISCHANGED(Status__c) &amp;&amp;
+(ISPICKVAL(Status__c, &apos;Withdrawn by CIS&apos;) || ISPICKVAL(Status__c, &apos;Withdrawn by Member&apos;)) &amp;&amp;
+!$Permission.Update_Accreditation_Status_To_Withdrawn</errorConditionFormula>
+        <errorMessage>You are not allowed to update the Accreditation status to withdrawn...</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

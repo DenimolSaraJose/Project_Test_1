@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Interviewer settings for the Internal Interview and Send Out actions. Includes the option to configure the interviewer search criteria.</description>
+    <fields>
+        <fullName>TR1__Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Specifies if it is an active configuration</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Specifies if it is an active configuration</inlineHelpText>
+        <label>Active</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__All_Contacts__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Allows to select any Contact as Interviewer</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Allows to select any Contact as Interviewer</inlineHelpText>
+        <label>All Contacts</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__All_Users__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Allows the selection of any User as an Interviewer</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Allows the selection of any User as an Interviewer</inlineHelpText>
+        <label>All Users</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Contacts_with_Job_Account__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Allows to select Contacts with Job Account as interviewers</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Allows to select Contacts with Job Account as interviewers</inlineHelpText>
+        <label>Contacts with Job Account</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Contacts_with_Job_Roles__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Allows to select Contacts with Job Roles as Interviewers</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Allows to select Contacts with Job Roles as Interviewers</inlineHelpText>
+        <label>Contacts with Job Roles</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Custom_Filter_Class_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Allows a custom filtering through the use of a custom apex class</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Allows a custom filtering through the use of a custom apex class</inlineHelpText>
+        <label>Custom Filter Class Name</label>
+        <length>90</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Enable_Team_Members_Only_in_the_CC_Field__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If checked, allows the Team Members only in the CC Field</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>If checked, allows the Team Members only in the CC Field</inlineHelpText>
+        <label>Enable Team Members Only in the CC Field</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Users_as_Team_Members__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Allows to select Users with Team Members as Interviewers</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Allows to select Users with Team Members as Interviewers</inlineHelpText>
+        <label>Users as Team Members</label>
+        <type>Checkbox</type>
+    </fields>
+    <label>Interviewer Configuration</label>
+    <pluralLabel>Interviewer Configurations</pluralLabel>
+    <validationRules>
+        <fullName>TR1__All_Contacts_and_Job_Account_not_allowed</fullName>
+        <active>true</active>
+        <description>Contacts with Job Account can not be selected while All Contacts is selected.</description>
+        <errorConditionFormula>TR1__Active__c = true &amp;&amp;  TR1__All_Contacts__c = true &amp;&amp;  TR1__Contacts_with_Job_Account__c =true</errorConditionFormula>
+        <errorMessage>Contacts with Job Account can not be selected while All Contacts is selected.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>TR1__All_Contacts_and_Job_Roles_not_allowed</fullName>
+        <active>true</active>
+        <description>Contacts with Job Roles can not be selected while All Contacts is selected</description>
+        <errorConditionFormula>TR1__Active__c = true &amp;&amp;  TR1__All_Contacts__c = true &amp;&amp;  TR1__Contacts_with_Job_Roles__c = true</errorConditionFormula>
+        <errorMessage>Contacts with Job Roles can not be selected while All Contacts is selected</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>TR1__All_Users_and_Team_Members_not_allowed</fullName>
+        <active>true</active>
+        <description>Users as Team Members can not be selected while All Users is selected</description>
+        <errorConditionFormula>TR1__Active__c = true &amp;&amp;  TR1__All_Users__c = true &amp;&amp;  TR1__Users_as_Team_Members__c = true</errorConditionFormula>
+        <errorMessage>Users as Team Members can not be selected while All Users is selected</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>TR1__Cannot_Active_without_filters_selected</fullName>
+        <active>true</active>
+        <description>Please select at least one filter option to activate the configuration</description>
+        <errorConditionFormula>TR1__Active__c = true &amp;&amp; TR1__All_Contacts__c = false &amp;&amp; TR1__All_Users__c = false &amp;&amp; TR1__Contacts_with_Job_Account__c = false &amp;&amp; TR1__Contacts_with_Job_Roles__c = false &amp;&amp; TR1__Users_as_Team_Members__c = false &amp;&amp; ISBLANK(TR1__Custom_Filter_Class_Name__c)</errorConditionFormula>
+        <errorMessage>Please select at least one filter option to activate the configuration</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

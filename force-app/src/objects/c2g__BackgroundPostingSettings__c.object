@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Contains settings that control the behavior of the Background Posting Scheduler.</description>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>c2g__CalcTaxOnCreditNoteRunParallel__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates that the process runs using parallel processing.</description>
+        <inlineHelpText>Indicates that the process runs using parallel processing.</inlineHelpText>
+        <label>Calculate Tax on SCR: Run parallel</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>c2g__CalcTaxOnCreditNoteScopeSize__c</fullName>
+        <defaultValue>1</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Scope size for the Calculate Tax on Sales Credit Note process.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Scope size for the Calculate Tax on Sales Credit Note process.</inlineHelpText>
+        <label>Calculate Tax on SCR: Scope Size</label>
+        <precision>15</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CalcTaxOnInvoiceRunParallel__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates that the process runs using parallel processing.</description>
+        <inlineHelpText>Indicates that the process runs using parallel processing.</inlineHelpText>
+        <label>Calculate Tax on SIN: Run parallel</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>c2g__CalcTaxOnInvoiceScopeSize__c</fullName>
+        <defaultValue>1</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Scope size for the Calculate Tax on Sales Invoice process.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Scope size for the Calculate Tax on Sales Invoice process.</inlineHelpText>
+        <label>Calculate Tax on SIN: Scope Size</label>
+        <precision>15</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CalcTaxOnPayableCreditNoteRunParallel__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates that the process runs using parallel processing.</description>
+        <inlineHelpText>Indicates that the process runs using parallel processing.</inlineHelpText>
+        <label>Calculate Tax on PCR: Run parallel</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>c2g__CalcTaxOnPayableCreditNoteScopeSize__c</fullName>
+        <defaultValue>1</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Scope size for the Calculate Tax on Payable Credit Note process.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Scope size for the Calculate Tax on Payable Credit Note process.</inlineHelpText>
+        <label>Calculate Tax on PCR: Scope Size</label>
+        <precision>15</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CalcTaxOnPayableInvoiceRunParallel__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates that the process runs using parallel processing.</description>
+        <inlineHelpText>Indicates that the process runs using parallel processing.</inlineHelpText>
+        <label>Calculate Tax on PIN: Run parallel</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>c2g__CalcTaxOnPayableInvoiceScopeSize__c</fullName>
+        <defaultValue>1</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Scope size for the Calculate Tax on Payable Invoice process.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Scope size for the Calculate Tax on Payable Invoice process.</inlineHelpText>
+        <label>Calculate Tax on PIN: Scope Size</label>
+        <precision>15</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CommitTaxOnCreditNoteRunParallel__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates that the process runs using parallel processing.</description>
+        <inlineHelpText>Indicates that the process runs using parallel processing.</inlineHelpText>
+        <label>Commit Sales Tax on SCR: Run parallel</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>c2g__CommitTaxOnCreditNoteScopeSize__c</fullName>
+        <defaultValue>1</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Scope size for the Commit Sales Tax on Sales Credit Note process.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Scope size for the Commit Sales Tax on Sales Credit Note process.</inlineHelpText>
+        <label>Commit Sales Tax on SCR: Scope Size</label>
+        <precision>15</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CommitTaxOnInvoiceRunParallel__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates that the process runs using parallel processing.</description>
+        <inlineHelpText>Indicates that the process runs using parallel processing.</inlineHelpText>
+        <label>Commit Sales Tax on SIN: Run parallel</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>c2g__CommitTaxOnInvoiceScopeSize__c</fullName>
+        <defaultValue>1</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Scope size for the Commit Sales Tax on Sales Invoice process.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Scope size for the Commit Sales Tax on Sales Invoice process.</inlineHelpText>
+        <label>Commit Sales Tax on SIN: Scope Size</label>
+        <precision>15</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CommitTaxOnPayableCreditNoteRunParallel__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates that the process runs using parallel processing.</description>
+        <inlineHelpText>Indicates that the process runs using parallel processing.</inlineHelpText>
+        <label>Commit Sales Tax on PCR: Run parallel</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>c2g__CommitTaxOnPayableCreditNoteScopeSize__c</fullName>
+        <defaultValue>1</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Scope size for the Commit Sales Tax on Payable Credit Note process.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Scope size for the Commit Sales Tax on Payable Credit Note process.</inlineHelpText>
+        <label>Commit Sales Tax on PCR: Scope Size</label>
+        <precision>15</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CommitTaxOnPayableInvoiceRunParallel__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates that the process runs using parallel processing.</description>
+        <inlineHelpText>Indicates that the process runs using parallel processing.</inlineHelpText>
+        <label>Commit Sales Tax on PIN: Run parallel</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>c2g__CommitTaxOnPayableInvoiceScopeSize__c</fullName>
+        <defaultValue>1</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Scope size for the Commit Sales Tax on Payable Invoice procss.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Scope size for the Commit Sales Tax on Payable Invoice procss.</inlineHelpText>
+        <label>Commit Sales Tax on PIN: Scope Size</label>
+        <precision>15</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CreateCurrencyAdjustmentRunParallel__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates that the process runs using parallel processing.</description>
+        <inlineHelpText>Indicates that the process runs using parallel processing.</inlineHelpText>
+        <label>Create Curr. Adj. Journal: Run parallel</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>c2g__CreateCurrencyAdjustmentScopeSize__c</fullName>
+        <defaultValue>1</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Scope size for the Create Currency Adjustment Journal process.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Scope size for the Create Currency Adjustment Journal process.</inlineHelpText>
+        <label>Create Curr. Adj. Journal: Scope Size</label>
+        <precision>15</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CreateJournalsRunParallel__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates that the process runs using parallel processing.</description>
+        <inlineHelpText>Indicates that the process runs using parallel processing.</inlineHelpText>
+        <label>Create Journals: Run parallel</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>c2g__CreateJournalsScopeSize__c</fullName>
+        <defaultValue>1</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Scope size for the Create Journals process.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Scope size for the Create Journals process.</inlineHelpText>
+        <label>Create Journals: Scope Size</label>
+        <precision>15</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__IsUserGroupNotification__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates that user group notifications are sent for the process.</description>
+        <inlineHelpText>Indicates that user group notifications are sent for the process.</inlineHelpText>
+        <label>User Group Notification</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>c2g__PostAndMatchSalesCreditNoteRunParallel__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates that the process runs using parallel processing.</description>
+        <inlineHelpText>Indicates that the process runs using parallel processing.</inlineHelpText>
+        <label>Post and Match SCR: Run parallel</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>c2g__PostAndMatchSalesCreditNoteScopeSize__c</fullName>
+        <defaultValue>1</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Scope size for the Post and Match Sales Credit Note process.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Scope size for the Post and Match Sales Credit Note process.</inlineHelpText>
+        <label>Post and Match SCR: Scope Size</label>
+        <precision>15</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__PostBillingDocumentRunParallel__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates that the process runs using parallel processing.</description>
+        <inlineHelpText>Indicates that the process runs using parallel processing.</inlineHelpText>
+        <label>Post Billing Document: Run parallel</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>c2g__PostBillingDocumentScopeSize__c</fullName>
+        <defaultValue>1</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Scope size for the Post Billing Document process.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Scope size for the Post Billing Document process.</inlineHelpText>
+        <label>Post Billing Document: Scope Size</label>
+        <precision>15</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__PostCashEntryRunParallel__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If selected, cash entries are posted in parallel for faster processing.</description>
+        <inlineHelpText>If selected, cash entries are posted in parallel for faster processing.</inlineHelpText>
+        <label>Parallel Cash Entry Posting</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>c2g__PostCashEntryScopeSize__c</fullName>
+        <defaultValue>1</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The maximum number of cash entries to be posted in one go. The default value is 1.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The maximum number of cash entries to be posted in one go. The default value is 1.</inlineHelpText>
+        <label>Cash Entry Posting Scope Size</label>
+        <precision>15</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__PostJournalRunParallel__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates that the process runs using parallel processing.</description>
+        <inlineHelpText>Indicates that the process runs using parallel processing.</inlineHelpText>
+        <label>Post Journal: Run parallel</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>c2g__PostJournalScopeSize__c</fullName>
+        <defaultValue>1</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Scope size for the Post Journal process.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Scope size for the Post Journal process.</inlineHelpText>
+        <label>Post Journal: Scope Size</label>
+        <precision>15</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__PostPayableCreditNoteRunParallel__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates that the process runs using parallel processing.</description>
+        <inlineHelpText>Indicates that the process runs using parallel processing.</inlineHelpText>
+        <label>Post PCR: Run parallel</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>c2g__PostPayableCreditNoteScopeSize__c</fullName>
+        <defaultValue>1</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Scope size for the Post Payable Credit Note process.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Scope size for the Post Payable Credit Note process.</inlineHelpText>
+        <label>Post PCR: Scope Size</label>
+        <precision>15</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__PostPayableInvoiceRunParallel__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates that the process runs using parallel processing.</description>
+        <inlineHelpText>Indicates that the process runs using parallel processing.</inlineHelpText>
+        <label>Post PIN: Run parallel</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>c2g__PostPayableInvoiceScopeSize__c</fullName>
+        <defaultValue>1</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Scope size for the Post Payable Invoices process.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Scope size for the Post Payable Invoices process.</inlineHelpText>
+        <label>Post PIN: Scope Size</label>
+        <precision>15</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__PostSalesCreditNoteRunParallel__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates that the process runs using parallel processing.</description>
+        <inlineHelpText>Indicates that the process runs using parallel processing.</inlineHelpText>
+        <label>Post SCR: Run parallel</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>c2g__PostSalesCreditNoteScopeSize__c</fullName>
+        <defaultValue>1</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Scope size for the Post Sales Credit Note process.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Scope size for the Post Sales Credit Note process.</inlineHelpText>
+        <label>Post SCR: Scope Size</label>
+        <precision>15</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__PostSalesInvoiceRunParallel__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates that the process runs using parallel processing.</description>
+        <inlineHelpText>Indicates that the process runs using parallel processing.</inlineHelpText>
+        <label>Post SIN: Run parallel</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>c2g__PostSalesInvoiceScopeSize__c</fullName>
+        <defaultValue>1</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Scope size for the Post Sales Invoice process.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Scope size for the Post Sales Invoice process.</inlineHelpText>
+        <label>Post SIN: Scope Size</label>
+        <precision>15</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__ProcessICTRunParallel__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates that the process runs using parallel processing.</description>
+        <inlineHelpText>Indicates that the process runs using parallel processing.</inlineHelpText>
+        <label>Process ICT: Run parallel</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>c2g__ProcessICTScopeSize__c</fullName>
+        <defaultValue>1</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Scope size for the Process Intercompany Transfers process.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Scope size for the Process Intercompany Transfers process.</inlineHelpText>
+        <label>Process ICT: Scope Size</label>
+        <precision>15</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__UseDetailedMonitoring__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates that detailed monitoring is to be used for the process.</description>
+        <inlineHelpText>Indicates that detailed monitoring is to be used for the process.</inlineHelpText>
+        <label>Use Detailed Monitoring</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Background Posting Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

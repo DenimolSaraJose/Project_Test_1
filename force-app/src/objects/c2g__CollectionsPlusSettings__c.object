@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Collections Plus Settings</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>c2g__AttachInvoicesInReminderEmail__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Attach all the Invoices for an Account into one email per Reminder Rule</description>
+        <inlineHelpText>When selected all the invoices for the account are attached to the reminder email. The default is selected. Note: The Send All Invoices in an Email checkbox must also be selected.</inlineHelpText>
+        <label>Attach Invoices to Reminder Email</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>c2g__CollectionsRemindersLimit__c</fullName>
+        <defaultValue>5000</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The number of records that are processed in a batch by the Reminder process.</description>
+        <externalId>false</externalId>
+        <label>Collections Reminders Limit</label>
+        <precision>15</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CongaBatchUrl__c</fullName>
+        <deprecated>false</deprecated>
+        <inlineHelpText>Conga Batch URL setting is required if using Conga Conductor v8.13 or earlier.</inlineHelpText>
+        <label>Conga Batch URL Link</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>c2g__CongaDashboardPage__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Conga Dashboard Page setting is required if using Conga Conductor v8.13 or earlier</inlineHelpText>
+        <label>Conga Dashboard Page</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__ContactsFieldNameForSalesInvoice__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Defines the field name to use as the source for additional contact email addresses when sending reminders for sales invoices.  You must enter the name and relationship in the format RelationshipObject__r.FieldName__c</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Defines the field name to use as the source for additional contact email addresses when sending reminders for sales invoices.  You must enter the name and relationship in the format RelationshipObject__r.FieldName__c</inlineHelpText>
+        <label>Additional Contacts Field Name For SIN</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CustomerStatementCongaAttachmentPrefix__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Defines the prefix for Conga Attachments for Customer Statements.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Defines the prefix for Conga Attachments for Customer Statements.</inlineHelpText>
+        <label>Conga Statements Attachment Prefix</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__CustomerStatementsLimit__c</fullName>
+        <defaultValue>5000</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The number of records that are processed in a batch by the Statement process.</description>
+        <externalId>false</externalId>
+        <label>Customer Statements Limit</label>
+        <precision>15</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__DetailedReminderLogs__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Add detailed reminder logs for all contacts.</description>
+        <inlineHelpText>Indicates that detailed reminder logs are created for all contacts when sending reminders. The default value is true. If the value is set to false, reminder logs are only created for the finance contact. If no finance contact exists, detailed logs are only created for the first collections communication contact.</inlineHelpText>
+        <label>Detailed reminder logs for all contacts.</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>c2g__DetailedRemindersBatchProcessLogs__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Add detailed process logs for each reminder batch job</description>
+        <inlineHelpText>Indicates that detailed process logs are created for each reminder batch job.</inlineHelpText>
+        <label>Detailed Reminders Batch Process Logs</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>c2g__EmailTemplateFolders__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Fetch email templates from folders.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to filter email templates by folder when creating reminder or statement rules. You can enter multiple folder names, separated by a comma. If blank, all email templates are displayed when creating rules.</inlineHelpText>
+        <label>Email Template Folders</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__ReminderLogsRetentionPeriod__c</fullName>
+        <defaultValue>90</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Contains the minimum number of days to retain logs before deletion.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Defines the minimum number of days to retain Collections reminder and statement logs before they can be deleted. The value must be greater than or equal to 90.</inlineHelpText>
+        <label>Retention Period (Days)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__RemindersBatchScopeSize__c</fullName>
+        <defaultValue>50</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The scope size of RemindersSendEmailBatch.</description>
+        <externalId>false</externalId>
+        <label>Reminders Batch Scope Size</label>
+        <precision>15</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__SendAllInvoicesInOneEmail__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Combines all the Sales Invoices for an Account into one email per Reminder Rule</description>
+        <inlineHelpText>Used for sending Reminders via Collections Plus. Combines all the Sales Invoices for an Account into one email per Reminder Rule to reduce number of emails being sent. The default is false, one email per sales invoice.</inlineHelpText>
+        <label>Send all Invoices in one email</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>c2g__SendBillingDocuments__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Enables you to send reminders for Billing Documents in Collections Plus</description>
+        <inlineHelpText>Used for sending reminders for Billing Documents in Collections Plus.</inlineHelpText>
+        <label>Send Reminders for Billing Documents</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Collections Plus Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>TR1__ATS_Config_per_Job_Record_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Lookup to ATS Config per Job Record Type CMT</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Lookup to ATS Config per Job Record Type CMT</inlineHelpText>
+        <label>ATS Config per Job Record Type</label>
+        <referenceTo>TR1__ATS_Config_per_Job_Record_Type__mdt</referenceTo>
+        <relationshipLabel>SendOut Schedule Record Types</relationshipLabel>
+        <relationshipName>SendOut_Schedule_Record_Types</relationshipName>
+        <required>true</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Action_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>ATS Action Configuration name. Used to determine which action should be used for this configuration.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>ATS Action Configuration name. Used to determine which action should be used for this configuration.</inlineHelpText>
+        <label>Action Name</label>
+        <length>80</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Component_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Aura component name for editing a SoSv2 record of a given Record Type.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Aura component name for editing a SoSv2 record of a given Record Type.</inlineHelpText>
+        <label>Component Name</label>
+        <length>80</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Is_Active__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Determines whether this record type tab is active.</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Determines whether this record type tab is active.</inlineHelpText>
+        <label>Is Active</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Query_Conditions__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Additional query conditions to query SoSv2 (i.e. Group interviews have the Internal Interview Record Type)</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Additional query conditions to query SoSv2 (i.e. Group interviews have the Internal Interview Record Type)</inlineHelpText>
+        <label>Query Conditions</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Record_Type_Developer_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Developer name of the SoSv2 Record Type</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Developer name of the SoSv2 Record Type</inlineHelpText>
+        <label>Record Type Developer Name</label>
+        <length>80</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Tab_Label__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Custom label API name for tab name.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Custom label API name for tab name.</inlineHelpText>
+        <label>Tab Label</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>SendOut Schedule Record Type</label>
+    <pluralLabel>SendOut Schedule Record Types</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

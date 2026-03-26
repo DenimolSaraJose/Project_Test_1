@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>This object has been deprecated as records limit for Asynchronous process will be set in JSON configuration.</description>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>c2g__AsyncRecordsLimit__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field has been deprecated as records limit for Asynchronous process will be set in JSON configuration.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Defines the number of records to load in each asynchronous process.</inlineHelpText>
+        <label>Deprecated: Async Records Limit</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Deprecated: XML Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

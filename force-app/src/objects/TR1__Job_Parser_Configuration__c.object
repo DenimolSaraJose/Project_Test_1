@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>TR1__Job_Parser_Record_Types_To_Display__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This configuration determines the Job record types that should be displayed in the Job Parser.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify Job Record Types that should be visible to User. Job Record Types mentioned in this field will be available as options when User will use the Job Parsing functionality. Field values must be written through the separator ‘,’. If a User should have access to all Record Types as it was set in his permission set by default, then leave this text field blank.</inlineHelpText>
+        <label>Job Parser Record Types To Display</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Job Parser Configuration</label>
+    <visibility>Public</visibility>
+</CustomObject>

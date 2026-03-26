@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <customHelpPage>c2g__codahelpjournal</customHelpPage>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Stores the filter&apos;s data in the payment details template.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>c2g__AccountsPayableControlGla__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The accounts payable general ledger account that relates to the payment details template filters.</description>
+        <label>Accounts Payable GLA</label>
+        <referenceTo>c2g__codaGeneralLedgerAccount__c</referenceTo>
+        <relationshipLabel>Payment Details Template Filters</relationshipLabel>
+        <relationshipName>PaymentDetailsTemplateFilters</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>c2g__DetailsTemplate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field to specify a set of filters for payment details templates.</description>
+        <label>Payment Details Template</label>
+        <referenceTo>c2g__PaymentDetailsTemplate__c</referenceTo>
+        <relationshipLabel>Payment Details Template Filters</relationshipLabel>
+        <relationshipName>PaymentDetailsTemplateFilters</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>c2g__Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field for filtering a list of records for payment details templates.</description>
+        <label>Filter Type</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Vendor Name</fullName>
+                    <default>false</default>
+                    <label>Vendor Name</label>
+                </value>
+                <value>
+                    <fullName>Vendor Payment Method</fullName>
+                    <default>false</default>
+                    <label>Vendor Payment Method</label>
+                </value>
+                <value>
+                    <fullName>Accounts Payable Control GLA</fullName>
+                    <default>false</default>
+                    <label>Accounts Payable Control GLA</label>
+                </value>
+                <value>
+                    <fullName>Custom</fullName>
+                    <default>false</default>
+                    <label>Custom</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>c2g__VendorPaymentMethod__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The payment method to apply to this record for payment details templates.</description>
+        <label>Vendor Payment Method</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Cash</fullName>
+                    <default>false</default>
+                    <label>Cash</label>
+                </value>
+                <value>
+                    <fullName>Check</fullName>
+                    <default>false</default>
+                    <label>Check</label>
+                </value>
+                <value>
+                    <fullName>Electronic</fullName>
+                    <default>false</default>
+                    <label>Electronic</label>
+                </value>
+                <value>
+                    <fullName>Asperato - Domestic</fullName>
+                    <default>false</default>
+                    <label>Asperato - Domestic</label>
+                </value>
+                <value>
+                    <fullName>Asperato - Domestic - ACH</fullName>
+                    <default>false</default>
+                    <label>Asperato - Domestic - ACH</label>
+                </value>
+                <value>
+                    <fullName>Asperato - Domestic - BPAY</fullName>
+                    <default>false</default>
+                    <label>Asperato - Domestic - BPAY</label>
+                </value>
+                <value>
+                    <fullName>Asperato - Domestic - BANK_TRANSFER</fullName>
+                    <default>false</default>
+                    <label>Asperato - Domestic - BANK_TRANSFER</label>
+                </value>
+                <value>
+                    <fullName>Asperato - Domestic - FAST</fullName>
+                    <default>false</default>
+                    <label>Asperato - Domestic - FAST</label>
+                </value>
+                <value>
+                    <fullName>Asperato - Domestic - FASTER_PAYMENTS</fullName>
+                    <default>false</default>
+                    <label>Asperato - Domestic - FASTER_PAYMENTS</label>
+                </value>
+                <value>
+                    <fullName>Asperato - Domestic - FEDWIRE</fullName>
+                    <default>false</default>
+                    <label>Asperato - Domestic - FEDWIRE</label>
+                </value>
+                <value>
+                    <fullName>Asperato - Domestic - FPS</fullName>
+                    <default>false</default>
+                    <label>Asperato - Domestic - FPS</label>
+                </value>
+                <value>
+                    <fullName>Asperato - Domestic - GIRO</fullName>
+                    <default>false</default>
+                    <label>Asperato - Domestic - GIRO</label>
+                </value>
+                <value>
+                    <fullName>Asperato - Domestic - RTGS</fullName>
+                    <default>false</default>
+                    <label>Asperato - Domestic - RTGS</label>
+                </value>
+                <value>
+                    <fullName>Asperato - International</fullName>
+                    <default>false</default>
+                    <label>Asperato - International</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>c2g__Vendor__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The account that relates to the payment details template filters.</description>
+        <label>Vendor Name</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Payment Details Template Filters</relationshipLabel>
+        <relationshipName>PaymentDetailsTemplateFilters</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Payment Details Template Filter</label>
+    <nameField>
+        <displayFormat>{0}</displayFormat>
+        <label>Payment Details Template Filter ID</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Payment Details Template Filters</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>TR1__Default_Email_Folder__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Stores the API name of the email template folder that will be pre-selected in the Email Editor for the current Email Page Type record.</description>
+        <inlineHelpText>Stores the API name of the email template folder that will be pre-selected in the Email Editor for the current Email Page Type record.</inlineHelpText>
+        <label>Default Email Folder</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>TR1__Email_Template_Folders</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__Default_Email_Template__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Stores the identifier of the email template that will be pre-selected in the Email Editor for the current Email Page Type record. The following 3 types are supported: Classic Salesforce Email Template Developer Name, or External Id/Campaign Unique Name(SFMC Integration only).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Stores the identifier of the email template that will be pre-selected in the Email Editor for the current Email Page Type record. The following 3 types are supported: Classic Salesforce Email Template Developer Name, or External Id/Campaign Unique Name(SFMC Integration only).</inlineHelpText>
+        <label>Default Email Template</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Default_Interviewee_Email_Folder__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Stores the API name of the email template folder that will be pre-selected in the Email Editor for an Interviewee for the current Email Page Type record.</description>
+        <inlineHelpText>Stores the API name of the email template folder that will be pre-selected in the Email Editor for an Interviewee for the current Email Page Type record.</inlineHelpText>
+        <label>Default Interviewee Email Folder</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>TR1__Email_Template_Folders</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__Default_Interviewee_Email_Template__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Stores the identifier of the email template that will be pre-selected in the Email Editor for an Interviewee for the current Email Page Type record.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Stores the identifier of the email template that will be pre-selected in the Email Editor for an Interviewee for the current Email Page Type record.</inlineHelpText>
+        <label>Default Interviewee Email Template</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Default_Interviewer_Email_Folder__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Stores the API name of the email template folder that will be pre-selected in the Email Editor for an Interviewer for the current Email Page Type record.</description>
+        <inlineHelpText>Stores the API name of the email template folder that will be pre-selected in the Email Editor for an Interviewer for the current Email Page Type record.</inlineHelpText>
+        <label>Default Interviewer Email Folder</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>TR1__Email_Template_Folders</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__Default_Interviewer_Email_Template__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Stores the identifier of the email template that will be pre-selected in the Email Editor for an Interviewer for the current Email Page Type record.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Stores the identifier of the email template that will be pre-selected in the Email Editor for an Interviewer for the current Email Page Type record.</inlineHelpText>
+        <label>Default Interviewer Email Template</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Email_Template_Folders__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Stores names of the folders under which email templates related to the current email page type should appear. Note: in case if the message preview from SFMC Cloud Page is enabled the folders don’t represent the SF Folders on the org and should match folders specified at some Campaign Template Mappings.</description>
+        <inlineHelpText>Stores names of the folders under which email templates related to the current email page type should appear. Note: in case if the message preview from SFMC Cloud Page is enabled the folders don’t represent the SF Folders on the org and should match folders specified at some Campaign Template Mappings.</inlineHelpText>
+        <label>Email Template Folders</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>TR1__Email_Template_Folders</valueSetName>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TR1__Email_Type__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <deprecated>false</deprecated>
+        <label>Email Type</label>
+        <referenceTo>TR1__Email_Type__c</referenceTo>
+        <relationshipLabel>Email Page Types</relationshipLabel>
+        <relationshipName>Email_Page_Types</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Page_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <label>Page Type</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>StandardCallList</fullName>
+                    <default>false</default>
+                    <label>Call List - Standard</label>
+                </value>
+                <value>
+                    <fullName>MarketingCallList</fullName>
+                    <default>false</default>
+                    <label>Call List - Candidate Marketing</label>
+                </value>
+                <value>
+                    <fullName>ShareCV</fullName>
+                    <default>false</default>
+                    <label>CV Manager - Share CV</label>
+                </value>
+                <value>
+                    <fullName>LongList</fullName>
+                    <default>false</default>
+                    <label>Long List</label>
+                </value>
+                <value>
+                    <fullName>RegistrationInterview</fullName>
+                    <default>false</default>
+                    <label>Registration Interview</label>
+                </value>
+                <value>
+                    <fullName>JobLeadEmail</fullName>
+                    <default>false</default>
+                    <label>Job Lead Email</label>
+                </value>
+                <value>
+                    <fullName>TextKernelSamEmail</fullName>
+                    <default>false</default>
+                    <label>TextKernel Sam Email</label>
+                </value>
+                <value>
+                    <fullName>SendEmail</fullName>
+                    <default>false</default>
+                    <label>ATSv2 - Send Email</label>
+                </value>
+                <value>
+                    <fullName>InternalInterview</fullName>
+                    <default>false</default>
+                    <label>ATSv2 - Internal Interview</label>
+                </value>
+                <value>
+                    <fullName>SendOutSchedule</fullName>
+                    <default>false</default>
+                    <label>ATSv2 - SendOut Schedule</label>
+                </value>
+                <value>
+                    <fullName>SubmitWithEmail</fullName>
+                    <default>false</default>
+                    <label>ATSv2 - Submit With Email</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Email Page Type</label>
+    <nameField>
+        <label>Email Page Type Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Email Page Types</pluralLabel>
+    <recordTypes>
+        <fullName>TR1__Basic</fullName>
+        <active>true</active>
+        <description>Record type for basic Email Page Types</description>
+        <label>Basic</label>
+        <picklistValues>
+            <picklist>TR1__Default_Email_Folder__c</picklist>
+            <values>
+                <fullName>Closing_Report_Email_Templates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Job_Manager_Templates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>My Personal Email Templates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Talent_Rover_Email_Templates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unfiled Public Email Templates</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>TR1__Default_Interviewee_Email_Folder__c</picklist>
+            <values>
+                <fullName>Closing_Report_Email_Templates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Job_Manager_Templates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>My Personal Email Templates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Talent_Rover_Email_Templates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unfiled Public Email Templates</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>TR1__Default_Interviewer_Email_Folder__c</picklist>
+            <values>
+                <fullName>Closing_Report_Email_Templates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Job_Manager_Templates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>My Personal Email Templates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Talent_Rover_Email_Templates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unfiled Public Email Templates</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>TR1__Email_Template_Folders__c</picklist>
+            <values>
+                <fullName>Closing_Report_Email_Templates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Job_Manager_Templates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>My Personal Email Templates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Talent_Rover_Email_Templates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unfiled Public Email Templates</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>TR1__Page_Type__c</picklist>
+            <values>
+                <fullName>InternalInterview</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JobLeadEmail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LongList</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MarketingCallList</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RegistrationInterview</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SendEmail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ShareCV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>StandardCallList</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SubmitWithEmail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TextKernelSamEmail</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>TR1__Interview</fullName>
+        <active>true</active>
+        <description>Record type for Email Page Types that contains interview-specific settings</description>
+        <label>Interview</label>
+        <picklistValues>
+            <picklist>TR1__Default_Email_Folder__c</picklist>
+            <values>
+                <fullName>Closing_Report_Email_Templates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Job_Manager_Templates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>My Personal Email Templates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Talent_Rover_Email_Templates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unfiled Public Email Templates</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>TR1__Default_Interviewee_Email_Folder__c</picklist>
+            <values>
+                <fullName>Closing_Report_Email_Templates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Job_Manager_Templates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>My Personal Email Templates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Talent_Rover_Email_Templates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unfiled Public Email Templates</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>TR1__Default_Interviewer_Email_Folder__c</picklist>
+            <values>
+                <fullName>Closing_Report_Email_Templates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Job_Manager_Templates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>My Personal Email Templates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Talent_Rover_Email_Templates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unfiled Public Email Templates</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>TR1__Email_Template_Folders__c</picklist>
+            <values>
+                <fullName>Closing_Report_Email_Templates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Job_Manager_Templates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>My Personal Email Templates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Talent_Rover_Email_Templates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unfiled Public Email Templates</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>TR1__Page_Type__c</picklist>
+            <values>
+                <fullName>SendOutSchedule</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

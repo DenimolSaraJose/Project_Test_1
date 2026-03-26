@@ -1,0 +1,928 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>TR1__ATS_Submittal_Default_Email_Template__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>ATS Submittal Default Email Template</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__ATS_console_link_target_behavior__c</fullName>
+        <defaultValue>&quot;BrowserTab&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>When clicking a link within the ATS in the Console View, this setting determines the opening behavior. The available values are:
+1)BrowserTab
+2)ConsoleTab
+3)ConsoleSubTab</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Determines the link behavior in the ATS within Console View. Available values are BrowserTab, ConsoleTab and ConsoleSubTab</inlineHelpText>
+        <label>ATS console link target behavior</label>
+        <length>15</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Account_Hierarchy_Levels_to_get_Contacts__c</fullName>
+        <defaultValue>(0)</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Number of levels in Account Hierarchy to check for getting Contact Ids for Send Out Schedule Interviewers search</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter a number between 1-30 to enable users to add Contacts from Account Hierarchy related to Job Account in &apos;Interviewer(s)&apos; field on SendOut Schedule. The number you enter determines the number of levels queried in related Account Hierarchy. If default value &apos;0&apos; is not changed, this functionality is not activated.</inlineHelpText>
+        <label>Account Hierarchy Levels to get Contacts</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__ApplicationFieldAPIName__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Application Field API Name to be used on the ATS view in the Applicant cell.</inlineHelpText>
+        <label>Application Field Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Apply_To_Other_Job_Lookup_Statuses__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Comma-separated list of Job statuses by which job records are filtered on the job lookup within the &quot;Apply To Other Job&quot; modal window in the ATS. Only Jobs with statuses in the list will be included, all other records will be excluded. If this field is not populated the &apos;Open&apos; Job status is used as a default filter.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Comma-separated list of Job statuses by which job records are filtered on the job lookup within the &quot;Apply To Other Job&quot; modal window in the ATS. Only Jobs with statuses in the list will be included, all other records will be excluded. If this field is not populated the &apos;Open&apos; Job status is used as a default filter.</inlineHelpText>
+        <label>Apply To Other Job Lookup Statuses</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Cancel_Events_Regardless_Of_Owner__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>All candidate events will be canceled/removed regardless of user access to these events if checked</description>
+        <inlineHelpText>All candidate events will be canceled/removed regardless of user access to these events if checked</inlineHelpText>
+        <label>Cancel Events Regardless Of Owner</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Cancel_SOS_reason_on_new_Closing_Report__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specify the Cancellation reason pick-list value to be populated to the future Send Out Schedules when a closing report is created</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify the Cancellation reason pick-list value to be populated to the future Send Out Schedules when a closing report is created</inlineHelpText>
+        <label>Cancel SOS reason on new Closing Report</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Cancel_future_SOS_on_new_Closing_Report__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If true, all future scheduled send out schedules will be cancelled when a closing report is created. If false, future scheduled send out schedules are deleted.</description>
+        <inlineHelpText>If true, all future scheduled send out schedules will be cancelled when a closing report is created. If false, future scheduled send out schedules are deleted.</inlineHelpText>
+        <label>Cancel future SOS on new Closing Report</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__CandidateFieldAPIName__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Candidate Field API name to be used on the ATS view in the Applicant cell.</inlineHelpText>
+        <label>Candidate Field Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Candidate_ATS_Default_View__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Default view for Candidate ATS
+Values are similar to Default View on  ATS Config per Job Record Type cmt
+If it is blank, default view will be ATS</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Valid values: Table, ATS
+If it is blank, default view will be ATS</inlineHelpText>
+        <label>Candidate ATS Default View</label>
+        <length>64</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Client_Contact_Record_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field holds the default record type whenever new contact created through send out screen.</description>
+        <externalId>false</externalId>
+        <label>Client Contact Record Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Delete_Cancelled_Interview_Activity__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If this checkbox is enabled, when an Interview is cancelled the associated Activity will be deleted in Salesforce. If disabled, the Activity is not deleted but its subject line is updated by prepending CANCELLED</description>
+        <inlineHelpText>If this checkbox is enabled, when an Interview is cancelled the associated Activity will be deleted in Salesforce. If disabled, the Activity is not deleted but its subject line is updated by prepending CANCELLED</inlineHelpText>
+        <label>Delete Cancelled Interview Activity</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Disable_ATSv2_actions_for_Closed_Jobs__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Disable ATSv2 actions for Closed Jobs</description>
+        <inlineHelpText>Disable ATSv2 actions for Closed Jobs</inlineHelpText>
+        <label>Disable ATSv2 actions for Closed Jobs</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Disable_All_Users_Visible_Filter__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <inlineHelpText>If checked, removes the ability to create ATSv2 Filters visible to all Users</inlineHelpText>
+        <label>Disable All Users Visible Filter</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Disable_Cancel_SOS_field_name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field Api name of any checkbox field in the TR1__Send_Out_Schedule_V2__c object. If the value of the specified field equals &quot;true&quot;, the &quot;Cancel schedules&quot; button will be disabled for this record.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Field Api name of any checkbox field in the TR1__Send_Out_Schedule_V2__c object. If the value of the specified field equals &quot;true&quot;, the &quot;Cancel schedules&quot; button will be disabled for this record.</inlineHelpText>
+        <label>Disable Cancel SOS field name</label>
+        <length>60</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Disable_Edit_SOS_field_name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field Api name of any checkbox field in the TR1__Send_Out_Schedule_V2__c object. If the value of the specified field equals &quot;true&quot;, the &quot;Edit schedules&quot; button will be disabled for this record.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Field Api name of any checkbox field in the TR1__Send_Out_Schedule_V2__c object. If the value of the specified field equals &quot;true&quot;, the &quot;Edit schedules&quot; button will be disabled for this record.</inlineHelpText>
+        <label>Disable Edit SOS field name</label>
+        <length>60</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Disable_Email_on_SOS_Cancel_field_name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field Api name of any checkbox field in the TR1__Send_Out_Schedule_V2__c object. If the value of the specified field equals &quot;true&quot;, the &quot;Send Email&quot; checkbox will be disabled for this record.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Field Api name of any checkbox field in the TR1__Send_Out_Schedule_V2__c object. If the value of the specified field equals &quot;true&quot;, the &quot;Send Email&quot; checkbox will be disabled for this record.</inlineHelpText>
+        <label>Disable Email on SOS Cancel field name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Disable_edit_mode_in_preview__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <inlineHelpText>Disables editing when previewing Application via &quot;i&quot; button on ATS</inlineHelpText>
+        <label>Disable edit mode in preview</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Disable_log_activities_for_Applications__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Disable log activities related to Application</description>
+        <label>Disable log activities for Applications</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Disable_move_back_for_multiple_selection__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>When checked, move back is disabled when multiple applications are selected. Applicable for ATS and Browse.</description>
+        <inlineHelpText>When checked, move back is disabled when multiple applications are selected. Applicable for ATS and Browse.</inlineHelpText>
+        <label>Disable move-back for multiple selection</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Disablesinglemoveback__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>To decide whether to move back word single should be allowed are not.</description>
+        <inlineHelpText>To decide whether to move back word single should be allowed are not.</inlineHelpText>
+        <label>Disable single move back</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Display_Location_Field_For_Types__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Defines Types for which the ‘Where’ field should be displayed on the email form. Type names should be separated by a comma. If empty, the ‘Where’ field will displayed for all Types.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Defines Types for which the ‘Where’ field should be displayed on the email form. Type names should be separated by a comma. If empty, the ‘Where’ field will displayed for all Types.</inlineHelpText>
+        <label>Types to display Location field</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Enable_AccountContact_Interviewers__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Allows to select AccountContacts (AccountContactRelation object) related to Job&apos;s Account as Interviewers on send out</description>
+        <inlineHelpText>Allows to select AccountContacts (AccountContactRelation object) related to Job&apos;s Account as Interviewers on send out</inlineHelpText>
+        <label>Enable AccountContact Interviewers</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Enable_Actions_for_Candidate_ATS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This flag enables actions on Candidate ATS</description>
+        <inlineHelpText>This flag enables actions on Candidate ATS</inlineHelpText>
+        <label>Enable Actions for Candidate ATS</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Enable_Application_Creation_On_Quick_Add__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If true, quick add component pre-creates application record for the chosen contact before moving to a custom/overridden stage</description>
+        <inlineHelpText>If true, quick add component pre-creates application record for the chosen contact before moving to a custom/overridden stage</inlineHelpText>
+        <label>Create App On Quick Add/Apply to Job</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Enable_Copy_to_All_SOSv2__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <inlineHelpText>Enables individual cancellation reasons and Send Email setting for SOSv2</inlineHelpText>
+        <label>Enable Copy to All SOSv2</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Enable_Fieldset_for_SoSv2_cancellation__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If checked, the Cancellation Form field-set is rendered on Cancel Interview modal window.</description>
+        <inlineHelpText>If checked, the Cancellation Form field-set is rendered on Cancel Interview modal window.</inlineHelpText>
+        <label>Enable Fieldset for SoSv2 cancellation</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Enable_Icons_For_Ranking_Groups__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Setting to display icons instead of names on ATS for Ranking Group.</description>
+        <inlineHelpText>Setting to display icons instead of names on ATS for Ranking Group.</inlineHelpText>
+        <label>Enable Icons For Ranking Groups</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Enable_LWC_TopNavigation__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Enable pagination navigation at the top of the LWC ATS view components</description>
+        <inlineHelpText>Enable pagination navigation at the top of the LWC ATS view components</inlineHelpText>
+        <label>Enable LWC view pagination at top</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Enable_Listview_LWC__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Enable the ATS view components using LWC</description>
+        <inlineHelpText>Enable the ATS view components using LWC</inlineHelpText>
+        <label>Switch views to LWC</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Enable_LongList_on_ATS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Enable showing Longlist records on LWC ATS</description>
+        <inlineHelpText>Enable showing Longlist records on LWC ATS</inlineHelpText>
+        <label>Enable LongList on LWC ATS</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Enable_SOSv2_actions_for_Candidate_ATS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <inlineHelpText>Controls the displaying of the Cancel/Edit buttons on the Candidate ATS - Interview Scheduler modal</inlineHelpText>
+        <label>Enable SOSv2 actions for Candidate ATS</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Enable_Stage_Color_override__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Determines if the color override functionality is active.</description>
+        <inlineHelpText>If checked, this setting enables stage color override feature (use TR1__ATS_Stage_Color_Override__mdt for setup)</inlineHelpText>
+        <label>Enable Stage Color override</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Enable_Sub_Status_History__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>When checked, will retain previously created sub status records instead of overwriting them on change.</description>
+        <inlineHelpText>When checked, will retain previously created sub status records instead of overwriting them on change.</inlineHelpText>
+        <label>Enable Sub Status History</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Enable_Sub_Statuses__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Allows users to add a sub status value to each stage of an application on ATS.</description>
+        <inlineHelpText>Allows users to add a sub status value to each stage of an application on ATS.</inlineHelpText>
+        <label>Enable Sub Statuses</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Enable_Table_View_for_Candidate_ATS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Check if Table View should be enabled for ATS for Candidate</description>
+        <inlineHelpText>Check if Table View should be enabled for ATS for Candidate</inlineHelpText>
+        <label>Enable Table View for Candidate ATS</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Enable_Truncation__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Enable Truncation for stage labels if the length of the component does not fit into the parent component. When the option is disabled, the scroll slider will be displayed.</description>
+        <inlineHelpText>Enable Truncation for stage labels if the length of the component does not fit into the parent component. When the option is disabled, the scroll slider will be displayed.</inlineHelpText>
+        <label>Enable Truncation</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Enable_grid_format_for_offer_page__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Check this field to enable grid format for Offer page</description>
+        <label>Enable grid format for Offer page</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Enable_send_email_mode__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Sending Email confirmation after Reject/Unreject action.</description>
+        <inlineHelpText>Sending Email confirmation after Reject/Unreject action.</inlineHelpText>
+        <label>Enable send email mode</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Enable_send_email_mode_on_Candidate_ATS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Sending Email confirmation after Reject/Unreject action on Candidate ATS.</description>
+        <inlineHelpText>Sending Email confirmation after Reject/Unreject action on Candidate ATS.</inlineHelpText>
+        <label>Enable send email mode on Candidate ATS</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Enforce_Read_Only_In_Mass_Offer_Grid__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>When active, enforces read-only for Read-Only and Formula Fields in the Mass Offer Grid View</description>
+        <inlineHelpText>When active, enforces read-only for Read-Only and Formula Fields in the Mass Offer Grid View</inlineHelpText>
+        <label>Enforce read-only in Mass Offer Grid</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Fields_To_Fire_Recalculation_On_Offer__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Defines the fields which, when changed, will force a recalculation of all formula fields within the mass offer grid view modal window. The field API Names should be separated by a comma. If empty, recalculation won&apos;t fire.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Defines the fields which, when changed, will force a recalculation of all formula fields within the mass offer grid view modal window. The field API Names should be separated by a comma. If empty, recalculation won&apos;t fire.</inlineHelpText>
+        <label>Fields to fire Recalculation on Offer</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Hide_Add_another_Schedule_Internal__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Hides the &apos;Add another Schedule&apos; button from the Internal Interview form.</description>
+        <inlineHelpText>Hides the &apos;Add another Schedule&apos; button from the Internal Interview form.</inlineHelpText>
+        <label>Hide Add another Schedule Internal</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Hide_Add_another_Schedule_Send_Out__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Hides the &apos;Add another Schedule&apos; button from the Send Out form.</description>
+        <inlineHelpText>Hides the &apos;Add another Schedule&apos; button from the Send Out form.</inlineHelpText>
+        <label>Hide Add another Schedule Send Out</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Hide_CertificationTab_SoSAttachments__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Disallows the adding of Certifications in the attachment selector for Sendout Schedule Emails.</description>
+        <inlineHelpText>Disallows the adding of Certifications in the attachment selector for Sendout Schedule Emails.</inlineHelpText>
+        <label>Hide Certifications Tab SoS Attachments</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Hide_ResumeTab_SoSAttachments__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Disallows the adding of Resumes in the attachment selector for Sendout Schedule Emails.</description>
+        <inlineHelpText>Disallows the adding of Resumes in the attachment selector for Sendout Schedule Emails.</inlineHelpText>
+        <label>Hide Resumes Tab SoS Attachments</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Internal_Inteview_Cancel_Template__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Used as default email template for Cancel Internal Interview notification. If the field is empty, use default &quot;Default Group Internal Interview Cancellation - Email Notification&quot; template</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used as default email template for Cancel Internal Interview notification. If the field is empty, use default &quot;Default Group Internal Interview Cancellation - Email Notification&quot; template</inlineHelpText>
+        <label>Internal Inteview Cancel Template</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Interview_Cancel_Email_Flow__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Enable cancel Interview Email notification flow if checked</description>
+        <inlineHelpText>Enable cancel Interview Email notification flow if checked</inlineHelpText>
+        <label>Interview Cancel Email Flow</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__IsSendOutEmailTemplateRequired__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If an interview is scheduled and send confirmation is checked for interviewee and interviewer then an email template is required</description>
+        <inlineHelpText>If an interview is scheduled and send confirmation is checked for interviewee and interviewer then an email template is required</inlineHelpText>
+        <label>Is SendOut Email Template Required</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Is_Send_Out_Duration_Field_Mandatory__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Check this if  Duration in minutes field for Send out schedule page is Mandatory</description>
+        <inlineHelpText>Check this if  Duration in minutes field for Send out schedule page is Mandatory</inlineHelpText>
+        <label>Is Send Out Duration Field Mandatory</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Is_Send_Out_Interviewers_Field_Mandatory__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Check this field to make Send Out Schedule Interviewers field mandatory</description>
+        <inlineHelpText>Check this field to make Send Out Schedule Interviewers field mandatory</inlineHelpText>
+        <label>Is Send Out Interviewers Field Mandatory</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Is_Send_Out_Type_Field_Mandatory__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Check this if Type field for Send Out schedule page is Mandatory</description>
+        <inlineHelpText>Check this if Type field for Send Out schedule page is Mandatory</inlineHelpText>
+        <label>Is Send Out Type Field Mandatory</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Job_detail_popover_Page_layout_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specifies the Page Layout to be used when hovering over a Job name within the Candidate ATS.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specifies the Page Layout to be used when hovering over a Job name within the Candidate ATS.</inlineHelpText>
+        <label>Job detail popover Page layout Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Kanban_Record_Size__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Kanban Record Size</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Kanban_View_Disabled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If checked, Kanban view is not available</description>
+        <inlineHelpText>Disable Kanban View option in ATS Select View drop down</inlineHelpText>
+        <label>Kanban View Disabled</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__List_view_records_size__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>List view records size</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Max_list_view_records_size__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Max number of applicants per job to display ATS view.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If number of candidates in ATS List View is bigger than number entered in this field, then when ATS is launched Table View will be shown.</inlineHelpText>
+        <label>Max list view records size</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Name_Space_Prefix__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is used for maintain the package namespace at org level.</description>
+        <externalId>false</externalId>
+        <label>Name Space Prefix</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Quick_Add_Candidates_Display_Number__c</fullName>
+        <defaultValue>500</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Presents the number of Candidates to display in search result. Default value is 10. Max value is 100</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Presents the number of Candidates to display in search result. Default value is 10. Max value is 100</inlineHelpText>
+        <label>Quick Add Candidates Display Number</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Registration_Interview_Date_Default__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Default value for Registration Interview/Internal Interview Date field</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Registration Interview/Internal Interview default date. Can be set to &quot;Today&quot; or a date in the format yyyy-mm-dd</inlineHelpText>
+        <label>Registration Interview Date Default</label>
+        <length>15</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Registration_Interview_Duration_Default__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Default value for Registration Interview/Internal Interview Duration field</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Registration Interview/Internal Interview default duration (in minutes)</inlineHelpText>
+        <label>Registration Interview Duration Default</label>
+        <length>8</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Registration_Interview_Time_Default__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Default value for Registration Interview/Internal Interview Time field</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Registration Interview/Internal Interview default time in 24h format hh:mm</inlineHelpText>
+        <label>Registration Interview Time Default</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Registration_Interview_Type_Default__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Default value for Registration Interview/Internal Interview Type field</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter one of the values from the TR1__Type__c picklist (SendOutv2 object, Internal interview record type)</inlineHelpText>
+        <label>Registration Interview Type Default</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Reject_Reason_Dependent_On_Stage__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Enables Reject Reason picklist dependency on Stage picklist for reject/unreject action if checked</description>
+        <inlineHelpText>Enables Reject Reason picklist dependency on Stage picklist for reject/unreject action if checked</inlineHelpText>
+        <label>Reject Reason Dependent On Stage</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Rejection_Email_Controlled_By_Method__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If rejection email is enabled sending or not will be controlled by Rejection Method value</description>
+        <inlineHelpText>If rejection email is enabled sending or not will be controlled by Rejection Method value</inlineHelpText>
+        <label>Rejection Email Controlled By Method</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__SAM_move_to_Application_Max__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Max number of candidates which can be added to Applicationv2 in a single transaction from SAM search result page.</inlineHelpText>
+        <label>SAM move to Application Max</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Send_Out_Date_Field_Default__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Default value for Send Out Date field</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Send Out default date. Can be set to &quot;Today&quot; or a date in the format yyyy-mm-dd</inlineHelpText>
+        <label>Send Out Date Field Default</label>
+        <length>15</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Send_Out_Duration_Field_Default__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Default value for Send Out Duration field</description>
+        <externalId>false</externalId>
+        <label>Send Out Duration Field Default</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Send_Out_Time_Field_Default__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Default value for Send Out Time field</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Send Out default time in 24h format hh:mm</inlineHelpText>
+        <label>Send Out Time Field Default</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Send_Out_Type_Field_Default__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Default value for Send Out Type field</description>
+        <externalId>false</externalId>
+        <label>Send Out Type Field Default</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Sendout_Inteview_Cancel_Template__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Used as default email template for Cancel SendOut Interview notification. If the field is empty, use default &quot;Default Group Internal Interview Cancellation - Email Notification&quot; template</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used as default email template for Cancel SendOut Interview notification. If the field is empty, use default &quot;Default Group Internal Interview Cancellation - Email Notification&quot; template</inlineHelpText>
+        <label>Sendout Inteview Cancel Template</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Set_Interview_Cancellation_Reason__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>(Deprecated)Controls displaying of Cancellation Reason field on Interview cancellation
+Use field-set configuration instead - Enable Fieldset for SoSv2 cancellation</description>
+        <inlineHelpText>Controls displaying of Cancellation Reason field on Interview cancellation</inlineHelpText>
+        <label>(Deprecated)Set Interview Cancel Reason</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Show_Power_Notes_On_Application_Info__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If enabled, the Power Notes tab is shown first instead of Applicationv2 record details when &apos;i&apos; is clicked.</description>
+        <inlineHelpText>If enabled, the Power Notes tab is shown first instead of Applicationv2 record details when &apos;i&apos; is clicked.</inlineHelpText>
+        <label>Show Power Notes On Application Info</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Show_Type_values_per_SoSv2_Record_Type__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If enabled, the Type pick-list value set is shown based on the Send Out Schedule v2 Record Type configuration.</description>
+        <inlineHelpText>If enabled, the Type pick-list value set is shown based on the Send Out Schedule v2 Record Type configuration.</inlineHelpText>
+        <label>Show Type values per SoSv2 Record Type</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Sub_Status_Position_on_Candidate_Table__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The position to display the Sub-Status column on the Candidate ATS Table view. Will not display when blank or a negative value and will default to the end position if the value exceeds that of the number of fields to display in the field set.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The position to display the Sub-Status column on the Candidate ATS Table view. Will not display when blank or a negative value and will default to the end position if the value exceeds that of the number of fields to display in the field set.</inlineHelpText>
+        <label>Sub Status Position On Candidate Table</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Submit_With_Email__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Used for choosing Submit with Email as default option for submittal entry page.</description>
+        <label>Submit With Email</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Submit_without_Email__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Used for choosing submit without email as the default option for submittal entry page.</description>
+        <label>Submit without Email</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Submittal_by_Contact_with_Job_Account__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <inlineHelpText>Only see related Contacts in the &apos;To&apos; field, that on their record have same Account value as Job Account field. Applied to ATSv2 &apos;Submit with Email&apos; email page (both for ATS Candidates and Job Candidates) and USAM</inlineHelpText>
+        <label>Submittal by Contact with Job Account</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Time_Zones_for_Interviews__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>When active, calculates the time/date for an interview using the Time Zone field on the Send Out Schedule v2 object and adds an additional “Time Zone” field in the Interview Scheduler modal window, allowing users to specify in which time zone the specified time &amp; date is set. The default value for the time zone is the time zone specified on the user’s profile.</description>
+        <inlineHelpText>When active, calculates the time/date for an interview using the Time Zone field on the Send Out Schedule v2 object and adds an additional “Time Zone” field in the Interview Scheduler modal window, allowing users to specify in which time zone the specified time &amp; date is set. The default value for the time zone is the time zone specified on the user’s profile.</inlineHelpText>
+        <label>Time Zones for Interviews</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Toggle_Views_Button_Disabled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Disable the Toggle Views function on ATS so the User cannot change between views on a job</description>
+        <inlineHelpText>Disable the Toggle Views function on ATS so the User cannot change between views on a job</inlineHelpText>
+        <label>Toggle Views Button Disabled</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Track_Interview_Attendees__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Store interview attendees in related records</description>
+        <inlineHelpText>Store interview attendees in related records</inlineHelpText>
+        <label>Track Interview Attendees</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__View_Interview_Schedules__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Display Internal Interviews In View Schedules, and group interviews if enable for this job type.</description>
+        <inlineHelpText>Display Internal Interviews In View Schedules, and group interviews if enable for this job type.</inlineHelpText>
+        <label>View Interview Schedules</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__View_Rejected_Closed_Application_modals__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Unfreezes locked stage modals for rejected or closed (closed report) application</description>
+        <inlineHelpText>Unfreezes locked stage modals for rejected or closed (closed report) application</inlineHelpText>
+        <label>View Rejected/Closed Application modals</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>ATS Configuration Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

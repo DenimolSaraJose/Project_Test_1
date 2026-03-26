@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>TR1__Resume_Search_Field_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Resume Search field API name. Required, if the TextKernel field is used in a custom filter. Otherwise, leave it blank.</inlineHelpText>
+        <label>Resume Search Field Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Salesforce_Field_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Job field API name. Required, if the TextKernel field is used for sorting, advanced search or autocompletion. Leave it blank, if the TextKernel field is used in a custom filter.</inlineHelpText>
+        <label>Salesforce Field Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Salesforce_Object_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Salesforce Object API Name for the fields from the Salesforce Field Name, Resume Search Field Name. Required, if Salesforce Field Name or Resume Search Field Name field is populated.</inlineHelpText>
+        <label>Salesforce Object Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__TextKernel_Field_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>TextKernel Field Name</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>TextKernel Search Field Mapping</label>
+    <pluralLabel>TextKernel Search Field Mappings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

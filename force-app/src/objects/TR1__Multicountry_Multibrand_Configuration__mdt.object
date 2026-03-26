@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>TR1__Brand_User_Field__c</fullName>
+        <deprecated>false</deprecated>
+        <description>API Name of the Brand field on the User object</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>API Name of the Brand field on the User object</inlineHelpText>
+        <label>Brand User Field</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Brands_MasterSkill_Field__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field contains an API name of MasterSkill&apos;s filed with the allowed brands.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>This field contains an API name of MasterSkill&apos;s filed with the allowed brands. The value should have an API Name of fields which type is Multi Picklist.</inlineHelpText>
+        <label>Brands MasterSkill Field</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Countries_MasterSkill_Field__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field contains an API name of MasterSkill&apos;s filed with the allowed countries.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>This field contains an API name of MasterSkill&apos;s filed with the allowed countries. The value should have an API Name of fields which type is Multi Picklist.</inlineHelpText>
+        <label>Countries MasterSkill Field</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Country_User_Field__c</fullName>
+        <deprecated>false</deprecated>
+        <description>API Name of the Country field on the User object</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>API Name of the Country field on the User object</inlineHelpText>
+        <label>Country User Field</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Enable_Multicountry_Multibrand_support__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Enable Multicountry/Multibrand support</label>
+        <type>Checkbox</type>
+    </fields>
+    <label>Multicountry/Multibrand Configuration</label>
+    <pluralLabel>Multicountry/Multibrand Configuration</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Settings that control the behavior of the Billing Document to Sales Invoice or Credit Note integration.</description>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>c2g__AdditionalEligibilityField__c</fullName>
+        <deprecated>false</deprecated>
+        <description>API name of the field on the Billing Document object used to determine whether a sales invoice or credit note can be created from the billing document. The field is used alongside the default eligibility criteria. This must be a checkbox or a formula checkbox field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>API name of the field on the Billing Document object used to determine whether a sales invoice or credit note can be created from the billing document. The field is used alongside the default eligibility criteria. This must be a checkbox or a formula checkbox field.</inlineHelpText>
+        <label>Additional Eligibility Field</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__AutoCreateInvoiceOrCreditField__c</fullName>
+        <deprecated>false</deprecated>
+        <description>API name of the field on the Billing Document object used to determine whether a sales invoice or credit note is automatically created from the billing document as soon as it becomes eligible. This must be a checkbox or a formula checkbox field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>API name of the field on the Billing Document object used to determine whether a sales invoice or credit note is automatically created from the billing document as soon as it becomes eligible. This must be a checkbox or a formula checkbox field.</inlineHelpText>
+        <label>Auto Create Invoice or Credit Field</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__AutoPostInvoiceOrCreditNoteField__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If selected, sales invoice or credit note is automatically posted from the billing document as soon as it becomes eligible. This is deselected by default.</description>
+        <inlineHelpText>If selected, sales invoice or credit note is automatically posted from the billing document as soon as it becomes eligible. This is deselected by default.</inlineHelpText>
+        <label>Auto Post Invoice or Credit Note</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>c2g__BillingDocumentLineSynchronousLimit__c</fullName>
+        <defaultValue>300</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Maximum number of billing document line items in a billing document that can be processed synchronously. If the number of lines in a billing document is greater than this number, the billing document is always processed asynchronously (in the background) when creating a sales invoice or credit note.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Maximum number of billing document line items in a billing document that can be processed synchronously. If the number of lines in a billing document is greater than this number, the billing document is always processed asynchronously (in the background) when creating a sales invoice or credit note. The default is 300.</inlineHelpText>
+        <label>Billing Document Line Synchronous Limit</label>
+        <precision>6</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>c2g__ValidateCompanyOnBillingDocument__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>When selected, the Company field must be specified for a billing document before it can be completed. In addition, the company must be linked to an Accounting company. This validation is also applied when creating a sales invoice or credit note from the billing document.</description>
+        <inlineHelpText>When selected, the Company field must be specified for a billing document before it can be completed. In addition, the company must be linked to an Accounting company. This validation is also applied when creating a sales invoice or credit note from the billing document. Selected by default.</inlineHelpText>
+        <label>Validate Company on Billing Document</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Billing Document to SIN or SCR settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

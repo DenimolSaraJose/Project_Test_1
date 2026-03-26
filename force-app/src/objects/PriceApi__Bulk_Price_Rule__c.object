@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>PriceApi__Discount_Percentage__c</fullName>
+        <defaultValue>0.00</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This defines the percent discount that will be applied against the default price of the defined items.</description>
+        <inlineHelpText>This defines the percent discount that will be applied against the default price of the defined items.</inlineHelpText>
+        <label>Price Rule Percentage</label>
+        <precision>7</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>PriceApi__End_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>If a pricing rule is date-driven what date does this rule expire and become an inactive price for the product?</description>
+        <inlineHelpText>If a pricing rule is date-driven what date does this rule expire and become an inactive price for the product?</inlineHelpText>
+        <label>End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>PriceApi__Event_Items__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This field is checked when we select all Event items as the item criteria.</description>
+        <inlineHelpText>This field is checked when we select all Event items as the item criteria.</inlineHelpText>
+        <label>Event Items</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PriceApi__Is_Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Activates and Deactivates all related price rules.</description>
+        <inlineHelpText>Activates and Deactivates all related price rules.</inlineHelpText>
+        <label>Is Active</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PriceApi__Item_List__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Defines the Item/Item Class/Catalog/Store/Business Group (csv) that will receive the discount.</description>
+        <inlineHelpText>Defines the Item/Item Class/Catalog/Store/Business Group (csv) that will receive the discount.</inlineHelpText>
+        <label>Item List</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>PriceApi__Item_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specify the grouping of items to apply the discount.</description>
+        <inlineHelpText>Specify the grouping of items to apply the discount.</inlineHelpText>
+        <label>Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Business Groups</fullName>
+                    <default>false</default>
+                    <label>Business Groups</label>
+                </value>
+                <value>
+                    <fullName>Catalogs</fullName>
+                    <default>false</default>
+                    <label>Catalogs</label>
+                </value>
+                <value>
+                    <fullName>Event Items</fullName>
+                    <default>false</default>
+                    <label>Event Items</label>
+                </value>
+                <value>
+                    <fullName>Item Classes</fullName>
+                    <default>false</default>
+                    <label>Item Classes</label>
+                </value>
+                <value>
+                    <fullName>Items</fullName>
+                    <default>false</default>
+                    <label>Items</label>
+                </value>
+                <value>
+                    <fullName>Stores</fullName>
+                    <default>false</default>
+                    <label>Stores</label>
+                </value>
+                <value>
+                    <fullName>Subscription Items</fullName>
+                    <default>false</default>
+                    <label>Subscription Items</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PriceApi__Max_Num_Available__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Enter the minimum quantity that must be purchased for this rule to apply to a purchase of the item. Leave blank to not constrain rule assignment by minimum quantity.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the minimum quantity that must be purchased for this rule to apply to a purchase of the item. Leave blank to not constrain rule assignment by minimum quantity.</inlineHelpText>
+        <label>Max Num Available</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PriceApi__Max_Quantity__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The maximum number of times this rule can be used. Typically used to incentivize customers to purchase products early or for flash/date-driven sales. Leave blank if you do not want to limit the number of times the rule can be applied.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The maximum number of times this rule can be used. Typically used to incentivize customers to purchase products early or for flash/date-driven sales. Leave blank if you do not want to limit the number of times the rule can be applied.</inlineHelpText>
+        <label>Max Quantity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PriceApi__Min_Quantity__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Enter the maximum quantity that can not be exceeded for this rule to apply to be valid for any given transaction scenario. Leave blank to disable max quantity as a constraint for the rule.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the maximum quantity that can not be exceeded for this rule to apply to be valid for any given transaction scenario. Leave blank to disable max quantity as a constraint for the rule.</inlineHelpText>
+        <label>Min Quantity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PriceApi__Price_Rule_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Provide the name that will be used to create new Price Rule Names.</description>
+        <inlineHelpText>Provide the name that will be used to create new Price Rule Names.</inlineHelpText>
+        <label>Price Rule Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>PriceApi__Required_Badge_Types__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Comma separated list of Badge Types required to be considered eligible for the Price Rule.</description>
+        <inlineHelpText>Comma separated list of Badge Types required to be considered eligible for the Price Rule.</inlineHelpText>
+        <label>Required Badge Types</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>PriceApi__Required_Source_Codes__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Comma separated list of Source Codes required to be considered eligible for the Price Rule.</description>
+        <inlineHelpText>Comma separated list of Source Codes required to be considered eligible for the Price Rule.</inlineHelpText>
+        <label>Required Source Codes</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>PriceApi__Required_Subscription_Plans__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Select the Subscription Plan that must be selected for this rule to apply to the purchase of the items. Leave blank to not constrain rule by Subscription Plan.</description>
+        <inlineHelpText>Select the Subscription Plan that must be selected for this rule to apply to the purchase of the items. Leave blank to not constrain rule by Subscription Plan.</inlineHelpText>
+        <label>Required Subscription Plans</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>PriceApi__Start_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>If a pricing rule is date-driven what date does this rule become an active/available price for the item?</description>
+        <inlineHelpText>If a pricing rule is date-driven what date does this rule become an active/available price for the item?</inlineHelpText>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>PriceApi__Subscription_Items__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This field is checked when we select Subscription Items as the Item Type in the price rule builder.</description>
+        <inlineHelpText>This field is checked when we select Subscription Items as the Item Type in the price rule builder.</inlineHelpText>
+        <label>Subscription Items</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Price Rules Manager</label>
+    <listViews>
+        <fullName>PriceApi__All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>BPR-{00000}</displayFormat>
+        <label>Price Rules Manager Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Price Rules Manager</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>PriceApi__Delete_Price_Rules</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Delete Price Rules</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/24.0/apex.js&quot;)} 
+
+alert(sforce.apex.execute(&quot;PriceApi.WebServiceBulkDataExecute&quot;, &quot;deletePriceRules&quot;,{bulkPriceRuleId:&quot;{!PriceApi__Bulk_Price_Rule__c.Id}&quot;}));</url>
+    </webLinks>
+    <webLinks>
+        <fullName>PriceApi__Generate_Update_Price_Rules</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Generate/Update Price Rules</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/24.0/apex.js&quot;)} 
+
+alert(sforce.apex.execute(&quot;PriceApi.WebServiceBulkDataExecute&quot;, &quot;generateUpdatePriceRules&quot;,{bulkPriceRuleId:&quot;{!PriceApi__Bulk_Price_Rule__c.Id}&quot;}));</url>
+    </webLinks>
+</CustomObject>

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Privilege_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Privilege_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>PrivilegeCompactLayout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>PrivilegeCompactLayout</fullName>
+        <fields>Name</fields>
+        <fields>ExternalName__c</fields>
+        <fields>System__c</fields>
+        <fields>Distribution_Type__c</fields>
+        <fields>AlignedWithMembershipStatus__c</fields>
+        <label>Privilege Compact Layout</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>AlignedWithMembershipStatus__c</fullName>
+        <defaultValue>false</defaultValue>
+        <inlineHelpText>When marked TRUE; based on the status change of membership, account privileges &amp; contact privileges automatically get revoked. When marked FALSE, membership status change doesn&apos;t result into automated revokements. This is then a manual task for the staff user.</inlineHelpText>
+        <label>Aligned with Membership</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Delegated_Admin__c</fullName>
+        <defaultValue>false</defaultValue>
+        <inlineHelpText>This is a privilege for becoming a delegated admin on the specified system</inlineHelpText>
+        <label>Delegated Admin</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Distribution_Type__c</fullName>
+        <inlineHelpText>ACCOUNT BASED; when account privilege is granted, ALL contacts may automatically get the contact privilege. 
+CONTACT BASED; when account privilege is granted, NO contacts get contact privileges automatically. This is for staff to decide on.</inlineHelpText>
+        <label>Distribution Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Distribution_Type</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ExternalName__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>as used in outgoing communications like email templates</inlineHelpText>
+        <label>External Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IsDefault__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>A default privilege is assigned automatically and cannot be revoked.</description>
+        <inlineHelpText>A default privilege is assigned automatically and cannot be revoked.</inlineHelpText>
+        <label>Default</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PermissionSetGroup__c</fullName>
+        <inlineHelpText>Each privilege has one permission set group that needs to be granted. Dependant on the privilege, each permission set group will contain one or more permission sets.</inlineHelpText>
+        <label>Permission Set Group</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>PermissionSetGroup</valueSetName>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>System__c</fullName>
+        <label>System</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>System</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <inlineHelpText>Internal = systems that are being used by internal employees
+External = systems that are used my members</inlineHelpText>
+        <label>Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>PrivilegeType</valueSetName>
+        </valueSet>
+    </fields>
+    <label>Privilege</label>
+    <listViews>
+        <fullName>All1</fullName>
+        <columns>NAME</columns>
+        <columns>System__c</columns>
+        <columns>Distribution_Type__c</columns>
+        <columns>AlignedWithMembershipStatus__c</columns>
+        <columns>Delegated_Admin__c</columns>
+        <columns>Type__c</columns>
+        <columns>PermissionSetGroup__c</columns>
+        <columns>ExternalName__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>PRV-{0000}</displayFormat>
+        <label>Privilege Number</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Privileges</pluralLabel>
+    <searchLayouts>
+        <searchResultsAdditionalFields>System__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Distribution_Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>AlignedWithMembershipStatus__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Delegated_Admin__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PermissionSetGroup__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ExternalName__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Default_AND_account_based</fullName>
+        <active>true</active>
+        <errorConditionFormula>IsDefault__c &amp;&amp; ISPICKVAL(Distribution_Type__c, &apos;Account Based&apos;)</errorConditionFormula>
+        <errorMessage>Default field cannot have value TRUE in combination with distribution type &apos;account based&apos;</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Delegated_admin_AND_account_based</fullName>
+        <active>true</active>
+        <errorConditionFormula>Delegated_Admin__c &amp;&amp; ISPICKVAL(Distribution_Type__c, &apos;Account Based&apos;)</errorConditionFormula>
+        <errorMessage>Delegated admin field cannot have value TRUE in combination with distribution type &apos;account based&apos;</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Fields_that_may_not_be_blank</fullName>
+        <active>true</active>
+        <errorConditionFormula>OR(
+ISBLANK(TEXT(Distribution_Type__c)),
+ISBLANK(TEXT(Type__c)),
+ISBLANK(TEXT(System__c)),
+ISBLANK(ExternalName__c)
+)</errorConditionFormula>
+        <errorMessage>the following fields must have a value; 
+* Distribution Type
+* Type
+* System
+* External Name</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Stores all data required for the previewing of SFMC messages for the first recipient based on the all information populated by the user within the BH4SF Email Editor. For security reasons, the preview record should be deleted after viewing (it is triggered by Marketing Cloud side).</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>TR1__Application_V2__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Lookup to the Application V2 object that is utilized in the SFMC message preview.</description>
+        <inlineHelpText>Lookup to the Application V2 object that is utilized in the SFMC message preview.</inlineHelpText>
+        <label>Application V2</label>
+        <referenceTo>TR1__Application_V2__c</referenceTo>
+        <relationshipLabel>SFMC Preview Data</relationshipLabel>
+        <relationshipName>SFMC_Preview_Data</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Campaign_Unique_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Stores the unique Campaign name corresponding to the specific email template on the SFMC side.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Stores the unique Campaign name corresponding to the specific email template on the SFMC side.</inlineHelpText>
+        <label>Campaign Unique Name</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Contact_Documents__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Stores the information of Contact Document Links (resumes) being sent to Marketing Cloud.</description>
+        <inlineHelpText>Stores the information of Contact Document Links (resumes) being sent to Marketing Cloud.</inlineHelpText>
+        <label>Contact Documents</label>
+        <length>4000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TR1__Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Lookup to the Contact object (recipient) that is utilized in the SFMC message preview.</description>
+        <inlineHelpText>Lookup to the Contact object (recipient) that is utilized in the SFMC message preview.</inlineHelpText>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>SFMC Preview Data</relationshipLabel>
+        <relationshipName>SFMC_Preview_Data</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Content_Documents__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Stores the information of Salesforce Content Distribution links to the shared documents being sent to Marketing Cloud. Note: actual URL for the links are not available during the preview so stub values are used instead.</description>
+        <inlineHelpText>Stores the information of Salesforce Content Distribution links to the shared documents being sent to Marketing Cloud. Note: actual URL for the links are not available during the preview so stub values are used instead.</inlineHelpText>
+        <label>Content Documents</label>
+        <length>4000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TR1__HTML_Body__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Stores the merged HTML body value of the fully-editable message being sent to Marketing Cloud.</description>
+        <inlineHelpText>Stores the merged HTML body value of the fully-editable message being sent to Marketing Cloud.</inlineHelpText>
+        <label>HTML Body</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TR1__Interview_Data__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Stores interview data entered by the User before previewing within the BH4SF Email Editor form which are not saved in the database yet. Stored in JSON format.</description>
+        <inlineHelpText>Stores interview data entered by the User before previewing within the BH4SF Email Editor form which are not saved in the database yet. Stored in JSON format.</inlineHelpText>
+        <label>Interview Data</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TR1__Job_Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Lookup to the Account object related to a Job that is utilized in the SFMC message preview.</description>
+        <inlineHelpText>Lookup to the Account object related to a Job that is utilized in the SFMC message preview.</inlineHelpText>
+        <label>Job Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>SFMC Preview Data</relationshipLabel>
+        <relationshipName>SFMC_Preview_Data</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Job__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Lookup to the Job object that is utilized in the SFMC message preview.</description>
+        <inlineHelpText>Lookup to the Job object that is utilized in the SFMC message preview.</inlineHelpText>
+        <label>Job</label>
+        <referenceTo>TR1__Job__c</referenceTo>
+        <relationshipLabel>SFMC Preview Data</relationshipLabel>
+        <relationshipName>SFMC_Preview_Data</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Language__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Stores the language which the user selected on the language dropdown within BH4SF Email Editor to preview an SFMC email template in the desired language.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Stores the language which the user selected on the language dropdown within BH4SF Email Editor to preview an SFMC email template in the desired language.</inlineHelpText>
+        <label>Language</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Personalization_Strings__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Stores Personalization Strings entered by the user within the BH4SF Email Editor form. Stored in JSON format.</description>
+        <inlineHelpText>Stores Personalization Strings entered by the user within the BH4SF Email Editor form. Stored in JSON format.</inlineHelpText>
+        <label>Personalization Strings</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TR1__Send_Out_Schedule_V2__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Lookup to the Send Out Schedule V2 object that is utilized in the SFMC message preview.</description>
+        <inlineHelpText>Lookup to the Send Out Schedule V2 object that is utilized in the SFMC message preview.</inlineHelpText>
+        <label>Send Out Schedule V2</label>
+        <referenceTo>TR1__Send_Out_Schedule_V2__c</referenceTo>
+        <relationshipLabel>SFMC Preview Data</relationshipLabel>
+        <relationshipName>SFMC_Preview_Data</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Sender__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Lookup to the User object that is utilized in the SFMC message preview to provide the information about the message sender (e.g. Name, Email).</description>
+        <inlineHelpText>Lookup to the User object that is utilized in the SFMC message preview to provide the information about the message sender (e.g. Name, Email).</inlineHelpText>
+        <label>Sender</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>SFMC_Preview_Data</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Signature__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Stores the user&apos;s signature being sent to Marketing Cloud if it is applied within the BH4SF Email Editor.</description>
+        <inlineHelpText>Stores the user&apos;s signature being sent to Marketing Cloud if it is applied within the BH4SF Email Editor.</inlineHelpText>
+        <label>Signature</label>
+        <length>4000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TR1__Subject__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Stores the subject of the message being sent to Marketing Cloud (only relevant to fully-editable email templates).</description>
+        <inlineHelpText>Stores the subject of the message being sent to Marketing Cloud (only relevant to fully-editable email templates).</inlineHelpText>
+        <label>Subject</label>
+        <length>1024</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TR1__Token_Status__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Represents the status of the current token. Setting the ‘Expired’ status triggers the deletion of the updated ‘SFMC Preview Data’ record.</description>
+        <inlineHelpText>Represents the status of the current token. Setting the ‘Expired’ status triggers the deletion of the updated ‘SFMC Preview Data’ record.</inlineHelpText>
+        <label>Token Status</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>false</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>Expired</fullName>
+                    <default>false</default>
+                    <label>Expired</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TR1__Token__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>Stores a unique token generated for a one-time preview of a particular email template.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Stores a unique token generated for a one-time preview of a particular email template.</inlineHelpText>
+        <label>Token</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <label>SFMC Preview Data</label>
+    <nameField>
+        <displayFormat>MCPD-{0000}</displayFormat>
+        <label>SFMC Preview Data Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>SFMC Preview Data</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>Private</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

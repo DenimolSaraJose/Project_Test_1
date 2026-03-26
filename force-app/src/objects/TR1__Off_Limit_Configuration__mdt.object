@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Deprecated</description>
+    <fields>
+        <fullName>TR1__Async_Update_Off_Limit_Lookups__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Deprecated</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Deprecated</inlineHelpText>
+        <label>Deprecated</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Info_Records_Chunk_Size__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Deprecated</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Deprecated</inlineHelpText>
+        <label>Deprecated</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Deprecated</label>
+    <pluralLabel>Deprecated</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

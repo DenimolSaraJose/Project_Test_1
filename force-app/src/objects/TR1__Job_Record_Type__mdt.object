@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Job (TR1__Job__c) Record Type</description>
+    <fields>
+        <fullName>TR1__Candidate_Status__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Candidate status that will be set on the contact record when the Closing report record is created.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Candidate status that will be set on the contact record when the Closing report record is created. Used to override the current behaviour.</inlineHelpText>
+        <label>Candidate Status</label>
+        <length>40</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Do_Not_Update_Candidate_Status__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Determines whether the candidate status should be updated in the contact record when a closing report record is created.</description>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>If checked, the candidate&apos;s status will not be updated in the contact record when the closing report record is created.</inlineHelpText>
+        <label>Do Not Update Candidate Status</label>
+        <type>Checkbox</type>
+    </fields>
+    <label>Job Record Type</label>
+    <pluralLabel>Job Record Types</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

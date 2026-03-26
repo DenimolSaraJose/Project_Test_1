@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>TR1__Alternative_Canvas_Connected_App_API__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Leave blank to use package Connected App</inlineHelpText>
+        <label>Alternative Canvas Connected App API</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Alternative_Canvas_Connected_App_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Leave blank to use package Connected App</inlineHelpText>
+        <label>Alternative Canvas Connected App Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Alternative_Document_Description__c</fullName>
+        <defaultValue>&apos;TR1__Version__c&apos;</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>To specify the API name of the field to be used as an alternative description. The field type can be string, double, integer, boolean, date and dateTime.</inlineHelpText>
+        <label>Alternative Document Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Always_as_PDF__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If the checkbox is unchecked then a user has the ability to choose on the UI how to send a resume as PDF or not. If checked then the resume will be sent in PDF format.</description>
+        <label>Always as PDF</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Create_ContactDocument_on_Send_as_PDF__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If true, a contact document record will be created with an uploaded PDF file when a user selects the “Send as PDF” option in Default Resume section of Email Editor. If false, a ContentVersion will be created.</description>
+        <inlineHelpText>If true, a contact document record will be created with an uploaded PDF file when a user selects the “Send as PDF” option in Default Resume section of Email Editor. If false, a ContentVersion will be created.</inlineHelpText>
+        <label>Create ContactDocument on Send as PDF</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Default_PDF_Recognition_Mode__c</fullName>
+        <defaultValue>&apos;Flow&apos;</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Configure the default format in Resume Manager 5 when a template is selected. The allowed values are Flow and Textbox</inlineHelpText>
+        <label>Default PDF Recognition Mode</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Description_Date_Format__c</fullName>
+        <defaultValue>&apos;yyyy-MM-dd&apos;</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used when a Date or DateTime field is specified in &apos;Alternative Document Description&apos; field
+Format examples:
+dd/MM/yyyy
+yyyy/MM/dd
+yyyy-MM-dd</inlineHelpText>
+        <label>Description Date Format</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__Disable_Download_Resume_Task__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <inlineHelpText>Prevents Task record creation after pressing Download button on Resume Manager</inlineHelpText>
+        <label>Disable Download Resume Task</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Do_not_create_new_CV_when_editing__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If this setting is enabled, when a resume is edited using Resume Manager Document Editor, on clicking &apos;Save&apos; the User will be offered the option to (a) create a new version or (b) save the changes to the last existing version of the resume</description>
+        <inlineHelpText>If this setting is enabled, when a resume is edited using Resume Manager Document Editor, on clicking &apos;Save&apos; the User will be offered the option to (a) create a new version or (b) save the changes to the last existing version of the resume</inlineHelpText>
+        <label>Do not create new CV when editing</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Enable_Alternative_File_Names_for_Attach__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <label>Enable Alternative File Names for Attach</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Enable_CV_Deletion__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If checked, &apos;Delete Resume&apos; button will be visible and user will be able to delete a CV from Resume Manager on Candidate Record</description>
+        <inlineHelpText>If checked, &apos;Delete Resume&apos; button will be visible and user will be able to delete a CV from Resume Manager on Candidate Record</inlineHelpText>
+        <label>Enable CV Deletion</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Enable_CV_Sharing_With_Users__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Allows to share CV with users if checked.</description>
+        <label>Enable CV Sharing With Users</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Make_CV_Default__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Editing or applying a template to a CV using Resume Manager will not automatically set the new CV as default if checked</description>
+        <label>Make CV Default</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Send_as_PDF__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <label>Send as PDF</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Sort_order__c</fullName>
+        <defaultValue>&apos;DESC&apos;</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Specify the order in which documents will be displayed. Supported values: &apos;DESC&apos; or &apos;ASC&apos;.</inlineHelpText>
+        <label>Sort order</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Resume Manager Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

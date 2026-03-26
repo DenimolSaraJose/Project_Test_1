@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>TR1__Enable_Add_My_Signature__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>If you enable this checkbox, when Org-level signature is configured &apos;Add my signature to the email&apos; checkbox  on Email Editor page will be selected by default</inlineHelpText>
+        <label>Enable Add my signature to the email</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1__Signature__c</fullName>
+        <deprecated>false</deprecated>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Enter template for Org-level Signature (HTML). Only enabled if &apos;User Email Signature API Field Name&apos; is blank</inlineHelpText>
+        <label>Signature</label>
+        <length>131072</length>
+        <type>LongTextArea</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TR1__User_Always_Add_Signature_API_Field_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>This field holds the User API field name of the checkbox that can be used to have “Add my signature to the email”=True in the email editor.</inlineHelpText>
+        <label>User Always Add Signature API Field Name</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TR1__User_Email_Signature_API_Field_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The API name of a field on the User object that contains the Email Signature to use. This enables users to have their own personalized signature.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Enter API name of custom field on User record that stores email signature</inlineHelpText>
+        <label>User Email Signature API Field Name</label>
+        <length>40</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Email Signature</label>
+    <pluralLabel>Email Signatures</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>
