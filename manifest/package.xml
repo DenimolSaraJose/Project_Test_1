@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>EventApi__Event__c.Desired_Capacity__c</members>
+        <members>EventApi__Event__c.Event_Registration_Deadline__c</members>
+        <name>CustomField</name>
+    </types>
+    <version>64.0</version>
+</Package>
